@@ -1,0 +1,7 @@
+{
+"cores": 2,
+"quantum_cycles": 10000,
+"trace_files": ["traces/big_0.txt", "traces/big_512.txt", "traces/big_0.txt", "traces/big_512.txt"],
+"base_addresses": [],
+"schedule": [[0,2], [1,2], [2,3], [3,0]]
+}

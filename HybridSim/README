@@ -1,0 +1,100 @@
+HybridSim
+
+University of Maryland, College Park
+Memory Systems Research Lab
+Lead Developer: Jim Stevens
+
+----------------------------------------------------------------------
+Description:
+
+HybridSim is a timing simulation for a memory system design that
+utilizes a DRAM memory subsystem to cache a non-volatile memory. The DRAM
+subsystem is simulated by DRAMSim2 and the NVRAM subsystem is simulated
+by NVDIMMSim. HybridSim can run as a standalone trace-based simulator or
+as part of a full system simulator.
+
+HybridSim assumes the cache controller exists on the CPU and can be
+accessed with no overhead. The cache tag lookup delay in HybridSim is
+configurable.  HybridSim simulates accesses at a granularity of 64 bytes
+(the last level cache line size that is typically used as the memory
+system access granularity). Each of these lines is then part of a larger
+NVDIMM page (typically 4K, but configurable).  When a page is mapped
+into the DRAM, HybridSim simply passes accesses along to DRAMSim2 to
+simulate the timing. When a page is not mapped into the DRAM, HybridSim
+evicts a page from the cache set and then requests the missed page from
+the NVDIMM. HybridSim is lockup free, so while one DRAM cache miss is
+being serviced, other accessed can continue without delay.
+
+HybridSim also has support for sequential prefetching and perfect
+prefetching (prefetching based on a prefetch script computed ahead
+of time).
+
+It is important to note that this is an experimental research codebase.
+This is not guaranteed to run on any platform outside of our development
+and experiment machines (we run Ubuntu 10.04 and 12.04). If you want to
+support another platform, feel free to make whatever changes are necessary
+and generate a patch. As long as it doesn't break things in our setup,
+then we will gladly merge it. Additionally, all of our memory simulators
+contain many experimental features that are not guaranteed to work
+well in all situations. Please contact the development team if you have
+questions about how certain features work or how to make the simulators
+work well for your goals. 
+
+----------------------------------------------------------------------
+Build instructions:
+
+To build HybridSim, the external headers and .so files for DRAMSim and
+NVDIMMSim must be available. NVDIMMSim must be placed in the ../NVDIMMSim
+directory and DRAMSim2 must be placed in the ../DRAMSim2 directory
+relative to this directory. Follow the instructions for those systems to
+build the .so files. Then, to build the standalone trace-based simulator,
+simply type "make".
+
+To build HybridSim as a shared library, type "make lib". The marss.hybridsim repo
+can then be built with libhybridsim.so.
+
+All code mentioned above can be found at:
+https://github.com/jimstevens2001
+
+
+----------------------------------------------------------------------
+Trace-Based Simulator Usage:
+
+./HybridSim <trace-file>
+
+The trace file format is an ASCII file with each access in the trace as a separate
+line. Each access consists of a cycle number, an operation type (0 for read, 1 for write),
+and an byte address for the memory access (addresses should be aligned to 64 bytes).
+
+----------------------------------------------------------------------
+Repository Management:
+
+This repo follows a standard git branching scheme.
+
+* master - stable branch
+* dev - unstable development branch
+
+All other branches are feature branches. Some may be orphans and some
+may eventually be merged into dev. The master branch will only merge
+changes from dev after we are satisfied they are stable.
+
+Tags with format vX.Y.Z are considered releases of stable versions.
+All other tags are considered experimental.
+
+The following versions of NVDIMMSim and DRAMSim2 will be kept compatible with
+the master branch of HybridSim...
+
+https://github.com/jimstevens2001/NVDIMMSim/tree/stable
+https://github.com/jimstevens2001/DRAMSim2
+
+Note that the HybridSim-compatible version of DRAMSim2 is not necsesarily
+the same as the mainline version of DRAMSim2 maintained here:
+https://github.com/dramninjasUMD/DRAMSim2
+
+Additionally, tagged releases across the three will be kept consistent in terms
+of version numbers.
+
+----------------------------------------------------------------------
+Software License:
+This software is open-source and is released under the BSD license. Please
+see the file LICENSE for a copy of the license.

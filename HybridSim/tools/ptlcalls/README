@@ -1,0 +1,3 @@
+This directory contains programs that are useful for making ptlcalls from the command line
+in marss. Build them and then put them in a disk image either by mounting the disk image
+on the host or by using the qemu nic and scp.

@@ -1,0 +1,25 @@
+{
+"cores": 4,
+"quantum_cycles": 2666667,
+#"trace_files": ["traces/big_0.txt", "traces/big_512.txt", "traces/big_0.txt", "traces/big_512.txt"],
+"trace_files": ["/home/jims/experiment/traces_10G/trace_run/NPB_32G___bt_B_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/NPB_32G___bt_C_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/NPB_32G___ft_B_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/NPB_32G___ft_C_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/NPB_32G___is_C_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/NPB_32G___lu_C_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/NPB_32G___sp_C_16/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___bodytrack_16_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___bodytrack_8_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___canneal_16_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___canneal_8_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___facesim_16_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___facesim_8_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___fluidanimate_16_large/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___fluidanimate_8_large_copy/marss.hybridsim/full_trace.log",
+"/home/jims/experiment/traces_10G/trace_run/PARSEC_32G___fluidanimate_8_large/marss.hybridsim/full_trace.log",
+"traces/qemu_test.txt"],
+"base_addresses": [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+#"schedule": [[0,1,8,9], [2,3,10,11], [4,5,12,13], [6,7,14,15]]
+"schedule": [[0,1,8,16], [2,3,10,16], [4,5,12,16], [6,7,14,16], [9,11,13,15]]
+}

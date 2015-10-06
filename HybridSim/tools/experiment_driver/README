@@ -1,0 +1,18 @@
+Python Experiment Driver for HybridSim and marss.hybridsim.
+
+The experiment_driver.py infrastructure enables the creation of experiment
+sweeps with minimal effort. 
+
+experiment_driver.py defines three classes:
+* Command
+* ExperimentDriver
+* ExperimentHooks
+
+Command is an infrastructure for generating chains of shell commands
+from the most common commands needed to run experiments. ExperimentDriver
+handles setting up and running each experiment.  ExperimentHooks defines
+experiment-specific details (e.g. directory layout).
+
+To use, create a subclass of ExperimentHooks and pass it to an instance
+of ExperimentDriver.  ExperimentDriver will then call the various hook
+methods to set up and run the experiments.
