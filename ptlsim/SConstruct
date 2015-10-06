@@ -1,0 +1,173 @@
+# Top level SConstruct file for lib_mptlsim
+import os
+import platform
+import subprocess
+import config_helper
+import re
+
+# List of subdirectories where we have source code
+dirs = ['cache', 'core', 'lib', 'sim', 'stats', 'tools', 'x86']
+
+try:
+	Import('ptl_env')
+	env = ptl_env
+	qemu_dir = env['qemu_dir']
+	nvmain_dir = env['nvmain_dir']
+	dramsim2_dir = env['dramsim2_dir']
+	hybridsim_dir = env['hybridsim_dir']
+	mem_type = env['mem_type']
+except:
+	env = Environment()
+	env['CC'] = 'g++'
+	qemu_dir = "%s/../qemu" % os.getcwd()
+	nvmain_dir = "%s/../nvmain" % os.getcwd()
+	dramsim2_dir = "%s/../DRAMSim2" % os.getcwd()
+	hybridsim_dir = "%s/../HybridSim" % os.getcwd()
+	mem_type=""
+# Setup the environment
+# env = Environment()
+
+env['CPPPATH'] = []
+env['CPPPATH'].append(qemu_dir)
+env['CPPPATH'].append("%s/%s" % (qemu_dir, "target-i386"))
+env['CPPPATH'].append("%s/%s" % (qemu_dir, "fpu"))
+env['CPPPATH'].append("%s/%s" % (qemu_dir, "x86_64-softmmu"))
+#print 'mem_type is %s ' % mem_type
+if mem_type == "NVMAIN":
+	#define NVMAIN
+	if os.path.isdir(nvmain_dir):
+		print nvmain_dir
+		env['CPPPATH'].append(nvmain_dir)
+		env.Append(CCFLAGS = '-DNVMAIN')
+if mem_type == "DRAMSIM":
+	if os.path.isdir(dramsim2_dir):
+		print dramsim2_dir
+		env['CPPPATH'].append(dramsim2_dir)
+		env.Append(CCFLAGS = '-DDRAMSIM')
+if mem_type == "HYBRIDSIM":
+	print hybridsim_dir
+	if os.path.isdir( hybridsim_dir):
+		env['CPPPATH'].append(hybridsim_dir)
+		env.Append(CCFLAGS='-DHYBRIDSIM')
+
+optimization_defs = '-fno-trapping-math -fstack-protector -fno-exceptions '
+optimization_defs += '-fno-rtti -funroll-loops -fstrict-aliasing '
+
+GCC_VERSION = subprocess.Popen([env['CC'], '-dumpversion'],
+				stdout=subprocess.PIPE).communicate()[0].strip()
+GCC_MAJOR_MINOR_VERSION = re.match(r'\d*\.\d+',GCC_VERSION).group() #e.g. returns 4.2 for 4.2.2
+debug = ARGUMENTS.get('debug', 1)
+if int(debug):
+
+    # If debugging level is 1 then do optimize
+    if int(debug) == 1:
+    	env.Append(CCFLAGS = '-g')
+    elif int(debug) == 2: #For more detailed debugging information
+		env.Append(CCFLAGS = '-ggdb3')
+		env.Append(CCFLAGS = '-g3')
+		env.Append(CCFLAGS = '-O0')
+
+    # Enable tests
+    env.Append(CCFLAGS = '-DENABLE_TESTS')
+    dirs.append('tests')
+    # Add gtest directory in CPPPATH
+    env['CPPPATH'].append(os.getcwd() + "/lib/gtest/include")
+    env['CPPPATH'].append(os.getcwd() + "/lib/gtest")
+    env['tests'] = True
+
+else:
+    env.Append(CCFLAGS = '-O3 -march=native')
+    env.Append(CCFLAGS = '-DDISABLE_ASSERT')
+    env.Append(CCFLAGS = '-DDISABLE_LOGGING')
+    env.Append(CCFLAGS = optimization_defs)
+    env['tests'] = False
+
+# Include all the subdirectories into the CCFLAGS
+for dir in dirs:
+    env['CPPPATH'].append(os.getcwd() + "/" + dir)
+
+num_sim_cores = ARGUMENTS.get('c', 2)
+env.Append(CCFLAGS = '-DNUM_SIM_CORES=%d' % int(num_sim_cores))
+env['num_cpus'] = int(num_sim_cores)
+if int(num_sim_cores) == 1:
+    env.Append(CCFLAGS = '-DSINGLE_CORE_MEM_CONFIG')
+
+# Set all the -D flags
+env.Append(CCFLAGS = '-DNEED_CPU_H')
+env.Append(CCFLAGS = '-D__STDC_FORMAT_MACROS')
+env.Append(CCFLAGS = '-DMARSS_QEMU')
+
+# To use AMD ooocore file uncomment this
+# env.Append(CCFLAGS = '-DUSE_AMD_OOOCORE')
+
+# Check for 64bit machine
+arch_type = platform.architecture()[0]
+if arch_type == '64bit':
+    env.Append(CCFLAGS = '-D__x86_64__')
+
+# git information to bake into the binary
+git_branch = "UNKNOWN"
+git_comm = "0000000"
+git_date = "UNKNOWN"
+
+try:
+    output = subprocess.Popen("git branch".split(),
+            stdout=subprocess.PIPE).communicate()[0]
+    for line in output.splitlines():
+        if line.startswith('*'):
+            git_branch = line[2:]
+            break;
+
+    output = subprocess.Popen("git log --abbrev-commit HEAD^..HEAD".split(),
+            stdout=subprocess.PIPE).communicate()[0]
+    for line in output.splitlines():
+        if line.startswith('commit '):
+            git_comm = line[8:]
+        if line.startswith('Date:   '):
+            git_date = line[8:-6]
+            break;
+except:
+    pass
+
+if git_branch == "(no branch)":
+    git_branch = "UNKNOWN"
+
+env.Append(CCFLAGS = "-DGITBRANCH=%s -DGITCOMMIT=%s -DGITDATE='%s'" %
+        (git_branch, git_comm, git_date))
+
+env.Append(CCFLAGS = " -Wall -Wendif-labels -Wwrite-strings" +
+        " -Wno-redundant-decls")
+
+Export('env')
+
+# print("Build Envrionment:")
+# print("\tCC:%s" % env['CC'])
+# print("\tCCFLAGS:%s" % env['CCFLAGS'])
+# print("\tCPPPATH:%s" % env['CPPPATH'])
+
+# Setup the build directory
+# Save configuration to build/config.yaml
+env['config_file'] = env.File('../build/config')
+env['config_gen'] = env.File('tools/config_gen.py')
+config_helper.save_config(str(env['config_file']), env['config'])
+
+# Now call the SConscript in all subdirectories to build object files
+objs = []
+for dir in dirs:
+	# Skip the Tools directory
+    if dir == "tools":
+        continue
+    o = SConscript('%s/SConscript' % dir, variant_dir='../build/%s' % dir , exports='env')
+    if type(o) == list:
+        objs.append(o[0])
+    else:
+        objs.append(o)
+
+inc_str = ""
+for i_s in env['CPPPATH']:
+    inc_str += " -I%s" % i_s
+env['incstr'] = inc_str
+
+lib = objs
+
+Return('lib')

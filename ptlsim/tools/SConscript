@@ -1,0 +1,5 @@
+# SConscript for cache subdirectory
+
+# Import envrionment
+Import('env')
+Import('dst_objs')

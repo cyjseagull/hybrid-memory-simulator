@@ -1,0 +1,33 @@
+# SConscript for cache subdirectory
+
+# Import envrionment
+#try:
+#        Import('env')
+#        Import('ptl_env')
+#        #nvmain_dir = ptl_env['nvmain_dir']
+#except:
+#       nvmain_dir = "%s/../nvmain" % os.getcwd()
+Import('env')
+###################################
+# Cache related autogeneration
+##################################
+
+cache_type_h = env.Command("cacheTypes.h", env['config_file'],
+        Action("%s -c $SOURCE -t cache -n header -o $TARGET" %
+            (env['config_gen']),
+        cmdstr="$CREATECOMSTR"))[0]
+
+env['cache_type_h'] = cache_type_h
+
+cache_cpp = env.Command("cacheTypes.cpp", env['config_file'],
+        Action("%s -c $SOURCE -t cache -n logic -o $TARGET" %
+            (env['config_gen']),
+            cmdstr="$CREATECOMSTR"))[0]
+
+# Now get list of .cpp files
+src_files = Glob('*.cpp')
+#src_files.append(env["NVMAINSOURCES"])
+#objs = env.Object(src_files,LIBS='nvmain', LIBPATH = nvmain_dir ,  CXXFLAGS = "$CXXFLAGS -include %s" % cache_type_h.rfile().abspath)
+objs = env.Object(src_files , CXXFLAGS="$CXXFLAGS -include %s" % cache_type_h.rfile().abspath)
+env.Depends(objs, cache_type_h)
+Return('objs')

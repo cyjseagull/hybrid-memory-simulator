@@ -1,0 +1,1090 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADD_HISTORY	memoryHierarchy.h	61;"	d
+ADD_HISTORY	memoryHierarchy.h	65;"	d
+ADD_HISTORY_ADD	memoryHierarchy.h	62;"	d
+ADD_HISTORY_ADD	memoryHierarchy.h	66;"	d
+ADD_HISTORY_REM	memoryHierarchy.h	63;"	d
+ADD_HISTORY_REM	memoryHierarchy.h	67;"	d
+AVG_WAIT_DELAY	cacheConstants.h	/^	const int AVG_WAIT_DELAY = 5;$/;"	m	namespace:Memory
+BUS_ARBITRATE_DELAY	bus.h	/^const int BUS_ARBITRATE_DELAY = 1;$/;"	m	namespace:Memory
+BUS_ARBITRATE_DELAY	splitPhaseBus.h	/^const int BUS_ARBITRATE_DELAY = 1;$/;"	m	namespace:Memory
+BUS_BROADCASTS_DELAY	bus.h	/^const int BUS_BROADCASTS_DELAY = 6;$/;"	m	namespace:Memory
+BUS_BROADCASTS_DELAY	splitPhaseBus.h	/^const int BUS_BROADCASTS_DELAY = 6;$/;"	m	namespace:Memory
+BUS_H	bus.h	29;"	d
+BaseCacheStats	memoryStats.h	/^    BaseCacheStats(const char *name, Statable *parent=NULL)$/;"	f	struct:Memory::BaseCacheStats
+BaseCacheStats	memoryStats.h	/^struct BaseCacheStats : public Statable$/;"	s	namespace:Memory
+BusBuilder	bus.cpp	/^    BusBuilder(const char* name) :$/;"	f	struct:BusBuilder
+BusBuilder	bus.cpp	/^struct BusBuilder : public InterconnectBuilder$/;"	s	file:
+BusControllerQueue	bus.h	/^struct BusControllerQueue$/;"	s	namespace:Memory
+BusControllerQueue	splitPhaseBus.h	/^struct BusControllerQueue$/;"	s	namespace:Memory::SplitPhaseBus
+BusInterconnect	bus.cpp	/^BusInterconnect::BusInterconnect(const char *name,$/;"	f	class:BusInterconnect
+BusInterconnect	bus.h	/^class BusInterconnect : public Interconnect$/;"	c	namespace:Memory
+BusInterconnect	splitPhaseBus.cpp	/^BusInterconnect::BusInterconnect(const char *name,$/;"	f	class:BusInterconnect
+BusInterconnect	splitPhaseBus.h	/^class BusInterconnect : public Interconnect$/;"	c	namespace:Memory::SplitPhaseBus
+BusQueueEntry	bus.h	/^struct BusQueueEntry : public FixStateListObject$/;"	s	namespace:Memory
+BusQueueEntry	splitPhaseBus.h	/^struct BusQueueEntry : public FixStateListObject$/;"	s	namespace:Memory::SplitPhaseBus
+BusStats	memoryStats.h	/^    BusStats(const char* name, Statable *parent)$/;"	f	struct:Memory::BusStats
+BusStats	memoryStats.h	/^struct BusStats : public Statable {$/;"	s	namespace:Memory
+CACHECONSTANTS_H	cacheConstants.h	29;"	d
+CACHE_ACCESS_EVENT	cacheController.h	/^	CACHE_ACCESS_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_ACCESS_EVENT	coherentCache.h	/^            CACHE_ACCESS_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_CLEAR_ENTRY_EVENT	cacheController.h	/^	CACHE_CLEAR_ENTRY_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_CLEAR_ENTRY_EVENT	coherentCache.h	/^            CACHE_CLEAR_ENTRY_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_CONTROLLER_H	cacheController.h	29;"	d
+CACHE_HIT_EVENT	cacheController.h	/^	CACHE_HIT_EVENT=0,$/;"	e	enum:Memory::__anon1
+CACHE_HIT_EVENT	coherentCache.h	/^            CACHE_HIT_EVENT=0,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_INSERT_COMPLETE_EVENT	cacheController.h	/^	CACHE_INSERT_COMPLETE_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_INSERT_COMPLETE_EVENT	coherentCache.h	/^            CACHE_INSERT_COMPLETE_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_INSERT_EVENT	cacheController.h	/^	CACHE_INSERT_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_INSERT_EVENT	coherentCache.h	/^            CACHE_INSERT_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_LINES_H	cacheLines.h	29;"	d
+CACHE_MISS_EVENT	cacheController.h	/^	CACHE_MISS_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_MISS_EVENT	coherentCache.h	/^            CACHE_MISS_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_NO_EVENTS	cacheController.h	/^	CACHE_NO_EVENTS$/;"	e	enum:Memory::__anon1
+CACHE_NO_EVENTS	coherentCache.h	/^            CACHE_NO_EVENTS$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_UPDATE_EVENT	cacheController.h	/^	CACHE_UPDATE_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_UPDATE_EVENT	coherentCache.h	/^            CACHE_UPDATE_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_WAIT_INTERCONNECT_EVENT	cacheController.h	/^	CACHE_WAIT_INTERCONNECT_EVENT,$/;"	e	enum:Memory::__anon1
+CACHE_WAIT_INTERCONNECT_EVENT	coherentCache.h	/^            CACHE_WAIT_INTERCONNECT_EVENT,$/;"	e	enum:Memory::CoherentCache::__anon2
+CACHE_WAIT_RESPONSE	cacheController.h	/^	CACHE_WAIT_RESPONSE,$/;"	e	enum:Memory::__anon1
+COHERENCE_LOGIC_H	coherenceLogic.h	28;"	d
+COHERENT_CACHE_H	coherentCache.h	29;"	d
+CONTROLLER_H	controller.h	29;"	d
+CPUController	cpuController.cpp	/^CPUController::CPUController(W8 coreid, const char *name,$/;"	f	class:CPUController
+CPUController	cpuController.h	/^class CPUController : public Controller$/;"	c	namespace:Memory
+CPUControllerBufferEntry	cpuController.h	/^struct CPUControllerBufferEntry : public FixStateListObject$/;"	s	namespace:Memory
+CPUControllerBuilder	cpuController.cpp	/^    CPUControllerBuilder(const char* name) :$/;"	f	struct:CPUControllerBuilder
+CPUControllerBuilder	cpuController.cpp	/^struct CPUControllerBuilder : public ControllerBuilder$/;"	s	file:
+CPUControllerQueueEntry	cpuController.h	/^struct CPUControllerQueueEntry : public FixStateListObject$/;"	s	namespace:Memory
+CPUControllerStats	memoryStats.h	/^    CPUControllerStats(const char *name, Statable *parent)$/;"	f	struct:Memory::CPUControllerStats
+CPUControllerStats	memoryStats.h	/^struct CPUControllerStats : public BaseCacheStats$/;"	s	namespace:Memory
+CPU_CONTROLLER_H	cpuController.h	29;"	d
+CPU_CONT_ICACHE_BUF_SIZE	cacheConstants.h	/^	const int CPU_CONT_ICACHE_BUF_SIZE = 32;$/;"	m	namespace:Memory
+CPU_CONT_PENDING_REQ_SIZE	cacheConstants.h	/^	const int CPU_CONT_PENDING_REQ_SIZE = 128;$/;"	m	namespace:Memory
+CacheController	cacheController.cpp	/^CacheController::CacheController(W8 coreid, const char *name,$/;"	f	class:CacheController
+CacheController	cacheController.h	/^class CacheController : public Controller$/;"	c	namespace:Memory
+CacheController	coherentCache.cpp	/^CacheController::CacheController(W8 coreid, const char *name,$/;"	f	class:CacheController
+CacheController	coherentCache.h	/^        class CacheController : public Controller$/;"	c	namespace:Memory::CoherentCache
+CacheLine	cacheLines.h	/^    struct CacheLine$/;"	s	namespace:Memory
+CacheLineState	cacheController.h	/^enum CacheLineState {$/;"	g	namespace:Memory
+CacheLines	cacheLines.h	/^        CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::CacheLines(int readPorts, int writePorts) :$/;"	f	class:Memory::CacheLines
+CacheLines	cacheLines.h	/^        class CacheLines : public CacheLinesBase,$/;"	c	namespace:Memory
+CacheLinesBase	cacheLines.h	/^    struct CacheLinesBase$/;"	s	namespace:Memory
+CacheQueueEntry	cacheController.h	/^struct CacheQueueEntry : public FixStateListObject$/;"	s	namespace:Memory
+CacheQueueEntry	coherentCache.h	/^        struct CacheQueueEntry : public FixStateListObject$/;"	s	namespace:Memory::CoherentCache
+CacheType	cacheConstants.h	/^	enum CacheType {$/;"	g	namespace:Memory
+CoherenceLogic	coherenceLogic.h	/^                CoherenceLogic(const char*name, CacheController* cont,$/;"	f	class:Memory::CoherentCache::CoherenceLogic
+CoherenceLogic	coherenceLogic.h	/^        class CoherenceLogic : public Statable$/;"	c	namespace:Memory::CoherentCache
+CoherentCache	coherenceLogic.h	/^    namespace CoherentCache {$/;"	n	namespace:Memory
+CoherentCache	coherentCache.h	/^    namespace CoherentCache {$/;"	n	namespace:Memory
+CoherentCache	mesiLogic.h	/^namespace CoherentCache {$/;"	n	namespace:Memory
+CoherentCache	moesiLogic.h	/^namespace CoherentCache {$/;"	n	namespace:Memory
+Controller	controller.h	/^		Controller(W8 coreid, const char *name,$/;"	f	class:Memory::Controller
+Controller	controller.h	/^class Controller$/;"	c	namespace:Memory
+ControllerQueue	switch.h	/^        ControllerQueue() {$/;"	f	struct:Memory::SwitchInterconnect::ControllerQueue
+ControllerQueue	switch.h	/^    struct ControllerQueue {$/;"	s	namespace:Memory::SwitchInterconnect
+DEBUG_MEMORY	memoryHierarchy.h	42;"	d
+DIR_ACCESS_DELAY	globalDirectory.h	27;"	d
+DIR_LINE_SIZE	globalDirectory.h	26;"	d
+DIR_SET	globalDirectory.h	24;"	d
+DIR_WAY	globalDirectory.h	25;"	d
+DirContBufferEntry	globalDirectory.h	/^struct DirContBufferEntry : public FixStateListObject$/;"	s
+Directory	globalDirectory.cpp	/^Directory::Directory()$/;"	f	class:Directory
+Directory	globalDirectory.h	/^class Directory {$/;"	c
+DirectoryController	globalDirectory.cpp	/^DirectoryController::DirectoryController(W8 idx, const char *name,$/;"	f	class:DirectoryController
+DirectoryController	globalDirectory.h	/^class DirectoryController : public Controller {$/;"	c
+DirectoryEntry	globalDirectory.h	/^    DirectoryEntry() { reset(); }$/;"	f	struct:DirectoryEntry
+DirectoryEntry	globalDirectory.h	/^struct DirectoryEntry {$/;"	s
+EE	mesiLogic.h	/^        EI, EM, EE, ES,$/;"	e	enum:Memory::CoherentCache::MESITransations
+EE	moesiLogic.h	/^        EI, EM, EO, EE, ES,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+EI	mesiLogic.h	/^        EI, EM, EE, ES,$/;"	e	enum:Memory::CoherentCache::MESITransations
+EI	moesiLogic.h	/^        EI, EM, EO, EE, ES,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+EM	mesiLogic.h	/^        EI, EM, EE, ES,$/;"	e	enum:Memory::CoherentCache::MESITransations
+EM	moesiLogic.h	/^        EI, EM, EO, EE, ES,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+ENABLE_CHECKS	memoryHierarchy.h	44;"	d
+ENABLE_MEM_REQUEST_HISTORY	memoryHierarchy.h	59;"	d
+EO	moesiLogic.h	/^        EI, EM, EO, EE, ES,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+ES	mesiLogic.h	/^        EI, EM, EE, ES,$/;"	e	enum:Memory::CoherentCache::MESITransations
+ES	moesiLogic.h	/^        EI, EM, EO, EE, ES,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+Event	memoryHierarchy.h	/^  class Event : public FixStateListObject$/;"	c	namespace:Memory
+GET_STRINGBUF_PTR	memoryHierarchy.h	75;"	d
+GlobalDirContBuilder	globalDirectory.cpp	/^    GlobalDirContBuilder(const char *name):$/;"	f	struct:GlobalDirContBuilder
+GlobalDirContBuilder	globalDirectory.cpp	/^struct GlobalDirContBuilder : public ControllerBuilder$/;"	s	file:
+IE	mesiLogic.h	/^        II=0, IM, IE, IS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+IE	moesiLogic.h	/^        II=0, IM, IO, IE, IS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+II	mesiLogic.h	/^        II=0, IM, IE, IS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+II	moesiLogic.h	/^        II=0, IM, IO, IE, IS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+IM	mesiLogic.h	/^        II=0, IM, IE, IS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+IM	moesiLogic.h	/^        II=0, IM, IO, IE, IS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+INTERCONNECT_H	interconnect.h	29;"	d
+INTERCONN_TYPE_D	interconnect.h	/^    INTERCONN_TYPE_D,$/;"	e	enum:Memory::__anon3
+INTERCONN_TYPE_DIRECTORY	interconnect.h	/^    INTERCONN_TYPE_DIRECTORY,$/;"	e	enum:Memory::__anon3
+INTERCONN_TYPE_I	interconnect.h	/^    INTERCONN_TYPE_I,$/;"	e	enum:Memory::__anon3
+INTERCONN_TYPE_LOWER	interconnect.h	/^    INTERCONN_TYPE_LOWER,$/;"	e	enum:Memory::__anon3
+INTERCONN_TYPE_UPPER	interconnect.h	/^    INTERCONN_TYPE_UPPER = 0,$/;"	e	enum:Memory::__anon3
+INTERCONN_TYPE_UPPER2	interconnect.h	/^    INTERCONN_TYPE_UPPER2,$/;"	e	enum:Memory::__anon3
+IO	moesiLogic.h	/^        II=0, IM, IO, IE, IS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+IS	mesiLogic.h	/^        II=0, IM, IE, IS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+IS	moesiLogic.h	/^        II=0, IM, IO, IE, IS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+Interconnect	interconnect.h	/^		Interconnect(const char *name, MemoryHierarchy *memoryHierarchy)$/;"	f	class:Memory::Interconnect
+Interconnect	interconnect.h	/^class Interconnect$/;"	c	namespace:Memory
+L1_D_CACHE	cacheConstants.h	/^		L1_D_CACHE,$/;"	e	enum:Memory::CacheType
+L1_I_CACHE	cacheConstants.h	/^		L1_I_CACHE,$/;"	e	enum:Memory::CacheType
+L2_CACHE	cacheConstants.h	/^		L2_CACHE,$/;"	e	enum:Memory::CacheType
+L3_CACHE	cacheConstants.h	/^		L3_CACHE,$/;"	e	enum:Memory::CacheType
+LINE_MODIFIED	cacheController.h	/^    LINE_MODIFIED,$/;"	e	enum:Memory::CacheLineState
+LINE_NOT_VALID	cacheController.h	/^    LINE_NOT_VALID = 0, \/\/ has to be 0 as its default$/;"	e	enum:Memory::CacheLineState
+LINE_VALID	cacheController.h	/^    LINE_VALID,$/;"	e	enum:Memory::CacheLineState
+MAIN_MEMORY	cacheConstants.h	/^		MAIN_MEMORY$/;"	e	enum:Memory::CacheType
+ME	mesiLogic.h	/^        MI, MM, ME, MS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+ME	moesiLogic.h	/^        MI, MM, MO, ME, MS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+MEMORY_CONTROLLER_H	bk/memoryController.h	29;"	d
+MEMORY_CONTROLLER_H	memoryController.h	29;"	d
+MEMORY_OP_EVICT	memoryRequest.h	/^	MEMORY_OP_EVICT,  \/* Indicates cache evict request *\/$/;"	e	enum:Memory::OP_TYPE
+MEMORY_OP_READ	memoryRequest.h	/^	MEMORY_OP_READ,   \/* Indicates cache miss on a read\/load operation *\/$/;"	e	enum:Memory::OP_TYPE
+MEMORY_OP_UPDATE	memoryRequest.h	/^	MEMORY_OP_UPDATE, \/* Indicates cache write-back request *\/$/;"	e	enum:Memory::OP_TYPE
+MEMORY_OP_WRITE	memoryRequest.h	/^	MEMORY_OP_WRITE,  \/* Indicates cache miss on a write\/store operation *\/$/;"	e	enum:Memory::OP_TYPE
+MEMORY_REQUEST_H	memoryRequest.h	29;"	d
+MEMORY_STATS_H	memoryStats.h	29;"	d
+MEM_BANKS	cacheConstants.h	/^	const int MEM_BANKS = 64;$/;"	m	namespace:Memory
+MEM_REQ_NUM	cacheConstants.h	/^	const int MEM_REQ_NUM = 128;$/;"	m	namespace:Memory
+MESICacheControllerBuilder	mesiLogic.cpp	/^    MESICacheControllerBuilder(const char* name) :$/;"	f	struct:MESICacheControllerBuilder
+MESICacheControllerBuilder	mesiLogic.cpp	/^struct MESICacheControllerBuilder : public ControllerBuilder$/;"	s	file:
+MESICacheLineState	mesiLogic.h	/^    enum MESICacheLineState {$/;"	g	namespace:Memory::CoherentCache
+MESILogic	mesiLogic.h	/^            MESILogic(CacheController *cont, Statable *parent,$/;"	f	class:Memory::CoherentCache::MESILogic
+MESILogic	mesiLogic.h	/^    class MESILogic : public CoherenceLogic$/;"	c	namespace:Memory::CoherentCache
+MESIStateNames	mesiLogic.h	/^    static const char* MESIStateNames[NO_MESI_STATES] = {$/;"	m	namespace:Memory::CoherentCache
+MESIStats	memoryStats.h	/^    MESIStats(const char *name, Statable *parent=NULL)$/;"	f	struct:Memory::MESIStats
+MESIStats	memoryStats.h	/^struct MESIStats : public BaseCacheStats {$/;"	s	namespace:Memory
+MESITransations	mesiLogic.h	/^    enum MESITransations {$/;"	g	namespace:Memory::CoherentCache
+MESI_BUS_H	splitPhaseBus.h	29;"	d
+MESI_COHERENCE_LOGIC_H	mesiLogic.h	28;"	d
+MESI_EXCLUSIVE	mesiLogic.h	/^        MESI_EXCLUSIVE,$/;"	e	enum:Memory::CoherentCache::MESICacheLineState
+MESI_INVALID	mesiLogic.h	/^        MESI_INVALID = 0, \/\/ 0 has to be invalid as its default$/;"	e	enum:Memory::CoherentCache::MESICacheLineState
+MESI_MODIFIED	mesiLogic.h	/^        MESI_MODIFIED,$/;"	e	enum:Memory::CoherentCache::MESICacheLineState
+MESI_SHARED	mesiLogic.h	/^        MESI_SHARED,$/;"	e	enum:Memory::CoherentCache::MESICacheLineState
+MI	mesiLogic.h	/^        MI, MM, ME, MS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+MI	moesiLogic.h	/^        MI, MM, MO, ME, MS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+MM	mesiLogic.h	/^        MI, MM, ME, MS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+MM	moesiLogic.h	/^        MI, MM, MO, ME, MS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+MO	moesiLogic.h	/^        MI, MM, MO, ME, MS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+MOESICacheControllerBuilder	moesiLogic.cpp	/^    MOESICacheControllerBuilder(const char* name) :$/;"	f	struct:MOESICacheControllerBuilder
+MOESICacheControllerBuilder	moesiLogic.cpp	/^struct MOESICacheControllerBuilder : public ControllerBuilder$/;"	s	file:
+MOESICacheLineState	moesiLogic.h	/^    enum MOESICacheLineState {$/;"	g	namespace:Memory::CoherentCache
+MOESILogic	moesiLogic.h	/^            MOESILogic(CacheController *cont, Statable *parent,$/;"	f	class:Memory::CoherentCache::MOESILogic
+MOESILogic	moesiLogic.h	/^    class MOESILogic : public CoherenceLogic$/;"	c	namespace:Memory::CoherentCache
+MOESIStateNames	moesiLogic.h	/^    static const char* MOESIStateNames[NUM_MOESI_STATES] = {$/;"	m	namespace:Memory::CoherentCache
+MOESITransTable	moesiLogic.h	/^    static int MOESITransTable[NUM_MOESI_STATES][NUM_MOESI_STATES] = {$/;"	m	namespace:Memory::CoherentCache
+MOESITransations	moesiLogic.h	/^    enum MOESITransations {$/;"	g	namespace:Memory::CoherentCache
+MOESI_COHERENCE_LOGIC_H	moesiLogic.h	28;"	d
+MOESI_EXCLUSIVE	moesiLogic.h	/^        MOESI_EXCLUSIVE,$/;"	e	enum:Memory::CoherentCache::MOESICacheLineState
+MOESI_INVALID	moesiLogic.h	/^        MOESI_INVALID = 0, \/\/ 0 has to be invalid as its default$/;"	e	enum:Memory::CoherentCache::MOESICacheLineState
+MOESI_MODIFIED	moesiLogic.h	/^        MOESI_MODIFIED,$/;"	e	enum:Memory::CoherentCache::MOESICacheLineState
+MOESI_OWNER	moesiLogic.h	/^        MOESI_OWNER,$/;"	e	enum:Memory::CoherentCache::MOESICacheLineState
+MOESI_SHARED	moesiLogic.h	/^        MOESI_SHARED,$/;"	e	enum:Memory::CoherentCache::MOESICacheLineState
+MS	mesiLogic.h	/^        MI, MM, ME, MS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+MS	moesiLogic.h	/^        MI, MM, MO, ME, MS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+Memory	NVMainMemory.h	/^namespace Memory$/;"	n
+Memory	bk/memoryController.h	/^namespace Memory {$/;"	n
+Memory	bus.h	/^namespace Memory {$/;"	n
+Memory	cacheConstants.h	/^namespace Memory{$/;"	n
+Memory	cacheController.h	/^namespace Memory {$/;"	n
+Memory	cacheLines.h	/^namespace Memory {$/;"	n
+Memory	coherenceLogic.h	/^namespace Memory {$/;"	n
+Memory	coherentCache.h	/^namespace Memory {$/;"	n
+Memory	controller.h	/^namespace Memory {$/;"	n
+Memory	cpuController.h	/^namespace Memory {$/;"	n
+Memory	interconnect.h	/^namespace Memory {$/;"	n
+Memory	memoryController.h	/^namespace Memory {$/;"	n
+Memory	memoryHierarchy.cpp	/^namespace Memory {$/;"	n	file:
+Memory	memoryHierarchy.h	/^namespace Memory {$/;"	n
+Memory	memoryRequest.h	/^namespace Memory {$/;"	n
+Memory	memoryStats.h	/^namespace Memory {$/;"	n
+Memory	mesiLogic.h	/^namespace Memory {$/;"	n
+Memory	moesiLogic.h	/^namespace Memory {$/;"	n
+Memory	p2p.h	/^namespace Memory {$/;"	n
+Memory	splitPhaseBus.h	/^namespace Memory {$/;"	n
+Memory	switch.h	/^namespace Memory {$/;"	n
+MemoryController	bk/memoryController.cpp	/^MemoryController::MemoryController(W8 coreid, const char *name,$/;"	f	class:MemoryController
+MemoryController	bk/memoryController.h	/^class MemoryController : public Controller$/;"	c	namespace:Memory
+MemoryController	memoryController.cpp	/^MemoryController::MemoryController(W8 coreid, const char *name,$/;"	f	class:MemoryController
+MemoryController	memoryController.h	/^class MemoryController : public Controller$/;"	c	namespace:Memory
+MemoryControllerBuilder	bk/memoryController.cpp	/^    MemoryControllerBuilder(const char* name) :$/;"	f	struct:MemoryControllerBuilder
+MemoryControllerBuilder	bk/memoryController.cpp	/^struct MemoryControllerBuilder : public ControllerBuilder$/;"	s	file:
+MemoryControllerBuilder	memoryController.cpp	/^    MemoryControllerBuilder(const char* name) :$/;"	f	struct:MemoryControllerBuilder
+MemoryControllerBuilder	memoryController.cpp	/^struct MemoryControllerBuilder : public ControllerBuilder$/;"	s	file:
+MemoryHierarchy	memoryHierarchy.cpp	/^MemoryHierarchy::MemoryHierarchy(BaseMachine& machine) :$/;"	f	class:MemoryHierarchy
+MemoryHierarchy	memoryHierarchy.h	/^  class MemoryHierarchy {$/;"	c	namespace:Memory
+MemoryInterlockBuffer	memoryHierarchy.h	/^  struct MemoryInterlockBuffer: public LockableAssociativeArray<W64, MemoryInterlockEntry, 16, 4, 8> { };$/;"	s	namespace:Memory
+MemoryInterlockEntry	memoryHierarchy.h	/^  struct MemoryInterlockEntry {$/;"	s	namespace:Memory
+MemoryQueueEntry	bk/memoryController.h	/^struct MemoryQueueEntry : public FixStateListObject$/;"	s	namespace:Memory
+MemoryQueueEntry	memoryController.h	/^struct MemoryQueueEntry : public FixStateListObject$/;"	s	namespace:Memory
+MemoryRequest	memoryRequest.h	/^		MemoryRequest() { reset(); }$/;"	f	class:Memory::MemoryRequest
+MemoryRequest	memoryRequest.h	/^class MemoryRequest: public selfqueuelink$/;"	c	namespace:Memory
+Message	controller.h	/^struct Message : public FixStateListObject {$/;"	s	namespace:Memory
+NO_MESI_STATES	mesiLogic.h	/^        NO_MESI_STATES$/;"	e	enum:Memory::CoherentCache::MESICacheLineState
+NUM_MEMORY_OP	memoryRequest.h	/^	NUM_MEMORY_OP$/;"	e	enum:Memory::OP_TYPE
+NUM_MOESI_STATES	moesiLogic.h	/^        NUM_MOESI_STATES$/;"	e	enum:Memory::CoherentCache::MOESICacheLineState
+NUM_MOESI_STATE_TRANS	moesiLogic.h	/^        NUM_MOESI_STATE_TRANS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+NVMainMemory	NVMainMemory.cpp	/^NVMainMemory::NVMainMemory( W8 coreid , const char* name , $/;"	f	class:NVMainMemory
+NVMainMemory	NVMainMemory.h	/^	class NVMainMemory: public Controller , public NVM::NVMObject $/;"	c	namespace:Memory
+N_STAT_UPDATE	memoryStats.h	46;"	d
+OE	moesiLogic.h	/^        OI, OM, OO, OE, OS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+OI	moesiLogic.h	/^        OI, OM, OO, OE, OS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+OM	moesiLogic.h	/^        OI, OM, OO, OE, OS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+OO	moesiLogic.h	/^        OI, OM, OO, OE, OS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+OP_TYPE	memoryRequest.h	/^enum OP_TYPE {$/;"	g	namespace:Memory
+OS	moesiLogic.h	/^        OI, OM, OO, OE, OS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+P2PBuilder	p2p.cpp	/^    P2PBuilder(const char* name) :$/;"	f	struct:P2PBuilder
+P2PBuilder	p2p.cpp	/^struct P2PBuilder : public InterconnectBuilder$/;"	s	file:
+P2PInterconnect	p2p.cpp	/^P2PInterconnect::P2PInterconnect(const char *name,$/;"	f	class:P2PInterconnect
+P2PInterconnect	p2p.h	/^class P2PInterconnect : public Interconnect$/;"	c	namespace:Memory
+P2P_INTERCONNECT_H	p2p.h	29;"	d
+PTLSIM_PUBLIC_ONLY	bk/memoryController.cpp	32;"	d	file:
+PTLSIM_PUBLIC_ONLY	cacheController.cpp	32;"	d	file:
+PTLSIM_PUBLIC_ONLY	coherentCache.cpp	32;"	d	file:
+PTLSIM_PUBLIC_ONLY	cpuController.cpp	32;"	d	file:
+PTLSIM_PUBLIC_ONLY	memoryController.cpp	32;"	d	file:
+PTLSIM_PUBLIC_ONLY	memoryHierarchy.cpp	36;"	d	file:
+PTLSIM_PUBLIC_ONLY	memoryRequest.cpp	33;"	d	file:
+PTLSIM_PUBLIC_ONLY	p2p.cpp	32;"	d	file:
+PTLSIM_PUBLIC_ONLY	splitPhaseBus.cpp	32;"	d	file:
+ParseRequest	NVMainMemory.cpp	/^void NVMainMemory::ParseRequest(NVM::NVMainRequest* &req ,  void *arg )$/;"	f	class:NVMainMemory
+PendingQueueEntry	splitPhaseBus.h	/^struct PendingQueueEntry : public FixStateListObject$/;"	s	namespace:Memory::SplitPhaseBus
+QueueEntry	switch.h	/^    struct QueueEntry : public FixStateListObject$/;"	s	namespace:Memory::SwitchInterconnect
+RAMStats	memoryStats.h	/^    RAMStats(const char* name, Statable *parent)$/;"	f	struct:Memory::RAMStats
+RAMStats	memoryStats.h	/^struct RAMStats : public Statable {$/;"	s	namespace:Memory
+REQUEST_POOL_LOW_RATIO	cacheConstants.h	/^	const double REQUEST_POOL_LOW_RATIO = 0.1;$/;"	m	namespace:Memory
+REQUEST_POOL_SIZE	cacheConstants.h	/^	const int REQUEST_POOL_SIZE = 1024;$/;"	m	namespace:Memory
+REQ_Q_SIZE	globalDirectory.h	28;"	d
+RequestPool	memoryRequest.cpp	/^RequestPool::RequestPool()$/;"	f	class:RequestPool
+RequestPool	memoryRequest.h	/^class RequestPool: public array<MemoryRequest,REQUEST_POOL_SIZE>$/;"	c	namespace:Memory
+SE	mesiLogic.h	/^        SI, SM, SE, SS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+SE	moesiLogic.h	/^        SI, SM, SO, SE, SS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+SETUP_STATS	memoryStats.h	37;"	d
+SET_SIGNAL_CB	memoryHierarchy.h	79;"	d
+SI	mesiLogic.h	/^        SI, SM, SE, SS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+SI	moesiLogic.h	/^        SI, SM, SO, SE, SS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+SM	mesiLogic.h	/^        SI, SM, SE, SS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+SM	moesiLogic.h	/^        SI, SM, SO, SE, SS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+SO	moesiLogic.h	/^        SI, SM, SO, SE, SS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+SS	mesiLogic.h	/^        SI, SM, SE, SS,$/;"	e	enum:Memory::CoherentCache::MESITransations
+SS	moesiLogic.h	/^        SI, SM, SO, SE, SS,$/;"	e	enum:Memory::CoherentCache::MOESITransations
+STAT_UPDATE	memoryStats.h	44;"	d
+SWITCH_DELAY	switch.h	22;"	d
+Set	cacheLines.h	/^                    CacheLine> > Set;$/;"	t	class:Memory::CacheLines
+Set	globalDirectory.h	/^                DirectoryEntry> > Set;$/;"	t	class:Directory
+SplitPhaseBus	splitPhaseBus.h	/^namespace SplitPhaseBus {$/;"	n	namespace:Memory
+SplitPhaseBusBuilder	splitPhaseBus.cpp	/^    SplitPhaseBusBuilder(const char* name) :$/;"	f	struct:SplitPhaseBusBuilder
+SplitPhaseBusBuilder	splitPhaseBus.cpp	/^struct SplitPhaseBusBuilder : public InterconnectBuilder$/;"	s	file:
+Switch	switch.cpp	/^Switch::Switch(const char *name, MemoryHierarchy *memoryHierarchy)$/;"	f	class:Switch
+Switch	switch.h	/^    class Switch : public Interconnect$/;"	c	namespace:Memory::SwitchInterconnect
+SwitchBuilder	switch.cpp	/^    SwitchBuilder(const char *name) :$/;"	f	struct:SwitchBuilder
+SwitchBuilder	switch.cpp	/^struct SwitchBuilder : public InterconnectBuilder$/;"	s	file:
+SwitchInterconnect	switch.h	/^namespace SwitchInterconnect {$/;"	n	namespace:Memory
+UPDATE_MESI_TRANS_STATS	mesiLogic.h	32;"	d
+UPDATE_MOESI_TRANS_STATS	moesiLogic.h	32;"	d
+WBCacheControllerBuilder	cacheController.cpp	/^    WBCacheControllerBuilder(const char* name) :$/;"	f	struct:WBCacheControllerBuilder
+WBCacheControllerBuilder	cacheController.cpp	/^struct WBCacheControllerBuilder : public ControllerBuilder$/;"	s	file:
+WTCacheControllerBuilder	cacheController.cpp	/^    WTCacheControllerBuilder(const char* name) :$/;"	f	struct:WTCacheControllerBuilder
+WTCacheControllerBuilder	cacheController.cpp	/^struct WTCacheControllerBuilder : public ControllerBuilder$/;"	s	file:
+_MEMORYSYSTEM_H_	memoryHierarchy.h	29;"	d
+_NVMAIN_MEMORY_H_	NVMainMemory.h	2;"	d
+access	cpuController.h	/^		int access(MemoryRequest *request) {$/;"	f	class:Memory::CPUController
+accessCompleted_	bk/memoryController.h	/^		Signal accessCompleted_;$/;"	m	class:Memory::MemoryController
+accessCompleted_	memoryController.h	/^		Signal accessCompleted_;$/;"	m	class:Memory::MemoryController
+access_cache	memoryHierarchy.cpp	/^bool MemoryHierarchy::access_cache(MemoryRequest *request)$/;"	f	class:MemoryHierarchy
+access_completed_cb	bk/memoryController.cpp	/^bool MemoryController::access_completed_cb(void *arg)$/;"	f	class:MemoryController
+access_completed_cb	memoryController.cpp	/^bool MemoryController::access_completed_cb(void *arg)$/;"	f	class:MemoryController
+access_fast_path	NVMainMemory.cpp	/^int NVMainMemory::access_fast_path( Interconnect* interconnect , $/;"	f	class:NVMainMemory
+access_fast_path	bus.cpp	/^int BusInterconnect::access_fast_path(Controller *controller,$/;"	f	class:BusInterconnect
+access_fast_path	cacheController.cpp	/^int CacheController::access_fast_path(Interconnect *interconnect,$/;"	f	class:CacheController
+access_fast_path	coherentCache.cpp	/^int CacheController::access_fast_path(Interconnect *interconnect,$/;"	f	class:CacheController
+access_fast_path	controller.h	/^		virtual int access_fast_path(Interconnect *interconnect,$/;"	f	class:Memory::Controller
+access_fast_path	cpuController.cpp	/^int CPUController::access_fast_path(Interconnect *interconnect,$/;"	f	class:CPUController
+access_fast_path	p2p.cpp	/^int P2PInterconnect::access_fast_path(Controller *controller,$/;"	f	class:P2PInterconnect
+access_fast_path	splitPhaseBus.cpp	/^int BusInterconnect::access_fast_path(Controller *controller,$/;"	f	class:BusInterconnect
+access_fast_path	switch.cpp	/^int Switch::access_fast_path(Controller *controller,$/;"	f	class:Switch
+add_cache_mem_controller	memoryHierarchy.h	/^      void add_cache_mem_controller(Controller* cont) {$/;"	f	class:Memory::MemoryHierarchy
+add_cpu_controller	memoryHierarchy.h	/^      void add_cpu_controller(Controller* cont) {$/;"	f	class:Memory::MemoryHierarchy
+add_entry	globalDirectory.cpp	/^DirContBufferEntry* DirectoryController::add_entry(Message *msg)$/;"	f	class:DirectoryController
+add_event	memoryHierarchy.cpp	/^void MemoryHierarchy::add_event(Signal *signal, int delay, void *arg)$/;"	f	class:MemoryHierarchy
+add_interconnect	memoryHierarchy.h	/^      void add_interconnect(Interconnect* conn) {$/;"	f	class:Memory::MemoryHierarchy
+addr_bus_cycles	memoryStats.h	/^    StatObj<W64> addr_bus_cycles;$/;"	m	struct:Memory::BusStats
+allControllers_	memoryHierarchy.h	/^      dynarray<Controller*> allControllers_;$/;"	m	class:Memory::MemoryHierarchy
+allInterconnects_	memoryHierarchy.h	/^      dynarray<Interconnect*> allInterconnects_;$/;"	m	class:Memory::MemoryHierarchy
+annual_request	NVMainMemory.cpp	/^void NVMainMemory::annual_request(MemoryRequest *req)$/;"	f	class:NVMainMemory
+annul	memoryStats.h	/^    StatObj<W64> annul;$/;"	m	struct:Memory::BaseCacheStats
+annul_request	bk/memoryController.cpp	/^void MemoryController::annul_request(MemoryRequest *request)$/;"	f	class:MemoryController
+annul_request	bus.cpp	/^void BusInterconnect::annul_request(MemoryRequest *request)$/;"	f	class:BusInterconnect
+annul_request	cacheController.cpp	/^void CacheController::annul_request(MemoryRequest *request)$/;"	f	class:CacheController
+annul_request	coherentCache.cpp	/^void CacheController::annul_request(MemoryRequest *request)$/;"	f	class:CacheController
+annul_request	cpuController.cpp	/^void CPUController::annul_request(MemoryRequest *request)$/;"	f	class:CPUController
+annul_request	globalDirectory.cpp	/^void DirectoryController::annul_request(MemoryRequest *request)$/;"	f	class:DirectoryController
+annul_request	memoryController.cpp	/^void MemoryController::annul_request(MemoryRequest *request)$/;"	f	class:MemoryController
+annul_request	memoryHierarchy.cpp	/^void MemoryHierarchy::annul_request(W8 coreid,$/;"	f	class:MemoryHierarchy
+annul_request	p2p.h	/^		void annul_request(MemoryRequest *request) {$/;"	f	class:Memory::P2PInterconnect
+annul_request	splitPhaseBus.cpp	/^void BusInterconnect::annul_request(MemoryRequest *request)$/;"	f	class:BusInterconnect
+annul_request	switch.cpp	/^void Switch::annul_request(MemoryRequest *request)$/;"	f	class:Switch
+annuled	bk/memoryController.h	/^	bool annuled;$/;"	m	struct:Memory::MemoryQueueEntry
+annuled	bus.h	/^	bool annuled;$/;"	m	struct:Memory::BusQueueEntry
+annuled	cacheController.h	/^		bool annuled;$/;"	m	struct:Memory::CacheQueueEntry
+annuled	coherentCache.h	/^                bool annuled;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+annuled	cpuController.h	/^	bool annuled;$/;"	m	struct:Memory::CPUControllerQueueEntry
+annuled	globalDirectory.h	/^    bool            annuled;$/;"	m	struct:DirContBufferEntry
+annuled	memoryController.h	/^	bool annuled;$/;"	m	struct:Memory::MemoryQueueEntry
+annuled	splitPhaseBus.h	/^	bool annuled;$/;"	m	struct:Memory::SplitPhaseBus::BusQueueEntry
+annuled	splitPhaseBus.h	/^	bool annuled;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+annuled	switch.h	/^        bool           annuled;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+arbitrate_latency_	bus.h	/^        int arbitrate_latency_;$/;"	m	class:Memory::BusInterconnect
+arbitrate_latency_	splitPhaseBus.h	/^        int arbitrate_latency_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+arbitrate_round_robin	bus.cpp	/^BusQueueEntry* BusInterconnect::arbitrate_round_robin()$/;"	f	class:BusInterconnect
+arbitrate_round_robin	splitPhaseBus.cpp	/^BusQueueEntry* BusInterconnect::arbitrate_round_robin()$/;"	f	class:BusInterconnect
+arg	controller.h	/^	void *arg;$/;"	m	struct:Memory::Message
+arg_	memoryHierarchy.h	/^      void   *arg_;$/;"	m	class:Memory::Event
+assert	memoryHierarchy.h	71;"	d
+assert	memoryHierarchy.h	72;"	d
+bankBits_	bk/memoryController.h	/^		int bankBits_;$/;"	m	class:Memory::MemoryController
+bankBits_	memoryController.h	/^		int bankBits_;$/;"	m	class:Memory::MemoryController
+bank_access	memoryStats.h	/^    StatArray<W64, MEM_BANKS> bank_access;$/;"	m	struct:Memory::RAMStats
+bank_read	memoryStats.h	/^    StatArray<W64, MEM_BANKS> bank_read;$/;"	m	struct:Memory::RAMStats
+bank_update	memoryStats.h	/^    StatArray<W64, MEM_BANKS> bank_update;$/;"	m	struct:Memory::RAMStats
+bank_write	memoryStats.h	/^    StatArray<W64, MEM_BANKS> bank_write;$/;"	m	struct:Memory::RAMStats
+banksUsed_	bk/memoryController.h	/^		bitvec<MEM_BANKS> banksUsed_;$/;"	m	class:Memory::MemoryController
+banksUsed_	memoryController.h	/^		bitvec<MEM_BANKS> banksUsed_;$/;"	m	class:Memory::MemoryController
+base_t	cacheLines.h	/^                    WAY_COUNT, LINE_SIZE> base_t;$/;"	t	class:Memory::CacheLines
+base_t	globalDirectory.h	/^                DIR_WAY, DIR_LINE_SIZE> base_t;$/;"	t	class:Directory
+broadcastCompleted_	bus.h	/^		Signal broadcastCompleted_;$/;"	m	class:Memory::BusInterconnect
+broadcastCompleted_	splitPhaseBus.h	/^		Signal broadcastCompleted_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+broadcast_	bus.h	/^		Signal broadcast_;$/;"	m	class:Memory::BusInterconnect
+broadcast_	splitPhaseBus.h	/^		Signal broadcast_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+broadcast_cb	bus.cpp	/^bool BusInterconnect::broadcast_cb(void *arg)$/;"	f	class:BusInterconnect
+broadcast_cb	splitPhaseBus.cpp	/^bool BusInterconnect::broadcast_cb(void *arg)$/;"	f	class:BusInterconnect
+broadcast_completed_cb	bus.cpp	/^bool BusInterconnect::broadcast_completed_cb(void *arg)$/;"	f	class:BusInterconnect
+broadcast_completed_cb	splitPhaseBus.cpp	/^bool BusInterconnect::broadcast_completed_cb(void *arg)$/;"	f	class:BusInterconnect
+broadcast_cycles	memoryStats.h	/^        broadcast_cycles(Statable *parent)$/;"	f	struct:Memory::BusStats::broadcast_cycles
+broadcast_cycles	memoryStats.h	/^    struct broadcast_cycles : public Statable {$/;"	s	struct:Memory::BusStats
+broadcast_cycles	memoryStats.h	/^    } broadcast_cycles;$/;"	m	struct:Memory::BusStats	typeref:struct:Memory::BusStats::broadcast_cycles
+broadcasts	memoryStats.h	/^        broadcasts(Statable *parent)$/;"	f	struct:Memory::BusStats::broadcasts
+broadcasts	memoryStats.h	/^    struct broadcasts : public Statable {$/;"	s	struct:Memory::BusStats
+broadcasts	memoryStats.h	/^    } broadcasts;$/;"	m	struct:Memory::BusStats	typeref:struct:Memory::BusStats::broadcasts
+buffer_full	memoryStats.h	/^                StatObj<W64> buffer_full;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::stall::stall_sub
+busBusy_	bus.h	/^		bool busBusy_;$/;"	m	class:Memory::BusInterconnect
+busBusy_	splitPhaseBus.h	/^		bool busBusy_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+bus_not_ready	memoryStats.h	/^    StatObj<W64> bus_not_ready;$/;"	m	struct:Memory::BusStats
+bus_width_	NVMainMemory.h	/^			uint64_t bus_width_;$/;"	m	class:Memory::NVMainMemory
+cacheAccessLatency_	cacheController.h	/^		int cacheAccessLatency_;$/;"	m	class:Memory::CacheController
+cacheAccessLatency_	coherentCache.h	/^                int cacheAccessLatency_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheAccess_	cacheController.h	/^		Signal cacheAccess_;$/;"	m	class:Memory::CacheController
+cacheAccess_	coherentCache.h	/^                Signal cacheAccess_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheAccess_	cpuController.h	/^		Signal cacheAccess_;$/;"	m	class:Memory::CPUController
+cacheHit_	cacheController.h	/^		Signal cacheHit_;$/;"	m	class:Memory::CacheController
+cacheHit_	coherentCache.h	/^                Signal cacheHit_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheInsertComplete_	cacheController.h	/^		Signal cacheInsertComplete_;$/;"	m	class:Memory::CacheController
+cacheInsertComplete_	coherentCache.h	/^                Signal cacheInsertComplete_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheInsert_	cacheController.h	/^		Signal cacheInsert_;$/;"	m	class:Memory::CacheController
+cacheInsert_	coherentCache.h	/^                Signal cacheInsert_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheInterconnect_	bk/memoryController.h	/^		Interconnect *cacheInterconnect_;$/;"	m	class:Memory::MemoryController
+cacheInterconnect_	memoryController.h	/^		Interconnect *cacheInterconnect_;$/;"	m	class:Memory::MemoryController
+cacheLineBits_	cacheController.h	/^		int cacheLineBits_;$/;"	m	class:Memory::CacheController
+cacheLineBits_	coherentCache.h	/^                int cacheLineBits_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheLines_	cacheController.h	/^		CacheLinesBase *cacheLines_;$/;"	m	class:Memory::CacheController
+cacheLines_	coherentCache.h	/^                CacheLinesBase *cacheLines_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheMiss_	cacheController.h	/^		Signal cacheMiss_;$/;"	m	class:Memory::CacheController
+cacheMiss_	coherentCache.h	/^                Signal cacheMiss_;$/;"	m	class:Memory::CoherentCache::CacheController
+cacheUpdate_	cacheController.h	/^		Signal cacheUpdate_;$/;"	m	class:Memory::CacheController
+cacheUpdate_	coherentCache.h	/^                Signal cacheUpdate_;$/;"	m	class:Memory::CoherentCache::CacheController
+cache_access_cb	cacheController.cpp	/^bool CacheController::cache_access_cb(void *arg)$/;"	f	class:CacheController
+cache_access_cb	coherentCache.cpp	/^bool CacheController::cache_access_cb(void *arg)$/;"	f	class:CacheController
+cache_access_cb	cpuController.cpp	/^bool CPUController::cache_access_cb(void *arg)$/;"	f	class:CPUController
+cache_hit_cb	cacheController.cpp	/^bool CacheController::cache_hit_cb(void *arg)$/;"	f	class:CacheController
+cache_hit_cb	coherentCache.cpp	/^bool CacheController::cache_hit_cb(void *arg)$/;"	f	class:CacheController
+cache_insert_cb	cacheController.cpp	/^bool CacheController::cache_insert_cb(void *arg)$/;"	f	class:CacheController
+cache_insert_cb	coherentCache.cpp	/^bool CacheController::cache_insert_cb(void *arg)$/;"	f	class:CacheController
+cache_insert_complete_cb	cacheController.cpp	/^bool CacheController::cache_insert_complete_cb(void *arg)$/;"	f	class:CacheController
+cache_insert_complete_cb	coherentCache.cpp	/^bool CacheController::cache_insert_complete_cb(void *arg)$/;"	f	class:CacheController
+cache_interconnect_	NVMainMemory.h	/^			Interconnect *cache_interconnect_;$/;"	m	class:Memory::NVMainMemory
+cache_line_size_	cacheController.cpp	/^int CacheController::cache_line_size_=0;$/;"	m	class:CacheController	file:
+cache_line_size_	cacheController.h	/^		static int cache_line_size_;$/;"	m	class:Memory::CacheController
+cache_miss_cb	cacheController.cpp	/^bool CacheController::cache_miss_cb(void *arg)$/;"	f	class:CacheController
+cache_miss_cb	coherentCache.cpp	/^bool CacheController::cache_miss_cb(void *arg)$/;"	f	class:CacheController
+cache_port	memoryStats.h	/^                StatObj<W64> cache_port;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::stall::stall_sub
+cache_update_cb	cacheController.cpp	/^bool CacheController::cache_update_cb(void *arg)$/;"	f	class:CacheController
+cache_update_cb	coherentCache.cpp	/^bool CacheController::cache_update_cb(void *arg)$/;"	f	class:CacheController
+can_broadcast	splitPhaseBus.cpp	/^bool BusInterconnect::can_broadcast(BusControllerQueue *queue)$/;"	f	class:BusInterconnect
+clearEntry_	cacheController.h	/^		Signal clearEntry_;$/;"	m	class:Memory::CacheController
+clearEntry_	coherentCache.h	/^                Signal clearEntry_;$/;"	m	class:Memory::CoherentCache::CacheController
+clear_entry_cb	cacheController.cpp	/^bool CacheController::clear_entry_cb(void *arg)$/;"	f	class:CacheController
+clear_entry_cb	coherentCache.cpp	/^bool CacheController::clear_entry_cb(void *arg)$/;"	f	class:CacheController
+clock	cpuController.cpp	/^void CPUController::clock()$/;"	f	class:CPUController
+clock	memoryHierarchy.cpp	/^void MemoryHierarchy::clock()$/;"	f	class:MemoryHierarchy
+clock_	memoryHierarchy.h	/^      W64    clock_;$/;"	m	class:Memory::Event
+coherence_logic_	coherentCache.h	/^                CoherenceLogic *coherence_logic_;$/;"	m	class:Memory::CoherentCache::CacheController
+complete_request	coherentCache.cpp	/^bool CacheController::complete_request(Message &message,$/;"	f	class:CacheController
+complete_request	mesiLogic.cpp	/^void MESILogic::complete_request(CacheQueueEntry *queueEntry,$/;"	f	class:MESILogic
+complete_request	moesiLogic.cpp	/^void MOESILogic::complete_request(CacheQueueEntry *queueEntry,$/;"	f	class:MOESILogic
+cont	globalDirectory.h	/^    Controller     *cont;$/;"	m	struct:DirContBufferEntry
+controller	bus.h	/^	Controller *controller;$/;"	m	struct:Memory::BusControllerQueue
+controller	coherenceLogic.h	/^                CacheController* controller;$/;"	m	class:Memory::CoherentCache::CoherenceLogic
+controller	splitPhaseBus.h	/^	Controller *controller;$/;"	m	struct:Memory::SplitPhaseBus::BusControllerQueue
+controller	switch.h	/^        Controller *controller;$/;"	m	struct:Memory::SwitchInterconnect::ControllerQueue
+controllerQueue	bus.h	/^	BusControllerQueue *controllerQueue;$/;"	m	struct:Memory::BusQueueEntry
+controllerQueue	splitPhaseBus.h	/^	BusControllerQueue *controllerQueue;$/;"	m	struct:Memory::SplitPhaseBus::BusQueueEntry
+controllerQueue	splitPhaseBus.h	/^	BusControllerQueue *controllerQueue;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+controllerWithData	splitPhaseBus.h	/^    Controller *controllerWithData;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+controller_request_	interconnect.h	/^		Signal controller_request_;$/;"	m	class:Memory::Interconnect
+controller_request_cb	bus.cpp	/^bool BusInterconnect::controller_request_cb(void *arg)$/;"	f	class:BusInterconnect
+controller_request_cb	p2p.cpp	/^bool P2PInterconnect::controller_request_cb(void *arg)$/;"	f	class:P2PInterconnect
+controller_request_cb	splitPhaseBus.cpp	/^bool BusInterconnect::controller_request_cb(void *arg)$/;"	f	class:BusInterconnect
+controller_request_cb	switch.cpp	/^bool Switch::controller_request_cb(void *arg)$/;"	f	class:Switch
+controllers	bus.h	/^		dynarray<BusControllerQueue*> controllers;$/;"	m	class:Memory::BusInterconnect
+controllers	globalDirectory.cpp	/^Controller* DirectoryController::controllers[NUM_SIM_CORES] = {0};$/;"	m	class:DirectoryController	file:
+controllers	globalDirectory.h	/^        static Controller   *controllers[NUM_SIM_CORES];$/;"	m	class:DirectoryController
+controllers	splitPhaseBus.h	/^		dynarray<BusControllerQueue*> controllers;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+controllers	switch.h	/^            dynarray<ControllerQueue*> controllers;$/;"	m	class:Memory::SwitchInterconnect::Switch
+controllersFullFlags_	memoryHierarchy.h	/^      dynarray<bool> controllersFullFlags_;$/;"	m	class:Memory::MemoryHierarchy
+controllers_	p2p.h	/^		Controller *controllers_[2];$/;"	m	class:Memory::P2PInterconnect
+copy	coherentCache.h	/^                void copy(CacheQueueEntry* ent)$/;"	f	struct:Memory::CoherentCache::CacheQueueEntry
+coreId_	memoryRequest.h	/^		W8 coreId_;$/;"	m	class:Memory::MemoryRequest
+coreNo_	memoryHierarchy.h	/^      int coreNo_;$/;"	m	class:Memory::MemoryHierarchy
+coreSignal_	memoryRequest.h	/^        Signal *coreSignal_;$/;"	m	class:Memory::MemoryRequest
+core_wakeup	memoryHierarchy.h	/^      void core_wakeup(MemoryRequest *request) {$/;"	f	class:Memory::MemoryHierarchy
+count	memoryStats.h	/^            count(Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest::count
+count	memoryStats.h	/^        struct count : public Statable$/;"	s	struct:Memory::BaseCacheStats::cpurequest
+count	memoryStats.h	/^        } count;$/;"	m	struct:Memory::BaseCacheStats::cpurequest	typeref:struct:Memory::BaseCacheStats::cpurequest::count
+cpu	memoryStats.h	/^        StatArray<W64, 5> cpu;$/;"	m	struct:Memory::MESIStats::miss_state
+cpu	memoryStats.h	/^        StatArray<W64,4> cpu;$/;"	m	struct:Memory::MESIStats::hit_state
+cpu	mesiLogic.h	/^                StatArray<W64, 4> cpu;$/;"	m	struct:Memory::CoherentCache::MESILogic::miss_state
+cpu	mesiLogic.h	/^                StatArray<W64,4> cpu;$/;"	m	struct:Memory::CoherentCache::MESILogic::hit_state
+cpuControllers_	memoryHierarchy.h	/^      dynarray<Controller*> cpuControllers_;$/;"	m	class:Memory::MemoryHierarchy
+cpuFullFlags_	memoryHierarchy.h	/^      dynarray<bool> cpuFullFlags_;$/;"	m	class:Memory::MemoryHierarchy
+cpurequest	memoryStats.h	/^        cpurequest(Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest
+cpurequest	memoryStats.h	/^    struct cpurequest : public Statable$/;"	s	struct:Memory::BaseCacheStats
+cpurequest	memoryStats.h	/^    } cpurequest;$/;"	m	struct:Memory::BaseCacheStats	typeref:struct:Memory::BaseCacheStats::cpurequest
+ctx_id	memoryHierarchy.h	/^    W8 ctx_id;$/;"	m	struct:Memory::MemoryInterlockEntry
+cycles	cpuController.h	/^	int cycles;$/;"	m	struct:Memory::CPUControllerQueueEntry
+cycles_	memoryRequest.h	/^		W64 cycles_;$/;"	m	class:Memory::MemoryRequest
+dataBroadcastCompleted_	bus.h	/^		Signal dataBroadcastCompleted_;$/;"	m	class:Memory::BusInterconnect
+dataBroadcastCompleted_	splitPhaseBus.h	/^		Signal dataBroadcastCompleted_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+dataBroadcast_	bus.h	/^		Signal dataBroadcast_;$/;"	m	class:Memory::BusInterconnect
+dataBroadcast_	splitPhaseBus.h	/^		Signal dataBroadcast_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+dataBusBusy_	bus.h	/^		bool dataBusBusy_;$/;"	m	class:Memory::BusInterconnect
+dataBusBusy_	splitPhaseBus.h	/^		bool dataBusBusy_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+dataQueue	bus.h	/^	FixStateList<BusQueueEntry, 16> dataQueue;$/;"	m	struct:Memory::BusControllerQueue
+dataQueue	splitPhaseBus.h	/^	FixStateList<BusQueueEntry, 16> dataQueue;$/;"	m	struct:Memory::SplitPhaseBus::BusControllerQueue
+data_broadcast_cb	bus.cpp	/^bool BusInterconnect::data_broadcast_cb(void *arg)$/;"	f	class:BusInterconnect
+data_broadcast_cb	splitPhaseBus.cpp	/^bool BusInterconnect::data_broadcast_cb(void *arg)$/;"	f	class:BusInterconnect
+data_broadcast_completed_cb	bus.cpp	/^bool BusInterconnect::data_broadcast_completed_cb(void *arg)$/;"	f	class:BusInterconnect
+data_broadcast_completed_cb	splitPhaseBus.cpp	/^bool BusInterconnect::data_broadcast_completed_cb(void *arg)$/;"	f	class:BusInterconnect
+data_bus_cycles	memoryStats.h	/^    StatObj<W64> data_bus_cycles;$/;"	m	struct:Memory::BusStats
+data_size_	NVMainMemory.h	/^			int data_size_;$/;"	m	class:Memory::NVMainMemory
+dcacheLineBits_	cpuController.h	/^		int dcacheLineBits_;$/;"	m	class:Memory::CPUController
+dcache_latency	memoryStats.h	/^    StatArray<W64, 200> dcache_latency;$/;"	m	struct:Memory::CPUControllerStats
+decRefCounter	memoryRequest.h	/^		void decRefCounter(){$/;"	f	class:Memory::MemoryRequest
+dependency	memoryStats.h	/^                StatObj<W64> dependency;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::stall::stall_sub
+depends	bk/memoryController.h	/^	int depends;$/;"	m	struct:Memory::MemoryQueueEntry
+depends	cacheController.h	/^		int depends;$/;"	m	struct:Memory::CacheQueueEntry
+depends	coherentCache.h	/^                int depends;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+depends	cpuController.h	/^	int depends;$/;"	m	struct:Memory::CPUControllerQueueEntry
+depends	globalDirectory.h	/^    int             depends;$/;"	m	struct:DirContBufferEntry
+depends	memoryController.h	/^	int depends;$/;"	m	struct:Memory::MemoryQueueEntry
+dependsAddr	cacheController.h	/^        W64 dependsAddr;$/;"	m	struct:Memory::CacheQueueEntry
+dependsAddr	coherentCache.h	/^                W64 dependsAddr;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+dest	cacheController.h	/^		Controller    *dest;$/;"	m	struct:Memory::CacheQueueEntry
+dest	coherentCache.h	/^                Controller    *dest;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+dest	controller.h	/^    void *dest;$/;"	m	struct:Memory::Message
+dest	switch.h	/^        Controller    *dest;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+dir	globalDirectory.cpp	/^Directory* Directory::dir = NULL;$/;"	m	class:Directory	file:
+dir	globalDirectory.h	/^        static Directory* dir;$/;"	m	class:Directory
+dir_	globalDirectory.h	/^        Directory    &dir_;$/;"	m	class:DirectoryController
+dir_controllers	globalDirectory.cpp	/^DirectoryController* DirectoryController::dir_controllers[NUM_SIM_CORES] = {0};$/;"	m	class:DirectoryController	file:
+dir_controllers	globalDirectory.h	/^        static DirectoryController *dir_controllers[NUM_SIM_CORES];$/;"	m	class:DirectoryController
+directory_	coherentCache.h	/^                Controller *directory_;$/;"	m	class:Memory::CoherentCache::CacheController
+dirty	globalDirectory.h	/^    bool dirty;$/;"	m	struct:DirectoryEntry
+do_prefetch	cacheController.cpp	/^void CacheController::do_prefetch(MemoryRequest *request, int additional_delay)$/;"	f	class:CacheController
+dummy_entries	globalDirectory.h	/^        DirectoryEntry dummy_entries[REQ_Q_SIZE];$/;"	m	class:DirectoryController
+dump_configuration	NVMainMemory.cpp	/^void NVMainMemory::dump_configuration(YAML::EMitter &out)$/;"	f	class:NVMainMemory
+dump_configuration	bk/memoryController.cpp	/^void MemoryController::dump_configuration(YAML::Emitter &out) const$/;"	f	class:MemoryController
+dump_configuration	bus.cpp	/^void BusInterconnect::dump_configuration(YAML::Emitter &out) const$/;"	f	class:BusInterconnect
+dump_configuration	cacheController.cpp	/^void CacheController::dump_configuration(YAML::Emitter &out) const$/;"	f	class:CacheController
+dump_configuration	coherentCache.cpp	/^void CacheController::dump_configuration(YAML::Emitter &out) const$/;"	f	class:CacheController
+dump_configuration	cpuController.cpp	/^void CPUController::dump_configuration(YAML::Emitter &out) const$/;"	f	class:CPUController
+dump_configuration	globalDirectory.cpp	/^void DirectoryController::dump_configuration(YAML::Emitter &out) const$/;"	f	class:DirectoryController
+dump_configuration	memoryController.cpp	/^void MemoryController::dump_configuration(YAML::Emitter &out) const$/;"	f	class:MemoryController
+dump_configuration	mesiLogic.cpp	/^void MESILogic::dump_configuration(YAML::Emitter &out) const$/;"	f	class:MESILogic
+dump_configuration	moesiLogic.cpp	/^void MOESILogic::dump_configuration(YAML::Emitter &out) const$/;"	f	class:MOESILogic
+dump_configuration	p2p.cpp	/^void P2PInterconnect::dump_configuration(YAML::Emitter &out) const$/;"	f	class:P2PInterconnect
+dump_configuration	splitPhaseBus.cpp	/^void BusInterconnect::dump_configuration(YAML::Emitter &out) const$/;"	f	class:BusInterconnect
+dump_configuration	switch.cpp	/^void Switch::dump_configuration(YAML::Emitter &out) const$/;"	f	class:Switch
+dump_info	memoryHierarchy.cpp	/^void MemoryHierarchy::dump_info(ostream& os)$/;"	f	class:MemoryHierarchy
+entries	globalDirectory.h	/^        base_t* entries;$/;"	m	class:Directory
+entry	globalDirectory.h	/^    DirectoryEntry *entry;$/;"	m	struct:DirContBufferEntry
+eventFlags	cacheController.h	/^		bitvec<CACHE_NO_EVENTS> eventFlags;$/;"	m	struct:Memory::CacheQueueEntry
+eventFlags	coherentCache.h	/^                bitvec<CACHE_NO_EVENTS> eventFlags;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+eventQueue_	memoryHierarchy.h	/^      FixStateList<Event, 2048> eventQueue_;$/;"	m	class:Memory::MemoryHierarchy
+event_driven_	NVMainMemory.h	/^			bool event_driven_;$/;"	m	class:Memory::NVMainMemory
+evict	globalDirectory.h	/^        Signal evict;$/;"	m	class:DirectoryController
+evict_cb	globalDirectory.cpp	/^bool DirectoryController::evict_cb(void *arg)$/;"	f	class:DirectoryController
+evicting	coherentCache.h	/^                bool evicting;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+execute	memoryHierarchy.h	/^      bool execute() {$/;"	f	class:Memory::Event
+fill	switch.h	/^        void fill(Message &msg) const {$/;"	f	struct:Memory::SwitchInterconnect::QueueEntry
+finalize_request	cpuController.cpp	/^void CPUController::finalize_request(CPUControllerQueueEntry *queueEntry)$/;"	f	class:CPUController
+find_dependency	cacheController.cpp	/^CacheQueueEntry* CacheController::find_dependency(MemoryRequest *request)$/;"	f	class:CacheController
+find_dependency	coherentCache.cpp	/^CacheQueueEntry* CacheController::find_dependency(MemoryRequest *request)$/;"	f	class:CacheController
+find_dependency	cpuController.cpp	/^CPUControllerQueueEntry* CPUController::find_dependency($/;"	f	class:CPUController
+find_dependent_enry	globalDirectory.cpp	/^DirContBufferEntry* DirectoryController::find_dependent_enry($/;"	f	class:DirectoryController
+find_entry	cpuController.cpp	/^CPUControllerQueueEntry* CPUController::find_entry(MemoryRequest *request)$/;"	f	class:CPUController
+find_entry	globalDirectory.cpp	/^DirContBufferEntry* DirectoryController::find_entry(MemoryRequest *req)$/;"	f	class:DirectoryController
+find_match	cacheController.cpp	/^CacheQueueEntry* CacheController::find_match(MemoryRequest *request)$/;"	f	class:CacheController
+find_match	coherentCache.cpp	/^CacheQueueEntry* CacheController::find_match(MemoryRequest *request)$/;"	f	class:CacheController
+flush	controller.h	/^		int flush() {$/;"	f	class:Memory::Controller
+flush	cpuController.cpp	/^int CPUController::flush()$/;"	f	class:CPUController
+flush	memoryHierarchy.cpp	/^int MemoryHierarchy::flush(uint8_t coreid)$/;"	f	class:MemoryHierarchy
+forward	memoryStats.h	/^                    StatObj<W64> forward;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count::hit::hit_sub
+freeRequest	memoryRequest.cpp	/^void RequestPool::freeRequest( MemoryRequest* memoryrequest)$/;"	f	class:RequestPool
+freeRequestList_	memoryRequest.h	/^		StateList freeRequestList_;$/;"	m	class:Memory::RequestPool
+free_message	memoryHierarchy.cpp	/^void MemoryHierarchy::free_message(Message* msg)$/;"	f	class:MemoryHierarchy
+free_on_success	globalDirectory.h	/^    bool            free_on_success;$/;"	m	struct:DirContBufferEntry
+garbage_collection	memoryRequest.cpp	/^void RequestPool::garbage_collection()$/;"	f	class:RequestPool
+get_access_latency	cacheLines.h	/^            int get_access_latency() const {$/;"	f	class:Memory::CacheLines
+get_bank_id	bk/memoryController.cpp	/^int MemoryController::get_bank_id(W64 addr)$/;"	f	class:MemoryController
+get_bank_id	memoryController.cpp	/^int MemoryController::get_bank_id(W64 addr)$/;"	f	class:MemoryController
+get_cache_line_size	cacheController.h	/^		static int get_cache_line_size()$/;"	f	class:Memory::CacheController
+get_clock	memoryHierarchy.h	/^      W64 get_clock() {$/;"	f	class:Memory::Event
+get_controller_request_signal	interconnect.h	/^		Signal* get_controller_request_signal() {$/;"	f	class:Memory::Interconnect
+get_coreSignal	memoryRequest.h	/^        Signal* get_coreSignal()$/;"	f	class:Memory::MemoryRequest
+get_core_pending_offchip_miss	memoryHierarchy.cpp	/^int MemoryHierarchy::get_core_pending_offchip_miss(W8 coreid)$/;"	f	class:MemoryHierarchy
+get_coreid	memoryRequest.h	/^		int get_coreid() { return int(coreId_); }$/;"	f	class:Memory::MemoryRequest
+get_delay	bus.h	/^		int get_delay() {$/;"	f	class:Memory::BusInterconnect
+get_delay	p2p.h	/^		int get_delay() {$/;"	f	class:Memory::P2PInterconnect
+get_delay	splitPhaseBus.h	/^		int get_delay() {$/;"	f	class:Memory::SplitPhaseBus::BusInterconnect
+get_delay	switch.h	/^            int  get_delay() { return latency_; }$/;"	f	class:Memory::SwitchInterconnect::Switch
+get_directory	coherentCache.cpp	/^void CacheController::get_directory(Interconnect *interconn)$/;"	f	class:CacheController
+get_directory	coherentCache.h	/^                Controller* get_directory() { return directory_; }$/;"	f	class:Memory::CoherentCache::CacheController
+get_directory	globalDirectory.cpp	/^Directory& Directory::get_directory()$/;"	f	class:Directory
+get_directory_entry	globalDirectory.cpp	/^DirectoryEntry* DirectoryController::get_directory_entry($/;"	f	class:DirectoryController
+get_dummy_entry	globalDirectory.cpp	/^DirectoryEntry* DirectoryController::get_dummy_entry(DirectoryEntry *entry,$/;"	f	class:DirectoryController
+get_entry	globalDirectory.cpp	/^DirContBufferEntry* DirectoryController::get_entry(int idx)$/;"	f	class:DirectoryController
+get_free_request	memoryHierarchy.h	/^      MemoryRequest* get_free_request(int id) {$/;"	f	class:Memory::MemoryHierarchy
+get_free_request	memoryRequest.cpp	/^MemoryRequest* RequestPool::get_free_request()$/;"	f	class:RequestPool
+get_history	memoryRequest.h	/^		stringbuf& get_history() { return *history; }$/;"	f	class:Memory::MemoryRequest
+get_init_cycles	memoryRequest.h	/^		W64 get_init_cycles() { return cycles_; }$/;"	f	class:Memory::MemoryRequest
+get_interconnect_signal	controller.h	/^		Signal* get_interconnect_signal() {$/;"	f	class:Memory::Controller
+get_line_addr	globalDirectory.cpp	/^static W64 get_line_addr(W64 addr)$/;"	f	file:
+get_line_address	cacheController.h	/^		W64 get_line_address(MemoryRequest *request) {$/;"	f	class:Memory::CacheController
+get_line_address	coherentCache.h	/^                W64 get_line_address(MemoryRequest *request) {$/;"	f	class:Memory::CoherentCache::CacheController
+get_line_address	cpuController.h	/^		W64 get_line_address(MemoryRequest *request) {$/;"	f	class:Memory::CPUController
+get_line_bits	cacheLines.h	/^            int get_line_bits() const {$/;"	f	class:Memory::CacheLines
+get_line_size	cacheLines.h	/^		    int get_line_size() const {$/;"	f	class:Memory::CacheLines
+get_lower_cont	coherentCache.h	/^				Controller* get_lower_cont() { return lowerCont_; }$/;"	f	class:Memory::CoherentCache::CacheController
+get_lower_intrconn	coherentCache.h	/^                Interconnect* get_lower_intrconn() { return lowerInterconnect_;}$/;"	f	class:Memory::CoherentCache::CacheController
+get_machine	memoryHierarchy.h	/^      BaseMachine& get_machine() { return machine_; }$/;"	f	class:Memory::MemoryHierarchy
+get_message	memoryHierarchy.cpp	/^Message* MemoryHierarchy::get_message()$/;"	f	class:MemoryHierarchy
+get_name	controller.h	/^		char* get_name() const {$/;"	f	class:Memory::Controller
+get_name	interconnect.h	/^		char* get_name() const {$/;"	f	class:Memory::Interconnect
+get_new_controller	bk/memoryController.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:MemoryControllerBuilder
+get_new_controller	cacheController.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:WBCacheControllerBuilder
+get_new_controller	cacheController.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:WTCacheControllerBuilder
+get_new_controller	cpuController.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:CPUControllerBuilder
+get_new_controller	globalDirectory.cpp	/^    Controller* get_new_controller(W8 idx, W8 type,$/;"	f	struct:GlobalDirContBuilder
+get_new_controller	memoryController.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:MemoryControllerBuilder
+get_new_controller	mesiLogic.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:MESICacheControllerBuilder
+get_new_controller	moesiLogic.cpp	/^    Controller* get_new_controller(W8 coreid, W8 type,$/;"	f	struct:MOESICacheControllerBuilder
+get_new_interconnect	bus.cpp	/^    Interconnect* get_new_interconnect(MemoryHierarchy& mem,$/;"	f	struct:BusBuilder
+get_new_interconnect	p2p.cpp	/^    Interconnect* get_new_interconnect(MemoryHierarchy& mem,$/;"	f	struct:P2PBuilder
+get_new_interconnect	splitPhaseBus.cpp	/^    Interconnect* get_new_interconnect(MemoryHierarchy& mem,$/;"	f	struct:SplitPhaseBusBuilder
+get_new_interconnect	switch.cpp	/^    Interconnect* get_new_interconnect(MemoryHierarchy &mem,$/;"	f	struct:SwitchBuilder
+get_new_queue_entry	coherentCache.cpp	/^CacheQueueEntry* CacheController::get_new_queue_entry()$/;"	f	class:CacheController
+get_new_state	mesiLogic.cpp	/^MESICacheLineState MESILogic::get_new_state($/;"	f	class:MESILogic
+get_no_pending_request	bk/memoryController.cpp	/^int MemoryController::get_no_pending_request(W8 coreid)$/;"	f	class:MemoryController
+get_no_pending_request	controller.h	/^		int get_no_pending_request(W8 coreid) { assert(0); return 0; }$/;"	f	class:Memory::Controller
+get_no_pending_request	memoryController.cpp	/^int MemoryController::get_no_pending_request(W8 coreid)$/;"	f	class:MemoryController
+get_other_controller	p2p.h	/^		Controller* get_other_controller(Controller *controller) {$/;"	f	class:Memory::P2PInterconnect
+get_owner_rip	memoryRequest.h	/^		W64 get_owner_rip() { return ownerRIP_; }$/;"	f	class:Memory::MemoryRequest
+get_owner_uuid	memoryRequest.h	/^		W64 get_owner_uuid() { return ownerUUID_; }$/;"	f	class:Memory::MemoryRequest
+get_physical_address	memoryRequest.h	/^		W64 get_physical_address() { return physicalAddress_; }$/;"	f	class:Memory::MemoryRequest
+get_port	cacheLines.h	/^        bool CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::get_port(MemoryRequest *request)$/;"	f	class:Memory::CacheLines
+get_queue	switch.cpp	/^ControllerQueue* Switch::get_queue(Controller *cont)$/;"	f	class:Switch
+get_ref_counter	memoryRequest.h	/^		int get_ref_counter() {$/;"	f	class:Memory::MemoryRequest
+get_robid	memoryRequest.h	/^		int get_robid() { return robId_; }$/;"	f	class:Memory::MemoryRequest
+get_set_count	cacheLines.h	/^			int get_set_count() const {$/;"	f	class:Memory::CacheLines
+get_size	cacheLines.h	/^			int get_size() const {$/;"	f	class:Memory::CacheLines
+get_stats	coherentCache.h	/^                Statable* get_stats() { return new_stats; }$/;"	f	class:Memory::CoherentCache::CacheController
+get_threadid	memoryRequest.h	/^		int get_threadid() { return int(threadId_); }$/;"	f	class:Memory::MemoryRequest
+get_type	memoryRequest.h	/^		OP_TYPE get_type() { return opType_; }$/;"	f	class:Memory::MemoryRequest
+get_way_count	cacheLines.h	/^			int get_way_count() const {$/;"	f	class:Memory::CacheLines
+grab_lock	memoryHierarchy.cpp	/^bool MemoryHierarchy::grab_lock(W64 lockaddr, W8 ctx_id)$/;"	f	class:MemoryHierarchy
+handle_cache_evict	mesiLogic.cpp	/^void MESILogic::handle_cache_evict(CacheQueueEntry *queueEntry)$/;"	f	class:MESILogic
+handle_cache_evict	moesiLogic.cpp	/^void MOESILogic::handle_cache_evict(CacheQueueEntry *queueEntry)$/;"	f	class:MOESILogic
+handle_cache_insert	coherentCache.cpp	/^void CacheController::handle_cache_insert(CacheQueueEntry *queueEntry,$/;"	f	class:CacheController
+handle_cache_insert	mesiLogic.cpp	/^void MESILogic::handle_cache_insert(CacheQueueEntry *queueEntry, W64 oldTag)$/;"	f	class:MESILogic
+handle_cache_insert	moesiLogic.cpp	/^void MOESILogic::handle_cache_insert(CacheQueueEntry *queueEntry,$/;"	f	class:MOESILogic
+handle_evict	globalDirectory.cpp	/^bool DirectoryController::handle_evict(Message *msg)$/;"	f	class:DirectoryController
+handle_interconn_hit	mesiLogic.cpp	/^void MESILogic::handle_interconn_hit(CacheQueueEntry *queueEntry)$/;"	f	class:MESILogic
+handle_interconn_hit	moesiLogic.cpp	/^void MOESILogic::handle_interconn_hit(CacheQueueEntry *queueEntry)$/;"	f	class:MOESILogic
+handle_interconn_miss	mesiLogic.cpp	/^void MESILogic::handle_interconn_miss(CacheQueueEntry *queueEntry)$/;"	f	class:MESILogic
+handle_interconn_miss	moesiLogic.cpp	/^void MOESILogic::handle_interconn_miss(CacheQueueEntry *queueEntry)$/;"	f	class:MOESILogic
+handle_interconnect_	controller.h	/^		Signal handle_interconnect_;$/;"	m	class:Memory::Controller
+handle_interconnect_cb	NVMainMemory.cpp	/^bool NVMainMemory::handle_interconnect_cb(void* arg)$/;"	f	class:NVMainMemory
+handle_interconnect_cb	bk/memoryController.cpp	/^bool MemoryController::handle_interconnect_cb(void *arg)$/;"	f	class:MemoryController
+handle_interconnect_cb	cacheController.cpp	/^bool CacheController::handle_interconnect_cb(void *arg)$/;"	f	class:CacheController
+handle_interconnect_cb	coherentCache.cpp	/^bool CacheController::handle_interconnect_cb(void *arg)$/;"	f	class:CacheController
+handle_interconnect_cb	cpuController.cpp	/^bool CPUController::handle_interconnect_cb(void *arg)$/;"	f	class:CPUController
+handle_interconnect_cb	globalDirectory.cpp	/^bool DirectoryController::handle_interconnect_cb(void *arg)$/;"	f	class:DirectoryController
+handle_interconnect_cb	memoryController.cpp	/^bool MemoryController::handle_interconnect_cb(void *arg)$/;"	f	class:MemoryController
+handle_local_hit	mesiLogic.cpp	/^void MESILogic::handle_local_hit(CacheQueueEntry *queueEntry)$/;"	f	class:MESILogic
+handle_local_hit	moesiLogic.cpp	/^void MOESILogic::handle_local_hit(CacheQueueEntry *queueEntry)$/;"	f	class:MOESILogic
+handle_local_miss	mesiLogic.cpp	/^void MESILogic::handle_local_miss(CacheQueueEntry *queueEntry)$/;"	f	class:MESILogic
+handle_local_miss	moesiLogic.cpp	/^void MOESILogic::handle_local_miss(CacheQueueEntry *queueEntry)$/;"	f	class:MOESILogic
+handle_lower_interconnect	coherentCache.cpp	/^bool CacheController::handle_lower_interconnect(Message &message)$/;"	f	class:CacheController
+handle_read_miss	globalDirectory.cpp	/^bool DirectoryController::handle_read_miss(Message *msg)$/;"	f	class:DirectoryController
+handle_request_cb	NVMainMemory.cpp	/^bool NVMainMemory::handle_request_cb( void* arg )$/;"	f	class:NVMainMemory
+handle_response	mesiLogic.cpp	/^void MESILogic::handle_response(CacheQueueEntry *entry, Message &msg)$/;"	f	class:MESILogic
+handle_response	moesiLogic.cpp	/^void MOESILogic::handle_response(CacheQueueEntry *queueEntry,$/;"	f	class:MOESILogic
+handle_update	globalDirectory.cpp	/^bool DirectoryController::handle_update(Message *msg)$/;"	f	class:DirectoryController
+handle_upper_interconnect	coherentCache.cpp	/^bool CacheController::handle_upper_interconnect(Message &message)$/;"	f	class:CacheController
+handle_write_miss	globalDirectory.cpp	/^bool DirectoryController::handle_write_miss(Message *msg)$/;"	f	class:DirectoryController
+hasData	bus.h	/^	bool hasData;$/;"	m	struct:Memory::BusQueueEntry
+hasData	controller.h	/^	bool hasData;$/;"	m	struct:Memory::Message
+hasData	globalDirectory.h	/^    bool            hasData;$/;"	m	struct:DirContBufferEntry
+hasData	splitPhaseBus.h	/^	bool hasData;$/;"	m	struct:Memory::SplitPhaseBus::BusQueueEntry
+hasData	splitPhaseBus.h	/^	bool hasData;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+has_data	switch.h	/^        bool           has_data;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+history	memoryRequest.h	/^		stringbuf *history;$/;"	m	class:Memory::MemoryRequest
+hit	memoryStats.h	/^                    StatObj<W64> hit;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count::hit::hit_sub
+hit	memoryStats.h	/^                hit(Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest::count::hit
+hit	memoryStats.h	/^            struct hit : public Statable$/;"	s	struct:Memory::BaseCacheStats::cpurequest::count
+hit	memoryStats.h	/^            } hit;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count	typeref:struct:Memory::BaseCacheStats::cpurequest::count::hit
+hit_state	memoryStats.h	/^        hit_state (const char *name,Statable *parent)$/;"	f	struct:Memory::MESIStats::hit_state
+hit_state	memoryStats.h	/^    struct hit_state : public Statable{$/;"	s	struct:Memory::MESIStats
+hit_state	memoryStats.h	/^    } hit_state;$/;"	m	struct:Memory::MESIStats	typeref:struct:Memory::MESIStats::hit_state
+hit_state	mesiLogic.h	/^                hit_state (const char *name,Statable *parent)$/;"	f	struct:Memory::CoherentCache::MESILogic::hit_state
+hit_state	mesiLogic.h	/^            struct hit_state : public Statable{$/;"	s	class:Memory::CoherentCache::MESILogic
+hit_state	mesiLogic.h	/^            } hit_state;$/;"	m	class:Memory::CoherentCache::MESILogic	typeref:struct:Memory::CoherentCache::MESILogic::hit_state
+hit_state	moesiLogic.h	/^            StatArray<W64, NUM_MOESI_STATES> hit_state;$/;"	m	class:Memory::CoherentCache::MOESILogic
+hit_sub	memoryStats.h	/^                    hit_sub(const char *name, Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest::count::hit::hit_sub
+hit_sub	memoryStats.h	/^                struct hit_sub : public Statable$/;"	s	struct:Memory::BaseCacheStats::cpurequest::count::hit
+icacheBuffer_	cpuController.h	/^			CPU_CONT_ICACHE_BUF_SIZE> icacheBuffer_;$/;"	m	class:Memory::CPUController
+icacheLineBits_	cpuController.h	/^		int icacheLineBits_;$/;"	m	class:Memory::CPUController
+icache_latency	memoryStats.h	/^    StatArray<W64, 200> icache_latency;$/;"	m	struct:Memory::CPUControllerStats
+idx	bus.h	/^	int idx;$/;"	m	struct:Memory::BusControllerQueue
+idx	controller.h	/^		W8 idx;$/;"	m	class:Memory::Controller
+idx	cpuController.h	/^	int idx;$/;"	m	struct:Memory::CPUControllerBufferEntry
+idx	splitPhaseBus.h	/^	int idx;$/;"	m	struct:Memory::SplitPhaseBus::BusControllerQueue
+inUse	bk/memoryController.h	/^	bool inUse;$/;"	m	struct:Memory::MemoryQueueEntry
+inUse	memoryController.h	/^	bool inUse;$/;"	m	struct:Memory::MemoryQueueEntry
+in_use	switch.h	/^        bool           in_use;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+incRefCounter	memoryRequest.h	/^		void incRefCounter(){$/;"	f	class:Memory::MemoryRequest
+inflightRequests	NVMainMemory.h	/^			std::vector<std::pair<NVM::NVMainRequest*, std::pair<NVMainAccEvent*, uint64_t>>> inflightRequests;$/;"	m	class:Memory::NVMainMemory
+init	bk/memoryController.h	/^	void init() {$/;"	f	struct:Memory::MemoryQueueEntry
+init	bus.h	/^	void init() {$/;"	f	struct:Memory::BusQueueEntry
+init	cacheController.h	/^		void init() {$/;"	f	struct:Memory::CacheQueueEntry
+init	cacheLines.h	/^        void CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::init()$/;"	f	class:Memory::CacheLines
+init	cacheLines.h	/^        void init(W64 tag_t) {$/;"	f	struct:Memory::CacheLine
+init	coherentCache.h	/^                void init() {$/;"	f	struct:Memory::CoherentCache::CacheQueueEntry
+init	controller.h	/^	void init() {$/;"	f	struct:Memory::Message
+init	cpuController.h	/^	void init() {$/;"	f	struct:Memory::CPUControllerQueueEntry
+init	cpuController.h	/^	void init() {}$/;"	f	struct:Memory::CPUControllerBufferEntry
+init	globalDirectory.cpp	/^void DirectoryEntry::init(W64 tag_)$/;"	f	class:DirectoryEntry
+init	globalDirectory.h	/^    void init() {$/;"	f	struct:DirContBufferEntry
+init	memoryController.h	/^	void init() {$/;"	f	struct:Memory::MemoryQueueEntry
+init	memoryHierarchy.h	/^      void init() {$/;"	f	class:Memory::Event
+init	memoryRequest.cpp	/^void MemoryRequest::init(MemoryRequest *request)$/;"	f	class:MemoryRequest
+init	memoryRequest.cpp	/^void MemoryRequest::init(W8 coreId,$/;"	f	class:MemoryRequest
+init	splitPhaseBus.h	/^	void init() {$/;"	f	struct:Memory::SplitPhaseBus::BusQueueEntry
+init	splitPhaseBus.h	/^	void init() {$/;"	f	struct:Memory::SplitPhaseBus::PendingQueueEntry
+init	switch.h	/^        void init() {$/;"	f	struct:Memory::SwitchInterconnect::QueueEntry
+initCycle	splitPhaseBus.h	/^    W64 initCycle;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+init_nvmain_object	NVMainMemory.cpp	/^void NVMainMemory::init_nvmain_object( )$/;"	f	class:NVMainMemory
+insert	cacheLines.h	/^        CacheLine* CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::insert(MemoryRequest *request, W64& oldTag)$/;"	f	class:Memory::CacheLines
+insert	globalDirectory.cpp	/^DirectoryEntry* Directory::insert(MemoryRequest *req, W64& old_tag)$/;"	f	class:Directory
+int_L1_d_	cpuController.h	/^		Interconnect *int_L1_d_;$/;"	m	class:Memory::CPUController
+int_L1_i_	cpuController.h	/^		Interconnect *int_L1_i_;$/;"	m	class:Memory::CPUController
+interconn_	globalDirectory.h	/^        Interconnect *interconn_;$/;"	m	class:DirectoryController
+interconnectsFullFlags_	memoryHierarchy.h	/^      dynarray<bool> interconnectsFullFlags_;$/;"	m	class:Memory::MemoryHierarchy
+interlocks	memoryHierarchy.cpp	/^  MemoryInterlockBuffer interlocks;$/;"	m	namespace:Memory	file:
+invalidate	cacheLines.h	/^        int CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::invalidate(MemoryRequest *request)$/;"	f	class:Memory::CacheLines
+invalidate	cacheLines.h	/^        void invalidate() { reset(); }$/;"	f	struct:Memory::CacheLine
+invalidate	globalDirectory.cpp	/^int Directory::invalidate(MemoryRequest *req)$/;"	f	class:Directory
+invalidate_line	mesiLogic.cpp	/^void MESILogic::invalidate_line(CacheLine *line)$/;"	f	class:MESILogic
+invalidate_line	moesiLogic.cpp	/^void MOESILogic::invalidate_line(CacheLine *line)$/;"	f	class:MOESILogic
+invalidate_lock	memoryHierarchy.cpp	/^void MemoryHierarchy::invalidate_lock(W64 lockaddr, W8 ctx_id)$/;"	f	class:MemoryHierarchy
+isData_	memoryRequest.h	/^		bool isData_;	\/\/data ? instruction$/;"	m	class:Memory::MemoryRequest
+isEmpty	memoryRequest.h	/^		bool isEmpty()$/;"	f	class:Memory::RequestPool
+isLowestPrivate_	cacheController.h	/^		bool isLowestPrivate_;$/;"	m	class:Memory::CacheController
+isLowestPrivate_	coherentCache.h	/^                bool isLowestPrivate_;$/;"	m	class:Memory::CoherentCache::CacheController
+isPoolLow	memoryRequest.h	/^		bool isPoolLow()$/;"	f	class:Memory::RequestPool
+isPrivate_	controller.h	/^		bool isPrivate_;$/;"	m	class:Memory::Controller
+isShared	coherentCache.h	/^                bool isShared;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+isShared	controller.h	/^	bool isShared;$/;"	m	struct:Memory::Message
+isSnoop	coherentCache.h	/^                bool isSnoop;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+is_busy	bus.h	/^		bool is_busy(){ return busBusy_; }$/;"	f	class:Memory::BusInterconnect
+is_busy	splitPhaseBus.h	/^		bool is_busy(){ return busBusy_; }$/;"	f	class:Memory::SplitPhaseBus::BusInterconnect
+is_cache_availabe	cpuController.cpp	/^bool CPUController::is_cache_availabe(bool is_icache)$/;"	f	class:CPUController
+is_cache_available	memoryHierarchy.cpp	/^bool MemoryHierarchy::is_cache_available(W8 coreid, W8 threadid,$/;"	f	class:MemoryHierarchy
+is_controller_full	memoryHierarchy.cpp	/^bool MemoryHierarchy::is_controller_full(Controller* controller)$/;"	f	class:MemoryHierarchy
+is_full	bk/memoryController.h	/^		bool is_full(bool fromInterconnect = false) const {$/;"	f	class:Memory::MemoryController
+is_full	cacheController.h	/^		bool is_full(bool fromInterconnect = false) const {$/;"	f	class:Memory::CacheController
+is_full	coherentCache.h	/^                bool is_full(bool fromInterconnect = false) const {$/;"	f	class:Memory::CoherentCache::CacheController
+is_full	cpuController.h	/^		bool is_full(bool fromInterconnect = false) const {$/;"	f	class:Memory::CPUController
+is_full	globalDirectory.cpp	/^bool DirectoryController::is_full(bool flag) const$/;"	f	class:DirectoryController
+is_full	memoryController.h	/^		bool is_full(bool fromInterconnect = false) const {$/;"	f	class:Memory::MemoryController
+is_icache_buffer_hit	cpuController.cpp	/^bool CPUController::is_icache_buffer_hit(MemoryRequest *request)$/;"	f	class:CPUController
+is_instruction	memoryRequest.h	/^		bool is_instruction() {$/;"	f	class:Memory::MemoryRequest
+is_kernel	memoryRequest.h	/^        bool is_kernel() {$/;"	f	class:Memory::MemoryRequest
+is_line_in_use	coherentCache.cpp	/^bool CacheController::is_line_in_use(W64 tag)$/;"	f	class:CacheController
+is_line_valid	coherentCache.cpp	/^bool CacheController::is_line_valid(CacheLine *line)$/;"	f	class:CacheController
+is_line_valid	mesiLogic.cpp	/^bool MESILogic::is_line_valid(CacheLine *line)$/;"	f	class:MESILogic
+is_line_valid	moesiLogic.cpp	/^bool MOESILogic::is_line_valid(CacheLine *line)$/;"	f	class:MOESILogic
+is_lowest_private	cacheController.h	/^		bool is_lowest_private() {$/;"	f	class:Memory::CacheController
+is_lowest_private	coherentCache.h	/^                bool is_lowest_private() {$/;"	f	class:Memory::CoherentCache::CacheController
+is_private	controller.h	/^		bool is_private() { return isPrivate_; }$/;"	f	class:Memory::Controller
+is_same	memoryRequest.cpp	/^bool MemoryRequest::is_same(MemoryRequest *request)$/;"	f	class:MemoryRequest
+is_same	memoryRequest.cpp	/^bool MemoryRequest::is_same(W8 coreid,$/;"	f	class:MemoryRequest
+lastAccessCycle_	cacheLines.h	/^            W64 lastAccessCycle_;$/;"	m	class:Memory::CacheLines
+lastAccessQueue	bus.h	/^		BusControllerQueue* lastAccessQueue;$/;"	m	class:Memory::BusInterconnect
+lastAccessQueue	splitPhaseBus.h	/^		BusControllerQueue* lastAccessQueue;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+latency	cacheLines.h	/^            int latency() const { return LATENCY; };$/;"	f	class:Memory::CacheLines
+latency_	bk/memoryController.h	/^        int latency_;$/;"	m	class:Memory::MemoryController
+latency_	bus.h	/^        int latency_;$/;"	m	class:Memory::BusInterconnect
+latency_	memoryController.h	/^        int latency_;$/;"	m	class:Memory::MemoryController
+latency_	splitPhaseBus.h	/^        int latency_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+latency_	switch.h	/^            int latency_;$/;"	m	class:Memory::SwitchInterconnect::Switch
+line	coherentCache.h	/^                CacheLine     *line;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+lineAddress	cpuController.h	/^	W64 lineAddress;$/;"	m	struct:Memory::CPUControllerBufferEntry
+line_bits	globalDirectory.cpp	/^static W16 line_bits = log2(DIR_LINE_SIZE);$/;"	v	file:
+locked	globalDirectory.h	/^	bool locked;$/;"	m	struct:DirectoryEntry
+lowerCont_	coherentCache.h	/^                Controller *lowerCont_;$/;"	m	class:Memory::CoherentCache::CacheController
+lowerInterconnect_	cacheController.h	/^		Interconnect *lowerInterconnect_;$/;"	m	class:Memory::CacheController
+lowerInterconnect_	coherentCache.h	/^                Interconnect *lowerInterconnect_;$/;"	m	class:Memory::CoherentCache::CacheController
+lower_cont	globalDirectory.cpp	/^Controller* DirectoryController::lower_cont = NULL;$/;"	m	class:DirectoryController	file:
+lower_cont	globalDirectory.h	/^        static Controller   *lower_cont;$/;"	m	class:DirectoryController
+m_arg	coherentCache.h	/^                void *m_arg;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+m_arg	switch.h	/^        void          *m_arg;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+machine_	memoryHierarchy.h	/^      BaseMachine &machine_;$/;"	m	class:Memory::MemoryHierarchy
+memdebug	memoryHierarchy.h	48;"	d
+memdebug	memoryHierarchy.h	52;"	d
+memdebug	memoryHierarchy.h	56;"	d
+memoryController_	memoryHierarchy.h	/^      Controller* memoryController_;$/;"	m	class:Memory::MemoryHierarchy
+memoryHierarchy	coherenceLogic.h	/^                MemoryHierarchy* memoryHierarchy;$/;"	m	class:Memory::CoherentCache::CoherenceLogic
+memoryHierarchy_	controller.h	/^		MemoryHierarchy *memoryHierarchy_;$/;"	m	class:Memory::Controller
+memoryHierarchy_	interconnect.h	/^		MemoryHierarchy *memoryHierarchy_;$/;"	m	class:Memory::Interconnect
+memory_op_names	memoryRequest.h	/^static const char* memory_op_names[NUM_MEMORY_OP] = {$/;"	m	namespace:Memory
+mesi_state_names	memoryStats.h	/^static const char* mesi_state_names[4] = {$/;"	m	namespace:Memory
+messageQueue_	memoryHierarchy.h	/^      FixStateList<Message, 128> messageQueue_;$/;"	m	class:Memory::MemoryHierarchy
+miss	memoryStats.h	/^                miss(Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest::count::miss
+miss	memoryStats.h	/^            struct miss : public Statable$/;"	s	struct:Memory::BaseCacheStats::cpurequest::count
+miss	memoryStats.h	/^            } miss;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count	typeref:struct:Memory::BaseCacheStats::cpurequest::count::miss
+miss_state	memoryStats.h	/^        miss_state(const char *name, Statable *parent)$/;"	f	struct:Memory::MESIStats::miss_state
+miss_state	memoryStats.h	/^    struct miss_state : public Statable {$/;"	s	struct:Memory::MESIStats
+miss_state	memoryStats.h	/^    } miss_state;$/;"	m	struct:Memory::MESIStats	typeref:struct:Memory::MESIStats::miss_state
+miss_state	mesiLogic.h	/^                miss_state(const char *name, Statable *parent)$/;"	f	struct:Memory::CoherentCache::MESILogic::miss_state
+miss_state	mesiLogic.h	/^            struct miss_state : public Statable {$/;"	s	class:Memory::CoherentCache::MESILogic
+miss_state	mesiLogic.h	/^            } miss_state;$/;"	m	class:Memory::CoherentCache::MESILogic	typeref:struct:Memory::CoherentCache::MESILogic::miss_state
+miss_state	moesiLogic.h	/^            StatArray<W64, NUM_MOESI_STATES> miss_state;$/;"	m	class:Memory::CoherentCache::MOESILogic
+nacked_req	NVMainMemory.h	/^			bool nacked_req;$/;"	m	class:Memory::NVMainMemory
+name_	controller.h	/^        stringbuf name_;$/;"	m	class:Memory::Controller
+name_	interconnect.h	/^        stringbuf name_;$/;"	m	class:Memory::Interconnect
+new_stats	bk/memoryController.h	/^        RAMStats new_stats;$/;"	m	class:Memory::MemoryController
+new_stats	cacheController.h	/^        BaseCacheStats new_stats;$/;"	m	class:Memory::CacheController
+new_stats	coherentCache.h	/^                MESIStats *new_stats;$/;"	m	class:Memory::CoherentCache::CacheController
+new_stats	memoryController.h	/^        RAMStats new_stats;$/;"	m	class:Memory::MemoryController
+new_stats	splitPhaseBus.h	/^        BusStats *new_stats;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+next_event_cycle_	NVMainMemory.h	/^			NVM::ncycle_t next_event_cycle_;$/;"	m	class:Memory::NVMainMemory
+nvmain_config_	NVMainMemory.h	/^			NVM::Config *nvmain_config_;$/;"	m	class:Memory::NVMainMemory
+nvmain_eventq_	NVMainMemory.h	/^			NVM::EventQueue *nvmain_eventq_;$/;"	m	class:Memory::NVMainMemory
+nvmain_geventq_	NVMainMemory.h	/^			NVM::GlobalEventQueue *nvmain_geventq_;$/;"	m	class:Memory::NVMainMemory
+nvmain_ptr_	NVMainMemory.h	/^			NVM::NVMain* nvmain_ptr_;	\/\/point to nvmain memory$/;"	m	class:Memory::NVMainMemory
+nvmain_sim_	NVMainMemory.h	/^			NVM::SimInterface *nvmain_sim_;$/;"	m	class:Memory::NVMainMemory
+nvmain_stat_ptr_	NVMainMemory.h	/^			NVM::Stats *nvmain_stat_ptr_;$/;"	m	class:Memory::NVMainMemory
+nvmain_tag_generator_	NVMainMemory.h	/^			NVM::TagGenerator *nvmain_tag_generator_;$/;"	m	class:Memory::NVMainMemory
+opType_	memoryRequest.h	/^		OP_TYPE opType_;$/;"	m	class:Memory::MemoryRequest
+operator ,	cacheLines.h	/^        static inline ostream& operator ,(ostream& os, const$/;"	f	namespace:Memory
+operator ,	cacheLines.h	/^    static inline ostream& operator ,(ostream& os, const CacheLine& line)$/;"	f	namespace:Memory
+operator <	memoryHierarchy.h	/^      bool operator <(Event &event) {$/;"	f	class:Memory::Event
+operator <<	bus.h	/^static inline ostream& operator <<(ostream& os,$/;"	f	namespace:Memory
+operator <<	cacheController.h	/^static inline ostream& operator <<(ostream& os, const CacheQueueEntry&$/;"	f	namespace:Memory
+operator <<	cacheLines.h	/^        static inline ostream& operator <<(ostream& os, const$/;"	f	namespace:Memory
+operator <<	cacheLines.h	/^    static inline ostream& operator <<(ostream& os, const CacheLine& line)$/;"	f	namespace:Memory
+operator <<	coherentCache.h	/^        static inline ostream& operator <<(ostream& os, const CacheQueueEntry&$/;"	f	namespace:Memory::CoherentCache
+operator <<	controller.h	/^static inline ostream& operator <<(ostream& os, const Controller&$/;"	f	namespace:Memory
+operator <<	controller.h	/^static inline ostream& operator <<(ostream& os, const Message& msg)$/;"	f	namespace:Memory
+operator <<	cpuController.h	/^static inline ostream& operator <<(ostream& os, const CPUController& controller)$/;"	f	namespace:Memory
+operator <<	cpuController.h	/^static inline ostream& operator <<(ostream& os,$/;"	f	namespace:Memory
+operator <<	globalDirectory.h	/^static inline ostream& operator << (ostream &os, const$/;"	f
+operator <<	globalDirectory.h	/^static inline ostream& operator << (ostream& os, const$/;"	f
+operator <<	globalDirectory.h	/^static inline ostream& operator <<(ostream &os, const DirectoryEntry &e)$/;"	f
+operator <<	interconnect.h	/^static inline ostream& operator << (ostream& os, const Interconnect&$/;"	f	namespace:Memory
+operator <<	memoryHierarchy.h	/^  static inline ostream& operator <<(ostream& os, const Event& event) {$/;"	f	namespace:Memory
+operator <<	memoryRequest.h	/^static inline ostream& operator <<(ostream& os, RequestPool &pool)$/;"	f	namespace:Memory
+operator <<	memoryRequest.h	/^static inline ostream& operator <<(ostream& os, const MemoryRequest& request)$/;"	f	namespace:Memory
+operator <<	p2p.h	/^static inline ostream& operator << (ostream& os, const P2PInterconnect&$/;"	f	namespace:Memory
+operator <<	splitPhaseBus.h	/^static inline ostream& operator <<(ostream& os, const BusQueueEntry&$/;"	f	namespace:Memory::SplitPhaseBus
+operator <<	splitPhaseBus.h	/^static inline ostream& operator <<(ostream& os, const$/;"	f	namespace:Memory::SplitPhaseBus
+operator <<	splitPhaseBus.h	/^static inline ostream& operator <<(ostream& os,$/;"	f	namespace:Memory::SplitPhaseBus
+operator <<	switch.h	/^    static inline Message& operator <<(Message& msg, const$/;"	f	namespace:Memory::SwitchInterconnect
+operator <<	switch.h	/^    static inline QueueEntry& operator <<(QueueEntry& entry, const$/;"	f	namespace:Memory::SwitchInterconnect
+operator <<	switch.h	/^    static inline ostream& operator <<(ostream& os, const QueueEntry$/;"	f	namespace:Memory::SwitchInterconnect
+operator <<	switch.h	/^    static inline ostream& operator <<(ostream& os, const Switch &sw)$/;"	f	namespace:Memory::SwitchInterconnect
+operator ==	memoryHierarchy.h	/^      bool operator ==(Event &event) {$/;"	f	class:Memory::Event
+operator >	memoryHierarchy.h	/^      bool operator >(Event &event) {$/;"	f	class:Memory::Event
+operator >=	memoryHierarchy.h	/^      bool operator >=(Event &event) {$/;"	f	class:Memory::Event
+origin	controller.h	/^    void *origin;$/;"	m	struct:Memory::Message
+origin	globalDirectory.h	/^    int             origin;$/;"	m	struct:DirContBufferEntry
+owner	globalDirectory.h	/^    W8   owner;$/;"	m	struct:DirectoryEntry
+ownerRIP_	memoryRequest.h	/^		W64 ownerRIP_;$/;"	m	class:Memory::MemoryRequest
+ownerUUID_	memoryRequest.h	/^		W64 ownerUUID_;$/;"	m	class:Memory::MemoryRequest
+pendingRequests_	bk/memoryController.h	/^		FixStateList<MemoryQueueEntry, MEM_REQ_NUM> pendingRequests_;$/;"	m	class:Memory::MemoryController
+pendingRequests_	cacheController.h	/^		FixStateList<CacheQueueEntry, 128> pendingRequests_;$/;"	m	class:Memory::CacheController
+pendingRequests_	coherentCache.h	/^                FixStateList<CacheQueueEntry, 256> pendingRequests_;$/;"	m	class:Memory::CoherentCache::CacheController
+pendingRequests_	cpuController.h	/^			CPU_CONT_PENDING_REQ_SIZE> pendingRequests_;$/;"	m	class:Memory::CPUController
+pendingRequests_	globalDirectory.cpp	/^DirectoryController::pendingRequests_ = NULL;$/;"	m	class:DirectoryController	file:
+pendingRequests_	globalDirectory.h	/^        static FixStateList<DirContBufferEntry, REQ_Q_SIZE> *pendingRequests_;$/;"	m	class:DirectoryController
+pendingRequests_	memoryController.h	/^		FixStateList<MemoryQueueEntry, MEM_REQ_NUM> pendingRequests_;$/;"	m	class:Memory::MemoryController
+pendingRequests_	splitPhaseBus.h	/^		FixStateList<PendingQueueEntry, 32> pendingRequests_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+physicalAddress_	memoryRequest.h	/^		W64 physicalAddress_;$/;"	m	class:Memory::MemoryRequest
+prefetch	cacheController.h	/^		bool prefetch;$/;"	m	struct:Memory::CacheQueueEntry
+prefetchCompleted	cacheController.h	/^		bool prefetchCompleted;$/;"	m	struct:Memory::CacheQueueEntry
+prefetchDelay_	cacheController.h	/^		int prefetchDelay_;$/;"	m	class:Memory::CacheController
+prefetchEnabled_	cacheController.h	/^		bool prefetchEnabled_;$/;"	m	class:Memory::CacheController
+present	globalDirectory.h	/^    bitvec<NUM_SIM_CORES> present;$/;"	m	struct:DirectoryEntry
+print	NVMainMemory.cpp	/^void NVMainMemory::print( ostream & os)$/;"	f	class:NVMainMemory
+print	bk/memoryController.cpp	/^void MemoryController::print(ostream& os) const$/;"	f	class:MemoryController
+print	bk/memoryController.h	/^	ostream& print(ostream &os) const {$/;"	f	struct:Memory::MemoryQueueEntry
+print	bus.h	/^		void print(ostream& os) const {$/;"	f	class:Memory::BusInterconnect
+print	bus.h	/^	ostream& print(ostream& os) const {$/;"	f	struct:Memory::BusQueueEntry
+print	cacheController.cpp	/^void CacheController::print(ostream& os) const$/;"	f	class:CacheController
+print	cacheController.h	/^		ostream& print(ostream& os) const {$/;"	f	struct:Memory::CacheQueueEntry
+print	cacheLines.h	/^        void CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::print(ostream& os) const$/;"	f	class:Memory::CacheLines
+print	cacheLines.h	/^        void print(ostream& os) const {$/;"	f	struct:Memory::CacheLine
+print	coherentCache.cpp	/^void CacheController::print(ostream& os) const$/;"	f	class:CacheController
+print	coherentCache.h	/^                ostream& print(ostream& os) const {$/;"	f	struct:Memory::CoherentCache::CacheQueueEntry
+print	controller.h	/^	ostream& print(ostream& os) const {$/;"	f	struct:Memory::Message
+print	cpuController.cpp	/^void CPUController::print(ostream& os) const$/;"	f	class:CPUController
+print	cpuController.h	/^	ostream& print(ostream& os) const {$/;"	f	struct:Memory::CPUControllerBufferEntry
+print	cpuController.h	/^	ostream& print(ostream& os) const {$/;"	f	struct:Memory::CPUControllerQueueEntry
+print	globalDirectory.cpp	/^void DirectoryController::print(ostream &os) const$/;"	f	class:DirectoryController
+print	globalDirectory.h	/^    ostream& print(ostream &os) const {$/;"	f	struct:DirContBufferEntry
+print	globalDirectory.h	/^    ostream& print(ostream &os) const {$/;"	f	struct:DirectoryEntry
+print	memoryController.cpp	/^void MemoryController::print(ostream& os) const$/;"	f	class:MemoryController
+print	memoryController.h	/^	ostream& print(ostream &os) const {$/;"	f	struct:Memory::MemoryQueueEntry
+print	memoryHierarchy.h	/^      ostream& print(ostream& os) const {$/;"	f	class:Memory::Event
+print	memoryHierarchy.h	/^    ostream& print(ostream& os, W64 physaddr) const {$/;"	f	struct:Memory::MemoryInterlockEntry
+print	memoryRequest.h	/^		ostream& print(ostream& os) const$/;"	f	class:Memory::MemoryRequest
+print	memoryRequest.h	/^		void print(ostream& os) {$/;"	f	class:Memory::RequestPool
+print	p2p.h	/^		void print(ostream& os) const {$/;"	f	class:Memory::P2PInterconnect
+print	splitPhaseBus.h	/^		void print(ostream& os) const {$/;"	f	class:Memory::SplitPhaseBus::BusInterconnect
+print	splitPhaseBus.h	/^	ostream& print(ostream& os) const {$/;"	f	struct:Memory::SplitPhaseBus::BusQueueEntry
+print	splitPhaseBus.h	/^	ostream& print(ostream& os) const {$/;"	f	struct:Memory::SplitPhaseBus::PendingQueueEntry
+print	switch.h	/^            void print(ostream& os) const {$/;"	f	class:Memory::SwitchInterconnect::Switch
+print	switch.h	/^        ostream& print(ostream& os) const {$/;"	f	struct:Memory::SwitchInterconnect::QueueEntry
+print_map	NVMainMemory.cpp	/^void NVMainMemory::print_map( ostream & os)$/;"	f	class:NVMainMemory
+print_map	bk/memoryController.h	/^		void print_map(ostream& os)$/;"	f	class:Memory::MemoryController
+print_map	bus.cpp	/^void BusInterconnect::print_map(ostream& os)$/;"	f	class:BusInterconnect
+print_map	cacheController.h	/^		void print_map(ostream& os)$/;"	f	class:Memory::CacheController
+print_map	coherentCache.cpp	/^void CacheController::print_map(ostream& os)$/;"	f	class:CacheController
+print_map	cpuController.h	/^		void print_map(ostream& os)$/;"	f	class:Memory::CPUController
+print_map	globalDirectory.cpp	/^void DirectoryController::print_map(ostream &os)$/;"	f	class:DirectoryController
+print_map	memoryController.h	/^		void print_map(ostream& os)$/;"	f	class:Memory::MemoryController
+print_map	memoryHierarchy.cpp	/^void MemoryHierarchy::print_map(ostream& os)$/;"	f	class:MemoryHierarchy
+print_map	p2p.cpp	/^void P2PInterconnect::print_map(ostream &os)$/;"	f	class:P2PInterconnect
+print_map	splitPhaseBus.h	/^		void print_map(ostream& os)$/;"	f	class:Memory::SplitPhaseBus::BusInterconnect
+print_map	switch.h	/^            void print_map(ostream& os) {$/;"	f	class:Memory::SwitchInterconnect::Switch
+probe	cacheLines.h	/^        CacheLine* CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::probe(MemoryRequest *request)$/;"	f	class:Memory::CacheLines
+probe	globalDirectory.cpp	/^DirectoryEntry* Directory::probe(MemoryRequest *req)$/;"	f	class:Directory
+probe_lock	memoryHierarchy.cpp	/^bool MemoryHierarchy::probe_lock(W64 lockaddr, W8 ctx_id)$/;"	f	class:MemoryHierarchy
+queue	bus.h	/^	FixStateList<BusQueueEntry, 16> queue;$/;"	m	struct:Memory::BusControllerQueue
+queue	splitPhaseBus.h	/^	FixStateList<BusQueueEntry, 16> queue;$/;"	m	struct:Memory::SplitPhaseBus::BusControllerQueue
+queue	switch.h	/^        FixStateList<QueueEntry, 16> queue;$/;"	m	struct:Memory::SwitchInterconnect::ControllerQueue
+queueAccess_	cpuController.h	/^		Signal queueAccess_;$/;"	m	class:Memory::CPUController
+queueFull	memoryStats.h	/^    StatObj<W64> queueFull;$/;"	m	struct:Memory::BaseCacheStats
+queue_access_cb	cpuController.cpp	/^bool CPUController::queue_access_cb(void *arg)$/;"	f	class:CPUController
+queue_in_use	switch.h	/^        bool        queue_in_use;$/;"	m	struct:Memory::SwitchInterconnect::ControllerQueue
+rate_	NVMainMemory.h	/^			uint64_t rate_;$/;"	m	class:Memory::NVMainMemory
+read	memoryStats.h	/^                StatObj<W64> read;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count::miss
+read	memoryStats.h	/^                hit_sub read;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count::hit
+read	memoryStats.h	/^            stall_sub read;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::stall
+read	memoryStats.h	/^        StatObj<W64> read;$/;"	m	struct:Memory::BusStats::broadcast_cycles
+read	memoryStats.h	/^        StatObj<W64> read;$/;"	m	struct:Memory::BusStats::broadcasts
+readPortUsed_	cacheLines.h	/^            int readPortUsed_;$/;"	m	class:Memory::CacheLines
+readPorts_	cacheLines.h	/^            int readPorts_;$/;"	m	class:Memory::CacheLines
+read_miss	globalDirectory.h	/^        Signal read_miss;$/;"	m	class:DirectoryController
+read_miss_cb	globalDirectory.cpp	/^bool DirectoryController::read_miss_cb(void *arg)$/;"	f	class:DirectoryController
+recv_busy	switch.h	/^        bool        recv_busy;$/;"	m	struct:Memory::SwitchInterconnect::ControllerQueue
+redirects	memoryStats.h	/^        StatObj<W64> redirects;$/;"	m	struct:Memory::BaseCacheStats::cpurequest
+refCounter_	memoryRequest.h	/^		int refCounter_;$/;"	m	class:Memory::MemoryRequest
+register_controller	bus.cpp	/^void BusInterconnect::register_controller(Controller *controller)$/;"	f	class:BusInterconnect
+register_controller	p2p.cpp	/^void P2PInterconnect::register_controller(Controller *controller)$/;"	f	class:P2PInterconnect
+register_controller	splitPhaseBus.cpp	/^void BusInterconnect::register_controller(Controller *controller)$/;"	f	class:BusInterconnect
+register_controller	switch.cpp	/^void Switch::register_controller(Controller *controller)$/;"	f	class:Switch
+register_interconnect	NVMainMemory.cpp	/^void NVMainMemory::register_interconnect( Interconnect* inter , int con_type )$/;"	f	class:NVMainMemory
+register_interconnect	bk/memoryController.cpp	/^void MemoryController::register_interconnect(Interconnect *interconnect,$/;"	f	class:MemoryController
+register_interconnect	cacheController.cpp	/^void CacheController::register_interconnect(Interconnect *interconnect,$/;"	f	class:CacheController
+register_interconnect	coherentCache.cpp	/^void CacheController::register_interconnect(Interconnect *interconnect,$/;"	f	class:CacheController
+register_interconnect	cpuController.cpp	/^void CPUController::register_interconnect(Interconnect *interconnect,$/;"	f	class:CPUController
+register_interconnect	globalDirectory.cpp	/^void DirectoryController::register_interconnect(Interconnect *interconn,$/;"	f	class:DirectoryController
+register_interconnect	memoryController.cpp	/^void MemoryController::register_interconnect(Interconnect *interconnect,$/;"	f	class:MemoryController
+register_interconnect_L1_d	cpuController.cpp	/^void CPUController::register_interconnect_L1_d(Interconnect *interconnect)$/;"	f	class:CPUController
+register_interconnect_L1_i	cpuController.cpp	/^void CPUController::register_interconnect_L1_i(Interconnect *interconnect)$/;"	f	class:CPUController
+register_lower_interconnect	cacheController.cpp	/^void CacheController::register_lower_interconnect(Interconnect *interconnect)$/;"	f	class:CacheController
+register_lower_interconnect	coherentCache.cpp	/^void CacheController::register_lower_interconnect(Interconnect *interconnect)$/;"	f	class:CacheController
+register_second_upper_interconnect	cacheController.cpp	/^void CacheController::register_second_upper_interconnect(Interconnect$/;"	f	class:CacheController
+register_second_upper_interconnect	coherentCache.cpp	/^void CacheController::register_second_upper_interconnect(Interconnect$/;"	f	class:CacheController
+register_upper_interconnect	cacheController.cpp	/^void CacheController::register_upper_interconnect(Interconnect *interconnect)$/;"	f	class:CacheController
+register_upper_interconnect	coherentCache.cpp	/^void CacheController::register_upper_interconnect(Interconnect *interconnect)$/;"	f	class:CacheController
+req_handler	globalDirectory.h	/^        typedef bool (DirectoryController::*req_handler)(Message *msg);$/;"	t	class:DirectoryController
+req_handlers	globalDirectory.h	/^        req_handler req_handlers[NUM_MEMORY_OP];$/;"	m	class:DirectoryController
+request	bk/memoryController.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::MemoryQueueEntry
+request	bus.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::BusQueueEntry
+request	cacheController.h	/^		MemoryRequest *request;$/;"	m	struct:Memory::CacheQueueEntry
+request	coherentCache.h	/^                MemoryRequest *request;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+request	controller.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::Message
+request	cpuController.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::CPUControllerQueueEntry
+request	globalDirectory.h	/^    MemoryRequest  *request;$/;"	m	struct:DirContBufferEntry
+request	memoryController.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::MemoryQueueEntry
+request	splitPhaseBus.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::SplitPhaseBus::BusQueueEntry
+request	splitPhaseBus.h	/^	MemoryRequest *request;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+request	switch.h	/^        MemoryRequest *request;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+requestPool_	memoryHierarchy.h	/^      dynarray<RequestPool*> requestPool_;$/;"	m	class:Memory::MemoryHierarchy
+request_completed_	NVMainMemory.h	/^			Signal request_completed_;$/;"	m	class:Memory::NVMainMemory
+request_completed_cb	NVMainMemory.cpp	/^bool NVMainMemory::request_completed_cb( void *arg)$/;"	f	class:NVMainMemory
+reset	cacheLines.h	/^        void reset() {$/;"	f	struct:Memory::CacheLine
+reset	cpuController.h	/^	void reset(int i) {$/;"	f	struct:Memory::CPUControllerBufferEntry
+reset	globalDirectory.cpp	/^void DirectoryEntry::reset()$/;"	f	class:DirectoryEntry
+reset	memoryHierarchy.cpp	/^void MemoryHierarchy::reset()$/;"	f	class:MemoryHierarchy
+reset	memoryHierarchy.h	/^    void reset() {ctx_id = -1;}$/;"	f	struct:Memory::MemoryInterlockEntry
+reset	memoryRequest.h	/^		void reset() {$/;"	f	class:Memory::MemoryRequest
+responder	globalDirectory.h	/^    Controller     *responder;$/;"	m	struct:DirContBufferEntry
+responseData	coherentCache.h	/^                bool responseData;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+responseReceived	splitPhaseBus.h	/^	dynarray<bool> responseReceived;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+robId_	memoryRequest.h	/^		int robId_;$/;"	m	class:Memory::MemoryRequest
+send	switch.h	/^            Signal send;$/;"	m	class:Memory::SwitchInterconnect::Switch
+sendTo	cacheController.h	/^		Interconnect  *sendTo;$/;"	m	struct:Memory::CacheQueueEntry
+sendTo	coherentCache.h	/^                Interconnect  *sendTo;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+send_cb	switch.cpp	/^bool Switch::send_cb(void *arg)$/;"	f	class:Switch
+send_complete	switch.h	/^            Signal send_complete;$/;"	m	class:Memory::SwitchInterconnect::Switch
+send_complete_cb	switch.cpp	/^bool Switch::send_complete_cb(void *arg)$/;"	f	class:Switch
+send_evict	globalDirectory.h	/^        Signal send_evict;$/;"	m	class:DirectoryController
+send_evict	moesiLogic.cpp	/^void MOESILogic::send_evict(CacheQueueEntry *queueEntry, W64 oldTag,$/;"	f	class:MOESILogic
+send_evict_cb	globalDirectory.cpp	/^bool DirectoryController::send_evict_cb(void *arg)$/;"	f	class:DirectoryController
+send_evict_to_lower	coherentCache.cpp	/^void CacheController::send_evict_to_lower(CacheQueueEntry *entry, W64 oldTag)$/;"	f	class:CacheController
+send_evict_to_upper	coherentCache.cpp	/^void CacheController::send_evict_to_upper(CacheQueueEntry *entry, W64 oldTag)$/;"	f	class:CacheController
+send_message	coherentCache.cpp	/^void CacheController::send_message(CacheQueueEntry *queueEntry,$/;"	f	class:CacheController
+send_msg	globalDirectory.h	/^        Signal send_msg;$/;"	m	class:DirectoryController
+send_msg_cb	globalDirectory.cpp	/^bool DirectoryController::send_msg_cb(void *arg)$/;"	f	class:DirectoryController
+send_request	p2p.cpp	/^bool P2PInterconnect::send_request(Controller *sender,$/;"	f	class:P2PInterconnect
+send_response	globalDirectory.h	/^        Signal send_response;$/;"	m	class:DirectoryController
+send_response	moesiLogic.cpp	/^void MOESILogic::send_response(CacheQueueEntry *queueEntry,$/;"	f	class:MOESILogic
+send_response_cb	globalDirectory.cpp	/^bool DirectoryController::send_response_cb(void *arg)$/;"	f	class:DirectoryController
+send_to_cont	moesiLogic.cpp	/^void MOESILogic::send_to_cont(CacheQueueEntry *queueEntry,$/;"	f	class:MOESILogic
+send_update	globalDirectory.h	/^        Signal send_update;$/;"	m	class:DirectoryController
+send_update	moesiLogic.cpp	/^void MOESILogic::send_update(CacheQueueEntry *queueEntry, W64 oldTag)$/;"	f	class:MOESILogic
+send_update_cb	globalDirectory.cpp	/^bool DirectoryController::send_update_cb(void *arg)$/;"	f	class:DirectoryController
+send_update_message	cacheController.cpp	/^bool CacheController::send_update_message(CacheQueueEntry *queueEntry,$/;"	f	class:CacheController
+send_update_to_lower	coherentCache.cpp	/^void CacheController::send_update_to_lower(CacheQueueEntry *entry, W64 tag)$/;"	f	class:CacheController
+send_update_to_upper	coherentCache.cpp	/^void CacheController::send_update_to_upper(CacheQueueEntry *entry, W64 tag)$/;"	f	class:CacheController
+sender	cacheController.h	/^		Interconnect  *sender;$/;"	m	struct:Memory::CacheQueueEntry
+sender	coherentCache.h	/^                Interconnect  *sender;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+sender	controller.h	/^	void *sender;$/;"	m	struct:Memory::Message
+set_bus_busy	bus.h	/^		void set_bus_busy(bool flag){$/;"	f	class:Memory::BusInterconnect
+set_bus_busy	splitPhaseBus.h	/^		void set_bus_busy(bool flag){$/;"	f	class:Memory::SplitPhaseBus::BusInterconnect
+set_coherence_logic	coherentCache.h	/^                void set_coherence_logic(CoherenceLogic *cl) {$/;"	f	class:Memory::CoherentCache::CacheController
+set_controller_full	memoryHierarchy.cpp	/^void MemoryHierarchy::set_controller_full(Controller* controller,$/;"	f	class:MemoryHierarchy
+set_coreSignal	memoryRequest.h	/^        void set_coreSignal(Signal* signal)$/;"	f	class:Memory::MemoryRequest
+set_data_bus	splitPhaseBus.cpp	/^void BusInterconnect::set_data_bus()$/;"	f	class:BusInterconnect
+set_dcacheLineBits	cpuController.h	/^        void set_dcacheLineBits(int i) {$/;"	f	class:Memory::CPUController
+set_icacheLineBits	cpuController.h	/^        void set_icacheLineBits(int i) {$/;"	f	class:Memory::CPUController
+set_interconnect_full	memoryHierarchy.cpp	/^void MemoryHierarchy::set_interconnect_full(Interconnect* interconnect,$/;"	f	class:MemoryHierarchy
+set_lowest_private	cacheController.h	/^		void set_lowest_private(bool flag) {$/;"	f	class:Memory::CacheController
+set_lowest_private	coherentCache.h	/^                void set_lowest_private(bool flag) {$/;"	f	class:Memory::CoherentCache::CacheController
+set_num_controllers	splitPhaseBus.h	/^	void set_num_controllers(int no) {$/;"	f	struct:Memory::SplitPhaseBus::PendingQueueEntry
+set_op_type	memoryRequest.h	/^		void set_op_type(OP_TYPE type) { opType_ = type; }$/;"	f	class:Memory::MemoryRequest
+set_physical_address	memoryRequest.h	/^		void set_physical_address(W64 addr) { physicalAddress_ = addr; }$/;"	f	class:Memory::MemoryRequest
+set_private	controller.h	/^		void set_private(bool flag) {$/;"	f	class:Memory::Controller
+set_ref_counter	memoryRequest.h	/^		void set_ref_counter(int count) {$/;"	f	class:Memory::MemoryRequest
+set_robid	memoryRequest.h	/^		void set_robid(int idx) { robId_ = idx; }$/;"	f	class:Memory::MemoryRequest
+set_wt_disable	cacheController.h	/^		void set_wt_disable(bool flag) {$/;"	f	class:Memory::CacheController
+setup	memoryHierarchy.h	/^      void setup(Signal *signal, W64 clock, void *arg) {$/;"	f	class:Memory::Event
+setup	switch.h	/^        void setup(const Message &msg) {$/;"	f	struct:Memory::SwitchInterconnect::QueueEntry
+setup_full_flags	memoryHierarchy.h	/^      void setup_full_flags() {$/;"	f	class:Memory::MemoryHierarchy
+shared	globalDirectory.h	/^    bool            shared;$/;"	m	struct:DirContBufferEntry
+shared	splitPhaseBus.h	/^	bool shared;$/;"	m	struct:Memory::SplitPhaseBus::PendingQueueEntry
+shared	switch.h	/^        bool           shared;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+signal_	memoryHierarchy.h	/^      Signal *signal_;$/;"	m	class:Memory::Event
+size_	memoryRequest.h	/^		int size_;$/;"	m	class:Memory::RequestPool
+snoop	memoryStats.h	/^        StatArray<W64,4> snoop;$/;"	m	struct:Memory::MESIStats::hit_state
+snoop	mesiLogic.h	/^                StatArray<W64,4> snoop;$/;"	m	struct:Memory::CoherentCache::MESILogic::hit_state
+snoopDisabled_	splitPhaseBus.h	/^		bool snoopDisabled_;$/;"	m	class:Memory::SplitPhaseBus::BusInterconnect
+someStructIsFull_	memoryHierarchy.h	/^      bool someStructIsFull_;$/;"	m	class:Memory::MemoryHierarchy
+sort_event_queue	memoryHierarchy.cpp	/^void MemoryHierarchy::sort_event_queue(Event *event)$/;"	f	class:MemoryHierarchy
+sort_event_queue_tail	memoryHierarchy.cpp	/^void MemoryHierarchy::sort_event_queue_tail(Event *event)$/;"	f	class:MemoryHierarchy
+source	bk/memoryController.h	/^	Controller *source;$/;"	m	struct:Memory::MemoryQueueEntry
+source	cacheController.h	/^		Controller    *source;$/;"	m	struct:Memory::CacheQueueEntry
+source	coherentCache.h	/^                Controller    *source;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+source	memoryController.h	/^	Controller *source;$/;"	m	struct:Memory::MemoryQueueEntry
+source	switch.h	/^        Controller    *source;$/;"	m	struct:Memory::SwitchInterconnect::QueueEntry
+stall	memoryStats.h	/^            stall(Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest::stall
+stall	memoryStats.h	/^        struct stall : public Statable$/;"	s	struct:Memory::BaseCacheStats::cpurequest
+stall	memoryStats.h	/^        } stall;$/;"	m	struct:Memory::BaseCacheStats::cpurequest	typeref:struct:Memory::BaseCacheStats::cpurequest::stall
+stall_sub	memoryStats.h	/^                stall_sub(const char *name, Statable *parent)$/;"	f	struct:Memory::BaseCacheStats::cpurequest::stall::stall_sub
+stall_sub	memoryStats.h	/^            struct stall_sub : public Statable$/;"	s	struct:Memory::BaseCacheStats::cpurequest::stall
+state	cacheLines.h	/^        W8 state;$/;"	m	struct:Memory::CacheLine
+state_transition	memoryStats.h	/^    StatArray<W64,16> state_transition;$/;"	m	struct:Memory::MESIStats
+state_transition	mesiLogic.h	/^            StatArray<W64,16> state_transition;$/;"	m	class:Memory::CoherentCache::MESILogic
+state_transition	moesiLogic.h	/^            StatArray<W64,NUM_MOESI_STATE_TRANS> state_transition;$/;"	m	class:Memory::CoherentCache::MOESILogic
+stats	cpuController.h	/^        CPUControllerStats stats;$/;"	m	class:Memory::CPUController
+stats	memoryHierarchy.h	/^      Stats *stats;$/;"	m	class:Memory::MemoryHierarchy
+tag	cacheLines.h	/^        W64 tag;$/;"	m	struct:Memory::CacheLine
+tag	globalDirectory.h	/^    W64  tag;$/;"	m	struct:DirectoryEntry
+tagOf	cacheLines.h	/^        W64 CacheLines<SET_COUNT, WAY_COUNT, LINE_SIZE, LATENCY>::tagOf(W64 address)$/;"	f	class:Memory::CacheLines
+tag_of	globalDirectory.h	/^        W64 tag_of(W64 addr) { return base_t::tagof(addr); }$/;"	f	class:Directory
+tburst_	NVMainMemory.h	/^			uint64_t tburst_;$/;"	m	class:Memory::NVMainMemory
+threadId_	memoryRequest.h	/^		W8 threadId_;$/;"	m	class:Memory::MemoryRequest
+type_	cacheController.h	/^		CacheType type_;$/;"	m	class:Memory::CacheController
+type_	coherentCache.h	/^                CacheType       type_;$/;"	m	class:Memory::CoherentCache::CacheController
+update	globalDirectory.h	/^        Signal update;$/;"	m	class:DirectoryController
+update	memoryStats.h	/^        StatObj<W64> update;$/;"	m	struct:Memory::BusStats::broadcast_cycles
+update	memoryStats.h	/^        StatObj<W64> update;$/;"	m	struct:Memory::BusStats::broadcasts
+update_cb	globalDirectory.cpp	/^bool DirectoryController::update_cb(void *arg)$/;"	f	class:DirectoryController
+upperInterconnect2_	cacheController.h	/^		Interconnect *upperInterconnect2_;$/;"	m	class:Memory::CacheController
+upperInterconnect2_	coherentCache.h	/^                Interconnect *upperInterconnect2_;$/;"	m	class:Memory::CoherentCache::CacheController
+upperInterconnect_	cacheController.h	/^		Interconnect *upperInterconnect_;$/;"	m	class:Memory::CacheController
+upperInterconnect_	coherentCache.h	/^                Interconnect *upperInterconnect_;$/;"	m	class:Memory::CoherentCache::CacheController
+usedRequestsList_	memoryRequest.h	/^		StateList usedRequestsList_;$/;"	m	class:Memory::RequestPool
+used_list	memoryRequest.h	/^		StateList& used_list() {$/;"	f	class:Memory::RequestPool
+waitFor	coherentCache.h	/^                int waitFor;$/;"	m	struct:Memory::CoherentCache::CacheQueueEntry
+waitFor	cpuController.h	/^    int waitFor;$/;"	m	struct:Memory::CPUControllerQueueEntry
+waitInterconnect_	bk/memoryController.h	/^		Signal waitInterconnect_;$/;"	m	class:Memory::MemoryController
+waitInterconnect_	cacheController.h	/^		Signal waitInterconnect_;$/;"	m	class:Memory::CacheController
+waitInterconnect_	coherentCache.h	/^                Signal waitInterconnect_;$/;"	m	class:Memory::CoherentCache::CacheController
+waitInterconnect_	memoryController.h	/^		Signal waitInterconnect_;$/;"	m	class:Memory::MemoryController
+wait_interconnect_cb	bk/memoryController.cpp	/^bool MemoryController::wait_interconnect_cb(void *arg)$/;"	f	class:MemoryController
+wait_interconnect_cb	cacheController.cpp	/^bool CacheController::wait_interconnect_cb(void *arg)$/;"	f	class:CacheController
+wait_interconnect_cb	coherentCache.cpp	/^bool CacheController::wait_interconnect_cb(void *arg)$/;"	f	class:CacheController
+wait_interconnect_cb	memoryController.cpp	/^bool MemoryController::wait_interconnect_cb(void *arg)$/;"	f	class:MemoryController
+wake	NVMainMemory.h	/^			bool wake;$/;"	m	class:Memory::NVMainMemory
+wakeup_dependent	globalDirectory.cpp	/^void DirectoryController::wakeup_dependent(DirContBufferEntry *queueEntry)$/;"	f	class:DirectoryController
+wakeup_dependents	cpuController.cpp	/^void CPUController::wakeup_dependents(CPUControllerQueueEntry *queueEntry)$/;"	f	class:CPUController
+wakeup_sig	globalDirectory.h	/^    Signal         *wakeup_sig;$/;"	m	struct:DirContBufferEntry
+write	memoryStats.h	/^                StatObj<W64> write;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count::miss
+write	memoryStats.h	/^                hit_sub write;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::count::hit
+write	memoryStats.h	/^            stall_sub write;$/;"	m	struct:Memory::BaseCacheStats::cpurequest::stall
+write	memoryStats.h	/^        StatObj<W64> write;$/;"	m	struct:Memory::BusStats::broadcast_cycles
+write	memoryStats.h	/^        StatObj<W64> write;$/;"	m	struct:Memory::BusStats::broadcasts
+writePortUsed_	cacheLines.h	/^            int writePortUsed_;$/;"	m	class:Memory::CacheLines
+writePorts_	cacheLines.h	/^            int writePorts_;$/;"	m	class:Memory::CacheLines
+write_miss	globalDirectory.h	/^        Signal write_miss;$/;"	m	class:DirectoryController
+write_miss_cb	globalDirectory.cpp	/^bool DirectoryController::write_miss_cb(void *arg)$/;"	f	class:DirectoryController
+wt_disabled_	cacheController.h	/^		bool wt_disabled_;$/;"	m	class:Memory::CacheController
+~BusInterconnect	splitPhaseBus.cpp	/^BusInterconnect::~BusInterconnect()$/;"	f	class:BusInterconnect
+~CacheController	cacheController.cpp	/^CacheController::~CacheController()$/;"	f	class:CacheController
+~CacheController	coherentCache.cpp	/^CacheController::~CacheController()$/;"	f	class:CacheController
+~Controller	controller.h	/^        virtual ~Controller()$/;"	f	class:Memory::Controller
+~Interconnect	interconnect.h	/^        virtual ~Interconnect()$/;"	f	class:Memory::Interconnect
+~MemoryHierarchy	memoryHierarchy.cpp	/^MemoryHierarchy::~MemoryHierarchy()$/;"	f	class:MemoryHierarchy
+~Switch	switch.cpp	/^Switch::~Switch()$/;"	f	class:Switch
