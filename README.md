@@ -15,6 +15,9 @@ To compile Marss on your system, you will need following:
 * SCons tool for compiling Marss (Minimum version 1.2.0)
 * SDL Development Libraries (Required for QEMU)
 
+Patches
+------------------
+
 
 Compiling
 ---------
