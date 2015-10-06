@@ -31,17 +31,17 @@ Once you have SCons install go to the code hybrid-memory-simulator and give foll
 * debug : optional , default is `0` (no debugging)
 * c: optional , default is `1`, single-core configuration
 * attention : 
-		`NVMAIN` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/nvmain`
-		`DRAMSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/DRAMSim2`
-		`HYBRIDSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/HybridSim`
-		before compile hybrid-memory-system , you must make sure `libdramsim.so` in `DRAMSim2 directory and libhybridsim.so` in `HybridSim directory` 
+	* `NVMAIN` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/nvmain`
+	* `DRAMSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/DRAMSim2`
+	* `HYBRIDSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/HybridSim`
+	* before compile hybrid-memory-system , you must make sure `libdramsim.so` in `DRAMSim2 directory and libhybridsim.so` in `HybridSim directory` 
 
 e.g.:
+
 		`$ scons -Q mem=NVMAIN config=config/new-machine/moesi.conf c=2`
-
 To clean your compilation:
-		`$ scons -Q -c`
 
+		`$ scons -Q -c`
 Running
 -------
 After successfull compilation, to run hybrid-memory-simulator , go to hybrid-memory-simulator directory , then give the following command:
