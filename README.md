@@ -41,7 +41,9 @@ e.g.:
     $ scons -Q mem=NVMAIN config=config/new-machine/moesi.conf c=2
 To clean your compilation:
 
+    $ command of build a machine -c ( eg. scons -Q mem=NVMAIN config=config/new-machine/moesi.conf c=2 -c)
     $ rm -rf build/
+    
 Running
 -------
 After successfull compilation, to run hybrid-memory-simulator , go to hybrid-memory-simulator directory , then give the following command:
