@@ -3,7 +3,7 @@ Hybrid-Memory-Simulator : MARSSX86 && NVMain && DRAMSim2 && HybridSim
 
 Copyright 2015 Huazhong University of Science and Technology (cyjseagull @ 163.com)
 
-Hybrid-Memory-Simulator is a simulation tool for x86-64 based computing system with hybrid memory system consisting of both non-volatile memory(such as SSD , PCM ) and dynamic random access memory. It's based on four independent open-source project: MARSSx86(http://www.marss86.org/~marss86/index.php/Home), NVMain(http://wiki.nvmain.org/) , DRAMsim2(https://github.com/jimstevens2001/DRAMSim2), NVDIMMSim(nvm simulator,but not very accurate , https://github.com/jimstevens2001/NVDIMMSim), HybridSim(https://github.com/jimstevens2001/HybridSim).Thanks for the hard working of people who had developed these simulators and made them open-source.  
+Hybrid-Memory-Simulator is a simulation tool for x86-64 based computing system with hybrid memory system consisting of both non-volatile memory(such as SSD , PCM ) and dynamic random access memory. It is based on four independent open-source project: MARSSx86(http://www.marss86.org/~marss86/index.php/Home), NVMain(http://wiki.nvmain.org/) , DRAMsim2(https://github.com/jimstevens2001/DRAMSim2), NVDIMMSim(nvm simulator,but not very accurate , https://github.com/jimstevens2001/NVDIMMSim), HybridSim(https://github.com/jimstevens2001/HybridSim).Thanks for the hard working of people who had developed these simulators and made them open-source.  
 
 System Requirements
 -------------------
@@ -16,7 +16,7 @@ To compile Marss on your system, you will need following:
 
 Compiling
 ---------
-If you don't have SCons install, install it using your stanard application
+If you do not have SCons install, install it using your stanard application
 installation program like apt-get or yum.
 
 Once you have SCons install go to the code hybrid-memory-simulator and give following command:
@@ -48,8 +48,8 @@ After successfull compilation, to run hybrid-memory-simulator , go to hybrid-mem
 	* `-nographic`: when connect remote server with shell , and run qemu through shell , should add this option to disable graphic requirement.
 
 You can use all the regular QEMU command here, like start VM window in VNC give
-'vnc :10' etc.  Once the system is booted, you can switch to Monitor mode using
-'Ctrl-Alt-2' key and give following command to switch to simulation mode:
+`vnc :10` etc.  Once the system is booted, you can switch to Monitor mode using
+`Ctrl-Alt-2` key and give following command to switch to simulation mode:
 
     (qemu) simconfig -run -stopinsns 100m -stats [stats-file-name]
 
