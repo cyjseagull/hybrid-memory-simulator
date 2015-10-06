@@ -1,0 +1,1648 @@
+diff -upNr marss-old/config/atom_core.conf marss/config/atom_core.conf
+--- marss-old/config/atom_core.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/atom_core.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,10 +0,0 @@
+-# vim: filetype=yaml
+-
+-
+-# File: atom_core.conf
+-core:
+-  atom:
+-    base: atom
+-    params:
+-      DISPATCH_Q_SIZE: 16
+-      ISSUE_PER_CYCLE: 2
+diff -upNr marss-old/config/default-machine/atom_core.conf marss/config/default-machine/atom_core.conf
+--- marss-old/config/default-machine/atom_core.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/atom_core.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,10 @@
++# vim: filetype=yaml
++
++
++# File: atom_core.conf
++core:
++  atom:
++    base: atom
++    params:
++      DISPATCH_Q_SIZE: 16
++      ISSUE_PER_CYCLE: 2
+diff -upNr marss-old/config/default-machine/default.conf marss/config/default-machine/default.conf
+--- marss-old/config/default-machine/default.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/default.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,252 @@
++# vim: filetype=yaml
++#
++# All core and cache configuration will be in a separate file and that will be
++# included in the final config file using 'import: [filename, ...]'
++
++# Import files that define various core/caches
++import:
++  - ooo_core.conf
++  - atom_core.conf
++  - l1_cache.conf
++  - l2_cache.conf
++  - l3_cache.conf
++  - moesi.conf
++
++memory:
++  dram_cont:
++    base: simple_dram_cont
++
++machine:
++  # Use run-time option '-machine [MACHINE_NAME]' to select
++  single_core:
++    description: Single Core configuration 
++    min_contexts: 1
++    max_contexts: 1
++    cores: # The order in which core is defined is used to assign
++           # the cores in a machine
++      - type: ooo
++        name_prefix: ooo_
++        option:
++            threads: 1
++    caches:
++      - type: l1_128K
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++      - type: l1_128K
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++      - type: l2_2M
++        name_prefix: L2_
++        insts: 1 # Shared L2 config
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        # '$' sign is used to map matching instances like:
++        # core_0, L1_I_0
++        connections:
++            - core_$: I
++              L1_I_$: UPPER
++            - core_$: D
++              L1_D_$: UPPER
++            - L1_I_0: LOWER
++              L2_0: UPPER
++            - L1_D_0: LOWER
++              L2_0: UPPER2
++            - L2_0: LOWER
++              MEM_0: UPPER
++
++  ooo_2_th:
++    description: Out-of-order core with 2 threads
++    min_contexts: 2
++    cores:
++      - type: ooo_2
++        name_prefix: ooo_
++        option:
++            threads: 2
++    caches:
++      - type: l1_128K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++      - type: l1_128K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++      - type: l2_2M_mesi
++        name_prefix: L2_
++        insts: $NUMCORES # Private L2 config
++        option:
++            private: true
++            last_private: true
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++    interconnects:
++      - type: p2p
++        connections:
++          - core_$: I
++            L1_I_$: UPPER
++          - core_$: D
++            L1_D_$: UPPER
++          - L1_I_$: LOWER
++            L2_$: UPPER
++          - L1_D_$: LOWER
++            L2_$: UPPER2
++      - type: split_bus
++        connections:
++          - L2_*: LOWER
++            MEM_0: UPPER
++
++  shared_l2:
++    description: Shared L2 Configuration
++    min_contexts: 2
++    cores: # The order in which core is defined is used to assign
++           # the cores in a machine
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_128K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++            last_private: true
++      - type: l1_128K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++            last_private: true
++      - type: l2_2M
++        name_prefix: L2_
++        insts: 1 # Shared L2 config
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        # '$' sign is used to map matching instances like:
++        # cpu_0, L1_I_0
++        connections:
++            - core_$: I
++              L1_I_$: UPPER
++            - core_$: D
++              L1_D_$: UPPER
++            - L2_0: LOWER
++              MEM_0: UPPER
++      - type: split_bus
++        connections:
++            - L1_I_*: LOWER
++              L1_D_*: LOWER
++              L2_0: UPPER
++
++  private_L2:
++    description: Private L2 Configuration with Bus Interconnect
++    min_contexts: 2
++    cores:
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_128K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++      - type: l1_128K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++      - type: l2_2M_mesi
++        name_prefix: L2_
++        insts: $NUMCORES # Private L2 config
++        option:
++            private: true
++            last_private: true
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        connections:
++          - core_$: I
++            L1_I_$: UPPER
++          - core_$: D
++            L1_D_$: UPPER
++          - L1_I_$: LOWER
++            L2_$: UPPER
++          - L1_D_$: LOWER
++            L2_$: UPPER2
++      - type: split_bus
++        connections:
++          - L2_*: LOWER
++            MEM_0: UPPER
++
++  shared_l3:
++    description: Shared L3 Configuration
++    min_contexts: 2
++    cores: # The order in which core is defined is used to assign
++           # the cores in a machine
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_32K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++            last_private: false
++      - type: l1_32K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++            last_private: false
++      - type: l2_256K_mesi
++        name_prefix: L2_
++        insts: $NUMCORES # Per core L2 cache
++        option:
++            private: true
++            last_private: true
++      - type: l3_32M
++        name_prefix: L3_
++        insts: 1 # Shared L3 cache
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        # '$' sign is used to map matching instances like:
++        # cpu_0, L1_I_0
++        connections:
++            - core_$: I
++              L1_I_$: UPPER
++            - core_$: D
++              L1_D_$: UPPER
++            - L1_I_$: LOWER
++              L2_$: UPPER
++            - L1_D_$: LOWER
++              L2_$: UPPER2
++            - L3_0: LOWER
++              MEM_0: UPPER
++      - type: split_bus
++        connections:
++            - L2_*: LOWER
++              L3_0: UPPER
+diff -upNr marss-old/config/default-machine/l1_cache.conf marss/config/default-machine/l1_cache.conf
+--- marss-old/config/default-machine/l1_cache.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/l1_cache.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,42 @@
++# vim: filetype=yaml
++
++cache:
++  l1_128K:
++    base: wb_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  l1_128K_wt:
++    base: wt_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  l1_128K_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  # 256K L1 with same params as l1_128K
++  l1_256K:
++    base: l1_128K
++    params:
++        SIZE: 256K
++  l1_32K_mesi:
++    base: l1_128K_mesi
++    params:
++        SIZE: 32K
+diff -upNr marss-old/config/default-machine/l2_cache.conf marss/config/default-machine/l2_cache.conf
+--- marss-old/config/default-machine/l2_cache.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/l2_cache.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,48 @@
++# vim: filetype=yaml
++
++cache:
++  l2_2M:
++    base: wb_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_2M_wt:
++    base: wt_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_2M_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_1M_mesi:
++    base: l2_2M_mesi
++    params:
++      SIZE: 1M
++  l2_256K_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 256K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++
+diff -upNr marss-old/config/default-machine/l3_cache.conf marss/config/default-machine/l3_cache.conf
+--- marss-old/config/default-machine/l3_cache.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/l3_cache.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,38 @@
++# vim: filetype=yaml
++
++cache:
++  l3_32M:
++    base: wb_cache
++    params:
++      SIZE: 32M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 20
++      LATENCY: 7
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l3_32M_wt:
++    base: wt_cache
++    params:
++      SIZE: 32M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 20
++      LATENCY: 7
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l3_32M_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 32M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 20
++      LATENCY: 7
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l3_24M_mesi:
++    base: l3_32M_mesi
++    params:
++      SIZE: 24M
++      
+diff -upNr marss-old/config/default-machine/moesi.conf marss/config/default-machine/moesi.conf
+--- marss-old/config/default-machine/moesi.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/moesi.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,98 @@
++# vim: filetype=yaml
++#
++# Machine configuration with MOESI caches and Directory Controller
++
++import:
++  - ooo_core.conf
++  - atom_core.conf
++
++memory:
++  global_dir_cont:
++    base: global_dir
++
++cache:
++  l1_128K_moesi:
++    base: moesi_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 1
++  l2_2M_moesi:
++    base: moesi_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  l3_8M:
++    base: wb_cache
++    params:
++      SIZE: 8M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 8
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++
++machine:
++  moesi_private_L2:
++    description: Private L2 Configuration with Bus Interconnect
++    min_contexts: 2
++    cores:
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_128K_moesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++      - type: l1_128K_moesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++      - type: l2_2M_moesi
++        name_prefix: L2_
++        insts: $NUMCORES # Private L2 config
++        option:
++            private: true
++            last_private: true
++      - type: l3_8M
++        name_prefix: L3_
++        insts: 1
++        option:
++            private: false
++    memory:
++      - type: global_dir_cont
++        name_prefix: DIR_
++        insts: 1 # Onlye one Directory controller
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        connections:
++          - core_$: I
++            L1_I_$: UPPER
++          - core_$: D
++            L1_D_$: UPPER
++          - L1_I_$: LOWER
++            L2_$: UPPER
++          - L1_D_$: LOWER
++            L2_$: UPPER2
++          - L3_0: LOWER
++            MEM_0: UPPER
++      - type: switch
++        connections:
++          - L2_*: LOWER
++            L3_0: UPPER
++            DIR_0: DIRECTORY
++
+diff -upNr marss-old/config/default-machine/ooo_core.conf marss/config/default-machine/ooo_core.conf
+--- marss-old/config/default-machine/ooo_core.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/default-machine/ooo_core.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,15 @@
++# vim: filetype=yaml
++
++# File: ooo_core.conf
++# Core - Default OOO
++core:
++  ooo:
++    base: ooo 
++    params:
++      ISSUE_WIDTH: 4
++      COMMIT_WIDTH: 4
++
++  ooo_2:
++    base: ooo # Here ooo_2 will inherit params of ooo defined above
++    params:
++      ISSUE_WIDTH: 6
+diff -upNr marss-old/config/default.conf marss/config/default.conf
+--- marss-old/config/default.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/default.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,239 +0,0 @@
+-# vim: filetype=yaml
+-#
+-# All core and cache configuration will be in a separate file and that will be
+-# included in the final config file using 'import: [filename, ...]'
+-
+-# Import files that define various core/caches
+-import:
+-  - ooo_core.conf
+-  - atom_core.conf
+-  - l1_cache.conf
+-  - l2_cache.conf
+-  - moesi.conf
+-
+-memory:
+-  dram_cont:
+-    base: simple_dram_cont
+-
+-machine:
+-  # Use run-time option '-machine [MACHINE_NAME]' to select
+-  single_core:
+-    description: Single Core configuration 
+-    min_contexts: 1
+-    max_contexts: 1
+-    cores: # The order in which core is defined is used to assign
+-           # the cores in a machine
+-      - type: ooo
+-        name_prefix: ooo_
+-        option:
+-            threads: 1
+-    caches:
+-      - type: l1_128K
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-      - type: l1_128K
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-      - type: l2_2M
+-        name_prefix: L2_
+-        insts: 1 # Shared L2 config
+-    memory:
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-        option:
+-            latency: 50 # In nano seconds
+-    interconnects:
+-      - type: p2p
+-        # '$' sign is used to map matching instances like:
+-        # core_0, L1_I_0
+-        connections:
+-            - core_$: I
+-              L1_I_$: UPPER
+-            - core_$: D
+-              L1_D_$: UPPER
+-            - L1_I_0: LOWER
+-              L2_0: UPPER
+-            - L1_D_0: LOWER
+-              L2_0: UPPER2
+-            - L2_0: LOWER
+-              MEM_0: UPPER
+-
+-  # Atom core
+-  atom_core:
+-    description: Single Atom Core configuration 
+-    min_contexts: 1
+-    max_contexts: 1
+-    cores: # The order in which core is defined is used to assign
+-           # the cores in a machine
+-      - type: atom
+-        name_prefix: atom_ 
+-        option:
+-            threads: 1
+-    caches:
+-      - type: l1_128K
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-      - type: l1_128K
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-      - type: l2_2M
+-        name_prefix: L2_
+-        insts: 1 # Shared L2 config
+-    memory:
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-        option:
+-            latency: 50 # In nano seconds
+-    interconnects:
+-      - type: p2p
+-        # '$' sign is used to map matching instances like:
+-        # core_0, L1_I_0
+-        connections:
+-            - core_$: I
+-              L1_I_$: UPPER
+-            - core_$: D
+-              L1_D_$: UPPER
+-            - L1_I_0: LOWER
+-              L2_0: UPPER
+-            - L1_D_0: LOWER
+-              L2_0: UPPER2
+-            - L2_0: LOWER
+-              MEM_0: UPPER
+-
+-  ooo_2_th:
+-    description: Out-of-order core with 2 threads
+-    min_contexts: 2
+-    cores:
+-      - type: ooo_2
+-        name_prefix: ooo_
+-        option:
+-            threads: 2
+-    caches:
+-      - type: l1_128K_mesi
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-        option:
+-            private: true
+-      - type: l1_128K_mesi
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-        option:
+-            private: true
+-      - type: l2_2M_mesi
+-        name_prefix: L2_
+-        insts: $NUMCORES # Private L2 config
+-        option:
+-            private: true
+-            last_private: true
+-    memory:
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-    interconnects:
+-      - type: p2p
+-        connections:
+-          - core_$: I
+-            L1_I_$: UPPER
+-          - core_$: D
+-            L1_D_$: UPPER
+-          - L1_I_$: LOWER
+-            L2_$: UPPER
+-          - L1_D_$: LOWER
+-            L2_$: UPPER2
+-      - type: split_bus
+-        connections:
+-          - L2_*: LOWER
+-            MEM_0: UPPER
+-
+-  shared_l2:
+-    description: Shared L2 Configuration
+-    min_contexts: 2
+-    cores: # The order in which core is defined is used to assign
+-           # the cores in a machine
+-      - type: ooo
+-        name_prefix: ooo_
+-    caches:
+-      - type: l1_128K_mesi
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-        option:
+-            private: true
+-            last_private: true
+-      - type: l1_128K_mesi
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-        option:
+-            private: true
+-            last_private: true
+-      - type: l2_2M
+-        name_prefix: L2_
+-        insts: 1 # Shared L2 config
+-    memory:
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-        option:
+-            latency: 50 # In nano seconds
+-    interconnects:
+-      - type: p2p
+-        # '$' sign is used to map matching instances like:
+-        # cpu_0, L1_I_0
+-        connections:
+-            - core_$: I
+-              L1_I_$: UPPER
+-            - core_$: D
+-              L1_D_$: UPPER
+-            - L2_0: LOWER
+-              MEM_0: UPPER
+-      - type: split_bus
+-        connections:
+-            - L1_I_*: LOWER
+-              L1_D_*: LOWER
+-              L2_0: UPPER
+-
+-  private_L2:
+-    description: Private L2 Configuration with Bus Interconnect
+-    min_contexts: 2
+-    cores:
+-      - type: ooo
+-        name_prefix: ooo_
+-    caches:
+-      - type: l1_128K_mesi
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-        option:
+-            private: true
+-      - type: l1_128K_mesi
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-        option:
+-            private: true
+-      - type: l2_2M_mesi
+-        name_prefix: L2_
+-        insts: $NUMCORES # Private L2 config
+-        option:
+-            private: true
+-            last_private: true
+-    memory:
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-        option:
+-            latency: 50 # In nano seconds
+-    interconnects:
+-      - type: p2p
+-        connections:
+-          - core_$: I
+-            L1_I_$: UPPER
+-          - core_$: D
+-            L1_D_$: UPPER
+-          - L1_I_$: LOWER
+-            L2_$: UPPER
+-          - L1_D_$: LOWER
+-            L2_$: UPPER2
+-      - type: split_bus
+-        connections:
+-          - L2_*: LOWER
+-            MEM_0: UPPER
+diff -upNr marss-old/config/l1_cache.conf marss/config/l1_cache.conf
+--- marss-old/config/l1_cache.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/l1_cache.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,35 +0,0 @@
+-# vim: filetype=yaml
+-
+-cache:
+-  l1_128K:
+-    base: wb_cache
+-    params:
+-      SIZE: 128K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 2
+-      READ_PORTS: 2
+-      WRITE_PORTS: 1
+-  l1_128K_wt:
+-    base: wt_cache
+-    params:
+-      SIZE: 128K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 2
+-      READ_PORTS: 2
+-      WRITE_PORTS: 1
+-  l1_128K_mesi:
+-    base: mesi_cache
+-    params:
+-      SIZE: 128K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 2
+-      READ_PORTS: 2
+-      WRITE_PORTS: 1
+-  # 256K L1 with same params as l1_128K
+-  l1_256K:
+-    base: l1_128K
+-    params:
+-        SIZE: 256K
+diff -upNr marss-old/config/l2_cache.conf marss/config/l2_cache.conf
+--- marss-old/config/l2_cache.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/l2_cache.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,34 +0,0 @@
+-# vim: filetype=yaml
+-
+-cache:
+-  l2_2M:
+-    base: wb_cache
+-    params:
+-      SIZE: 2M
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 5
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-  l2_2M_wt:
+-    base: wt_cache
+-    params:
+-      SIZE: 2M
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 5
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-  l2_2M_mesi:
+-    base: mesi_cache
+-    params:
+-      SIZE: 2M
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 5
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-  l2_1M_mesi:
+-    base: l2_2M_mesi
+-    params:
+-      SIZE: 1M
+diff -upNr marss-old/config/moesi.conf marss/config/moesi.conf
+--- marss-old/config/moesi.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/moesi.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,98 +0,0 @@
+-# vim: filetype=yaml
+-#
+-# Machine configuration with MOESI caches and Directory Controller
+-
+-import:
+-  - ooo_core.conf
+-  - atom_core.conf
+-
+-memory:
+-  global_dir_cont:
+-    base: global_dir
+-
+-cache:
+-  l1_128K_moesi:
+-    base: moesi_cache
+-    params:
+-      SIZE: 128K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 2
+-      READ_PORTS: 2
+-      WRITE_PORTS: 1
+-  l2_2M_moesi:
+-    base: moesi_cache
+-    params:
+-      SIZE: 2M
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 5
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-  l3_8M:
+-    base: wb_cache
+-    params:
+-      SIZE: 8M
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 8
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-
+-machine:
+-  moesi_private_L2:
+-    description: Private L2 Configuration with Bus Interconnect
+-    min_contexts: 2
+-    cores:
+-      - type: ooo
+-        name_prefix: ooo_
+-    caches:
+-      - type: l1_128K_moesi
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-        option:
+-            private: true
+-      - type: l1_128K_moesi
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-        option:
+-            private: true
+-      - type: l2_2M_moesi
+-        name_prefix: L2_
+-        insts: $NUMCORES # Private L2 config
+-        option:
+-            private: true
+-            last_private: true
+-      - type: l3_8M
+-        name_prefix: L3_
+-        insts: 1
+-        option:
+-            private: false
+-    memory:
+-      - type: global_dir_cont
+-        name_prefix: DIR_
+-        insts: 1 # Onlye one Directory controller
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-        option:
+-            latency: 50 # In nano seconds
+-    interconnects:
+-      - type: p2p
+-        connections:
+-          - core_$: I
+-            L1_I_$: UPPER
+-          - core_$: D
+-            L1_D_$: UPPER
+-          - L1_I_$: LOWER
+-            L2_$: UPPER
+-          - L1_D_$: LOWER
+-            L2_$: UPPER2
+-          - L3_0: LOWER
+-            MEM_0: UPPER
+-      - type: switch
+-        connections:
+-          - L2_*: LOWER
+-            L3_0: UPPER
+-            DIR_0: DIRECTORY
+-
+diff -upNr marss-old/config/new-machine/atom_core.conf marss/config/new-machine/atom_core.conf
+--- marss-old/config/new-machine/atom_core.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/atom_core.conf	2015-10-06 15:51:42.943323825 +0800
+@@ -0,0 +1,10 @@
++# vim: filetype=yaml
++
++
++# File: atom_core.conf
++core:
++  atom:
++    base: atom
++    params:
++      DISPATCH_Q_SIZE: 16
++      ISSUE_PER_CYCLE: 2
+diff -upNr marss-old/config/new-machine/default.conf marss/config/new-machine/default.conf
+--- marss-old/config/new-machine/default.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/default.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,252 @@
++# vim: filetype=yaml
++#
++# All core and cache configuration will be in a separate file and that will be
++# included in the final config file using 'import: [filename, ...]'
++
++# Import files that define various core/caches
++import:
++  - ooo_core.conf
++  - atom_core.conf
++  - l1_cache.conf
++  - l2_cache.conf
++  - l3_cache.conf
++  - moesi.conf
++
++memory:
++  dram_cont:
++    base: simple_dram_cont
++
++machine:
++  # Use run-time option '-machine [MACHINE_NAME]' to select
++  single_core:
++    description: Single Core configuration 
++    min_contexts: 1
++    max_contexts: 1
++    cores: # The order in which core is defined is used to assign
++           # the cores in a machine
++      - type: ooo
++        name_prefix: ooo_
++        option:
++            threads: 1
++    caches:
++      - type: l1_128K
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++      - type: l1_128K
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++      - type: l2_2M
++        name_prefix: L2_
++        insts: 1 # Shared L2 config
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        # '$' sign is used to map matching instances like:
++        # core_0, L1_I_0
++        connections:
++            - core_$: I
++              L1_I_$: UPPER
++            - core_$: D
++              L1_D_$: UPPER
++            - L1_I_0: LOWER
++              L2_0: UPPER
++            - L1_D_0: LOWER
++              L2_0: UPPER2
++            - L2_0: LOWER
++              MEM_0: UPPER
++
++  ooo_2_th:
++    description: Out-of-order core with 2 threads
++    min_contexts: 2
++    cores:
++      - type: ooo_2
++        name_prefix: ooo_
++        option:
++            threads: 2
++    caches:
++      - type: l1_128K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++      - type: l1_128K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++      - type: l2_2M_mesi
++        name_prefix: L2_
++        insts: $NUMCORES # Private L2 config
++        option:
++            private: true
++            last_private: true
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++    interconnects:
++      - type: p2p
++        connections:
++          - core_$: I
++            L1_I_$: UPPER
++          - core_$: D
++            L1_D_$: UPPER
++          - L1_I_$: LOWER
++            L2_$: UPPER
++          - L1_D_$: LOWER
++            L2_$: UPPER2
++      - type: split_bus
++        connections:
++          - L2_*: LOWER
++            MEM_0: UPPER
++
++  shared_l2:
++    description: Shared L2 Configuration
++    min_contexts: 2
++    cores: # The order in which core is defined is used to assign
++           # the cores in a machine
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_128K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++            last_private: true
++      - type: l1_128K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++            last_private: true
++      - type: l2_2M
++        name_prefix: L2_
++        insts: 1 # Shared L2 config
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        # '$' sign is used to map matching instances like:
++        # cpu_0, L1_I_0
++        connections:
++            - core_$: I
++              L1_I_$: UPPER
++            - core_$: D
++              L1_D_$: UPPER
++            - L2_0: LOWER
++              MEM_0: UPPER
++      - type: split_bus
++        connections:
++            - L1_I_*: LOWER
++              L1_D_*: LOWER
++              L2_0: UPPER
++
++  private_L2:
++    description: Private L2 Configuration with Bus Interconnect
++    min_contexts: 2
++    cores:
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_128K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++      - type: l1_128K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++      - type: l2_2M_mesi
++        name_prefix: L2_
++        insts: $NUMCORES # Private L2 config
++        option:
++            private: true
++            last_private: true
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        connections:
++          - core_$: I
++            L1_I_$: UPPER
++          - core_$: D
++            L1_D_$: UPPER
++          - L1_I_$: LOWER
++            L2_$: UPPER
++          - L1_D_$: LOWER
++            L2_$: UPPER2
++      - type: split_bus
++        connections:
++          - L2_*: LOWER
++            MEM_0: UPPER
++
++  shared_l3:
++    description: Shared L3 Configuration
++    min_contexts: 2
++    cores: # The order in which core is defined is used to assign
++           # the cores in a machine
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_32K_mesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++            last_private: false
++      - type: l1_32K_mesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++            last_private: false
++      - type: l2_256K_mesi
++        name_prefix: L2_
++        insts: $NUMCORES # Per core L2 cache
++        option:
++            private: true
++            last_private: true
++      - type: l3_32M
++        name_prefix: L3_
++        insts: 1 # Shared L3 cache
++    memory:
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++        option:
++            latency: 50 # In nano seconds
++    interconnects:
++      - type: p2p
++        # '$' sign is used to map matching instances like:
++        # cpu_0, L1_I_0
++        connections:
++            - core_$: I
++              L1_I_$: UPPER
++            - core_$: D
++              L1_D_$: UPPER
++            - L1_I_$: LOWER
++              L2_$: UPPER
++            - L1_D_$: LOWER
++              L2_$: UPPER2
++            - L3_0: LOWER
++              MEM_0: UPPER
++      - type: split_bus
++        connections:
++            - L2_*: LOWER
++              L3_0: UPPER
+diff -upNr marss-old/config/new-machine/l1_cache.conf marss/config/new-machine/l1_cache.conf
+--- marss-old/config/new-machine/l1_cache.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/l1_cache.conf	2015-10-06 15:51:42.943323825 +0800
+@@ -0,0 +1,58 @@
++# vim: filetype=yaml
++
++cache:
++  l1_128K:
++    base: wb_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  l1_128K_wt:
++    base: wt_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  l1_128K_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  l1_128K_moesi:
++    base: moesi_cache
++    params:
++      SIZE: 128K
++      LINE_SIZE: 64
++      ASSOC: 8
++      LATENCY: 2
++      TAG_LATENCY: 2
++      READ_PORTS: 2
++      WRITE_PORTS: 2
++  # 256K L1 with same params as l1_128K
++  l1_256K:
++    base: l1_128K
++    params:
++        SIZE: 256K
++  l1_32K_mesi:
++    base: l1_128K_mesi
++    params:
++        SIZE: 32K
++        ASSOC: 2
++  l1_32K_moesi:
++    base: l1_128K_moesi
++    params:
++        SIZE: 32K
++        ASSOC: 2
+diff -upNr marss-old/config/new-machine/l2_cache.conf marss/config/new-machine/l2_cache.conf
+--- marss-old/config/new-machine/l2_cache.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/l2_cache.conf	2015-10-06 15:51:42.943323825 +0800
+@@ -0,0 +1,56 @@
++# vim: filetype=yaml
++
++cache:
++  l2_2M:
++    base: wb_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_2M_wt:
++    base: wt_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_2M_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_2M_moesi:
++    base: moesi_cache
++    params:
++      SIZE: 2M
++      LINE_SIZE: 64
++      ASSOC: 8
++      LATENCY: 5
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l2_1M_moesi:
++    base: l2_2M_moesi
++    params:
++      SIZE: 1M
++  l2_512K_moesi:
++    base: l2_2M_moesi
++    params:
++      SIZE: 512K
++      ASSOC: 4
++  l2_256K_mesi:
++    base: l2_2M_mesi
++    params:
++      SIZE: 256K
+diff -upNr marss-old/config/new-machine/l3_cache.conf marss/config/new-machine/l3_cache.conf
+--- marss-old/config/new-machine/l3_cache.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/l3_cache.conf	2015-10-06 15:51:42.944323819 +0800
+@@ -0,0 +1,43 @@
++# vim: filetype=yaml
++
++cache:
++  l3_32M:
++    base: wb_cache
++    params:
++      SIZE: 32M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 20
++      LATENCY: 7
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l3_32M_wt:
++    base: wt_cache
++    params:
++      SIZE: 32M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 20
++      LATENCY: 7
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l3_32M_mesi:
++    base: mesi_cache
++    params:
++      SIZE: 32M
++      LINE_SIZE: 64 # bytes
++      ASSOC: 20
++      LATENCY: 7
++      TAG_LATENCY: 2
++      READ_PORTS: 1
++      WRITE_PORTS: 1
++  l3_1M:
++    base: l3_32M
++    params:
++      SIZE: 1M
++      ASSOC: 8
++  l3_2M:
++    base: l3_32M
++    params:
++      SIZE: 2M
++      ASSOC: 16
+diff -upNr marss-old/config/new-machine/moesi.conf marss/config/new-machine/moesi.conf
+--- marss-old/config/new-machine/moesi.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/moesi.conf	2015-10-06 16:33:56.480796138 +0800
+@@ -0,0 +1,70 @@
++# vim: filetype=yaml
++# Machine configuration with MOESI caches and Directory Controller
++import:
++  - ooo_core.conf
++  - atom_core.conf
++  - l1_cache.conf
++  - l2_cache.conf
++  - l3_cache.conf
++memory:
++  global_dir_cont:
++    base: global_dir
++  nvmain_cont:
++    base: simple_nvm_cont
++  dram_cont:
++    base: simple_dram_cont
++machine:
++  nvmain_test_shared_l3:
++    description: public shared l3 cache with nvm memory
++    min_contexts: 2
++    cores:
++      - type: ooo
++        name_prefix: ooo_
++    caches:
++      - type: l1_32K_moesi
++        name_prefix: L1_I_
++        insts: $NUMCORES # Per core L1-I cache
++        option:
++            private: true
++      - type: l1_32K_moesi
++        name_prefix: L1_D_
++        insts: $NUMCORES # Per core L1-D cache
++        option:
++            private: true
++      - type: l2_512K_moesi
++        name_prefix: L2_
++        insts: $NUMCORES # Private L2 config
++        option:
++            private: true
++            last_private: true
++      - type: l3_2M
++        name_prefix: L3_
++        insts: 1
++        option:
++            private: false
++    memory:
++      - type: global_dir_cont
++        name_prefix: DIR_
++        insts: 1 # Onlye one Directory controller
++      - type: dram_cont
++        name_prefix: MEM_
++        insts: 1 # Single DRAM controller
++    interconnects:
++      - type: p2p
++        connections:
++          - core_$: I
++            L1_I_$: UPPER
++          - core_$: D
++            L1_D_$: UPPER
++          - L1_I_$: LOWER
++            L2_$: UPPER
++          - L1_D_$: LOWER
++            L2_$: UPPER2
++          - L3_0: LOWER
++            MEM_0: UPPER
++      - type: switch
++        connections:
++          - L2_*: LOWER
++            L3_0: UPPER
++            DIR_0: DIRECTORY
++
+diff -upNr marss-old/config/new-machine/ooo_core.conf marss/config/new-machine/ooo_core.conf
+--- marss-old/config/new-machine/ooo_core.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/new-machine/ooo_core.conf	2015-10-06 15:51:42.943323825 +0800
+@@ -0,0 +1,15 @@
++# vim: filetype=yaml
++
++# File: ooo_core.conf
++# Core - Default OOO
++core:
++  ooo:
++    base: ooo 
++    params:
++      ISSUE_WIDTH: 4
++      COMMIT_WIDTH: 4
++
++  ooo_2:
++    base: ooo # Here ooo_2 will inherit params of ooo defined above
++    params:
++      ISSUE_WIDTH: 6
+diff -upNr marss-old/config/ooo_core.conf marss/config/ooo_core.conf
+--- marss-old/config/ooo_core.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/ooo_core.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,15 +0,0 @@
+-# vim: filetype=yaml
+-
+-# File: ooo_core.conf
+-# Core - Default OOO
+-core:
+-  ooo:
+-    base: ooo 
+-    params:
+-      ISSUE_WIDTH: 4
+-      COMMIT_WIDTH: 4
+-
+-  ooo_2:
+-    base: ooo # Here ooo_2 will inherit params of ooo defined above
+-    params:
+-      ISSUE_WIDTH: 6
+diff -upNr marss-old/config/sim-config-dir/sim-config.conf marss/config/sim-config-dir/sim-config.conf
+--- marss-old/config/sim-config-dir/sim-config.conf	1970-01-01 08:00:00.000000000 +0800
++++ marss/config/sim-config-dir/sim-config.conf	2015-10-06 15:51:42.943323825 +0800
+@@ -0,0 +1,5 @@
++-machine nvmain_test_shared_l3 
++-logfile /home/liao/chenyujie/hybrid-main/bk-marss/results/logs/test-cyj.log
++-loglevel 10
++-nvmain_config_path /home/liao/chenyujie/hybrid-main/bk-marss/nvmain/Config/Hybrid_Migration_example.config
++-stats results/stats/test-cyj.stats
+diff -upNr marss-old/config/xeon.conf marss/config/xeon.conf
+--- marss-old/config/xeon.conf	2015-10-06 16:40:14.811295737 +0800
++++ marss/config/xeon.conf	1970-01-01 08:00:00.000000000 +0800
+@@ -1,117 +0,0 @@
+-# vim: filetype=yaml
+-#
+-
+-import:
+-  - l1_cache.conf
+-  - l2_cache.conf
+-  - ooo_core.conf
+-
+-core:
+-  xeon:
+-    base: ooo 
+-    params:
+-      ISSUE_WIDTH: 5
+-      COMMIT_WIDTH: 4
+-      ROB_SIZE: 128
+-      ISSUE_Q_SIZE: 36
+-      ALU_FU_COUNT: 6
+-      FPU_FU_COUNT: 6
+-      LOAD_FU_COUNT: 1
+-      STORE_FU_COUNT: 1
+-      LOAD_Q_SIZE: 48
+-      STORE_Q_SIZE: 32
+-
+-cache:
+-  l1_32K_xeon:
+-    base: wb_cache
+-    params:
+-      SIZE: 32K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 4
+-      READ_PORTS: 2
+-      WRITE_PORTS: 1
+-  l1_32K_I_xeon:
+-    base: wb_cache
+-    params:
+-      SIZE: 32K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 4
+-      LATENCY: 2
+-      READ_PORTS: 2
+-      WRITE_PORTS: 1
+-  l2_256K_xeon:
+-    base: wb_cache
+-    params:
+-      SIZE: 256K
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 8
+-      LATENCY: 6
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-  l3_12M_xeon_mesi:
+-    base: mesi_cache
+-    params:
+-      SIZE: 12M
+-      LINE_SIZE: 64 # bytes
+-      ASSOC: 16
+-      LATENCY: 27
+-      READ_PORTS: 2
+-      WRITE_PORTS: 2
+-
+-machine:
+-  xeon_single_core:
+-    description: Single Core Xeon configuration
+-    min_contexts: 1
+-    max_contexts: 1
+-    cores: # The order in which core is defined is used to assign
+-           # the cores in a machine
+-      - type: xeon
+-        name_prefix: xeon_
+-        option:
+-            threads: 1
+-    caches:
+-      - type: l1_32K_I_xeon
+-        name_prefix: L1_I_
+-        insts: $NUMCORES # Per core L1-I cache
+-        option:
+-          private: true
+-      - type: l1_32K_xeon
+-        name_prefix: L1_D_
+-        insts: $NUMCORES # Per core L1-D cache
+-        option:
+-          private: true
+-      - type: l2_256K_xeon
+-        name_prefix: L2_
+-        insts: 1 # Shared L2 config
+-        option:
+-          private: true
+-          last_private: true
+-      - type: l3_12M_xeon_mesi
+-        name_prefix: L3_
+-        insts: 1
+-    memory:
+-      - type: dram_cont
+-        name_prefix: MEM_
+-        insts: 1 # Single DRAM controller
+-        option:
+-            latency: 54 # In nano seconds
+-    interconnects:
+-      - type: p2p
+-        # '$' sign is used to map matching instances like:
+-        # core_0, L1_I_0
+-        connections:
+-            - core_$: I
+-              L1_I_$: UPPER
+-            - core_$: D
+-              L1_D_$: UPPER
+-            - L1_I_0: LOWER
+-              L2_0: UPPER
+-            - L1_D_0: LOWER
+-              L2_0: UPPER2
+-            - L3_0: LOWER
+-              MEM_0: UPPER
+-      - type: split_bus
+-        connections:
+-            - L2_0: LOWER
+-              L3_0: UPPER
