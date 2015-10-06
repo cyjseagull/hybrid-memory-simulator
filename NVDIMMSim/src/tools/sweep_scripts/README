@@ -1,0 +1,4 @@
+This directory contains a set of scripts that were used for performing channel sweeps 
+with perfect prefetching using trace-based sim mode. These can be adapted for any experiment
+and is just here to provide an example of working scripts to run large series of experiments. 
+The ini directory is included to show how to copy data into the hybridsim repo.

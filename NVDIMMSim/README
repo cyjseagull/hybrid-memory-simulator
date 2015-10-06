@@ -1,0 +1,19 @@
+FlashDIMMSim: a reasonably accurate flash DIMM simulator.
+
+Acknowledgements:
+	General design (anything not flash specific) borrows heavily from DRAMSim Copyright (C) 2008-2009 Elliot Cooper-Balis and Paul Rosenfeld (overall structure is very similar and some code snippets and classes are copy+paste).
+
+Getting started:
+	To run TraceBasedSim.cpp (doesn't actually run traces yet):
+
+		cd src
+		make
+		./FDSim
+
+	To create a shared library:
+
+		cd src
+		make libfdsim.so
+
+Questions?
+	Contact me at <slunk at umd dot edu>

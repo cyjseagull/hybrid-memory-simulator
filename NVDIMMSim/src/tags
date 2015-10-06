@@ -1,0 +1,1246 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ASYNC_READ_I	Init.cpp	/^    double ASYNC_READ_I;$/;"	m	namespace:NVDSim	file:
+AccessMapEntry	Logger.h	/^		AccessMapEntry()$/;"	f	class:NVDSim::Logger::AccessMapEntry
+AccessMapEntry	Logger.h	/^	class AccessMapEntry$/;"	c	class:NVDSim::Logger
+BITS_PER_KB	FlashConfiguration.h	105;"	d
+BLOCKS_PER_PLANE	Init.cpp	/^    uint64_t BLOCKS_PER_PLANE;$/;"	m	namespace:NVDSim	file:
+BLOCKS_PER_PLANE	tools/perfect_scheduling/schedule_analysis.py	/^BLOCKS_PER_PLANE = 32$/;"	v
+BLOCKS_PER_PLANE	tools/perfect_scheduling/stream_analysis.py	/^BLOCKS_PER_PLANE = 32$/;"	v
+BLOCK_ERASE	FlashTransaction.h	/^		BLOCK_ERASE,$/;"	e	enum:NVDSim::TransactionType
+BLOCK_SIZE	FlashConfiguration.h	184;"	d
+BOOL	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	e	enum:NVDSim::_variableType
+BUFFER	Channel.h	/^		BUFFER$/;"	e	enum:NVDSim::SenderType
+BUFFERED	Init.cpp	/^    bool BUFFERED;$/;"	m	namespace:NVDSim	file:
+BUFFER_LOOKUP_CYCLES	FlashConfiguration.h	205;"	d
+BUFFER_LOOKUP_TIME	Init.cpp	/^    uint64_t BUFFER_LOOKUP_TIME;$/;"	m	namespace:NVDSim	file:
+Block	Block.cpp	/^Block::Block(){$/;"	f	class:Block
+Block	Block.cpp	/^Block::Block(uint block){$/;"	f	class:Block
+Block	Block.h	/^	class Block{$/;"	c	namespace:NVDSim
+Buffer	Buffer.cpp	/^Buffer::Buffer(uint64_t i){$/;"	f	class:Buffer
+Buffer	Buffer.h	/^    class Buffer : public SimObj{$/;"	c	namespace:NVDSim
+BufferPacket	Buffer.h	/^		BufferPacket(){$/;"	f	class:NVDSim::Buffer::BufferPacket
+BufferPacket	Buffer.h	/^	    class BufferPacket{$/;"	c	class:NVDSim::Buffer
+CAPACITY	tools/perfect_scheduling/schedule_analysis.py	/^CAPACITY = NUM_PACKAGES * DIES_PER_PACKAGE * PLANES_PER_DIE * BLOCKS_PER_PLANE * PAGES_PER_BLOCK$/;"	v
+CHANNEL_CYCLE	Init.cpp	/^    float CHANNEL_CYCLE; \/\/default channel, becomes up channel when down channel is enabled$/;"	m	namespace:NVDSim	file:
+CHANNEL_CYCLE	tools/perfect_scheduling/schedule_analysis.py	/^CHANNEL_CYCLE = 0.15$/;"	v
+CHANNEL_WIDTH	Init.cpp	/^    uint64_t CHANNEL_WIDTH;$/;"	m	namespace:NVDSim	file:
+CHANNEL_WIDTH	tools/perfect_scheduling/schedule_analysis.py	/^CHANNEL_WIDTH = 8$/;"	v
+CLOCK_DELAY	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^uint64_t CLOCK_DELAY = 1000000;$/;"	v
+CLOCK_DELAY	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^uint64_t CLOCK_DELAY = 1000000;$/;"	v
+CLOCK_DELAY	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^uint64_t CLOCK_DELAY = 1000000;$/;"	v
+CLOCK_DELAY	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^uint64_t CLOCK_DELAY = 1000000;$/;"	v
+COMMAND_CHANNEL_WIDTH	Init.cpp	/^    uint64_t COMMAND_CHANNEL_WIDTH;$/;"	m	namespace:NVDSim	file:
+COMMAND_LENGTH	Init.cpp	/^    uint64_t COMMAND_LENGTH;$/;"	m	namespace:NVDSim	file:
+COMMAND_LENGTH	tools/perfect_scheduling/schedule_analysis.py	/^COMMAND_LENGTH = 56$/;"	v
+CONCURRENCY	tools/perfect_scheduling/schedule_analysis.py	/^CONCURRENCY = NUM_PACKAGES * DIES_PER_PACKAGE * PLANES_PER_DIE * BLOCKS_PER_PLANE$/;"	v
+CONTROLLER	Channel.h	/^		CONTROLLER,$/;"	e	enum:NVDSim::SenderType
+CRIT_LINE_FIRST	Init.cpp	/^    bool CRIT_LINE_FIRST;$/;"	m	namespace:NVDSim	file:
+CTRL_IDLE_WRITE	Init.cpp	/^    bool CTRL_IDLE_WRITE;$/;"	m	namespace:NVDSim	file:
+CTRL_READ_QUEUE_LENGTH	Init.cpp	/^    uint64_t CTRL_READ_QUEUE_LENGTH;$/;"	m	namespace:NVDSim	file:
+CTRL_SCHEDULE	Init.cpp	/^    bool CTRL_SCHEDULE;$/;"	m	namespace:NVDSim	file:
+CTRL_WRITE_ON_QUEUE_SIZE	Init.cpp	/^    bool CTRL_WRITE_ON_QUEUE_SIZE;$/;"	m	namespace:NVDSim	file:
+CTRL_WRITE_QUEUE_LENGTH	Init.cpp	/^    uint64_t CTRL_WRITE_QUEUE_LENGTH;$/;"	m	namespace:NVDSim	file:
+CTRL_WRITE_QUEUE_LIMIT	Init.cpp	/^    uint64_t CTRL_WRITE_QUEUE_LIMIT;$/;"	m	namespace:NVDSim	file:
+CUT_THROUGH	Init.cpp	/^    bool CUT_THROUGH;$/;"	m	namespace:NVDSim	file:
+CXXFLAGS	Makefile	/^CXXFLAGS = -pg$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS= -O0 -g -DDEBUG_BUILD -DNO_STORAGE -Wall -pedantic -std=c++0x$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS= -O0 -g -DNO_STORAGE$/;"	m
+CYCLES_PER_TRANSFER	tools/perfect_scheduling/schedule_analysis.py	/^CYCLES_PER_TRANSFER = NV_PAGE_SIZE \/ CHANNEL_WIDTH$/;"	v
+CYCLE_TIME	Init.cpp	/^    float CYCLE_TIME;$/;"	m	namespace:NVDSim	file:
+CYCLE_TIME	tools/perfect_scheduling/schedule_analysis.py	/^CYCLE_TIME = 1.51$/;"	v
+Callback	Callbacks.h	/^        Callback( ConsumerT* const object, PtrMember member) :$/;"	f	class:NVDSim::Callback
+Callback	Callbacks.h	/^Callback( const Callback<ConsumerT,ReturnT,Param1T,Param2T,Param3T,Param4T>& e ) :$/;"	f	class:NVDSim::Callback
+Callback	Callbacks.h	/^class Callback: public CallbackBase<ReturnT,Param1T,Param2T,Param3T,Param4T>$/;"	c	namespace:NVDSim
+CallbackBase	Callbacks.h	/^class CallbackBase$/;"	c	namespace:NVDSim
+Callback_t	NVDIMM.h	/^    typedef CallbackBase<void,uint64_t,uint64_t,uint64_t,bool> Callback_t;$/;"	t	namespace:NVDSim
+Callback_t	NVDIMMSim.h	/^    typedef CallbackBase<void,uint64_t,uint64_t,uint64_t,bool> Callback_t;$/;"	t	namespace:NVDSim
+Callback_v	NVDIMM.h	/^    typedef CallbackBase<void,uint64_t,vector<vector<double>>,uint64_t,bool> Callback_v;$/;"	t	namespace:NVDSim
+Callback_v	NVDIMMSim.h	/^    typedef CallbackBase<void,uint64_t,std::vector<std::vector<double> >,uint64_t,bool> Callback_v;$/;"	t	namespace:NVDSim
+Channel	Channel.cpp	/^Channel::Channel(void){$/;"	f	class:Channel
+Channel	Channel.h	/^	class Channel{$/;"	c	namespace:NVDSim
+ChannelPacket	ChannelPacket.cpp	/^ChannelPacket::ChannelPacket() {}$/;"	f	class:ChannelPacket
+ChannelPacket	ChannelPacket.cpp	/^ChannelPacket::ChannelPacket(ChannelPacketType packtype, uint64_t virtualAddr, uint64_t physicalAddr, uint64_t page_num, $/;"	f	class:ChannelPacket
+ChannelPacket	ChannelPacket.h	/^	class ChannelPacket$/;"	c	namespace:NVDSim
+ChannelPacketType	ChannelPacket.h	/^	enum ChannelPacketType$/;"	g	namespace:NVDSim
+CheckIfAllSet	Init.cpp	/^    bool Init::CheckIfAllSet() {$/;"	f	class:NVDSim::Init
+ConfigMap	Init.h	/^	} ConfigMap;$/;"	t	namespace:NVDSim	typeref:struct:NVDSim::_configMap
+Controller	Controller.cpp	/^Controller::Controller(NVDIMM* parent, Logger* l){$/;"	f	class:Controller
+Controller	Controller.h	/^	class Controller : public SimObj{$/;"	c	namespace:NVDSim
+CriticalLineDone	NVDIMM.h	/^			Callback_t* CriticalLineDone;$/;"	m	class:NVDSim::NVDIMM
+DATA	ChannelPacket.h	/^		DATA,$/;"	e	enum:NVDSim::ChannelPacketType
+DATA_READ	FlashTransaction.h	/^		DATA_READ, $/;"	e	enum:NVDSim::TransactionType
+DATA_WRITE	FlashTransaction.h	/^		DATA_WRITE,$/;"	e	enum:NVDSim::TransactionType
+DEBUG	FlashConfiguration.h	64;"	d
+DEBUG	FlashConfiguration.h	71;"	d
+DEBUG	FlashConfiguration.h	86;"	d
+DEBUG	FlashConfiguration.h	88;"	d
+DEBUGN	FlashConfiguration.h	67;"	d
+DEBUGN	FlashConfiguration.h	74;"	d
+DEBUGN	FlashConfiguration.h	87;"	d
+DEBUGN	FlashConfiguration.h	89;"	d
+DEBUG_INIT	Init.cpp	/^    bool DEBUG_INIT= 0;$/;"	m	namespace:NVDSim	file:
+DEFINE_BOOL_PARAM	Init.h	50;"	d
+DEFINE_DOUBLE_PARAM	Init.h	49;"	d
+DEFINE_FLOAT_PARAM	Init.h	48;"	d
+DEFINE_STRING_PARAM	Init.h	47;"	d
+DEFINE_UINT64_PARAM	Init.h	51;"	d
+DEFINE_UINT_PARAM	Init.h	46;"	d
+DELAY_WRITE	Init.cpp	/^    bool DELAY_WRITE;$/;"	m	namespace:NVDSim	file:
+DELAY_WRITE_CYCLES	Init.cpp	/^    uint64_t DELAY_WRITE_CYCLES;$/;"	m	namespace:NVDSim	file:
+DEVICE_CYCLE	Init.cpp	/^    float DEVICE_CYCLE;$/;"	m	namespace:NVDSim	file:
+DEVICE_CYCLE	tools/perfect_scheduling/schedule_analysis.py	/^DEVICE_CYCLE = 2.5$/;"	v
+DEVICE_TYPE	Init.cpp	/^    std::string DEVICE_TYPE;$/;"	m	namespace:NVDSim	file:
+DEVICE_WIDTH	Init.cpp	/^    uint64_t DEVICE_WIDTH;$/;"	m	namespace:NVDSim	file:
+DEVICE_WIDTH	tools/perfect_scheduling/schedule_analysis.py	/^DEVICE_WIDTH = 8$/;"	v
+DEV_PARAM	Init.h	/^	typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	e	enum:NVDSim::_paramType
+DIES_PER_PACKAGE	Init.cpp	/^    uint64_t DIES_PER_PACKAGE;$/;"	m	namespace:NVDSim	file:
+DIES_PER_PACKAGE	tools/perfect_scheduling/schedule_analysis.py	/^DIES_PER_PACKAGE = 4$/;"	v
+DIES_PER_PACKAGE	tools/perfect_scheduling/stream_analysis.py	/^DIES_PER_PACKAGE = 2$/;"	v
+DIE_SIZE	FlashConfiguration.h	186;"	d
+DISK_READ	Init.cpp	/^    bool DISK_READ;$/;"	m	namespace:NVDSim	file:
+DOUBLE	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	e	enum:NVDSim::_variableType
+DRAM_WRITE_CYCLES	tools/perfect_scheduling/schedule_analysis.py	/^DRAM_WRITE_CYCLES = 90$/;"	v
+Die	Die.cpp	/^Die::Die(NVDIMM *parent, Logger *l, uint64_t idNum){$/;"	f	class:Die
+Die	Die.h	/^	class Die : public SimObj{$/;"	c	namespace:NVDSim
+EMPTY	FlashTransaction.h	/^		EMPTY$/;"	e	enum:NVDSim::TransactionType
+ENABLE_COMMAND_CHANNEL	Init.cpp	/^    bool ENABLE_COMMAND_CHANNEL;$/;"	m	namespace:NVDSim	file:
+ENABLE_NV_RESTORE	Init.cpp	/^    bool ENABLE_NV_RESTORE;$/;"	m	namespace:NVDSim	file:
+ENABLE_NV_SAVE	Init.cpp	/^    bool ENABLE_NV_SAVE;$/;"	m	namespace:NVDSim	file:
+ENABLE_REQUEST_CHANNEL	Init.cpp	/^    bool ENABLE_REQUEST_CHANNEL;$/;"	m	namespace:NVDSim	file:
+ENABLE_WRITE_SCRIPT	Init.cpp	/^    bool ENABLE_WRITE_SCRIPT;$/;"	m	namespace:NVDSim	file:
+EPOCH	tools/perfect_scheduling/schedule_analysis.py	/^		EPOCH = (state_cycle-reset_value) % EPOCH_SIZE	$/;"	v
+EPOCH	tools/perfect_scheduling/schedule_analysis.py	/^	EPOCH = 0;$/;"	v
+EPOCH_CYCLES	Init.cpp	/^    uint64_t EPOCH_CYCLES;$/;"	m	namespace:NVDSim	file:
+EPOCH_SIZE	tools/perfect_scheduling/schedule_analysis.py	/^	EPOCH_SIZE = 200000000;$/;"	v
+ERASE	ChannelPacket.h	/^		ERASE,$/;"	e	enum:NVDSim::ChannelPacketType
+ERASE_CYCLES	FlashConfiguration.h	200;"	d
+ERASE_CYCLES	tools/perfect_scheduling/schedule_analysis.py	/^ERASE_CYCLES = 1000700$/;"	v
+ERASE_I	Init.cpp	/^    double ERASE_I;$/;"	m	namespace:NVDSim	file:
+ERASE_TIME	Init.cpp	/^    uint64_t ERASE_TIME;$/;"	m	namespace:NVDSim	file:
+ERASE_TIME	tools/perfect_scheduling/schedule_analysis.py	/^ERASE_TIME = (ERASE_CYCLES + COMMAND_LENGTH) * CYCLE_TIME$/;"	v
+ERASING	Logger.h	/^	ERASING$/;"	e	enum:NVDSim::PlaneStateType
+ERROR	FlashConfiguration.h	55;"	d
+EXE_NAME	Makefile	/^EXE_NAME=NVDSim$/;"	m
+EpochEntry	GCLogger.h	/^	    EpochEntry()$/;"	f	class:NVDSim::GCLogger::EpochEntry
+EpochEntry	GCLogger.h	/^	class EpochEntry$/;"	c	class:NVDSim::GCLogger
+EpochEntry	Logger.h	/^	    EpochEntry()$/;"	f	class:NVDSim::Logger::EpochEntry
+EpochEntry	Logger.h	/^	class EpochEntry$/;"	c	class:NVDSim::Logger
+EpochEntry	P8PGCLogger.h	/^	    EpochEntry()$/;"	f	class:NVDSim::P8PGCLogger::EpochEntry
+EpochEntry	P8PGCLogger.h	/^	class EpochEntry$/;"	c	class:NVDSim::P8PGCLogger
+EpochEntry	P8PLogger.h	/^	    EpochEntry()$/;"	f	class:NVDSim::P8PLogger::EpochEntry
+EpochEntry	P8PLogger.h	/^	class EpochEntry$/;"	c	class:NVDSim::P8PLogger
+FAST_WRITE	ChannelPacket.h	/^		FAST_WRITE$/;"	e	enum:NVDSim::ChannelPacketType
+FLOAT	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	e	enum:NVDSim::_variableType
+FORCE_GC_THRESHOLD	Init.cpp	/^    float FORCE_GC_THRESHOLD;$/;"	m	namespace:NVDSim	file:
+FRONT_BUFFER	Init.cpp	/^    bool FRONT_BUFFER;$/;"	m	namespace:NVDSim	file:
+FTL_READ_QUEUE_LENGTH	Init.cpp	/^    uint64_t FTL_READ_QUEUE_LENGTH;$/;"	m	namespace:NVDSim	file:
+FTL_WRITE_QUEUE_LENGTH	Init.cpp	/^    uint64_t FTL_WRITE_QUEUE_LENGTH;$/;"	m	namespace:NVDSim	file:
+FlashTransaction	FlashTransaction.cpp	/^FlashTransaction::FlashTransaction()$/;"	f	class:FlashTransaction
+FlashTransaction	FlashTransaction.cpp	/^FlashTransaction::FlashTransaction(TransactionType transType, uint64_t addr, void *dat)$/;"	f	class:FlashTransaction
+FlashTransaction	FlashTransaction.h	/^	class FlashTransaction$/;"	c	namespace:NVDSim
+FrontBuffer	FrontBuffer.cpp	/^FrontBuffer::FrontBuffer(NVDIMM* parent, Ftl* f){$/;"	f	class:FrontBuffer
+FrontBuffer	FrontBuffer.h	/^	class FrontBuffer : public SimObj{$/;"	c	namespace:NVDSim
+Ftl	Ftl.cpp	/^Ftl::Ftl(Controller *c, Logger *l, NVDIMM *p){$/;"	f	class:Ftl
+Ftl	Ftl.h	/^	class Ftl : public SimObj{$/;"	c	namespace:NVDSim
+GARBAGE_COLLECT	Init.cpp	/^    bool GARBAGE_COLLECT;$/;"	m	namespace:NVDSim	file:
+GCFtl	GCFtl.cpp	/^GCFtl::GCFtl(Controller *c, Logger *l, NVDIMM *p) $/;"	f	class:GCFtl
+GCFtl	GCFtl.h	/^	class GCFtl : public Ftl{$/;"	c	namespace:NVDSim
+GCLogger	GCLogger.cpp	/^GCLogger::GCLogger()$/;"	f	class:GCLogger
+GCLogger	GCLogger.h	/^    class GCLogger: public Logger$/;"	c	namespace:NVDSim
+GCReadDone	Ftl.cpp	/^void Ftl::GCReadDone(uint64_t vAddr)$/;"	f	class:Ftl
+GCReadDone	GCFtl.cpp	/^void GCFtl::GCReadDone(uint64_t vAddr)$/;"	f	class:GCFtl
+GCReadDone	NVDIMM.cpp	/^    void NVDIMM::GCReadDone(uint64_t vAddr)$/;"	f	class:NVDSim::NVDIMM
+GC_DATA	FlashTransaction.h	/^		GC_DATA,$/;"	e	enum:NVDSim::TransactionType
+GC_DATA_READ	FlashTransaction.h	/^		GC_DATA_READ,$/;"	e	enum:NVDSim::TransactionType
+GC_DATA_WRITE	FlashTransaction.h	/^		GC_DATA_WRITE,$/;"	e	enum:NVDSim::TransactionType
+GC_READ	ChannelPacket.h	/^		GC_READ,$/;"	e	enum:NVDSim::ChannelPacketType
+GC_READING	Logger.h	/^	GC_READING,$/;"	e	enum:NVDSim::PlaneStateType
+GC_WRITE	ChannelPacket.h	/^		GC_WRITE,$/;"	e	enum:NVDSim::ChannelPacketType
+GC_WRITING	Logger.h	/^	GC_WRITING,$/;"	e	enum:NVDSim::PlaneStateType
+IDLE	Logger.h	/^	IDLE,$/;"	e	enum:NVDSim::PlaneStateType
+IDLE_GC_THRESHOLD	Init.cpp	/^    float IDLE_GC_THRESHOLD;$/;"	m	namespace:NVDSim	file:
+IDLE_WRITE	Init.cpp	/^    bool IDLE_WRITE;$/;"	m	namespace:NVDSim	file:
+IN_BUFFER_SIZE	Init.cpp	/^    uint64_t IN_BUFFER_SIZE;$/;"	m	namespace:NVDSim	file:
+IN_LEAK_I	Init.cpp	/^    double IN_LEAK_I;$/;"	m	namespace:NVDSim	file:
+Init	Init.h	/^	class Init $/;"	c	namespace:NVDSim
+LIB_NAME	Makefile	/^LIB_NAME=libnvdsim.so$/;"	m
+LIB_NAME_MACOS	Makefile	/^LIB_NAME_MACOS=libnvdsim.dylib$/;"	m
+LOGGING	Init.cpp	/^    bool LOGGING;$/;"	m	namespace:NVDSim	file:
+LOG_DIR	Init.cpp	/^    std::string LOG_DIR;$/;"	m	namespace:NVDSim	file:
+LOOKUP_CYCLES	FlashConfiguration.h	203;"	d
+LOOKUP_TIME	Init.cpp	/^    uint64_t LOOKUP_TIME;$/;"	m	namespace:NVDSim	file:
+Logger	Logger.cpp	/^Logger::Logger()$/;"	f	class:Logger
+Logger	Logger.h	/^    class Logger: public SimObj$/;"	c	namespace:NVDSim
+MAX_PENDING	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^const uint64_t MAX_PENDING = 3000;$/;"	v
+MAX_PENDING	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^const uint64_t MAX_PENDING = 3000;$/;"	v
+MAX_PENDING	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^const uint64_t MAX_PENDING = 3000;$/;"	v
+MAX_PENDING	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^const uint64_t MAX_PENDING = 3000;$/;"	v
+MIN_PENDING	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^const uint64_t MIN_PENDING = 2500;$/;"	v
+MIN_PENDING	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^const uint64_t MIN_PENDING = 2500;$/;"	v
+MIN_PENDING	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^const uint64_t MIN_PENDING = 2500;$/;"	v
+MIN_PENDING	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^const uint64_t MIN_PENDING = 2500;$/;"	v
+NUM_PACKAGES	Init.cpp	/^    uint64_t NUM_PACKAGES;$/;"	m	namespace:NVDSim	file:
+NUM_PACKAGES	tools/perfect_scheduling/schedule_analysis.py	/^NUM_PACKAGES = 32$/;"	v
+NUM_PACKAGES	tools/perfect_scheduling/stream_analysis.py	/^NUM_PACKAGES = 32$/;"	v
+NUM_WRITES	TraceBasedSim.cpp	50;"	d	file:
+NVBLOCK_H	Block.h	35;"	d
+NVBUFFER_H	Buffer.h	35;"	d
+NVCHANNELPACKET_H	ChannelPacket.h	35;"	d
+NVCHANNEL_H	Channel.h	35;"	d
+NVCONTROLLER_H	Controller.h	35;"	d
+NVDIE_H	Die.h	35;"	d
+NVDIMM	NVDIMM.cpp	/^    NVDIMM::NVDIMM(uint64_t id, string deviceFile, string sysFile, string pwd, string trc) :$/;"	f	class:NVDSim::NVDIMM
+NVDIMM	NVDIMM.h	/^	class NVDIMM : public SimObj{$/;"	c	namespace:NVDSim
+NVDIMM	NVDIMMSim.h	/^    class NVDIMM$/;"	c	namespace:NVDSim
+NVDIMMSIM_H	NVDIMMSim.h	2;"	d
+NVDIMM_H	NVDIMM.h	35;"	d
+NVDIMM_UTIL_H	Util.h	35;"	d
+NVDSIMCALLBACK_H	Callbacks.h	36;"	d
+NVDSim	Block.h	/^namespace NVDSim{$/;"	n
+NVDSim	Buffer.h	/^namespace NVDSim{$/;"	n
+NVDSim	Callbacks.h	/^namespace NVDSim {$/;"	n
+NVDSim	Channel.h	/^namespace NVDSim{$/;"	n
+NVDSim	ChannelPacket.h	/^namespace NVDSim$/;"	n
+NVDSim	Controller.h	/^namespace NVDSim{$/;"	n
+NVDSim	Die.h	/^namespace NVDSim{$/;"	n
+NVDSim	FlashConfiguration.h	/^namespace NVDSim{$/;"	n
+NVDSim	FlashTransaction.h	/^namespace NVDSim$/;"	n
+NVDSim	FrontBuffer.h	/^namespace NVDSim{	$/;"	n
+NVDSim	Ftl.h	/^namespace NVDSim{$/;"	n
+NVDSim	GCFtl.h	/^namespace NVDSim{$/;"	n
+NVDSim	GCLogger.h	/^namespace NVDSim$/;"	n
+NVDSim	Init.cpp	/^namespace NVDSim $/;"	n	file:
+NVDSim	Init.h	/^namespace NVDSim $/;"	n
+NVDSim	Logger.h	/^namespace NVDSim$/;"	n
+NVDSim	NVDIMM.cpp	/^namespace NVDSim$/;"	n	file:
+NVDSim	NVDIMM.h	/^namespace NVDSim{$/;"	n
+NVDSim	NVDIMMSim.h	/^namespace NVDSim$/;"	n
+NVDSim	P8PGCLogger.h	/^namespace NVDSim$/;"	n
+NVDSim	P8PLogger.h	/^namespace NVDSim$/;"	n
+NVDSim	Plane.h	/^namespace NVDSim{$/;"	n
+NVDSim	SimObj.h	/^namespace NVDSim$/;"	n
+NVDSim	TraceBasedSim.cpp	/^namespace NVDSim$/;"	n	file:
+NVFLASHCONF_H	FlashConfiguration.h	35;"	d
+NVFRONTBUFFER_H	FrontBuffer.h	35;"	d
+NVFTL_H	Ftl.h	35;"	d
+NVGCFTL_H	GCFtl.h	35;"	d
+NVGCLOGGER_H	GCLogger.h	35;"	d
+NVINIT_H	Init.h	35;"	d
+NVLOGGER_H	Logger.h	35;"	d
+NVMLT	MemLeakTest.h	2;"	d
+NVP8PGCLOGGER_H	P8PGCLogger.h	35;"	d
+NVP8PLOGGER_H	P8PLogger.h	34;"	d
+NVPLANE_H	Plane.h	35;"	d
+NVSIMOBJ_H	SimObj.h	35;"	d
+NVSIMTRANSACTION_H	FlashTransaction.h	35;"	d
+NVTBS_H	TraceBasedSim.h	35;"	d
+NV_PAGE_SIZE	Init.cpp	/^    uint64_t NV_PAGE_SIZE;$/;"	m	namespace:NVDSim	file:
+NV_PAGE_SIZE	tools/perfect_scheduling/schedule_analysis.py	/^NV_PAGE_SIZE=32768 # in bits$/;"	v
+NV_PAGE_SIZE	tools/perfect_scheduling/stream_analysis.py	/^NV_PAGE_SIZE=32768 # in bits$/;"	v
+NV_RESTORE_FILE	Init.cpp	/^    std::string NV_RESTORE_FILE;$/;"	m	namespace:NVDSim	file:
+NV_SAVE_FILE	Init.cpp	/^    std::string NV_SAVE_FILE;$/;"	m	namespace:NVDSim	file:
+NV_WRITE_SCRIPT	Init.cpp	/^    std::string NV_WRITE_SCRIPT;$/;"	m	namespace:NVDSim	file:
+OBJ	Makefile	/^OBJ = $(addsuffix .o, $(basename $(SRC)))$/;"	m
+OUTPUT	TraceBasedSim.cpp	/^	bool OUTPUT= 1;$/;"	m	namespace:NVDSim	file:
+OUT_BUFFER_SIZE	Init.cpp	/^    uint64_t OUT_BUFFER_SIZE;$/;"	m	namespace:NVDSim	file:
+OUT_LEAK_I	Init.cpp	/^    double OUT_LEAK_I;$/;"	m	namespace:NVDSim	file:
+OverrideKeys	Init.cpp	/^    void Init::OverrideKeys(vector<string> keys, vector<string>values) $/;"	f	class:NVDSim::Init
+P8PGCLogger	P8PGCLogger.cpp	/^P8PGCLogger::P8PGCLogger()$/;"	f	class:P8PGCLogger
+P8PGCLogger	P8PGCLogger.h	/^    class P8PGCLogger: public GCLogger$/;"	c	namespace:NVDSim
+P8PLogger	P8PLogger.cpp	/^P8PLogger::P8PLogger()$/;"	f	class:P8PLogger
+P8PLogger	P8PLogger.h	/^    class P8PLogger: public Logger$/;"	c	namespace:NVDSim
+PACKAGE_SIZE	FlashConfiguration.h	187;"	d
+PAGES_PER_BLOCK	Init.cpp	/^    uint64_t PAGES_PER_BLOCK;$/;"	m	namespace:NVDSim	file:
+PAGES_PER_BLOCK	tools/perfect_scheduling/schedule_analysis.py	/^PAGES_PER_BLOCK = 48$/;"	v
+PAGES_PER_BLOCK	tools/perfect_scheduling/stream_analysis.py	/^PAGES_PER_BLOCK = 48$/;"	v
+PBLOCKS_PER_VBLOCK	Init.cpp	/^    float PBLOCKS_PER_VBLOCK;$/;"	m	namespace:NVDSim	file:
+PCM_WRITE_CYCLES	tools/perfect_scheduling/schedule_analysis.py	/^PCM_WRITE_CYCLES = 47020$/;"	v
+PERCENT_FULL	Init.cpp	/^    float PERCENT_FULL;$/;"	m	namespace:NVDSim	file:
+PERFECT_SCHEDULE	Init.cpp	/^    bool PERFECT_SCHEDULE;$/;"	m	namespace:NVDSim	file:
+PER_PACKAGE	Init.cpp	/^    bool PER_PACKAGE;$/;"	m	namespace:NVDSim	file:
+PLANES_PER_DIE	Init.cpp	/^    uint64_t PLANES_PER_DIE;$/;"	m	namespace:NVDSim	file:
+PLANES_PER_DIE	tools/perfect_scheduling/schedule_analysis.py	/^PLANES_PER_DIE = 1$/;"	v
+PLANES_PER_DIE	tools/perfect_scheduling/stream_analysis.py	/^PLANES_PER_DIE = 1$/;"	v
+PLANE_SIZE	FlashConfiguration.h	185;"	d
+PLANE_STATE_LOG	Init.cpp	/^    bool PLANE_STATE_LOG;$/;"	m	namespace:NVDSim	file:
+POBJ	Makefile	/^POBJ = $(addsuffix .po, $(basename $(SRC)))$/;"	m
+PRESTATE	Init.cpp	/^    bool PRESTATE;$/;"	m	namespace:NVDSim	file:
+PRINT	FlashConfiguration.h	80;"	d
+PRINT	FlashConfiguration.h	91;"	d
+PRINTN	FlashConfiguration.h	83;"	d
+PRINTN	FlashConfiguration.h	94;"	d
+Package	Controller.h	/^	} Package;$/;"	t	namespace:NVDSim	typeref:struct:NVDSim::__anon1
+PendingErase	GCFtl.h	/^			    PendingErase()$/;"	f	class:NVDSim::GCFtl::PendingErase
+PendingErase	GCFtl.h	/^			class PendingErase$/;"	c	class:NVDSim::GCFtl
+Plane	Plane.cpp	/^Plane::Plane(void){$/;"	f	class:Plane
+Plane	Plane.h	/^	class Plane{$/;"	c	namespace:NVDSim
+PlaneStateType	Logger.h	/^    enum PlaneStateType{$/;"	g	namespace:NVDSim
+Power_Callback	FlashConfiguration.h	99;"	d
+PtrMember	Callbacks.h	/^    typedef ReturnT (ConsumerT::*PtrMember)(Param1T,Param2T,Param3T,Param4T); $/;"	t	class:NVDSim::Callback
+QUEUE_ACCESS_CYCLES	FlashConfiguration.h	207;"	d
+QUEUE_ACCESS_TIME	Init.cpp	/^    uint64_t QUEUE_ACCESS_TIME;$/;"	m	namespace:NVDSim	file:
+QUEUE_EVENT_LOG	Init.cpp	/^    bool QUEUE_EVENT_LOG;$/;"	m	namespace:NVDSim	file:
+RAW_haz	tools/perfect_scheduling/schedule_analysis.py	/^					RAW_haz = RAW_haz + 1$/;"	v
+RAW_haz	tools/perfect_scheduling/schedule_analysis.py	/^	RAW_haz = 0 $/;"	v
+RAW_haz	tools/perfect_scheduling/schedule_analysis.py	/^	RAW_haz = 0$/;"	v
+READ	ChannelPacket.h	/^		READ,$/;"	e	enum:NVDSim::ChannelPacketType
+READING	Logger.h	/^	READING,$/;"	e	enum:NVDSim::PlaneStateType
+READ_ARRIVE_LOG	Init.cpp	/^    bool READ_ARRIVE_LOG;$/;"	m	namespace:NVDSim	file:
+READ_CYCLES	FlashConfiguration.h	196;"	d
+READ_CYCLES	tools/perfect_scheduling/schedule_analysis.py	/^READ_CYCLES = 16678 # pretty sure I don't need this actually$/;"	v
+READ_I	Init.cpp	/^    double READ_I;$/;"	m	namespace:NVDSim	file:
+READ_TIME	Init.cpp	/^    uint64_t READ_TIME;$/;"	m	namespace:NVDSim	file:
+READ_TIME	tools/perfect_scheduling/schedule_analysis.py	/^READ_TIME = (READ_CYCLES + COMMAND_LENGTH) * CYCLE_TIME$/;"	v
+REBUILDABLES	Makefile	/^REBUILDABLES=$(OBJ) ${POBJ} $(EXE_NAME) $(LIB_NAME)$/;"	m
+REQUEST_BUFFER_SIZE	Init.cpp	/^    uint64_t REQUEST_BUFFER_SIZE;$/;"	m	namespace:NVDSim	file:
+REQUEST_CHANNEL_WIDTH	Init.cpp	/^    uint64_t REQUEST_CHANNEL_WIDTH;$/;"	m	namespace:NVDSim	file:
+RESPONSE_BUFFER_SIZE	Init.cpp	/^    uint64_t RESPONSE_BUFFER_SIZE;$/;"	m	namespace:NVDSim	file:
+RETURN_DATA	FlashTransaction.h	/^		RETURN_DATA,$/;"	e	enum:NVDSim::TransactionType
+RUNTIME_WRITE	Init.cpp	/^    bool RUNTIME_WRITE; $/;"	m	namespace:NVDSim	file:
+ReadIniFile	Init.cpp	/^    void Init::ReadIniFile(string filename, bool isSystemFile)$/;"	f	class:NVDSim::Init
+RegisterCallbacks	NVDIMM.cpp	/^    void NVDIMM::RegisterCallbacks(Callback_t *readCB,  Callback_t *critLineCB, Callback_t *writeCB, Callback_v *Power)$/;"	f	class:NVDSim::NVDIMM
+RegisterCallbacks	NVDIMM.cpp	/^    void NVDIMM::RegisterCallbacks(Callback_t *readCB, Callback_t *writeCB, Callback_v *Power){$/;"	f	class:NVDSim::NVDIMM
+ReturnPowerData	NVDIMM.h	/^			Callback_v* ReturnPowerData;$/;"	m	class:NVDSim::NVDIMM
+ReturnReadData	NVDIMM.h	/^			Callback_t* ReturnReadData;$/;"	m	class:NVDSim::NVDIMM
+SCHEDULE	Init.cpp	/^    bool SCHEDULE;$/;"	m	namespace:NVDSim	file:
+SIM_CYCLES	TraceBasedSim.cpp	51;"	d	file:
+SRC	Makefile	/^SRC = $(wildcard *.cpp)$/;"	m
+STANDBY_I	Init.cpp	/^    double STANDBY_I;$/;"	m	namespace:NVDSim	file:
+STRING	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	e	enum:NVDSim::_variableType
+SYSTEM_CYCLE	Init.cpp	/^    float SYSTEM_CYCLE;$/;"	m	namespace:NVDSim	file:
+SYS_PARAM	Init.h	/^	typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	e	enum:NVDSim::_paramType
+SenderType	Channel.h	/^	enum SenderType{$/;"	g	namespace:NVDSim
+SetKey	Init.cpp	/^    void Init::SetKey(string key, string valueString, bool isSystemParam, size_t lineNumber) $/;"	f	class:NVDSim::Init
+SetOutputFileName	NVDIMM.cpp	/^    string NVDIMM::SetOutputFileName(string tracefilename){$/;"	f	class:NVDSim::NVDIMM
+SimObj	SimObj.h	/^		SimObj() { currentClockCycle = 0; };		$/;"	f	class:NVDSim::SimObj
+SimObj	SimObj.h	/^	class SimObj$/;"	c	namespace:NVDSim
+TOTAL_PLANES	tools/perfect_scheduling/schedule_analysis.py	/^TOTAL_PLANES = NUM_PACKAGES * DIES_PER_PACKAGE * PLANES_PER_DIE$/;"	v
+TOTAL_SIZE	FlashConfiguration.h	188;"	d
+TransactionType	FlashTransaction.h	/^	enum TransactionType$/;"	g	namespace:NVDSim
+UINT	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	e	enum:NVDSim::_variableType
+UINT64	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	e	enum:NVDSim::_variableType
+USE_EPOCHS	FlashConfiguration.h	213;"	d
+VCC	Init.cpp	/^    double VCC;$/;"	m	namespace:NVDSim	file:
+VIRTUAL_BLOCKS_PER_PLANE	Init.cpp	/^    uint64_t VIRTUAL_BLOCKS_PER_PLANE;$/;"	m	namespace:NVDSim	file:
+VIRTUAL_DIE_SIZE	FlashConfiguration.h	191;"	d
+VIRTUAL_PACKAGE_SIZE	FlashConfiguration.h	192;"	d
+VIRTUAL_PLANE_SIZE	FlashConfiguration.h	190;"	d
+VIRTUAL_TOTAL_SIZE	FlashConfiguration.h	193;"	d
+VPP	Init.cpp	/^    double VPP;$/;"	m	namespace:NVDSim	file:
+VPP_ERASE_I	Init.cpp	/^    double VPP_ERASE_I;$/;"	m	namespace:NVDSim	file:
+VPP_READ_I	Init.cpp	/^    double VPP_READ_I;$/;"	m	namespace:NVDSim	file:
+VPP_STANDBY_I	Init.cpp	/^    double VPP_STANDBY_I;$/;"	m	namespace:NVDSim	file:
+VPP_WRITE_I	Init.cpp	/^    double VPP_WRITE_I;$/;"	m	namespace:NVDSim	file:
+Verbose_Power_Callback	FlashConfiguration.h	100;"	d
+WARNING	FlashConfiguration.h	59;"	d
+WEAR_LEVEL_LOG	Init.cpp	/^    bool WEAR_LEVEL_LOG;$/;"	m	namespace:NVDSim	file:
+WRITE	ChannelPacket.h	/^		WRITE,$/;"	e	enum:NVDSim::ChannelPacketType
+WRITE_ARRIVE_LOG	Init.cpp	/^    bool WRITE_ARRIVE_LOG;$/;"	m	namespace:NVDSim	file:
+WRITE_CYCLES	FlashConfiguration.h	198;"	d
+WRITE_CYCLES	tools/perfect_scheduling/schedule_analysis.py	/^WRITE_CYCLES = 133420$/;"	v
+WRITE_I	Init.cpp	/^    double WRITE_I;$/;"	m	namespace:NVDSim	file:
+WRITE_ON_QUEUE_SIZE	Init.cpp	/^    bool WRITE_ON_QUEUE_SIZE;$/;"	m	namespace:NVDSim	file:
+WRITE_QUEUE_LIMIT	Init.cpp	/^    uint64_t WRITE_QUEUE_LIMIT;$/;"	m	namespace:NVDSim	file:
+WRITE_TIME	Init.cpp	/^    uint64_t WRITE_TIME;$/;"	m	namespace:NVDSim	file:
+WRITE_TIME	tools/perfect_scheduling/schedule_analysis.py	/^WRITE_TIME = (WRITE_CYCLES + COMMAND_LENGTH) * CYCLE_TIME$/;"	v
+WRITING	Logger.h	/^	WRITING,$/;"	e	enum:NVDSim::PlaneStateType
+WriteDataDone	NVDIMM.h	/^			Callback_t* WriteDataDone;$/;"	m	class:NVDSim::NVDIMM
+WriteValuesOut	Init.cpp	/^    void Init::WriteValuesOut(std::ofstream &visDataOut) $/;"	f	class:NVDSim::Init
+_configMap	Init.h	/^	typedef struct _configMap $/;"	s	namespace:NVDSim
+_paramType	Init.h	/^	typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	g	namespace:NVDSim
+_variableType	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	g	namespace:NVDSim
+access_energy	GCLogger.h	/^	    std::vector<double> access_energy;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+access_energy	Logger.h	/^	    std::vector<double> access_energy;$/;"	m	class:NVDSim::Logger::EpochEntry
+access_energy	Logger.h	/^	std::vector<double> access_energy;$/;"	m	class:NVDSim::Logger
+access_energy	P8PGCLogger.h	/^	    std::vector<double> access_energy;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+access_energy	P8PLogger.h	/^	    std::vector<double> access_energy;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+access_map	Logger.h	/^	std::unordered_map<uint64_t, std::unordered_map<uint64_t, std::list<AccessMapEntry>>> access_map;$/;"	m	class:NVDSim::Logger
+access_process	Logger.cpp	/^void Logger::access_process(uint64_t addr, uint64_t paddr, uint64_t package, ChannelPacketType op)$/;"	f	class:Logger
+access_queue	Logger.h	/^	std::list<std::pair <uint64_t, uint64_t>> access_queue;$/;"	m	class:NVDSim::Logger
+access_start	Logger.cpp	/^void Logger::access_start(uint64_t addr)$/;"	f	class:Logger
+access_start	Logger.cpp	/^void Logger::access_start(uint64_t addr, TransactionType op)$/;"	f	class:Logger
+access_stop	GCLogger.cpp	/^void GCLogger::access_stop(uint64_t addr, uint64_t paddr)$/;"	f	class:GCLogger
+access_stop	Logger.cpp	/^void Logger::access_stop(uint64_t addr, uint64_t paddr)$/;"	f	class:Logger
+access_stop	P8PGCLogger.cpp	/^void P8PGCLogger::access_stop(uint64_t addr, uint64_t paddr)$/;"	f	class:P8PGCLogger
+access_stop	P8PLogger.cpp	/^void P8PLogger::access_stop(uint64_t addr, uint64_t paddr)$/;"	f	class:P8PLogger
+actual_image_out	tools/perfect_scheduling/stream_analysis.py	/^actual_image_out = image_out + ".pdf"$/;"	v
+add	NVDIMM.cpp	/^    bool NVDIMM::add(FlashTransaction &trans){$/;"	f	class:NVDSim::NVDIMM
+addGC	GCFtl.cpp	/^void GCFtl::addGC(uint64_t dirty_block)$/;"	f	class:GCFtl
+addGcTransaction	GCFtl.cpp	/^void GCFtl::addGcTransaction(FlashTransaction &t){ $/;"	f	class:GCFtl
+addPacket	Controller.cpp	/^bool Controller::addPacket(ChannelPacket *p){$/;"	f	class:Controller
+addPerfectTransaction	Ftl.cpp	/^bool Ftl::addPerfectTransaction(FlashTransaction &t)$/;"	f	class:Ftl
+addScheduledTransaction	Ftl.cpp	/^bool Ftl::addScheduledTransaction(FlashTransaction &t)$/;"	f	class:Ftl
+addTransaction	FrontBuffer.cpp	/^bool FrontBuffer::addTransaction(FlashTransaction transaction){$/;"	f	class:FrontBuffer
+addTransaction	Ftl.cpp	/^bool Ftl::addTransaction(FlashTransaction &t){$/;"	f	class:Ftl
+addTransaction	GCFtl.cpp	/^bool GCFtl::addTransaction(FlashTransaction &t){$/;"	f	class:GCFtl
+addTransaction	NVDIMM.cpp	/^    bool NVDIMM::addTransaction(bool isWrite, uint64_t addr){$/;"	f	class:NVDSim::NVDIMM
+address	FlashTransaction.h	/^		uint64_t address;$/;"	m	class:NVDSim::FlashTransaction
+addressMap	Ftl.h	/^			std::unordered_map<uint64_t,uint64_t> addressMap;$/;"	m	class:NVDSim::Ftl
+attachBuffer	Channel.cpp	/^void Channel::attachBuffer(Buffer *b){$/;"	f	class:Channel
+attachChannel	Buffer.cpp	/^void Buffer::attachChannel(Channel *c){$/;"	f	class:Buffer
+attachController	Channel.cpp	/^void Channel::attachController(Controller *c){$/;"	f	class:Channel
+attachDie	Buffer.cpp	/^void Buffer::attachDie(Die *d){$/;"	f	class:Buffer
+attachFrontBuffer	Controller.cpp	/^void Controller::attachFrontBuffer(FrontBuffer *fb){$/;"	f	class:Controller
+attachPackages	Controller.cpp	/^void Controller::attachPackages(vector<Package> *packages){$/;"	f	class:Controller
+attachToBuffer	Die.cpp	/^void Die::attachToBuffer(Buffer *buff){$/;"	f	class:Die
+attemptAdd	Ftl.cpp	/^bool Ftl::attemptAdd(FlashTransaction &t, std::list<FlashTransaction> *queue, uint64_t queue_limit)$/;"	f	class:Ftl
+average_erase_latency	GCLogger.h	/^	    uint64_t average_erase_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_erase_latency	GCLogger.h	/^	uint64_t average_erase_latency;$/;"	m	class:NVDSim::GCLogger
+average_erase_latency	P8PGCLogger.h	/^	    uint64_t average_erase_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_gcread_latency	GCLogger.h	/^	    uint64_t average_gcread_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_gcread_latency	GCLogger.h	/^	uint64_t average_gcread_latency;$/;"	m	class:NVDSim::GCLogger
+average_gcread_latency	P8PGCLogger.h	/^	    uint64_t average_gcread_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_gcwrite_latency	GCLogger.h	/^	    uint64_t average_gcwrite_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_gcwrite_latency	GCLogger.h	/^	uint64_t average_gcwrite_latency;$/;"	m	class:NVDSim::GCLogger
+average_gcwrite_latency	P8PGCLogger.h	/^	    uint64_t average_gcwrite_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_latency	GCLogger.h	/^	    uint64_t average_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_latency	Logger.h	/^	    uint64_t average_latency;$/;"	m	class:NVDSim::Logger::EpochEntry
+average_latency	Logger.h	/^	uint64_t average_latency;$/;"	m	class:NVDSim::Logger
+average_latency	P8PGCLogger.h	/^	    uint64_t average_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_latency	P8PLogger.h	/^	    uint64_t average_latency;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+average_queue_latency	GCLogger.h	/^	    uint64_t average_queue_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_queue_latency	Logger.h	/^	    uint64_t average_queue_latency;$/;"	m	class:NVDSim::Logger::EpochEntry
+average_queue_latency	Logger.h	/^	uint64_t average_queue_latency;$/;"	m	class:NVDSim::Logger
+average_queue_latency	P8PGCLogger.h	/^	    uint64_t average_queue_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_queue_latency	P8PLogger.h	/^	    uint64_t average_queue_latency;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+average_read_latency	GCLogger.h	/^	    uint64_t average_read_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_read_latency	Logger.h	/^	    uint64_t average_read_latency;$/;"	m	class:NVDSim::Logger::EpochEntry
+average_read_latency	Logger.h	/^	uint64_t average_read_latency;$/;"	m	class:NVDSim::Logger
+average_read_latency	P8PGCLogger.h	/^	    uint64_t average_read_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_read_latency	P8PLogger.h	/^	    uint64_t average_read_latency;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+average_time	tools/perfect_scheduling/schedule_analysis.py	/^					average_time = average_time + average_times[i][j][k]$/;"	v
+average_time	tools/perfect_scheduling/schedule_analysis.py	/^	average_time = 0$/;"	v
+average_time	tools/perfect_scheduling/schedule_analysis.py	/^	average_time = average_time \/ TOTAL_PLANES$/;"	v
+average_times	tools/perfect_scheduling/schedule_analysis.py	/^	average_times = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+average_write_latency	GCLogger.h	/^	    uint64_t average_write_latency;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+average_write_latency	Logger.h	/^	    uint64_t average_write_latency;$/;"	m	class:NVDSim::Logger::EpochEntry
+average_write_latency	Logger.h	/^	uint64_t average_write_latency;$/;"	m	class:NVDSim::Logger
+average_write_latency	P8PGCLogger.h	/^	    uint64_t average_write_latency;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+average_write_latency	P8PLogger.h	/^	    uint64_t average_write_latency;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+bigger_count	tools/perfect_scheduling/schedule_analysis.py	/^					bigger_count = bigger_count + 1$/;"	v
+bigger_count	tools/perfect_scheduling/schedule_analysis.py	/^	bigger_count = 0$/;"	v
+block	ChannelPacket.h	/^		uint64_t block;$/;"	m	class:NVDSim::ChannelPacket
+block_num	Block.h	/^			uint block_num;$/;"	m	class:NVDSim::Block
+blocks	Plane.h	/^			std::unordered_map<uint64_t, Block> blocks;$/;"	m	class:NVDSim::Plane
+buffer	Channel.h	/^			Buffer *buffer;$/;"	m	class:NVDSim::Channel
+buffer	Controller.h	/^	        Buffer *buffer;$/;"	m	struct:NVDSim::__anon1
+buffer	Die.h	/^			Buffer *buffer;$/;"	m	class:NVDSim::Die
+bufferDone	Channel.cpp	/^void Channel::bufferDone(uint64_t package, uint64_t die, uint64_t plane){$/;"	f	class:Channel
+bufferDone	Controller.cpp	/^void Controller::bufferDone(uint64_t package, uint64_t die, uint64_t plane)$/;"	f	class:Controller
+bufferDone	Die.cpp	/^void Die::bufferDone(uint64_t plane)$/;"	f	class:Die
+bufferLoaded	Die.cpp	/^void Die::bufferLoaded()$/;"	f	class:Die
+busPacketType	ChannelPacket.h	/^		ChannelPacketType busPacketType;$/;"	m	class:NVDSim::ChannelPacket
+busy	Channel.h	/^			int busy;$/;"	m	class:NVDSim::Channel
+busy	Ftl.h	/^			bool busy;$/;"	m	class:NVDSim::Ftl
+busy_channels	tools/perfect_scheduling/schedule_analysis.py	/^	busy_channels = []$/;"	v
+cDirectory	NVDIMM.h	/^			string dev, sys, cDirectory;$/;"	m	class:NVDSim::NVDIMM
+cacheReg	Plane.h	/^			ChannelPacket *dataReg, *cacheReg;$/;"	m	class:NVDSim::Plane
+calc_throughput	Logger.cpp	/^double Logger::calc_throughput(uint64_t cycles, uint64_t accesses)$/;"	f	class:Logger
+chan	tools/sweep_scripts/plots/buffered_plots.py	/^chan = [1,2,4,8,16,32]$/;"	v
+chan	tools/sweep_scripts/plots/plots.py	/^chan = [1,2,4,8,16,32,64,128,256]$/;"	v
+channel	Buffer.h	/^	    Channel *channel;$/;"	m	class:NVDSim::Buffer
+channel	Controller.h	/^		Channel *channel;$/;"	m	struct:NVDSim::__anon1
+channel	Ftl.h	/^			uint64_t channel, die, plane, lookupCounter;$/;"	m	class:NVDSim::Ftl
+channelBeatsLeft	Controller.h	/^			std::vector<uint64_t> channelBeatsLeft; \/\/channel beats per page$/;"	m	class:NVDSim::Controller
+channelXferCyclesLeft	Controller.h	/^			std::vector<uint64_t> channelXferCyclesLeft; \/\/cycles per channel beat$/;"	m	class:NVDSim::Controller
+channel_clock_counter	NVDIMM.h	/^			float *channel_clock_counter, *nv_clock_counter3;$/;"	m	class:NVDSim::NVDIMM
+channel_cycles_per_cycle	NVDIMM.h	/^			uint64_t channel_cycles_per_cycle, controller_cycles_left;$/;"	m	class:NVDSim::NVDIMM
+channel_delays	tools/perfect_scheduling/schedule_analysis.py	/^						channel_delays = channel_delays + 1$/;"	v
+channel_delays	tools/perfect_scheduling/schedule_analysis.py	/^	channel_delays = 0$/;"	v
+checkCacheReg	Plane.cpp	/^bool Plane::checkCacheReg(void)$/;"	f	class:Plane
+checkGC	GCFtl.cpp	/^bool GCFtl::checkGC(void){$/;"	f	class:GCFtl
+checkQueueWrite	Controller.cpp	/^bool Controller::checkQueueWrite(ChannelPacket *p)$/;"	f	class:Controller
+commandCompletedCount	FrontBuffer.h	/^			int commandCompletedCount;$/;"	m	class:NVDSim::FrontBuffer
+commandCyclesLeft	FrontBuffer.h	/^			uint64_t commandCyclesLeft;$/;"	m	class:NVDSim::FrontBuffer
+commandStartedCount	FrontBuffer.h	/^			int commandStartedCount;$/;"	m	class:NVDSim::FrontBuffer
+commandTrans	FrontBuffer.h	/^			FlashTransaction commandTrans;$/;"	m	class:NVDSim::FrontBuffer
+commands	FrontBuffer.h	/^			std::queue<FlashTransaction>  commands;$/;"	m	class:NVDSim::FrontBuffer
+complete	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^uint64_t complete = 0;$/;"	v
+complete	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^uint64_t complete = 0;$/;"	v
+complete	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^uint64_t complete = 0;$/;"	v
+complete	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^uint64_t complete = 0;$/;"	v
+completed_reads	tools/perfect_scheduling/schedule_analysis.py	/^				completed_reads = completed_reads + 1$/;"	v
+completed_reads	tools/perfect_scheduling/schedule_analysis.py	/^	completed_reads = 0$/;"	v
+completed_writes	tools/perfect_scheduling/schedule_analysis.py	/^				completed_writes = completed_writes + 1$/;"	v
+completed_writes	tools/perfect_scheduling/schedule_analysis.py	/^	completed_writes = 0$/;"	v
+config	tools/sweep_scripts/plots/plots.py	/^config = ['prefetch', 'noprefetch']$/;"	v
+configMap	Init.cpp	/^    static ConfigMap configMap[] = {$/;"	m	namespace:NVDSim	file:
+controlCyclesLeft	Die.h	/^			uint64_t *controlCyclesLeft;$/;"	m	class:NVDSim::Die
+controller	Channel.h	/^			Controller *controller;$/;"	m	class:NVDSim::Channel
+controller	Ftl.h	/^			Controller *controller;$/;"	m	class:NVDSim::Ftl
+controller	NVDIMM.h	/^			Controller *controller;$/;"	m	class:NVDSim::NVDIMM
+controller_clock_counter	NVDIMM.h	/^			float system_clock_counter, nv_clock_counter1, nv_clock_counter2, controller_clock_counter;$/;"	m	class:NVDSim::NVDIMM
+controller_cycles_left	NVDIMM.h	/^			uint64_t channel_cycles_per_cycle, controller_cycles_left;$/;"	m	class:NVDSim::NVDIMM
+convert_uint64_t	Util.cpp	/^uint64_t convert_uint64_t(string value)$/;"	f
+count	tools/perfect_scheduling/stream_analysis.py	/^				count = count + 1$/;"	v
+count	tools/perfect_scheduling/stream_analysis.py	/^	count = 1$/;"	v
+critBeat	Die.h	/^			uint64_t critBeat; \/\/device beat when first cache line will have been sent, used for crit line first$/;"	m	class:NVDSim::Die
+critData	Buffer.h	/^	    uint64_t* critData; \/\/ burst on which the critical line will be done$/;"	m	class:NVDSim::Buffer
+critLineDone	Die.cpp	/^void Die::critLineDone()$/;"	f	class:Die
+crit_cb	TraceBasedSim.cpp	/^void test_obj::crit_cb(uint64_t id, uint64_t address, uint64_t cycle, bool mapped){$/;"	f	class:test_obj
+ctrlQueueLength	Logger.cpp	/^void Logger::ctrlQueueLength(vector<vector <uint64_t> > length)$/;"	f	class:Logger
+ctrlQueueReset	Logger.cpp	/^void Logger::ctrlQueueReset()$/;"	f	class:Logger
+ctrlQueueSingleLength	Logger.cpp	/^void Logger::ctrlQueueSingleLength(uint64_t package, uint64_t die, uint64_t length)$/;"	f	class:Logger
+ctrl_queue_length	GCLogger.h	/^	    std::vector<std::vector <uint64_t> > ctrl_queue_length;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+ctrl_queue_length	Logger.h	/^	    std::vector<std::vector<uint64_t> > ctrl_queue_length;$/;"	m	class:NVDSim::Logger::EpochEntry
+ctrl_queue_length	Logger.h	/^	std::vector<std::vector <uint64_t> > ctrl_queue_length;$/;"	m	class:NVDSim::Logger
+ctrl_queue_length	P8PGCLogger.h	/^	    std::vector<std::vector <uint64_t> > ctrl_queue_length;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+ctrl_queue_length	P8PLogger.h	/^	    std::vector<std::vector <uint64_t> > ctrl_queue_length;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+curr_data	tools/perfect_scheduling/schedule_analysis.py	/^		curr_data = plane_data[data_counter]$/;"	v
+curr_die	tools/perfect_scheduling/schedule_analysis.py	/^						curr_die = 0$/;"	v
+curr_die	tools/perfect_scheduling/schedule_analysis.py	/^					curr_die = 0$/;"	v
+curr_die	tools/perfect_scheduling/schedule_analysis.py	/^					curr_die = curr_die + 1$/;"	v
+curr_die	tools/perfect_scheduling/schedule_analysis.py	/^				curr_die = curr_die + 1$/;"	v
+curr_die	tools/perfect_scheduling/schedule_analysis.py	/^	curr_die = 0$/;"	v
+curr_op	tools/perfect_scheduling/schedule_analysis.py	/^			curr_op = plane_data[plane_counter]$/;"	v
+curr_pack	tools/perfect_scheduling/schedule_analysis.py	/^							curr_pack = 0$/;"	v
+curr_pack	tools/perfect_scheduling/schedule_analysis.py	/^						curr_pack = 0$/;"	v
+curr_pack	tools/perfect_scheduling/schedule_analysis.py	/^						curr_pack = curr_pack + 1$/;"	v
+curr_pack	tools/perfect_scheduling/schedule_analysis.py	/^					curr_pack = curr_pack + 1$/;"	v
+curr_pack	tools/perfect_scheduling/schedule_analysis.py	/^	curr_pack = 0$/;"	v
+curr_plane	tools/perfect_scheduling/schedule_analysis.py	/^					curr_plane = 0$/;"	v
+curr_plane	tools/perfect_scheduling/schedule_analysis.py	/^				curr_plane = 0$/;"	v
+curr_plane	tools/perfect_scheduling/schedule_analysis.py	/^				curr_plane = curr_plane + 1$/;"	v
+curr_plane	tools/perfect_scheduling/schedule_analysis.py	/^			curr_plane = curr_plane + 1$/;"	v
+curr_plane	tools/perfect_scheduling/schedule_analysis.py	/^	curr_plane = 0$/;"	v
+curr_read	tools/perfect_scheduling/stream_analysis.py	/^			curr_read = read_data[read_pointer]$/;"	v
+curr_read	tools/perfect_scheduling/stream_analysis.py	/^		curr_read = plane_data[plane_pointer]$/;"	v
+curr_write	tools/perfect_scheduling/schedule_analysis.py	/^			curr_write = write_data[write_counter]$/;"	v
+curr_write	tools/perfect_scheduling/schedule_analysis.py	/^		curr_write = write_data[write_counter]$/;"	v
+curr_write	tools/perfect_scheduling/stream_analysis.py	/^			curr_write = write_data[write_pointer]$/;"	v
+currentClockCycle	SimObj.h	/^		uint64_t currentClockCycle;$/;"	m	class:NVDSim::SimObj
+currentCommands	Die.h	/^			std::vector<ChannelPacket *> currentCommands;$/;"	m	class:NVDSim::Die
+currentDie	Channel.h	/^			uint64_t currentDie;$/;"	m	class:NVDSim::Channel
+currentPlane	Channel.h	/^			uint64_t currentPlane;$/;"	m	class:NVDSim::Channel
+currentTransaction	Ftl.h	/^			FlashTransaction currentTransaction;$/;"	m	class:NVDSim::Ftl
+cycle	GCLogger.h	/^	    uint64_t cycle;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+cycle	Logger.h	/^	    uint64_t cycle;$/;"	m	class:NVDSim::Logger::EpochEntry
+cycle	P8PGCLogger.h	/^	    uint64_t cycle;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+cycle	P8PLogger.h	/^	    uint64_t cycle;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+cycle	tools/perfect_scheduling/schedule_analysis.py	/^				cycle = cycle + 1$/;"	v
+cycle	tools/perfect_scheduling/schedule_analysis.py	/^				cycle = tcycle$/;"	v
+cycle	tools/perfect_scheduling/schedule_analysis.py	/^			cycle = cycle + 1$/;"	v
+cycle	tools/perfect_scheduling/schedule_analysis.py	/^	cycle = 0	$/;"	v
+cycle	tools/perfect_scheduling/schedule_analysis.py	/^	cycle = 0$/;"	v
+cycle_counter	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^uint64_t cycle_counter = 0;$/;"	v
+cycle_counter	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^uint64_t cycle_counter = 0;$/;"	v
+cycle_counter	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^uint64_t cycle_counter = 0;$/;"	v
+cycle_counter	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^uint64_t cycle_counter = 0;$/;"	v
+cyclesLeft	Buffer.h	/^	    uint64_t* cyclesLeft;	    $/;"	m	class:NVDSim::Buffer
+cycles_left	NVDIMM.h	/^			uint64_t* cycles_left;$/;"	m	class:NVDSim::NVDIMM
+data	ChannelPacket.h	/^		void *data;$/;"	m	class:NVDSim::ChannelPacket
+data	FlashTransaction.h	/^		void *data;$/;"	m	class:NVDSim::FlashTransaction
+data	tools/sweep_scripts/plots/buffered_plots.py	/^data = parse_all_results()$/;"	v
+data	tools/sweep_scripts/plots/plots.py	/^data = parse_all_results()$/;"	v
+dataCyclesLeft	Die.h	/^			uint64_t dataCyclesLeft; \/\/cycles per device beat$/;"	m	class:NVDSim::Die
+dataGone	Plane.cpp	/^void Plane::dataGone(void)$/;"	f	class:Plane
+dataReady	Buffer.cpp	/^bool Buffer::dataReady(uint64_t die, uint64_t plane)$/;"	f	class:Buffer
+dataReady	Controller.cpp	/^bool Controller::dataReady(uint64_t package, uint64_t die, uint64_t plane)$/;"	f	class:Controller
+dataReg	Plane.h	/^			ChannelPacket *dataReg, *cacheReg;$/;"	m	class:NVDSim::Plane
+data_counter	tools/perfect_scheduling/schedule_analysis.py	/^		data_counter =  data_counter + 1$/;"	v
+data_counter	tools/perfect_scheduling/schedule_analysis.py	/^	data_counter = 0$/;"	v
+deadlock_counter	Ftl.h	/^			uint64_t deadlock_counter;$/;"	m	class:NVDSim::Ftl
+deadlock_time	Ftl.h	/^			uint64_t deadlock_time;$/;"	m	class:NVDSim::Ftl
+delayed_reads	tools/perfect_scheduling/schedule_analysis.py	/^						delayed_reads = delayed_reads + 1$/;"	v
+delayed_reads	tools/perfect_scheduling/schedule_analysis.py	/^					delayed_reads = delayed_reads + 1$/;"	v
+delayed_reads	tools/perfect_scheduling/schedule_analysis.py	/^	delayed_reads = 0$/;"	v
+delayed_writes	tools/perfect_scheduling/schedule_analysis.py	/^					delayed_writes = delayed_writes + 1$/;"	v
+delayed_writes	tools/perfect_scheduling/schedule_analysis.py	/^				delayed_writes = delayed_writes + 1	$/;"	v
+delayed_writes	tools/perfect_scheduling/schedule_analysis.py	/^				delayed_writes = delayed_writes + 1$/;"	v
+delayed_writes	tools/perfect_scheduling/schedule_analysis.py	/^			delayed_writes = delayed_writes + 1$/;"	v
+delayed_writes	tools/perfect_scheduling/schedule_analysis.py	/^	delayed_writes = 0$/;"	v
+dev	NVDIMM.h	/^			string dev, sys, cDirectory;$/;"	m	class:NVDSim::NVDIMM
+deviceBeatsLeft	Die.h	/^			uint64_t deviceBeatsLeft; \/\/device beats per page$/;"	m	class:NVDSim::Die
+die	ChannelPacket.h	/^		uint64_t die;$/;"	m	class:NVDSim::ChannelPacket
+die	Ftl.h	/^			uint64_t channel, die, plane, lookupCounter;$/;"	m	class:NVDSim::Ftl
+dieLookingUp	Buffer.h	/^	    uint64_t dieLookingUp;$/;"	m	class:NVDSim::Buffer
+die_counter	Controller.h	/^			uint64_t die_counter;$/;"	m	class:NVDSim::Controller
+die_pointers	Controller.h	/^			uint64_t* die_pointers; \/\/ for maintaining round robin fairness for channel access$/;"	m	class:NVDSim::Controller
+dies	Buffer.h	/^	    std::vector<Die *> dies;$/;"	m	class:NVDSim::Buffer
+dies	Controller.h	/^		std::vector<Die *> dies;$/;"	m	struct:NVDSim::__anon1
+dirty	GCFtl.h	/^			std::vector<vector<bool>> dirty;$/;"	m	class:NVDSim::GCFtl
+dirty_page_count	GCFtl.h	/^			uint64_t dirty_page_count;$/;"	m	class:NVDSim::GCFtl
+divide	Logger.cpp	/^double Logger::divide(double num, double denom)$/;"	f	class:Logger
+divide_params	Util.cpp	/^uint divide_params(float num, float denom)$/;"	f
+divide_params	Util.cpp	/^uint divide_params(uint num, uint denom)$/;"	f
+divide_params	Util.cpp	/^uint divide_params(uint num, uint64_t denom)$/;"	f
+divide_params	Util.cpp	/^uint divide_params(uint64_t num, uint denom)$/;"	f
+divide_params	Util.cpp	/^uint divide_params(uint64_t num, uint64_t denom)$/;"	f
+divide_params_64b	Util.cpp	/^uint64_t divide_params_64b(float num, float denom)$/;"	f
+divide_params_64b	Util.cpp	/^uint64_t divide_params_64b(uint num, uint64_t denom)$/;"	f
+divide_params_64b	Util.cpp	/^uint64_t divide_params_64b(uint64_t num, float denom)$/;"	f
+divide_params_64b	Util.cpp	/^uint64_t divide_params_64b(uint64_t num, uint denom)$/;"	f
+divide_params_64b	Util.cpp	/^uint64_t divide_params_64b(uint64_t num, uint64_t denom)$/;"	f
+done	Controller.h	/^			bool done;$/;"	m	class:NVDSim::Controller
+end_writes	tools/perfect_scheduling/schedule_analysis.py	/^					end_writes = end_writes + 1$/;"	v
+end_writes	tools/perfect_scheduling/schedule_analysis.py	/^				end_writes = end_writes + 1$/;"	v
+end_writes	tools/perfect_scheduling/schedule_analysis.py	/^	end_writes = 0$/;"	v
+epoch	GCLogger.h	/^	    uint64_t epoch;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+epoch	Logger.h	/^	    uint64_t epoch;$/;"	m	class:NVDSim::Logger::EpochEntry
+epoch	P8PGCLogger.h	/^	    uint64_t epoch;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+epoch	P8PLogger.h	/^	    uint64_t epoch;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+epoch	tools/perfect_scheduling/stream_analysis.py	/^	epoch = epoch + 1$/;"	v
+epoch	tools/perfect_scheduling/stream_analysis.py	/^epoch = 0$/;"	v
+epoch_count	NVDIMM.h	/^			uint64_t epoch_count, epoch_cycles;$/;"	m	class:NVDSim::NVDIMM
+epoch_cycles	NVDIMM.h	/^			uint64_t epoch_count, epoch_cycles;$/;"	m	class:NVDSim::NVDIMM
+epoch_list	GraphGen.py	/^epoch_list = parse_epoch(sections['epoch'])$/;"	v
+epoch_list	tools/perfect_scheduling/stream_analysis.py	/^epoch_list = range(epoch_total)$/;"	v
+epoch_queue	GCLogger.h	/^	std::list<EpochEntry> epoch_queue;$/;"	m	class:NVDSim::GCLogger
+epoch_queue	Logger.h	/^	std::list<EpochEntry> epoch_queue;$/;"	m	class:NVDSim::Logger
+epoch_queue	P8PGCLogger.h	/^	std::list<EpochEntry> epoch_queue;$/;"	m	class:NVDSim::P8PGCLogger
+epoch_queue	P8PLogger.h	/^	std::list<EpochEntry> epoch_queue;$/;"	m	class:NVDSim::P8PLogger
+epoch_reads	tools/perfect_scheduling/stream_analysis.py	/^epoch_reads = [0 for k in range(epoch_total)]$/;"	v
+epoch_reads_arrived	tools/perfect_scheduling/stream_analysis.py	/^epoch_reads_arrived = [0 for k in range(epoch_total)]$/;"	v
+epoch_size	tools/perfect_scheduling/stream_analysis.py	/^	epoch_size = int(sys.argv[3])$/;"	v
+epoch_size	tools/perfect_scheduling/stream_analysis.py	/^epoch_size = 100000$/;"	v
+epoch_total	tools/perfect_scheduling/stream_analysis.py	/^epoch_total = int(real_last_clock \/ epoch_size) + 1$/;"	v
+epoch_writes	tools/perfect_scheduling/stream_analysis.py	/^epoch_writes = [0 for k in range(epoch_total)]$/;"	v
+epoch_writes_arrived	tools/perfect_scheduling/stream_analysis.py	/^epoch_writes_arrived = [0 for k in range(epoch_total)]$/;"	v
+erase	Block.cpp	/^void Block::erase(){$/;"	f	class:Block
+erase	GCLogger.cpp	/^void GCLogger::erase()$/;"	f	class:GCLogger
+erase	Plane.cpp	/^void Plane::erase(ChannelPacket *busPacket){$/;"	f	class:Plane
+erase_block	GCFtl.h	/^			    uint64_t erase_block;$/;"	m	class:NVDSim::GCFtl::PendingErase
+erase_energy	GCLogger.h	/^	    std::vector<double> erase_energy;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+erase_energy	GCLogger.h	/^	std::vector<double> erase_energy;$/;"	m	class:NVDSim::GCLogger
+erase_energy	P8PGCLogger.h	/^	    std::vector<double> erase_energy;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+erase_latency	GCLogger.cpp	/^void GCLogger::erase_latency(uint64_t cycles)$/;"	f	class:GCLogger
+erase_pointer	GCFtl.h	/^			uint64_t erase_pointer;			$/;"	m	class:NVDSim::GCFtl
+error_file	tools/perfect_scheduling/schedule_analysis.py	/^	error_file = open(sys.argv[6], 'w')$/;"	v
+error_out	tools/perfect_scheduling/schedule_analysis.py	/^	error_out = 1 # just so we know we're printing errors$/;"	v
+faster_channel	NVDIMM.h	/^			bool faster_channel;$/;"	m	class:NVDSim::NVDIMM
+file_out	tools/perfect_scheduling/schedule_analysis.py	/^	file_out = 1 # just so we know later to write to a file$/;"	v
+file_out	tools/perfect_scheduling/schedule_analysis.py	/^	file_out = 1 # just so we know later to write to a fill$/;"	v
+file_out	tools/perfect_scheduling/stream_analysis.py	/^	file_out = 1 # just so we know later to write to a file$/;"	v
+file_out	tools/perfect_scheduling/stream_analysis.py	/^file_out = 0$/;"	v
+findTransaction	FrontBuffer.cpp	/^FlashTransaction FrontBuffer::findTransaction(std::vector<FlashTransaction> *pendingSearch, std::vector<FlashTransaction> *pendingAdd, FlashTransaction transaction){$/;"	f	class:FrontBuffer
+firstCheck	Channel.h	/^			int firstCheck;$/;"	m	class:NVDSim::Channel
+first_crtl_write_log	Logger.h	/^	bool* first_crtl_write_log;$/;"	m	class:NVDSim::Logger
+first_ctrl_read_log	Logger.h	/^	bool* first_ctrl_read_log;$/;"	m	class:NVDSim::Logger
+first_ftl_read_log	Logger.h	/^	bool first_ftl_read_log;$/;"	m	class:NVDSim::Logger
+first_ftl_write_log	Logger.h	/^	bool first_ftl_write_log;$/;"	m	class:NVDSim::Logger
+first_read_log	Logger.h	/^	bool first_read_log;$/;"	m	class:NVDSim::Logger
+first_state_log	Logger.h	/^	bool first_state_log;$/;"	m	class:NVDSim::Logger
+first_write_log	Logger.h	/^	bool first_write_log;$/;"	m	class:NVDSim::Logger
+flushing_write	Ftl.h	/^			bool flushing_write;$/;"	m	class:NVDSim::Ftl
+forced_write	Logger.cpp	/^void Logger::forced_write()$/;"	f	class:Logger
+found	tools/perfect_scheduling/schedule_analysis.py	/^								found = 1$/;"	v
+found	tools/perfect_scheduling/schedule_analysis.py	/^			found = 0$/;"	v
+free_channels	tools/perfect_scheduling/schedule_analysis.py	/^					free_channels = free_channels - 1$/;"	v
+free_channels	tools/perfect_scheduling/schedule_analysis.py	/^				free_channels = free_channels + 1$/;"	v
+free_channels	tools/perfect_scheduling/schedule_analysis.py	/^			free_channels = free_channels - 1$/;"	v
+free_channels	tools/perfect_scheduling/schedule_analysis.py	/^	free_channels = NUM_PACKAGES$/;"	v
+free_planes	tools/perfect_scheduling/schedule_analysis.py	/^				free_planes = free_planes + 1$/;"	v
+free_planes	tools/perfect_scheduling/schedule_analysis.py	/^				free_planes = free_planes - 1	$/;"	v
+free_planes	tools/perfect_scheduling/schedule_analysis.py	/^			free_planes = free_planes - 1$/;"	v
+free_planes	tools/perfect_scheduling/schedule_analysis.py	/^	free_planes = TOTAL_PLANES$/;"	v
+frontBuffer	NVDIMM.h	/^			FrontBuffer  *frontBuffer;$/;"	m	class:NVDSim::NVDIMM
+front_buffer	Controller.h	/^			FrontBuffer *front_buffer;$/;"	m	class:NVDSim::Controller
+ftl	FrontBuffer.h	/^			Ftl *ftl;$/;"	m	class:NVDSim::FrontBuffer
+ftl	NVDIMM.h	/^			Ftl *ftl;$/;"	m	class:NVDSim::NVDIMM
+ftlQueueLength	GCLogger.cpp	/^void GCLogger::ftlQueueLength(uint64_t length, uint64_t length2)$/;"	f	class:GCLogger
+ftlQueueLength	Logger.cpp	/^void Logger::ftlQueueLength(uint64_t length)$/;"	f	class:Logger
+ftlQueueLength	Logger.cpp	/^void Logger::ftlQueueLength(uint64_t length, uint64_t length2)$/;"	f	class:Logger
+ftlQueueReset	GCLogger.cpp	/^void GCLogger::ftlQueueReset()$/;"	f	class:GCLogger
+ftlQueueReset	Logger.cpp	/^void Logger::ftlQueueReset()$/;"	f	class:Logger
+ftl_queue_length	GCLogger.h	/^	    uint64_t ftl_queue_length;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+ftl_queue_length	Logger.h	/^	    uint64_t ftl_queue_length;$/;"	m	class:NVDSim::Logger::EpochEntry
+ftl_queue_length	Logger.h	/^	uint64_t ftl_queue_length;$/;"	m	class:NVDSim::Logger
+ftl_queue_length	P8PGCLogger.h	/^	    uint64_t ftl_queue_length;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+ftl_queue_length	P8PLogger.h	/^	    uint64_t ftl_queue_length;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+gcQueue	GCFtl.h	/^			std::list<FlashTransaction> gcQueue;$/;"	m	class:NVDSim::GCFtl
+gc_flag	Ftl.h	/^			bool gc_flag;$/;"	m	class:NVDSim::Ftl
+gc_pending_erase	GCFtl.h	/^			std::list<PendingErase> gc_pending_erase;  $/;"	m	class:NVDSim::GCFtl
+gc_queue_length	GCLogger.h	/^	    uint64_t gc_queue_length;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+gc_queue_length	GCLogger.h	/^	uint64_t gc_queue_length;$/;"	m	class:NVDSim::GCLogger
+gc_queue_length	P8PGCLogger.h	/^	    uint64_t gc_queue_length;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+gc_status	GCFtl.h	/^			bool gc_status, panic_mode;$/;"	m	class:NVDSim::GCFtl
+gcread	GCLogger.cpp	/^void GCLogger::gcread()$/;"	f	class:GCLogger
+gcread_latency	GCLogger.cpp	/^void GCLogger::gcread_latency(uint64_t cycles)$/;"	f	class:GCLogger
+gcwrite	GCLogger.cpp	/^void GCLogger::gcwrite()$/;"	f	class:GCLogger
+gcwrite_latency	GCLogger.cpp	/^void GCLogger::gcwrite_latency(uint64_t cycles)$/;"	f	class:GCLogger
+gen_metrics	tools/sweep_scripts/plots/buffered_plots.py	/^def gen_metrics():$/;"	f
+getEnergyData	GCLogger.cpp	/^vector<vector<double> > GCLogger::getEnergyData(void)$/;"	f	class:GCLogger
+getEnergyData	Logger.cpp	/^vector<vector<double> > Logger::getEnergyData(void)$/;"	f	class:Logger
+getEnergyData	P8PGCLogger.cpp	/^vector<vector<double> > P8PGCLogger::getEnergyData(void)$/;"	f	class:P8PGCLogger
+getEnergyData	P8PLogger.cpp	/^vector<vector<double> > P8PLogger::getEnergyData(void)$/;"	f	class:P8PLogger
+getNVDIMMInstance	NVDIMM.cpp	/^    NVDIMM *getNVDIMMInstance(uint64_t id, string deviceFile, string sysFile, string pwd, string trc)$/;"	f	namespace:NVDSim
+get_ptr	Ftl.cpp	/^uint64_t Ftl::get_ptr(void) {$/;"	f	class:Ftl
+handle_disk_read	Ftl.cpp	/^void Ftl::handle_disk_read(bool gc)$/;"	f	class:Ftl
+handle_read	Ftl.cpp	/^void Ftl::handle_read(bool gc)$/;"	f	class:Ftl
+handle_scripted_write	Ftl.cpp	/^void Ftl::handle_scripted_write(void)$/;"	f	class:Ftl
+handle_write	Ftl.cpp	/^void Ftl::handle_write(bool gc)$/;"	f	class:Ftl
+hasChannel	Channel.cpp	/^int Channel::hasChannel(SenderType t, uint64_t s){$/;"	f	class:Channel
+id	Buffer.h	/^	    uint64_t id;$/;"	m	class:NVDSim::Buffer
+id	Die.h	/^			uint64_t id;$/;"	m	class:NVDSim::Die
+idle	tools/perfect_scheduling/schedule_analysis.py	/^	idle = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+idle_counts	tools/perfect_scheduling/schedule_analysis.py	/^	idle_counts = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+idle_energy	GCLogger.h	/^	    std::vector<double> idle_energy;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+idle_energy	Logger.h	/^	    std::vector<double> idle_energy;$/;"	m	class:NVDSim::Logger::EpochEntry
+idle_energy	Logger.h	/^	std::vector<double> idle_energy;$/;"	m	class:NVDSim::Logger
+idle_energy	P8PGCLogger.h	/^	    std::vector<double> idle_energy;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+idle_energy	P8PLogger.h	/^	    std::vector<double> idle_energy;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+idle_write	Logger.cpp	/^void Logger::idle_write()$/;"	f	class:Logger
+image_out	tools/perfect_scheduling/stream_analysis.py	/^	image_out = sys.argv[2]$/;"	v
+image_out	tools/perfect_scheduling/stream_analysis.py	/^image_out = "StreamAnalysis.pdf"$/;"	v
+inData	Buffer.h	/^	    std::vector<std::list<BufferPacket *> > inData;$/;"	m	class:NVDSim::Buffer
+inDataLeft	Buffer.h	/^	    uint64_t* inDataLeft;$/;"	m	class:NVDSim::Buffer
+inDataSize	Buffer.h	/^	    uint64_t* inDataSize;$/;"	m	class:NVDSim::Buffer
+iniKey	Init.h	/^		string iniKey; \/\/for example "tRCD"$/;"	m	struct:NVDSim::_configMap
+isBufferFull	Channel.cpp	/^bool Channel::isBufferFull(SenderType t, ChannelPacketType bt, uint64_t die)$/;"	f	class:Channel
+isDieBusy	Die.cpp	/^int Die::isDieBusy(uint64_t plane){$/;"	f	class:Die
+isFull	Buffer.cpp	/^bool Buffer::isFull(SenderType t, ChannelPacketType bt, uint64_t die)$/;"	f	class:Buffer
+last_clock	tools/perfect_scheduling/stream_analysis.py	/^last_clock = write_last_clock if write_last_clock > plane_last_clock else plane_last_clock$/;"	v
+last_clock	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^uint64_t last_clock = 0;$/;"	v
+last_clock	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^uint64_t last_clock = 0;$/;"	v
+last_clock	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^uint64_t last_clock = 0;$/;"	v
+last_clock	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^uint64_t last_clock = 0;$/;"	v
+last_epoch	GCLogger.h	/^	EpochEntry last_epoch;$/;"	m	class:NVDSim::GCLogger
+last_epoch	Logger.h	/^	EpochEntry last_epoch;$/;"	m	class:NVDSim::Logger
+last_epoch	P8PGCLogger.h	/^	EpochEntry last_epoch;$/;"	m	class:NVDSim::P8PGCLogger
+last_epoch	P8PLogger.h	/^	EpochEntry last_epoch;$/;"	m	class:NVDSim::P8PLogger
+last_read	tools/perfect_scheduling/schedule_analysis.py	/^				last_read = state_cycle			$/;"	v
+last_read	tools/perfect_scheduling/schedule_analysis.py	/^	last_read = 0$/;"	v
+last_read	tools/perfect_scheduling/schedule_analysis.py	/^	last_read = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+loadNVState	Ftl.cpp	/^void Ftl::loadNVState(void)$/;"	f	class:Ftl
+loadNVState	GCFtl.cpp	/^void GCFtl::loadNVState(void)$/;"	f	class:GCFtl
+loadNVState	NVDIMM.cpp	/^    void NVDIMM::loadNVState(string filename){$/;"	f	class:NVDSim::NVDIMM
+loaded	Ftl.h	/^			bool loaded;$/;"	m	class:NVDSim::Ftl
+lock_start	Logger.h	/^	uint64_t lock_start;$/;"	m	class:NVDSim::Logger
+locked_counter	Ftl.h	/^			uint64_t locked_counter;$/;"	m	class:NVDSim::Ftl
+locked_up	Logger.cpp	/^void Logger::locked_up(uint64_t cycle)$/;"	f	class:Logger
+log	Controller.h	/^			Logger *log;$/;"	m	class:NVDSim::Controller
+log	Die.h	/^			Logger *log;$/;"	m	class:NVDSim::Die
+log	Ftl.h	/^			Logger *log;$/;"	m	class:NVDSim::Ftl
+log	NVDIMM.h	/^			Logger *log;$/;"	m	class:NVDSim::NVDIMM
+log_ctrl_queue_event	Logger.cpp	/^void Logger::log_ctrl_queue_event(bool write, uint64_t number, std::list<ChannelPacket*> *queue)$/;"	f	class:Logger
+log_ftl_queue_event	Logger.cpp	/^void Logger::log_ftl_queue_event(bool write, std::list<FlashTransaction> *queue)$/;"	f	class:Logger
+log_plane_state	Logger.cpp	/^void Logger::log_plane_state(uint64_t address, uint64_t package, uint64_t die, uint64_t plane, PlaneStateType op)$/;"	f	class:Logger
+longest_time	tools/perfect_scheduling/schedule_analysis.py	/^				longest_time = temp_time$/;"	v
+longest_time	tools/perfect_scheduling/schedule_analysis.py	/^	longest_time = 0$/;"	v
+lookupCounter	Ftl.h	/^			uint64_t channel, die, plane, lookupCounter;$/;"	m	class:NVDSim::Ftl
+lookupTimeLeft	Buffer.h	/^	    uint64_t lookupTimeLeft;$/;"	m	class:NVDSim::Buffer
+lookup_count	tools/perfect_scheduling/schedule_analysis.py	/^				lookup_count = lookup_count + 1$/;"	v
+lookup_count	tools/perfect_scheduling/schedule_analysis.py	/^	lookup_count = 0$/;"	v
+main	TraceBasedSim.cpp	/^int main(void){$/;"	f
+main	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^int main(int argc, char *argv[])$/;"	f
+main	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^int main(int argc, char *argv[])$/;"	f
+mapped	Logger.cpp	/^void Logger::mapped()$/;"	f	class:Logger
+math	tools/perfect_scheduling/schedule_analysis.py	/^import math$/;"	i
+math	tools/perfect_scheduling/stream_analysis.py	/^import math$/;"	i
+math	tools/sweep_scripts/plots/buffered_plots.py	/^import math $/;"	i
+math	tools/sweep_scripts/plots/plots.py	/^import math $/;"	i
+matplotlib	GraphGen.py	/^import matplotlib$/;"	i
+matplotlib	tools/perfect_scheduling/stream_analysis.py	/^import matplotlib$/;"	i
+matplotlib	tools/perfect_scheduling/stream_analysis.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	tools/sweep_scripts/plots/buffered_plots.py	/^import matplotlib.mlab as mlab$/;"	i
+matplotlib	tools/sweep_scripts/plots/buffered_plots.py	/^import matplotlib.pyplot as plt$/;"	i
+matplotlib	tools/sweep_scripts/plots/plots.py	/^import matplotlib.mlab as mlab$/;"	i
+matplotlib	tools/sweep_scripts/plots/plots.py	/^import matplotlib.pyplot as plt$/;"	i
+max_ctrl_queue_length	Logger.h	/^	std::vector<std::vector <uint64_t> > max_ctrl_queue_length;$/;"	m	class:NVDSim::Logger
+max_ftl_queue_length	Logger.h	/^	uint64_t max_ftl_queue_length;$/;"	m	class:NVDSim::Logger
+max_gc_queue_length	GCLogger.h	/^	uint64_t max_gc_queue_length;$/;"	m	class:NVDSim::GCLogger
+max_queue_length	Ftl.h	/^			uint64_t max_queue_length;$/;"	m	class:NVDSim::Ftl
+member	Callbacks.h	/^        const PtrMember  member;$/;"	m	class:NVDSim::Callback
+metrics	tools/sweep_scripts/plots/buffered_plots.py	/^metrics = ['Cycles Simulated', 'Accesses', 'Reads completed', 'Writes completed', 'Erases completed', 'GC Reads completed', 'GC Writes completed', 'Number of Unmapped Accesses', 'Number of Mapped Accesses', 'Number of Unmapped Reads', 'Number of Mapped Reads', 'Number of Unmapped Writes', 'Number of Mapped Writes', 'Average Read Latency', 'Average Write Latency', 'Average Erase Latency', 'Average Garbage Collector initiated Read Latency', 'Average Garbage Collector initiated Write Latency', 'Average Queue Latency', 'Total Throughput', 'Read Throughput', 'Write Throughput', 'Length of Ftl Queue', 'Length of GC Queue']$/;"	v
+metrics	tools/sweep_scripts/plots/plots.py	/^metrics = ['cycles', 'miss rate', 'throughput', 'average queue length', 'average latency', 'average queue latency', 'average miss latency', $/;"	v
+mix	tools/sweep_scripts/plots/buffered_plots.py	/^mix = ['mix'+str(i) for i in [1,2,3,4]]$/;"	v
+mix	tools/sweep_scripts/plots/plots.py	/^mix = ['mix'+str(i) for i in [1,2,3,4]]$/;"	v
+mlab	tools/sweep_scripts/plots/buffered_plots.py	/^import matplotlib.mlab as mlab$/;"	i
+mlab	tools/sweep_scripts/plots/plots.py	/^import matplotlib.mlab as mlab$/;"	i
+mode	tools/perfect_scheduling/schedule_analysis.py	/^mode = sys.argv[3]$/;"	v
+mpl	tools/sweep_scripts/plots/buffered_plots.py	/^import matplotlib as mpl$/;"	i
+mpl	tools/sweep_scripts/plots/plots.py	/^import matplotlib as mpl$/;"	i
+newRequestTrans	FrontBuffer.cpp	/^FlashTransaction FrontBuffer::newRequestTrans(void){$/;"	f	class:FrontBuffer
+nextDie	Controller.cpp	/^bool Controller::nextDie(uint64_t package)$/;"	f	class:Controller
+notBusy	Channel.cpp	/^int Channel::notBusy(void){$/;"	f	class:Channel
+np	tools/sweep_scripts/plots/buffered_plots.py	/^import numpy as np$/;"	i
+np	tools/sweep_scripts/plots/plots.py	/^import numpy as np$/;"	i
+numErases	NVDIMM.h	/^			uint64_t systemID, numReads, numWrites, numErases;$/;"	m	class:NVDSim::NVDIMM
+numReads	NVDIMM.h	/^			uint64_t systemID, numReads, numWrites, numErases;$/;"	m	class:NVDSim::NVDIMM
+numWrites	NVDIMM.h	/^			uint64_t systemID, numReads, numWrites, numErases;$/;"	m	class:NVDSim::NVDIMM
+num_accesses	GCLogger.h	/^	    uint64_t num_accesses;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_accesses	Logger.h	/^	    uint64_t num_accesses;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_accesses	Logger.h	/^	uint64_t num_accesses;$/;"	m	class:NVDSim::Logger
+num_accesses	P8PGCLogger.h	/^	    uint64_t num_accesses;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_accesses	P8PLogger.h	/^	    uint64_t num_accesses;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_erases	GCLogger.h	/^	    uint64_t num_erases;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_erases	GCLogger.h	/^	uint64_t num_erases;$/;"	m	class:NVDSim::GCLogger
+num_erases	P8PGCLogger.h	/^	    uint64_t num_erases;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_forced	Logger.h	/^	uint64_t num_forced;$/;"	m	class:NVDSim::Logger
+num_gcreads	GCLogger.h	/^	    uint64_t num_gcreads;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_gcreads	GCLogger.h	/^	uint64_t num_gcreads;$/;"	m	class:NVDSim::GCLogger
+num_gcreads	P8PGCLogger.h	/^	    uint64_t num_gcreads;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_gcwrites	GCLogger.h	/^	    uint64_t num_gcwrites;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_gcwrites	GCLogger.h	/^	uint64_t num_gcwrites;$/;"	m	class:NVDSim::GCLogger
+num_gcwrites	P8PGCLogger.h	/^	    uint64_t num_gcwrites;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_idle_writes	Logger.h	/^	uint64_t num_idle_writes;$/;"	m	class:NVDSim::Logger
+num_locks	Logger.h	/^	uint64_t num_locks;$/;"	m	class:NVDSim::Logger
+num_mapped	GCLogger.h	/^	    uint64_t num_mapped;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_mapped	Logger.h	/^	    uint64_t num_mapped;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_mapped	Logger.h	/^	uint64_t num_mapped;$/;"	m	class:NVDSim::Logger
+num_mapped	P8PGCLogger.h	/^	    uint64_t num_mapped;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_mapped	P8PLogger.h	/^	    uint64_t num_mapped;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_read_mapped	GCLogger.h	/^	    uint64_t num_read_mapped;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_read_mapped	Logger.h	/^	    uint64_t num_read_mapped;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_read_mapped	Logger.h	/^	uint64_t num_read_mapped;$/;"	m	class:NVDSim::Logger
+num_read_mapped	P8PGCLogger.h	/^	    uint64_t num_read_mapped;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_read_mapped	P8PLogger.h	/^	    uint64_t num_read_mapped;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_read_unmapped	GCLogger.h	/^	    uint64_t num_read_unmapped;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_read_unmapped	Logger.h	/^	    uint64_t num_read_unmapped;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_read_unmapped	Logger.h	/^	uint64_t num_read_unmapped;$/;"	m	class:NVDSim::Logger
+num_read_unmapped	P8PGCLogger.h	/^	    uint64_t num_read_unmapped;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_read_unmapped	P8PLogger.h	/^	    uint64_t num_read_unmapped;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_reads	GCLogger.h	/^	    uint64_t num_reads;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_reads	Logger.h	/^	    uint64_t num_reads;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_reads	Logger.h	/^	uint64_t num_reads;$/;"	m	class:NVDSim::Logger
+num_reads	P8PGCLogger.h	/^	    uint64_t num_reads;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_reads	P8PLogger.h	/^	    uint64_t num_reads;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_unmapped	GCLogger.h	/^	    uint64_t num_unmapped;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_unmapped	Logger.h	/^	    uint64_t num_unmapped;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_unmapped	Logger.h	/^	uint64_t num_unmapped;$/;"	m	class:NVDSim::Logger
+num_unmapped	P8PGCLogger.h	/^	    uint64_t num_unmapped;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_unmapped	P8PLogger.h	/^	    uint64_t num_unmapped;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_write_mapped	GCLogger.h	/^	    uint64_t num_write_mapped;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_write_mapped	Logger.h	/^	    uint64_t num_write_mapped;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_write_mapped	Logger.h	/^	uint64_t num_write_mapped;$/;"	m	class:NVDSim::Logger
+num_write_mapped	P8PGCLogger.h	/^	    uint64_t num_write_mapped;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_write_mapped	P8PLogger.h	/^	    uint64_t num_write_mapped;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_write_unmapped	GCLogger.h	/^	    uint64_t num_write_unmapped;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_write_unmapped	Logger.h	/^	    uint64_t num_write_unmapped;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_write_unmapped	Logger.h	/^	uint64_t num_write_unmapped;$/;"	m	class:NVDSim::Logger
+num_write_unmapped	P8PGCLogger.h	/^	    uint64_t num_write_unmapped;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_write_unmapped	P8PLogger.h	/^	    uint64_t num_write_unmapped;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+num_writes	GCLogger.h	/^	    uint64_t num_writes;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+num_writes	Logger.h	/^	    uint64_t num_writes;$/;"	m	class:NVDSim::Logger::EpochEntry
+num_writes	Logger.h	/^	uint64_t num_writes;$/;"	m	class:NVDSim::Logger
+num_writes	P8PGCLogger.h	/^	    uint64_t num_writes;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+num_writes	P8PLogger.h	/^	    uint64_t num_writes;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+number	Buffer.h	/^		uint64_t number;$/;"	m	class:NVDSim::Buffer::BufferPacket
+nv_clock_counter1	NVDIMM.h	/^			float system_clock_counter, nv_clock_counter1, nv_clock_counter2, controller_clock_counter;$/;"	m	class:NVDSim::NVDIMM
+nv_clock_counter2	NVDIMM.h	/^			float system_clock_counter, nv_clock_counter1, nv_clock_counter2, controller_clock_counter;$/;"	m	class:NVDSim::NVDIMM
+nv_clock_counter3	NVDIMM.h	/^			float *channel_clock_counter, *nv_clock_counter3;$/;"	m	class:NVDSim::NVDIMM
+object	Callbacks.h	/^        ConsumerT* const object;$/;"	m	class:NVDSim::Callback
+obtainChannel	Channel.cpp	/^int Channel::obtainChannel(uint64_t s, SenderType t, ChannelPacket *p){$/;"	f	class:Channel
+one_count	tools/perfect_scheduling/schedule_analysis.py	/^				one_count = one_count + 1$/;"	v
+one_count	tools/perfect_scheduling/schedule_analysis.py	/^	one_count = 0$/;"	v
+op	Logger.h	/^		ChannelPacketType op; \/\/ what operation is this?$/;"	m	class:NVDSim::Logger::AccessMapEntry
+open_count	tools/perfect_scheduling/schedule_analysis.py	/^				open_count = open_count + math.floor(temp_time\/WRITE_CYCLES)$/;"	v
+open_count	tools/perfect_scheduling/schedule_analysis.py	/^	open_count = 0$/;"	v
+open_counts	tools/perfect_scheduling/schedule_analysis.py	/^	open_counts = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+operator ()	Callbacks.h	/^		ReturnT operator()(Param1T param1, Param2T param2, Param3T param3, Param4T param4) {$/;"	f	class:NVDSim::Callback
+outData	Buffer.h	/^	    std::vector<std::list<BufferPacket *> >  outData;$/;"	m	class:NVDSim::Buffer
+outDataLeft	Buffer.h	/^	    uint64_t* outDataLeft;$/;"	m	class:NVDSim::Buffer
+outDataSize	Buffer.h	/^	    uint64_t* outDataSize;$/;"	m	class:NVDSim::Buffer
+outgoingPackets	Controller.h	/^			std::vector<ChannelPacket *> outgoingPackets; \/\/there can only ever be one outgoing packet per channel$/;"	m	class:NVDSim::Controller
+output_file	tools/perfect_scheduling/schedule_analysis.py	/^		output_file = open(sys.argv[5], 'a')$/;"	v
+output_file	tools/perfect_scheduling/schedule_analysis.py	/^		output_file = open(sys.argv[5], 'w')$/;"	v
+output_file	tools/perfect_scheduling/schedule_analysis.py	/^	output_file = open(sys.argv[4], 'w')$/;"	v
+output_file	tools/perfect_scheduling/stream_analysis.py	/^	output_file = open(sys.argv[7], 'w')$/;"	v
+pAddr	Logger.h	/^		uint64_t pAddr; \/\/ Virtual address of access$/;"	m	class:NVDSim::Logger::AccessMapEntry
+package	ChannelPacket.h	/^		uint64_t package;$/;"	m	class:NVDSim::ChannelPacket
+package	Logger.h	/^		uint64_t package; \/\/ package for the power calculations$/;"	m	class:NVDSim::Logger::AccessMapEntry
+packages	Controller.h	/^			std::vector<Package> *packages;$/;"	m	class:NVDSim::Controller
+packages	NVDIMM.h	/^			vector<Package> *packages;$/;"	m	class:NVDSim::NVDIMM
+packetType	Channel.h	/^			int packetType;$/;"	m	class:NVDSim::Channel
+page	ChannelPacket.h	/^		uint64_t page;$/;"	m	class:NVDSim::ChannelPacket
+page_data	Block.h	/^	                std::unordered_map<uint, void *> page_data;$/;"	m	class:NVDSim::Block
+panic_mode	GCFtl.h	/^			bool gc_status, panic_mode;$/;"	m	class:NVDSim::GCFtl
+paramType	Init.h	/^	typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	t	namespace:NVDSim	typeref:enum:NVDSim::_paramType
+parameterType	Init.h	/^		paramType parameterType;$/;"	m	struct:NVDSim::_configMap
+parent	Ftl.h	/^			NVDIMM *parent;$/;"	m	class:NVDSim::Ftl
+parentNVDIMM	Controller.h	/^			NVDIMM *parentNVDIMM;$/;"	m	class:NVDSim::Controller
+parentNVDIMM	Die.h	/^			NVDIMM *parentNVDIMM;$/;"	m	class:NVDSim::Die
+parentNVDIMM	FrontBuffer.h	/^			NVDIMM *parentNVDIMM;$/;"	m	class:NVDSim::FrontBuffer
+parse_all_results	tools/sweep_scripts/plots/buffered_plots.py	/^def parse_all_results():$/;"	f
+parse_all_results	tools/sweep_scripts/plots/plots.py	/^def parse_all_results():$/;"	f
+parse_epoch	GraphGen.py	/^def parse_epoch(epoch_lines):$/;"	f
+parse_file	GraphGen.py	/^def parse_file(logfile):$/;"	f
+parse_hybridsim_log	tools/sweep_scripts/plots/plots.py	/^def parse_hybridsim_log(logfile):$/;"	f
+parse_nvdimmsim_log	tools/sweep_scripts/plots/buffered_plots.py	/^def parse_nvdimmsim_log(logfile):$/;"	f
+parse_total	GraphGen.py	/^def parse_total(total_lines):$/;"	f
+paused	Controller.h	/^			bool* paused;$/;"	m	class:NVDSim::Controller
+pending	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^uint64_t pending = 0;$/;"	v
+pending	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^uint64_t pending = 0;$/;"	v
+pending	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^uint64_t pending = 0;$/;"	v
+pending	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^uint64_t pending = 0;$/;"	v
+pendingCommand	FrontBuffer.h	/^			std::vector<FlashTransaction>  pendingCommand;$/;"	m	class:NVDSim::FrontBuffer
+pendingData	FrontBuffer.h	/^			std::vector<FlashTransaction>  pendingData;$/;"	m	class:NVDSim::FrontBuffer
+pendingDataPackets	Die.h	/^			std::queue<ChannelPacket *> pendingDataPackets;$/;"	m	class:NVDSim::Die
+pendingPackets	Controller.h	/^			std::vector<std::list <ChannelPacket *> > pendingPackets; \/\/there can be a pending package for each plane of each die of each package$/;"	m	class:NVDSim::Controller
+pending_addresses	tools/perfect_scheduling/schedule_analysis.py	/^	pending_addresses = {} #dictionary cycle:address$/;"	v
+pending_reads	GCFtl.h	/^			    std::list<uint64_t> pending_reads;$/;"	m	class:NVDSim::GCFtl::PendingErase
+pending_writes	tools/perfect_scheduling/schedule_analysis.py	/^	pending_writes = []$/;"	v
+per_plane	tools/perfect_scheduling/stream_analysis.py	/^	per_plane = int(sys.argv[4])$/;"	v
+per_plane	tools/perfect_scheduling/stream_analysis.py	/^per_plane = 0$/;"	v
+physicalAddress	ChannelPacket.h	/^		uint64_t physicalAddress;$/;"	m	class:NVDSim::ChannelPacket
+placed_writes	tools/perfect_scheduling/schedule_analysis.py	/^				placed_writes = placed_writes + 1$/;"	v
+placed_writes	tools/perfect_scheduling/schedule_analysis.py	/^	placed_writes = 0$/;"	v
+plane	Buffer.h	/^		uint64_t plane;$/;"	m	class:NVDSim::Buffer::BufferPacket
+plane	ChannelPacket.h	/^		uint64_t plane;$/;"	m	class:NVDSim::ChannelPacket
+plane	Ftl.h	/^			uint64_t channel, die, plane, lookupCounter;$/;"	m	class:NVDSim::Ftl
+plane_counter	tools/perfect_scheduling/schedule_analysis.py	/^			plane_counter = plane_counter + 1					$/;"	v
+plane_counter	tools/perfect_scheduling/schedule_analysis.py	/^	plane_counter = 0$/;"	v
+plane_data	tools/perfect_scheduling/schedule_analysis.py	/^plane_data = []$/;"	v
+plane_data	tools/perfect_scheduling/stream_analysis.py	/^plane_data = []$/;"	v
+plane_gaps	tools/perfect_scheduling/schedule_analysis.py	/^	plane_gaps = [[[[] for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+plane_last_clock	tools/perfect_scheduling/stream_analysis.py	/^	plane_last_clock = state_cycle$/;"	v
+plane_last_clock	tools/perfect_scheduling/stream_analysis.py	/^plane_last_clock = 0$/;"	v
+plane_log	tools/perfect_scheduling/schedule_analysis.py	/^plane_log = open(sys.argv[2], 'r')$/;"	v
+plane_log	tools/perfect_scheduling/stream_analysis.py	/^plane_log = open(sys.argv[1], 'r')$/;"	v
+plane_pointer	tools/perfect_scheduling/stream_analysis.py	/^		plane_pointer = plane_pointer + 1;$/;"	v
+plane_pointer	tools/perfect_scheduling/stream_analysis.py	/^plane_pointer = 0$/;"	v
+plane_states	Logger.h	/^	PlaneStateType*** plane_states;$/;"	m	class:NVDSim::Logger
+plane_states	tools/perfect_scheduling/schedule_analysis.py	/^	plane_states = [[[[[] for x in range(1000)] for i in range(100)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+plane_states	tools/perfect_scheduling/schedule_analysis.py	/^	plane_states = [[[[] for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+planes	Die.h	/^			std::vector<Plane> planes;$/;"	m	class:NVDSim::Die
+planes	tools/perfect_scheduling/schedule_analysis.py	/^	planes = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+planes_done	tools/perfect_scheduling/stream_analysis.py	/^			planes_done = 1$/;"	v
+planes_done	tools/perfect_scheduling/stream_analysis.py	/^planes_done = 0$/;"	v
+plot	tools/sweep_scripts/plots/buffered_plots.py	/^def plot(param, data):$/;"	f
+plot	tools/sweep_scripts/plots/plots.py	/^def plot(param, data):$/;"	f
+plt	tools/perfect_scheduling/stream_analysis.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	tools/sweep_scripts/plots/buffered_plots.py	/^import matplotlib.pyplot as plt$/;"	i
+plt	tools/sweep_scripts/plots/plots.py	/^import matplotlib.pyplot as plt$/;"	i
+popFront	Ftl.cpp	/^void Ftl::popFront(ChannelPacketType type)$/;"	f	class:Ftl
+popFront	GCFtl.cpp	/^void GCFtl::popFront(ChannelPacketType type)$/;"	f	class:GCFtl
+powerCallback	Ftl.cpp	/^void Ftl::powerCallback(void) $/;"	f	class:Ftl
+powerCallback	NVDIMM.cpp	/^    void NVDIMM::powerCallback(void){$/;"	f	class:NVDSim::NVDIMM
+power_cb	TraceBasedSim.cpp	/^void test_obj::power_cb(uint64_t id, vector<vector<double>> data, uint64_t cycle, bool mapped){$/;"	f	class:test_obj
+pp_epoch_reads	tools/perfect_scheduling/stream_analysis.py	/^pp_epoch_reads = [[[[0 for x in range(epoch_total)] for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+pp_epoch_writes	tools/perfect_scheduling/stream_analysis.py	/^pp_epoch_writes = [[[[0 for x in range(epoch_total)] for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+prepareOutChannel	Buffer.cpp	/^void Buffer::prepareOutChannel(uint64_t die)$/;"	f	class:Buffer
+previous_read	tools/perfect_scheduling/schedule_analysis.py	/^	previous_read = []$/;"	v
+previous_state	tools/perfect_scheduling/schedule_analysis.py	/^	previous_state = []$/;"	v
+print	ChannelPacket.cpp	/^void ChannelPacket::print(uint64_t currentClockCycle){$/;"	f	class:ChannelPacket
+print	FlashTransaction.cpp	/^void FlashTransaction::print()$/;"	f	class:FlashTransaction
+print	GCLogger.cpp	/^void GCLogger::print(uint64_t cycle) {$/;"	f	class:GCLogger
+print	Logger.cpp	/^void Logger::print(uint64_t cycle) $/;"	f	class:Logger
+print	P8PGCLogger.cpp	/^void P8PGCLogger::print(uint64_t cycle) {$/;"	f	class:P8PGCLogger
+print	P8PLogger.cpp	/^void P8PLogger::print(uint64_t cycle) {$/;"	f	class:P8PLogger
+printData	ChannelPacket.cpp	/^void ChannelPacket::printData(const void *data) $/;"	f	class:ChannelPacket
+printStats	NVDIMM.cpp	/^    void NVDIMM::printStats(void){$/;"	f	class:NVDSim::NVDIMM
+process	Logger.h	/^		uint64_t process; \/\/ Cycle when processing starts$/;"	m	class:NVDSim::Logger::AccessMapEntry
+processInData	Buffer.cpp	/^void Buffer::processInData(uint64_t die){$/;"	f	class:Buffer
+processOutData	Buffer.cpp	/^void Buffer::processOutData(uint64_t die){$/;"	f	class:Buffer
+queue_access_counter	Controller.h	/^			uint64_t queue_access_counter;$/;"	m	class:NVDSim::Controller
+queue_access_counter	Ftl.h	/^			uint64_t queue_access_counter; \/\/ time it takes to get the data out of the write queue$/;"	m	class:NVDSim::Ftl
+queue_latency	Logger.cpp	/^void Logger::queue_latency(uint64_t cycles)$/;"	f	class:Logger
+queuesNotFull	Ftl.cpp	/^void Ftl::queuesNotFull(void)$/;"	f	class:Ftl
+queuesNotFull	NVDIMM.cpp	/^    void NVDIMM::queuesNotFull(void)$/;"	f	class:NVDSim::NVDIMM
+read	Block.cpp	/^void *Block::read(uint page_num){$/;"	f	class:Block
+read	Logger.cpp	/^void Logger::read()$/;"	f	class:Logger
+read	Plane.cpp	/^void Plane::read(ChannelPacket *busPacket){$/;"	f	class:Plane
+read	tools/perfect_scheduling/stream_analysis.py	/^		read = read_log.readline()$/;"	v
+readFromData	Plane.cpp	/^ChannelPacket *Plane::readFromData(void){$/;"	f	class:Plane
+readQueue	Ftl.h	/^			std::list<FlashTransaction> readQueue; $/;"	m	class:NVDSim::Ftl
+readQueues	Controller.h	/^			std::vector<std::vector<std::list <ChannelPacket *> > > readQueues;$/;"	m	class:NVDSim::Controller
+read_arrive	tools/perfect_scheduling/stream_analysis.py	/^	read_arrive = 1$/;"	v
+read_arrive	tools/perfect_scheduling/stream_analysis.py	/^read_arrive = 0$/;"	v
+read_cb	TraceBasedSim.cpp	/^void test_obj::read_cb(uint64_t id, uint64_t address, uint64_t cycle, bool mapped){$/;"	f	class:test_obj
+read_complete	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^void HybridSimTBS::read_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+read_complete	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^void HybridSimTBS::read_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+read_complete	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^void HybridSimTBS::read_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+read_complete	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^void HybridSimTBS::read_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+read_counter	tools/perfect_scheduling/schedule_analysis.py	/^				read_counter = read_counter + 1$/;"	v
+read_counter	tools/perfect_scheduling/schedule_analysis.py	/^	read_counter = 0$/;"	v
+read_counters	tools/perfect_scheduling/schedule_analysis.py	/^	read_counters = [[[0 for i in range(PLANES_PER_DIE)] for j in range(DIES_PER_PACKAGE)] for k in range(NUM_PACKAGES)]$/;"	v
+read_data	tools/perfect_scheduling/stream_analysis.py	/^read_data = []$/;"	v
+read_delayed	tools/perfect_scheduling/schedule_analysis.py	/^	read_delayed = 0$/;"	v
+read_iterator_counter	Ftl.h	/^			uint64_t read_iterator_counter; \/\/ double check for the end() function$/;"	m	class:NVDSim::Ftl
+read_last_clock	tools/perfect_scheduling/stream_analysis.py	/^		read_last_clock = tcycle$/;"	v
+read_last_clock	tools/perfect_scheduling/stream_analysis.py	/^read_last_clock = 0$/;"	v
+read_latency	Logger.cpp	/^void Logger::read_latency(uint64_t cycles)$/;"	f	class:Logger
+read_log	tools/perfect_scheduling/stream_analysis.py	/^	read_log = open(sys.argv[6], 'r')$/;"	v
+read_mapped	Logger.cpp	/^void Logger::read_mapped()$/;"	f	class:Logger
+read_pointer	Ftl.h	/^			std::list<FlashTransaction>::iterator read_pointer; \/\/ stores location of the last place we tried in the read queue$/;"	m	class:NVDSim::Ftl
+read_pointer	tools/perfect_scheduling/stream_analysis.py	/^				read_pointer = read_pointer + 1;$/;"	v
+read_pointer	tools/perfect_scheduling/stream_analysis.py	/^read_pointer = 0$/;"	v
+read_queues_full	Ftl.h	/^			bool read_queues_full;$/;"	m	class:NVDSim::Ftl
+read_unmapped	Logger.cpp	/^void Logger::read_unmapped()$/;"	f	class:Logger
+read_unmapped_rate	Logger.cpp	/^double Logger::read_unmapped_rate()$/;"	f	class:Logger
+reading_write	Ftl.h	/^			std::list<FlashTransaction>::iterator reading_write;$/;"	m	class:NVDSim::Ftl
+reads_done	tools/perfect_scheduling/stream_analysis.py	/^				reads_done = 1$/;"	v
+reads_done	tools/perfect_scheduling/stream_analysis.py	/^reads_done = 0$/;"	v
+real_last_clock	tools/perfect_scheduling/stream_analysis.py	/^real_last_clock = last_clock if last_clock > read_last_clock else read_last_clock$/;"	v
+receiveFromBuffer	Die.cpp	/^void Die::receiveFromBuffer(ChannelPacket *busPacket){$/;"	f	class:Die
+receiveFromChannel	Controller.cpp	/^void Controller::receiveFromChannel(ChannelPacket *busPacket){$/;"	f	class:Controller
+releaseChannel	Channel.cpp	/^int Channel::releaseChannel(SenderType t, uint64_t s){       $/;"	f	class:Channel
+removals	tools/perfect_scheduling/schedule_analysis.py	/^		removals = []$/;"	v
+requestCompletedCount	FrontBuffer.h	/^			int requestCompletedCount;$/;"	m	class:NVDSim::FrontBuffer
+requestCyclesLeft	FrontBuffer.h	/^			uint64_t requestCyclesLeft;$/;"	m	class:NVDSim::FrontBuffer
+requestStartedCount	FrontBuffer.h	/^			int requestStartedCount;$/;"	m	class:NVDSim::FrontBuffer
+requestTrans	FrontBuffer.h	/^			FlashTransaction requestTrans;$/;"	m	class:NVDSim::FrontBuffer
+requests	FrontBuffer.h	/^			std::queue<FlashTransaction>  requests;$/;"	m	class:NVDSim::FrontBuffer
+requestsSize	FrontBuffer.h	/^			uint64_t requestsSize;$/;"	m	class:NVDSim::FrontBuffer
+reset_value	tools/perfect_scheduling/schedule_analysis.py	/^			reset_value = state_cycle-1$/;"	v
+reset_value	tools/perfect_scheduling/schedule_analysis.py	/^	reset_value = 0$/;"	v
+responseCompletedCount	FrontBuffer.h	/^			int responseCompletedCount;$/;"	m	class:NVDSim::FrontBuffer
+responseCyclesLeft	FrontBuffer.h	/^			uint64_t responseCyclesLeft;$/;"	m	class:NVDSim::FrontBuffer
+responseStartedCount	FrontBuffer.h	/^			int responseStartedCount;$/;"	m	class:NVDSim::FrontBuffer
+responseTrans	FrontBuffer.h	/^			FlashTransaction responseTrans;$/;"	m	class:NVDSim::FrontBuffer
+responses	FrontBuffer.h	/^			std::queue<FlashTransaction>  responses;$/;"	m	class:NVDSim::FrontBuffer
+responsesSize	FrontBuffer.h	/^			uint64_t responsesSize;$/;"	m	class:NVDSim::FrontBuffer
+returnCallBack_t	FlashConfiguration.h	/^	typedef void (*returnCallBack_t)(uint64_t id, uint64_t addr, uint64_t clockcycle);$/;"	t	namespace:NVDSim
+returnCritLine	Controller.cpp	/^void Controller::returnCritLine(ChannelPacket *busPacket){$/;"	f	class:Controller
+returnDataPackets	Die.h	/^			std::queue<ChannelPacket *> returnDataPackets;$/;"	m	class:NVDSim::Die
+returnPowerData	Controller.cpp	/^void Controller::returnPowerData(vector<double> idle_energy, vector<double> access_energy) {$/;"	f	class:Controller
+returnPowerData	Controller.cpp	/^void Controller::returnPowerData(vector<double> idle_energy, vector<double> access_energy, vector<double> erase_energy) {$/;"	f	class:Controller
+returnPowerData	Controller.cpp	/^void Controller::returnPowerData(vector<double> idle_energy, vector<double> access_energy, vector<double> erase_energy,$/;"	f	class:Controller
+returnPowerData	Controller.cpp	/^void Controller::returnPowerData(vector<double> idle_energy, vector<double> access_energy, vector<double> vpp_idle_energy,$/;"	f	class:Controller
+returnReadData	Controller.cpp	/^void Controller::returnReadData(const FlashTransaction  &trans){$/;"	f	class:Controller
+returnTransaction	Controller.h	/^			std::list<FlashTransaction> returnTransaction;$/;"	m	class:NVDSim::Controller
+returnUnmappedData	Controller.cpp	/^void Controller::returnUnmappedData(const FlashTransaction  &trans){$/;"	f	class:Controller
+runGC	GCFtl.cpp	/^void GCFtl::runGC() {$/;"	f	class:GCFtl
+runGC	GCFtl.cpp	/^void GCFtl::runGC(uint64_t plane) {$/;"	f	class:GCFtl
+run_test	TraceBasedSim.cpp	/^void test_obj::run_test(void){$/;"	f	class:test_obj
+run_trace	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^int HybridSimTBS::run_trace(string tracefile)$/;"	f	class:HybridSimTBS
+run_trace	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^int HybridSimTBS::run_trace(string tracefile)$/;"	f	class:HybridSimTBS
+run_trace	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^int HybridSimTBS::run_trace(string tracefile)$/;"	f	class:HybridSimTBS
+run_trace	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^int HybridSimTBS::run_trace(string tracefile)$/;"	f	class:HybridSimTBS
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s =  str(average_times[i][j][k])$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s =  str(i)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s =  str(j)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s =  str(k)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s =  str(open_counts[i][j][k])$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s = str(p)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^					s = str(pending_addresses[p])$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(address)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(curr_die)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(curr_pack)		$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(curr_plane)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(cycle + WRITE_CYCLES + CYCLES_PER_TRANSFER)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(soonest_die)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(soonest_pack)		$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(soonest_plane)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(soonest_start)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^				s = str(write_clock)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^			s = str(address)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^			s = str(curr_die)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^			s = str(curr_pack)		$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^			s = str(curr_plane)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^			s = str(write_clock)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(RAW_haz)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(average_time)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(bigger_count)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(channel_delays)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(completed_reads)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(completed_writes)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(delayed_reads)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(delayed_writes)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(free_channels)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(free_planes)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(longest_time)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(lookup_count)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(one_count)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(open_count)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(short_count)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(shorter_count)$/;"	v
+s	tools/perfect_scheduling/schedule_analysis.py	/^		s =  str(shortest_time)$/;"	v
+s	tools/perfect_scheduling/stream_analysis.py	/^					s =  str(epoch)$/;"	v
+s	tools/perfect_scheduling/stream_analysis.py	/^					s =  str(epoch_reads_arrived[epoch])$/;"	v
+s	tools/perfect_scheduling/stream_analysis.py	/^					s =  str(epoch_writes_arrived[epoch])$/;"	v
+s	tools/perfect_scheduling/stream_analysis.py	/^				s =  str(epoch_reads[epoch])$/;"	v
+s	tools/perfect_scheduling/stream_analysis.py	/^				s =  str(epoch_writes[epoch])$/;"	v
+sType	Channel.h	/^			SenderType sType;$/;"	m	class:NVDSim::Channel
+save	GCLogger.cpp	/^void GCLogger::save(uint64_t cycle, uint64_t epoch) $/;"	f	class:GCLogger
+save	Logger.cpp	/^void Logger::save(uint64_t cycle, uint64_t epoch) $/;"	f	class:Logger
+save	P8PGCLogger.cpp	/^void P8PGCLogger::save(uint64_t cycle, uint64_t epoch) $/;"	f	class:P8PGCLogger
+save	P8PLogger.cpp	/^void P8PLogger::save(uint64_t cycle, uint64_t epoch) $/;"	f	class:P8PLogger
+saveNVState	Ftl.cpp	/^void Ftl::saveNVState(void)$/;"	f	class:Ftl
+saveNVState	GCFtl.cpp	/^void GCFtl::saveNVState(void)$/;"	f	class:GCFtl
+saveNVState	NVDIMM.cpp	/^    void NVDIMM::saveNVState(string filename){$/;"	f	class:NVDSim::NVDIMM
+saveStats	NVDIMM.cpp	/^    void NVDIMM::saveStats(void){$/;"	f	class:NVDSim::NVDIMM
+save_epoch	GCLogger.cpp	/^void GCLogger::save_epoch(uint64_t cycle, uint64_t epoch)$/;"	f	class:GCLogger
+save_epoch	Logger.cpp	/^void Logger::save_epoch(uint64_t cycle, uint64_t epoch)$/;"	f	class:Logger
+save_epoch	P8PGCLogger.cpp	/^void P8PGCLogger::save_epoch(uint64_t cycle, uint64_t epoch)$/;"	f	class:P8PGCLogger
+save_epoch	P8PLogger.cpp	/^void P8PLogger::save_epoch(uint64_t cycle, uint64_t epoch)$/;"	f	class:P8PLogger
+saved	Ftl.h	/^			bool saved;$/;"	m	class:NVDSim::Ftl
+savefile	Logger.h	/^	std::ofstream savefile;$/;"	m	class:NVDSim::Logger
+scheduleCurrentTransaction	Ftl.cpp	/^void Ftl::scheduleCurrentTransaction(void)$/;"	f	class:Ftl
+scriptCurrentTransaction	Ftl.cpp	/^void Ftl::scriptCurrentTransaction(void)$/;"	f	class:Ftl
+scriptfile	Ftl.h	/^			std::ifstream scriptfile;$/;"	m	class:NVDSim::Ftl
+sections	GraphGen.py	/^sections = parse_file('NVDIMM.log')$/;"	v
+sendPiece	Buffer.cpp	/^bool Buffer::sendPiece(SenderType t, int type, uint64_t die, uint64_t plane){$/;"	f	class:Buffer
+sendPiece	Channel.cpp	/^void Channel::sendPiece(SenderType t, int type, uint64_t die, uint64_t plane){$/;"	f	class:Channel
+sendQueueLength	Controller.cpp	/^void Controller::sendQueueLength(void)$/;"	f	class:Controller
+sendQueueLength	Ftl.cpp	/^void Ftl::sendQueueLength(void)$/;"	f	class:Ftl
+sendQueueLength	GCFtl.cpp	/^void GCFtl::sendQueueLength(void)$/;"	f	class:GCFtl
+sendToBuffer	Channel.cpp	/^void Channel::sendToBuffer(ChannelPacket *busPacket){$/;"	f	class:Channel
+sendToController	Buffer.cpp	/^void Buffer::sendToController(ChannelPacket *busPacket){$/;"	f	class:Buffer
+sendToController	Channel.cpp	/^void Channel::sendToController(ChannelPacket *busPacket){$/;"	f	class:Channel
+sendToDie	Buffer.cpp	/^void Buffer::sendToDie(ChannelPacket *busPacket){$/;"	f	class:Buffer
+sendToFTL	FrontBuffer.cpp	/^bool FrontBuffer::sendToFTL(FlashTransaction transaction){$/;"	f	class:FrontBuffer
+sendToHybrid	FrontBuffer.cpp	/^void FrontBuffer::sendToHybrid(const FlashTransaction &transaction){$/;"	f	class:FrontBuffer
+sender	Channel.h	/^			uint64_t sender;$/;"	m	class:NVDSim::Channel
+sender	FrontBuffer.h	/^			int sender;$/;"	m	class:NVDSim::FrontBuffer
+sending	Buffer.h	/^	    bool* sending;$/;"	m	class:NVDSim::Buffer
+sending	Die.h	/^			bool sending;$/;"	m	class:NVDSim::Die
+sendingDie	Buffer.h	/^	    uint64_t sendingDie;$/;"	m	class:NVDSim::Buffer
+sendingPlane	Buffer.h	/^	    uint64_t sendingPlane;$/;"	m	class:NVDSim::Buffer
+setDataCycles	FrontBuffer.cpp	/^uint64_t FrontBuffer::setDataCycles(FlashTransaction transaction, uint64_t width){$/;"	f	class:FrontBuffer
+short_count	tools/perfect_scheduling/schedule_analysis.py	/^				short_count = short_count + 1$/;"	v
+short_count	tools/perfect_scheduling/schedule_analysis.py	/^	short_count = 0$/;"	v
+shorter_count	tools/perfect_scheduling/schedule_analysis.py	/^				shorter_count = shorter_count + 1$/;"	v
+shorter_count	tools/perfect_scheduling/schedule_analysis.py	/^	shorter_count = 0$/;"	v
+shortest_time	tools/perfect_scheduling/schedule_analysis.py	/^				shortest_time = temp_time$/;"	v
+shortest_time	tools/perfect_scheduling/schedule_analysis.py	/^	shortest_time = READ_TIME * WRITE_TIME #just a big number$/;"	v
+soon_channels	tools/perfect_scheduling/schedule_analysis.py	/^	soon_channels = []$/;"	v
+soonest_die	tools/perfect_scheduling/schedule_analysis.py	/^								soonest_die = j$/;"	v
+soonest_die	tools/perfect_scheduling/schedule_analysis.py	/^			soonest_die = 0$/;"	v
+soonest_pack	tools/perfect_scheduling/schedule_analysis.py	/^								soonest_pack = i$/;"	v
+soonest_pack	tools/perfect_scheduling/schedule_analysis.py	/^			soonest_pack = 0$/;"	v
+soonest_plane	tools/perfect_scheduling/schedule_analysis.py	/^								soonest_plane = k$/;"	v
+soonest_plane	tools/perfect_scheduling/schedule_analysis.py	/^			soonest_plane = 0$/;"	v
+soonest_start	tools/perfect_scheduling/schedule_analysis.py	/^								soonest_start = gap_start$/;"	v
+soonest_start	tools/perfect_scheduling/schedule_analysis.py	/^			soonest_start = sys.maxint$/;"	v
+speed	tools/sweep_scripts/plots/buffered_plots.py	/^speed = [1,2,4]$/;"	v
+start	Logger.h	/^		uint64_t start; \/\/ Starting cycle of access$/;"	m	class:NVDSim::Logger::AccessMapEntry
+start_erase	GCFtl.h	/^			uint64_t start_erase;$/;"	m	class:NVDSim::GCFtl
+starting	tools/perfect_scheduling/schedule_analysis.py	/^			starting = 0$/;"	v
+starting	tools/perfect_scheduling/schedule_analysis.py	/^	starting = 1;$/;"	v
+state	tools/perfect_scheduling/schedule_analysis.py	/^		state = plane_log.readline()$/;"	v
+state	tools/perfect_scheduling/stream_analysis.py	/^	state = plane_log.readline()$/;"	v
+step	SimObj.cpp	/^void SimObj::step()$/;"	f	class:SimObj
+still_gaps	tools/perfect_scheduling/schedule_analysis.py	/^				still_gaps = 0$/;"	v
+still_gaps	tools/perfect_scheduling/schedule_analysis.py	/^	still_gaps = 1						$/;"	v
+stop	Logger.h	/^		uint64_t stop; \/\/ Stopping cycle of access$/;"	m	class:NVDSim::Logger::AccessMapEntry
+storeInData	Plane.cpp	/^void Plane::storeInData(ChannelPacket *busPacket){$/;"	f	class:Plane
+subtract_params	Util.cpp	/^uint64_t subtract_params(uint64_t a, uint64_t b)$/;"	f
+sys	NVDIMM.h	/^			string dev, sys, cDirectory;$/;"	m	class:NVDSim::NVDIMM
+sys	tools/perfect_scheduling/schedule_analysis.py	/^import sys$/;"	i
+sys	tools/perfect_scheduling/stream_analysis.py	/^import sys$/;"	i
+systemID	NVDIMM.h	/^			uint64_t systemID, numReads, numWrites, numErases;$/;"	m	class:NVDSim::NVDIMM
+system_clock_counter	NVDIMM.h	/^			float system_clock_counter, nv_clock_counter1, nv_clock_counter2, controller_clock_counter;$/;"	m	class:NVDSim::NVDIMM
+temp_channel	Ftl.h	/^			uint64_t temp_channel, temp_die, temp_plane;$/;"	m	class:NVDSim::Ftl
+temp_die	Ftl.h	/^			uint64_t temp_channel, temp_die, temp_plane;$/;"	m	class:NVDSim::Ftl
+temp_name	tools/perfect_scheduling/stream_analysis.py	/^				temp_name =   image_out + "-Pack" + str(i) + "-Die" + str(j) + "-Plane" + str(k) + ".pdf"$/;"	v
+temp_plane	Ftl.h	/^			uint64_t temp_channel, temp_die, temp_plane;$/;"	m	class:NVDSim::Ftl
+temp_start	tools/perfect_scheduling/schedule_analysis.py	/^					temp_start =  temp_start + WRITE_CYCLES$/;"	v
+temp_time	tools/perfect_scheduling/schedule_analysis.py	/^			temp_time = state_cycle - last_read[package][die][plane]$/;"	v
+test_obj	MemLeakTest.h	/^class test_obj{$/;"	c
+test_obj	TraceBasedSim.h	/^class test_obj{$/;"	c
+throttle_count	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^uint64_t throttle_count = 0;$/;"	v
+throttle_count	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^uint64_t throttle_count = 0;$/;"	v
+throttle_count	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^uint64_t throttle_count = 0;$/;"	v
+throttle_count	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^uint64_t throttle_count = 0;$/;"	v
+timeAdded	FlashTransaction.h	/^		uint64_t timeAdded;$/;"	m	class:NVDSim::FlashTransaction
+timeReturned	FlashTransaction.h	/^		uint64_t timeReturned;$/;"	m	class:NVDSim::FlashTransaction
+time_locked	Logger.h	/^	uint64_t time_locked;$/;"	m	class:NVDSim::Logger
+total_dict	GraphGen.py	/^total_dict = parse_total(sections['total'])$/;"	v
+transactionType	FlashTransaction.h	/^		TransactionType transactionType;$/;"	m	class:NVDSim::FlashTransaction
+transaction_complete	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^void transaction_complete(uint64_t clock_cycle)$/;"	f
+transaction_complete	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^void transaction_complete(uint64_t clock_cycle)$/;"	f
+transaction_complete	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^void transaction_complete(uint64_t clock_cycle)$/;"	f
+transaction_complete	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^void transaction_complete(uint64_t clock_cycle)$/;"	f
+translate	Ftl.cpp	/^ChannelPacket *Ftl::translate(ChannelPacketType type, uint64_t vAddr, uint64_t pAddr){$/;"	f	class:Ftl
+type	Buffer.h	/^		int type;$/;"	m	class:NVDSim::Buffer::BufferPacket
+uint	Util.h	/^typedef unsigned int uint;$/;"	t
+unlocked_up	Logger.cpp	/^void Logger::unlocked_up(uint64_t count)$/;"	f	class:Logger
+unmapped	Logger.cpp	/^void Logger::unmapped()$/;"	f	class:Logger
+unmapped_rate	Logger.cpp	/^double Logger::unmapped_rate()$/;"	f	class:Logger
+update	Buffer.cpp	/^void Buffer::update(void){$/;"	f	class:Buffer
+update	Channel.cpp	/^void Channel::update(void){$/;"	f	class:Channel
+update	Controller.cpp	/^void Controller::update(void){$/;"	f	class:Controller
+update	Die.cpp	/^void Die::update(void){$/;"	f	class:Die
+update	FrontBuffer.cpp	/^void FrontBuffer::update(void){$/;"	f	class:FrontBuffer
+update	Ftl.cpp	/^void Ftl::update(void){$/;"	f	class:Ftl
+update	GCFtl.cpp	/^void GCFtl::update(void){$/;"	f	class:GCFtl
+update	GCLogger.cpp	/^void GCLogger::update()$/;"	f	class:GCLogger
+update	Logger.cpp	/^void Logger::update()$/;"	f	class:Logger
+update	NVDIMM.cpp	/^    void NVDIMM::update(void)$/;"	f	class:NVDSim::NVDIMM
+update	P8PGCLogger.cpp	/^void P8PGCLogger::update()$/;"	f	class:P8PGCLogger
+update	P8PLogger.cpp	/^void P8PLogger::update()$/;"	f	class:P8PLogger
+updateCommand	FrontBuffer.cpp	/^void FrontBuffer::updateCommand(void){$/;"	f	class:FrontBuffer
+updateRequest	FrontBuffer.cpp	/^void FrontBuffer::updateRequest(void){$/;"	f	class:FrontBuffer
+updateResponse	FrontBuffer.cpp	/^void FrontBuffer::updateResponse(void){$/;"	f	class:FrontBuffer
+used	Ftl.h	/^			std::vector<vector<bool>> used;$/;"	m	class:NVDSim::Ftl
+used_page_count	Ftl.h	/^			uint64_t used_page_count;$/;"	m	class:NVDSim::Ftl
+varType	Init.h	/^        typedef enum _variableType {STRING, UINT, UINT64, FLOAT, DOUBLE, BOOL} varType;$/;"	t	namespace:NVDSim	typeref:enum:NVDSim::_variableType
+variablePtr	Init.h	/^		void *variablePtr;$/;"	m	struct:NVDSim::_configMap
+variableType	Init.h	/^		varType variableType;$/;"	m	struct:NVDSim::_configMap
+virtualAddress	ChannelPacket.h	/^		uint64_t virtualAddress;$/;"	m	class:NVDSim::ChannelPacket
+vpp_access_energy	P8PGCLogger.h	/^	    std::vector<double> vpp_access_energy;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+vpp_access_energy	P8PGCLogger.h	/^	std::vector<double> vpp_access_energy;$/;"	m	class:NVDSim::P8PGCLogger
+vpp_access_energy	P8PLogger.h	/^	    std::vector<double> vpp_access_energy;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+vpp_access_energy	P8PLogger.h	/^	std::vector<double> vpp_access_energy;$/;"	m	class:NVDSim::P8PLogger
+vpp_erase_energy	P8PGCLogger.h	/^	    std::vector<double> vpp_erase_energy;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+vpp_erase_energy	P8PGCLogger.h	/^	std::vector<double> vpp_erase_energy;$/;"	m	class:NVDSim::P8PGCLogger
+vpp_idle_energy	P8PGCLogger.h	/^	    std::vector<double> vpp_idle_energy;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+vpp_idle_energy	P8PGCLogger.h	/^	std::vector<double> vpp_idle_energy;$/;"	m	class:NVDSim::P8PGCLogger
+vpp_idle_energy	P8PLogger.h	/^	    std::vector<double> vpp_idle_energy;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+vpp_idle_energy	P8PLogger.h	/^	std::vector<double> vpp_idle_energy;$/;"	m	class:NVDSim::P8PLogger
+waiting	Buffer.h	/^	    bool* waiting;$/;"	m	class:NVDSim::Buffer
+wasSet	Init.h	/^		bool wasSet; $/;"	m	struct:NVDSim::_configMap
+write	Block.cpp	/^void Block::write(uint page_num, void *data){$/;"	f	class:Block
+write	Logger.cpp	/^void Logger::write()$/;"	f	class:Logger
+write	Plane.cpp	/^void Plane::write(ChannelPacket *busPacket){$/;"	f	class:Plane
+write	tools/perfect_scheduling/schedule_analysis.py	/^		write = write_log.readline()$/;"	v
+write	tools/perfect_scheduling/stream_analysis.py	/^		write = write_log.readline()$/;"	v
+writeDone	Plane.cpp	/^void Plane::writeDone(ChannelPacket *busPacket)$/;"	f	class:Plane
+writeQueue	Ftl.h	/^			std::list<FlashTransaction> writeQueue;$/;"	m	class:NVDSim::Ftl
+writeQueues	Controller.h	/^			std::vector<std::vector<std::list <ChannelPacket *> > > writeQueues;$/;"	m	class:NVDSim::Controller
+writeToPackage	Controller.cpp	/^void Controller::writeToPackage(ChannelPacket *packet)$/;"	f	class:Controller
+writeToPlane	Die.cpp	/^void Die::writeToPlane(ChannelPacket *packet)$/;"	f	class:Die
+writeTransaction	Ftl.h	/^			FlashTransaction writeTransaction;$/;"	m	class:NVDSim::Ftl
+write_addr	Ftl.h	/^			uint64_t write_addr;$/;"	m	class:NVDSim::Ftl
+write_arrive	tools/perfect_scheduling/stream_analysis.py	/^	write_arrive = 1$/;"	v
+write_arrive	tools/perfect_scheduling/stream_analysis.py	/^write_arrive = 0$/;"	v
+write_cb	TraceBasedSim.cpp	/^void test_obj::write_cb(uint64_t id, uint64_t address, uint64_t cycle, bool mapped){$/;"	f	class:test_obj
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^					write_clock = last_read + READ_CYCLES$/;"	v
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^					write_clock = tcycle$/;"	v
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^					write_clock = write_clock + WRITE_CYCLES$/;"	v
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^				write_clock = last_read + READ_CYCLES$/;"	v
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^				write_clock = tcycle$/;"	v
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^				write_clock = write_clock + WRITE_CYCLES$/;"	v
+write_clock	tools/perfect_scheduling/schedule_analysis.py	/^	write_clock = 0$/;"	v
+write_complete	tools/sweep_scripts/buffered_test/ini/TraceBasedSim.cpp	/^void HybridSimTBS::write_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+write_complete	tools/sweep_scripts/buffered_test2/ini/TraceBasedSim.cpp	/^void HybridSimTBS::write_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+write_complete	tools/sweep_scripts/ini/TraceBasedSim.cpp	/^void HybridSimTBS::write_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+write_complete	tools/sweep_scripts/scheduled_test/ini/TraceBasedSim.cpp	/^void HybridSimTBS::write_complete(uint id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:HybridSimTBS
+write_counter	Ftl.h	/^			uint64_t write_counter;$/;"	m	class:NVDSim::Ftl
+write_counter	tools/perfect_scheduling/schedule_analysis.py	/^			write_counter = write_counter + 1$/;"	v
+write_counter	tools/perfect_scheduling/schedule_analysis.py	/^		write_counter = write_counter + 1$/;"	v
+write_counter	tools/perfect_scheduling/schedule_analysis.py	/^	write_counter = 0$/;"	v
+write_cycle	Ftl.h	/^			uint64_t write_cycle;$/;"	m	class:NVDSim::Ftl
+write_data	tools/perfect_scheduling/schedule_analysis.py	/^write_data = []$/;"	v
+write_data	tools/perfect_scheduling/stream_analysis.py	/^write_data = []$/;"	v
+write_delayed	tools/perfect_scheduling/schedule_analysis.py	/^			write_delayed = 0$/;"	v
+write_delayed	tools/perfect_scheduling/schedule_analysis.py	/^			write_delayed = 1$/;"	v
+write_delayed	tools/perfect_scheduling/schedule_analysis.py	/^	write_delayed = 0$/;"	v
+write_die	Ftl.h	/^			uint64_t write_die;$/;"	m	class:NVDSim::Ftl
+write_epoch	GCLogger.cpp	/^void GCLogger::write_epoch(EpochEntry *e)$/;"	f	class:GCLogger
+write_epoch	Logger.cpp	/^void Logger::write_epoch(EpochEntry *e)$/;"	f	class:Logger
+write_epoch	P8PGCLogger.cpp	/^void P8PGCLogger::write_epoch(EpochEntry *e)$/;"	f	class:P8PGCLogger
+write_epoch	P8PLogger.cpp	/^void P8PLogger::write_epoch(EpochEntry *e)$/;"	f	class:P8PLogger
+write_last_clock	tools/perfect_scheduling/stream_analysis.py	/^		write_last_clock = tcycle$/;"	v
+write_last_clock	tools/perfect_scheduling/stream_analysis.py	/^write_last_clock = 0$/;"	v
+write_latency	Logger.cpp	/^void Logger::write_latency(uint64_t cycles)$/;"	f	class:Logger
+write_log	tools/perfect_scheduling/schedule_analysis.py	/^write_log = open(sys.argv[1], 'r')$/;"	v
+write_log	tools/perfect_scheduling/stream_analysis.py	/^	write_log = open(sys.argv[5], 'r')$/;"	v
+write_mapped	Logger.cpp	/^void Logger::write_mapped()$/;"	f	class:Logger
+write_pack	Ftl.h	/^			uint64_t write_pack;$/;"	m	class:NVDSim::Ftl
+write_plane	Ftl.h	/^			uint64_t write_plane;$/;"	m	class:NVDSim::Ftl
+write_pointer	tools/perfect_scheduling/stream_analysis.py	/^				write_pointer = write_pointer + 1;$/;"	v
+write_pointer	tools/perfect_scheduling/stream_analysis.py	/^write_pointer = 0$/;"	v
+write_queues_full	Ftl.h	/^			bool write_queues_full;$/;"	m	class:NVDSim::Ftl
+write_success	Ftl.cpp	/^void Ftl::write_success(uint64_t block, uint64_t page, uint64_t vAddr, uint64_t pAddr, bool gc, bool mapped)$/;"	f	class:Ftl
+write_unmapped	Logger.cpp	/^void Logger::write_unmapped()$/;"	f	class:Logger
+write_unmapped_rate	Logger.cpp	/^double Logger::write_unmapped_rate()$/;"	f	class:Logger
+write_used_handler	Ftl.cpp	/^void Ftl::write_used_handler(uint64_t vAddr)$/;"	f	class:Ftl
+write_used_handler	GCFtl.cpp	/^void GCFtl::write_used_handler(uint64_t vAddr)$/;"	f	class:GCFtl
+write_wait_count	Ftl.h	/^			uint64_t write_wait_count;$/;"	m	class:NVDSim::Ftl
+writes_done	tools/perfect_scheduling/stream_analysis.py	/^				writes_done = 1$/;"	v
+writes_done	tools/perfect_scheduling/stream_analysis.py	/^writes_done = 0$/;"	v
+writes_per_address	GCLogger.h	/^	    std::unordered_map<uint64_t, uint64_t> writes_per_address;$/;"	m	class:NVDSim::GCLogger::EpochEntry
+writes_per_address	Logger.h	/^	    std::unordered_map<uint64_t, uint64_t> writes_per_address;$/;"	m	class:NVDSim::Logger::EpochEntry
+writes_per_address	Logger.h	/^	std::unordered_map<uint64_t, uint64_t> writes_per_address;$/;"	m	class:NVDSim::Logger
+writes_per_address	P8PGCLogger.h	/^	    std::unordered_map<uint64_t, uint64_t> writes_per_address;$/;"	m	class:NVDSim::P8PGCLogger::EpochEntry
+writes_per_address	P8PLogger.h	/^	    std::unordered_map<uint64_t, uint64_t> writes_per_address;$/;"	m	class:NVDSim::P8PLogger::EpochEntry
+~CallbackBase	Callbacks.h	/^    NVDSim::CallbackBase<Return,Param1T,Param2T,Param3T,Param4T>::~CallbackBase(){}$/;"	f	class:NVDSim::NVDSim::CallbackBase
