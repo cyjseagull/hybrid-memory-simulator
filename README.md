@@ -31,7 +31,6 @@ Once you have SCons install go to the code hybrid-memory-simulator and give foll
 * debug : optional , default is `0` (no debugging)
 * c: optional , default is `1`, single-core configuration
 * attention : 
-
 		`NVMAIN` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/nvmain`
 		`DRAMSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/DRAMSim2`
 		`HYBRIDSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/HybridSim`
