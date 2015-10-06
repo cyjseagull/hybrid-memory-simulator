@@ -23,17 +23,17 @@ installation program like apt-get or yum.
 
 Once you have SCons install go to the code hybrid-memory-simulator and give following command:
 
-    $scons -Q config=machine configuration path  [mem_type=NVMAIN/DRAMSIM/HYBRIDSIM] [mem_dir=path of memory simulator] [debug=0/1/2] [c=num of cores]
+    $scons -Q config=machine configuration path  [mem=NVMAIN/DRAMSIM/HYBRIDSIM] [mem_dir=path of memory simulator] [debug=0/1/2] [c=num of cores]
 
 * config: required , path of machine config file
-* mem_type : optional , default is `NVMAIN` ( plug NVMain as memory system simulator)
+* mem : optional , default is `NVMAIN` ( plug NVMain as memory system simulator)
 * mem_dir : optional , default is `hybrid-memory-simulator/nvmain` ( if mem_dir is default , make sure nvmain simulator exists in hybrid-memory-simulator directory)
 * debug : optional , default is `0` (no debugging)
 * c: optional , default is `1`, single-core configuration
 * attention : 
-	* `NVMAIN` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/nvmain`
-	* `DRAMSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/DRAMSim2`
-	* `HYBRIDSIM` as `mem_type` , default `mem_dir` is `hybrid-memory-simulator/HybridSim`
+	* `NVMAIN` as `mem` , default `mem_dir` is `hybrid-memory-simulator/nvmain`
+	* `DRAMSIM` as `mem` , default `mem_dir` is `hybrid-memory-simulator/DRAMSim2`
+	* `HYBRIDSIM` as `mem` , default `mem_dir` is `hybrid-memory-simulator/HybridSim`
 	* before compile hybrid-memory-system , you must make sure `libdramsim.so` in `DRAMSim2 directory and libhybridsim.so` in `HybridSim directory` 
 
 e.g.:
