@@ -1,0 +1,561 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIVATE	BusPacket.h	/^	ACTIVATE,$/;"	e	enum:DRAMSim::BusPacketType
+ADDRESS_MAPPING_H	AddressMapping.h	31;"	d
+ADDRESS_MAPPING_SCHEME	IniReader.cpp	/^string ADDRESS_MAPPING_SCHEME;$/;"	v
+ADD_TYPE	CSVWriter.h	201;"	d
+AL	IniReader.cpp	/^unsigned AL;$/;"	v
+About DRAMSim2	README.tex	/^\\section{About DRAMSim2}$/;"	s
+AddressMappingScheme	SystemConfiguration.h	/^enum AddressMappingScheme$/;"	g
+BANKSTATE_H	BankState.h	39;"	d
+BANK_H	Bank.h	39;"	d
+BL	IniReader.cpp	/^unsigned BL;$/;"	v
+BOOL	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	e	enum:DRAMSim::_variableType
+BUSPACKET_H	BusPacket.h	32;"	d
+BYTE_OFFSET_WIDTH	IniReader.cpp	/^unsigned BYTE_OFFSET_WIDTH;$/;"	v
+Bank	Bank.cpp	/^Bank::Bank(ostream &dramsim_log_):$/;"	f	class:Bank
+Bank	Bank.h	/^class Bank$/;"	c	namespace:DRAMSim
+BankState	BankState.cpp	/^BankState::BankState(ostream &dramsim_log_):$/;"	f	class:BankState
+BankState	BankState.h	/^class BankState$/;"	c	namespace:DRAMSim
+BankThenRankRoundRobin	SystemConfiguration.h	/^	BankThenRankRoundRobin$/;"	e	enum:SchedulingPolicy
+Building DRAMSim2	README.tex	/^\\section{Building DRAMSim2}$/;"	s
+BusPacket	BusPacket.cpp	/^BusPacket::BusPacket(BusPacketType packtype, uint64_t physicalAddr, $/;"	f	class:BusPacket
+BusPacket	BusPacket.h	/^class BusPacket$/;"	c	namespace:DRAMSim
+BusPacket1D	CommandQueue.h	/^	typedef vector<BusPacket *> BusPacket1D;$/;"	t	class:DRAMSim::CommandQueue
+BusPacket2D	CommandQueue.h	/^	typedef vector<BusPacket1D> BusPacket2D;$/;"	t	class:DRAMSim::CommandQueue
+BusPacket3D	CommandQueue.h	/^	typedef vector<BusPacket2D> BusPacket3D;$/;"	t	class:DRAMSim::CommandQueue
+BusPacketType	BusPacket.h	/^enum BusPacketType$/;"	g	namespace:DRAMSim
+CALLBACK_H	Callback.h	36;"	d
+CL	IniReader.cpp	/^unsigned CL;$/;"	v
+CMDQUEUE_H	CommandQueue.h	37;"	d
+CMD_QUEUE_DEPTH	IniReader.cpp	/^unsigned CMD_QUEUE_DEPTH;$/;"	v
+COL_LOW_BIT_WIDTH	IniReader.cpp	/^unsigned COL_LOW_BIT_WIDTH;$/;"	v
+CSVWriter	CSVWriter.h	/^		CSVWriter(ostream &_output) : output(_output), finalized(false), idx(0)$/;"	f	class:DRAMSim::CSVWriter
+CSVWriter	CSVWriter.h	/^	class CSVWriter {$/;"	c	namespace:DRAMSim
+CXXFLAGS	Makefile	/^CXXFLAGS=-DNO_STORAGE -Wall -DDEBUG_BUILD $/;"	m
+Callback	Callback.h	/^	Callback( ConsumerT* const object, PtrMember member) :$/;"	f	class:DRAMSim::Callback
+Callback	Callback.h	/^	Callback( const Callback<ConsumerT,ReturnT,Param1T,Param2T,Param3T>& e ) :$/;"	f	class:DRAMSim::Callback
+Callback	Callback.h	/^class Callback: public CallbackBase<ReturnT,Param1T,Param2T,Param3T>$/;"	c	namespace:DRAMSim
+Callback	ClockDomain.h	/^        Callback(ConsumerT* const object, PtrMember member) : object(object), member(member) {}$/;"	f	class:ClockDomain::Callback
+Callback	ClockDomain.h	/^        Callback(const Callback<ConsumerT,ReturnT> &e) : object(e.object), member(e.member) {}$/;"	f	class:ClockDomain::Callback
+Callback	ClockDomain.h	/^    class Callback: public CallbackBase<ReturnT>$/;"	c	namespace:ClockDomain
+CallbackBase	Callback.h	/^class CallbackBase$/;"	c	namespace:DRAMSim
+CallbackBase	ClockDomain.h	/^    class CallbackBase$/;"	c	namespace:ClockDomain
+Callback_t	MemorySystem.h	/^typedef CallbackBase<void,unsigned,uint64_t,uint64_t> Callback_t;$/;"	t	namespace:DRAMSim
+CheckIfAllSet	IniReader.cpp	/^bool IniReader::CheckIfAllSet()$/;"	f	class:DRAMSim::IniReader
+ClockDomain	ClockDomain.cpp	/^namespace ClockDomain$/;"	n	file:
+ClockDomain	ClockDomain.h	/^namespace ClockDomain$/;"	n
+ClockDomainCrosser	ClockDomain.cpp	/^	ClockDomainCrosser::ClockDomainCrosser(ClockUpdateCB *_callback)$/;"	f	class:ClockDomain::ClockDomainCrosser
+ClockDomainCrosser	ClockDomain.cpp	/^	ClockDomainCrosser::ClockDomainCrosser(double ratio, ClockUpdateCB *_callback)$/;"	f	class:ClockDomain::ClockDomainCrosser
+ClockDomainCrosser	ClockDomain.cpp	/^	ClockDomainCrosser::ClockDomainCrosser(uint64_t _clock1, uint64_t _clock2, ClockUpdateCB *_callback) $/;"	f	class:ClockDomain::ClockDomainCrosser
+ClockDomainCrosser	ClockDomain.h	/^	class ClockDomainCrosser$/;"	c	namespace:ClockDomain
+ClockUpdateCB	ClockDomain.h	/^    typedef CallbackBase <void> ClockUpdateCB;$/;"	t	namespace:ClockDomain
+ClosePage	SystemConfiguration.h	/^	ClosePage$/;"	e	enum:RowBufferPolicy
+CommandQueue	CommandQueue.cpp	/^CommandQueue::CommandQueue(vector< vector<BankState> > &states, ostream &dramsim_log_) :$/;"	f	class:CommandQueue
+CommandQueue	CommandQueue.h	/^class CommandQueue : public SimulatorObject$/;"	c	namespace:DRAMSim
+ConfigMap	IniReader.h	/^} ConfigMap;$/;"	t	namespace:DRAMSim	typeref:struct:DRAMSim::_configMap
+CurrentBankState	BankState.h	/^enum CurrentBankState$/;"	g	namespace:DRAMSim
+DATA	BusPacket.h	/^	DATA$/;"	e	enum:DRAMSim::BusPacketType
+DATA_READ	Transaction.h	/^	DATA_READ,$/;"	e	enum:DRAMSim::TransactionType
+DATA_WRITE	Transaction.h	/^	DATA_WRITE,$/;"	e	enum:DRAMSim::TransactionType
+DEBUG	PrintMacros.h	47;"	d
+DEBUG	PrintMacros.h	55;"	d
+DEBUG	PrintMacros.h	57;"	d
+DEBUGN	PrintMacros.h	48;"	d
+DEBUGN	PrintMacros.h	56;"	d
+DEBUGN	PrintMacros.h	58;"	d
+DEBUG_ADDR_MAP	IniReader.cpp	/^bool DEBUG_ADDR_MAP;$/;"	v
+DEBUG_BANKS	IniReader.cpp	/^bool DEBUG_BANKS;$/;"	v
+DEBUG_BANKSTATE	IniReader.cpp	/^bool DEBUG_BANKSTATE;$/;"	v
+DEBUG_BUS	IniReader.cpp	/^bool DEBUG_BUS;$/;"	v
+DEBUG_CMD_Q	IniReader.cpp	/^bool DEBUG_CMD_Q;$/;"	v
+DEBUG_INI_READER	IniReader.cpp	/^bool DEBUG_INI_READER=false;$/;"	v
+DEBUG_POWER	IniReader.cpp	/^bool DEBUG_POWER;$/;"	v
+DEBUG_TRANS_Q	IniReader.cpp	/^bool DEBUG_TRANS_Q;$/;"	v
+DEFINE_BOOL_PARAM	IniReader.h	46;"	d
+DEFINE_FLOAT_PARAM	IniReader.h	45;"	d
+DEFINE_STRING_PARAM	IniReader.h	44;"	d
+DEFINE_UINT64_PARAM	IniReader.h	47;"	d
+DEFINE_UINT_PARAM	IniReader.h	43;"	d
+DEF_GETTER	IniReader.cpp	490;"	d	file:
+DEVICE_WIDTH	IniReader.cpp	/^unsigned DEVICE_WIDTH;$/;"	v
+DEV_PARAM	IniReader.h	/^typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	e	enum:DRAMSim::_paramType
+DRAM Scheduling Complexity is Growing	README.tex	/^\\subsection{DRAM Scheduling Complexity is Growing}$/;"	b
+DRAM performance characteristics changes every generation	README.tex	/^\\subsection{DRAM performance characteristics changes every generation}$/;"	b
+DRAMSIM_H	DRAMSim.h	33;"	d
+DRAMSim	AddressMapping.cpp	/^namespace DRAMSim$/;"	n	file:
+DRAMSim	AddressMapping.h	/^namespace DRAMSim$/;"	n
+DRAMSim	Bank.h	/^namespace DRAMSim$/;"	n
+DRAMSim	BankState.h	/^namespace DRAMSim$/;"	n
+DRAMSim	BusPacket.h	/^namespace DRAMSim$/;"	n
+DRAMSim	CSVWriter.h	/^namespace DRAMSim {$/;"	n
+DRAMSim	Callback.h	/^namespace DRAMSim$/;"	n
+DRAMSim	CommandQueue.h	/^namespace DRAMSim$/;"	n
+DRAMSim	DRAMSim.h	/^namespace DRAMSim $/;"	n
+DRAMSim	IniReader.cpp	/^namespace DRAMSim$/;"	n	file:
+DRAMSim	IniReader.h	/^namespace DRAMSim$/;"	n
+DRAMSim	MemoryController.h	/^namespace DRAMSim$/;"	n
+DRAMSim	MemorySystem.cpp	/^namespace DRAMSim {$/;"	n	file:
+DRAMSim	MemorySystem.h	/^namespace DRAMSim$/;"	n
+DRAMSim	MultiChannelMemorySystem.cpp	/^namespace DRAMSim {$/;"	n	file:
+DRAMSim	MultiChannelMemorySystem.h	/^namespace DRAMSim {$/;"	n
+DRAMSim	Rank.h	/^namespace DRAMSim$/;"	n
+DRAMSim	SimulatorObject.h	/^namespace DRAMSim$/;"	n
+DRAMSim	SystemConfiguration.h	/^namespace DRAMSim$/;"	n
+DRAMSim	Transaction.cpp	/^namespace DRAMSim {$/;"	n	file:
+DRAMSim	Transaction.h	/^namespace DRAMSim$/;"	n
+DataStruct	Bank.h	/^	} DataStruct;$/;"	t	class:DRAMSim::Bank	typeref:struct:DRAMSim::Bank::_DataStruct
+EPOCH_LENGTH	IniReader.cpp	/^unsigned EPOCH_LENGTH;$/;"	v
+ERROR	PrintMacros.h	42;"	d
+EXE_NAME	Makefile	/^EXE_NAME=DRAMSim$/;"	m
+Example Output	README.tex	/^\\section{Example Output}$/;"	s
+FLOAT	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	e	enum:DRAMSim::_variableType
+FilenameWithNumberSuffix	MultiChannelMemorySystem.cpp	/^string FilenameWithNumberSuffix(const string &filename, const string &extension, unsigned maxNumber=100)$/;"	f
+Getting DRAMSim2	README.tex	/^\\section{Getting DRAMSim2}$/;"	s
+HISTOGRAM_BIN_SIZE	SystemConfiguration.h	56;"	d
+IDD0	IniReader.cpp	/^unsigned IDD0;$/;"	v
+IDD1	IniReader.cpp	/^unsigned IDD1;$/;"	v
+IDD2N	IniReader.cpp	/^unsigned IDD2N;$/;"	v
+IDD2P	IniReader.cpp	/^unsigned IDD2P;$/;"	v
+IDD2Q	IniReader.cpp	/^unsigned IDD2Q;$/;"	v
+IDD3N	IniReader.cpp	/^unsigned IDD3N;$/;"	v
+IDD3Pf	IniReader.cpp	/^unsigned IDD3Pf;$/;"	v
+IDD3Ps	IniReader.cpp	/^unsigned IDD3Ps;$/;"	v
+IDD4R	IniReader.cpp	/^unsigned IDD4R;$/;"	v
+IDD4W	IniReader.cpp	/^unsigned IDD4W;$/;"	v
+IDD5	IniReader.cpp	/^unsigned IDD5;$/;"	v
+IDD6	IniReader.cpp	/^unsigned IDD6;$/;"	v
+IDD6L	IniReader.cpp	/^unsigned IDD6L;$/;"	v
+IDD7	IniReader.cpp	/^unsigned IDD7;$/;"	v
+INIREADER_H	IniReader.h	32;"	d
+Idle	BankState.h	/^	Idle,$/;"	e	enum:DRAMSim::CurrentBankState
+IndexedName	CSVWriter.h	/^			IndexedName(const char *baseName, unsigned channel)$/;"	f	struct:DRAMSim::CSVWriter::IndexedName
+IndexedName	CSVWriter.h	/^			IndexedName(const char *baseName, unsigned channel, unsigned rank)$/;"	f	struct:DRAMSim::CSVWriter::IndexedName
+IndexedName	CSVWriter.h	/^			IndexedName(const char *baseName, unsigned channel, unsigned rank, unsigned bank)$/;"	f	struct:DRAMSim::CSVWriter::IndexedName
+IndexedName	CSVWriter.h	/^		struct IndexedName {$/;"	s	class:DRAMSim::CSVWriter
+IniReader	IniReader.h	/^class IniReader$/;"	c	namespace:DRAMSim
+InitEnumsFromStrings	IniReader.cpp	/^void IniReader::InitEnumsFromStrings()$/;"	f	class:DRAMSim::IniReader
+InitOutputFiles	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::InitOutputFiles(string traceFilename)$/;"	f	class:MultiChannelMemorySystem
+JEDEC_DATA_BUS_BITS	IniReader.cpp	/^unsigned JEDEC_DATA_BUS_BITS;$/;"	v
+LIB_NAME	Makefile	/^LIB_NAME=libdramsim.so$/;"	m
+LIB_NAME_MACOS	Makefile	/^LIB_NAME_MACOS=libdramsim.dylib$/;"	m
+LIB_OBJ	Makefile	/^LIB_OBJ := $(addsuffix .o, $(basename $(LIB_SRC)))$/;"	m
+LIB_SRC	Makefile	/^LIB_SRC := $(filter-out TraceBasedSim.cpp,$(SRC))$/;"	m
+Library Interface	README.tex	/^\\subsection{Library Interface}\\label{library}$/;"	b
+MAX_TMP_STR	CSVWriter.h	/^			static const size_t MAX_TMP_STR = 64; $/;"	m	struct:DRAMSim::CSVWriter::IndexedName
+MEMORYCONTROLLER_H	MemoryController.h	33;"	d
+MEMORYSYSTEM_H	MemorySystem.h	34;"	d
+MemoryController	MemoryController.cpp	/^MemoryController::MemoryController(MemorySystem *parent, CSVWriter &csvOut_, ostream &dramsim_log_) :$/;"	f	class:MemoryController
+MemoryController	MemoryController.h	/^class MemoryController : public SimulatorObject$/;"	c	namespace:DRAMSim
+MemorySystem	MemorySystem.cpp	/^MemorySystem::MemorySystem(unsigned id, unsigned int megsOfMemory, CSVWriter &csvOut_, ostream &dramsim_log_) :$/;"	f	class:DRAMSim::MemorySystem
+MemorySystem	MemorySystem.h	/^class MemorySystem : public SimulatorObject$/;"	c	namespace:DRAMSim
+MultiChannelMemorySystem	DRAMSim.h	/^	class MultiChannelMemorySystem {$/;"	c	namespace:DRAMSim
+MultiChannelMemorySystem	MultiChannelMemorySystem.cpp	/^MultiChannelMemorySystem::MultiChannelMemorySystem(const string &deviceIniFilename_, const string &systemIniFilename_, const string &pwd_, const string &traceFilename_, unsigned megsOfMemory_, string *visFilename_, const IniReader::OverrideMap *paramOverrides)$/;"	f	class:MultiChannelMemorySystem
+MultiChannelMemorySystem	MultiChannelMemorySystem.h	/^class MultiChannelMemorySystem : public SimulatorObject $/;"	c	namespace:DRAMSim
+NUM_BANKS	IniReader.cpp	/^unsigned NUM_BANKS;$/;"	v
+NUM_BANKS_LOG	IniReader.cpp	/^unsigned NUM_BANKS_LOG;$/;"	v
+NUM_CHANS	IniReader.cpp	/^unsigned NUM_CHANS;$/;"	v
+NUM_CHANS_LOG	IniReader.cpp	/^unsigned NUM_CHANS_LOG;$/;"	v
+NUM_COLS	IniReader.cpp	/^unsigned NUM_COLS;$/;"	v
+NUM_COLS_LOG	IniReader.cpp	/^unsigned NUM_COLS_LOG;$/;"	v
+NUM_DEVICES	MemorySystem.cpp	/^unsigned NUM_DEVICES;$/;"	v
+NUM_RANKS	MemorySystem.cpp	/^unsigned NUM_RANKS;$/;"	v
+NUM_RANKS_LOG	MemorySystem.cpp	/^unsigned NUM_RANKS_LOG;$/;"	v
+NUM_ROWS	IniReader.cpp	/^unsigned NUM_ROWS;$/;"	v
+NUM_ROWS_LOG	IniReader.cpp	/^unsigned NUM_ROWS_LOG;$/;"	v
+OBJ	Makefile	/^OBJ = $(addsuffix .o, $(basename $(SRC)))$/;"	m
+OPTFLAGS	Makefile	/^OPTFLAGS= -O0 -g$/;"	m
+OPTFLAGS	Makefile	/^OPTFLAGS=-O3 $/;"	m
+OpenPage	SystemConfiguration.h	/^	OpenPage,$/;"	e	enum:RowBufferPolicy
+OverrideIterator	IniReader.h	/^	typedef OverrideMap::const_iterator OverrideIterator; $/;"	t	class:DRAMSim::IniReader
+OverrideKeys	IniReader.cpp	/^void IniReader::OverrideKeys(const OverrideMap *map)$/;"	f	class:DRAMSim::IniReader
+OverrideMap	IniReader.h	/^	typedef std::map<string, string> OverrideMap;$/;"	t	class:DRAMSim::IniReader
+POBJ	Makefile	/^POBJ = $(addsuffix .po, $(basename $(LIB_SRC)))$/;"	m
+PRECHARGE	BusPacket.h	/^	PRECHARGE,$/;"	e	enum:DRAMSim::BusPacketType
+PRINT	PrintMacros.h	59;"	d
+PRINTN	PrintMacros.h	60;"	d
+PRINT_MACROS_H	PrintMacros.h	36;"	d
+PerRank	SystemConfiguration.h	/^	PerRank,$/;"	e	enum:QueuingStructure
+PerRankPerBank	SystemConfiguration.h	/^	PerRankPerBank$/;"	e	enum:QueuingStructure
+PowerDown	BankState.h	/^	PowerDown$/;"	e	enum:DRAMSim::CurrentBankState
+Precharging	BankState.h	/^	Precharging,$/;"	e	enum:DRAMSim::CurrentBankState
+PtrMember	Callback.h	/^	typedef ReturnT (ConsumerT::*PtrMember)(Param1T,Param2T,Param3T);$/;"	t	class:DRAMSim::Callback
+PtrMember	ClockDomain.h	/^        typedef ReturnT (ConsumerT::*PtrMember)();$/;"	t	class:ClockDomain::Callback
+QUEUING_STRUCTURE	IniReader.cpp	/^string QUEUING_STRUCTURE;$/;"	v
+QueuingStructure	SystemConfiguration.h	/^enum QueuingStructure$/;"	g
+RANK_H	Rank.h	35;"	d
+READ	BusPacket.h	/^	READ,$/;"	e	enum:DRAMSim::BusPacketType
+READ_AUTOPRE_DELAY	SystemConfiguration.h	125;"	d
+READ_P	BusPacket.h	/^	READ_P,$/;"	e	enum:DRAMSim::BusPacketType
+READ_TO_PRE_DELAY	SystemConfiguration.h	122;"	d
+READ_TO_WRITE_DELAY	SystemConfiguration.h	124;"	d
+REBUILDABLES	Makefile	/^REBUILDABLES=$(OBJ) ${POBJ} $(EXE_NAME) $(LIB_NAME) $(STATIC_LIB_NAME)$/;"	m
+REFRESH	BusPacket.h	/^	REFRESH,$/;"	e	enum:DRAMSim::BusPacketType
+REFRESH_PERIOD	IniReader.cpp	/^unsigned REFRESH_PERIOD;$/;"	v
+RETURN_DATA	Transaction.h	/^	RETURN_DATA$/;"	e	enum:DRAMSim::TransactionType
+RL	SystemConfiguration.h	97;"	d
+ROW_BUFFER_POLICY	IniReader.cpp	/^string ROW_BUFFER_POLICY;$/;"	v
+Rank	Rank.cpp	/^Rank::Rank(ostream &dramsim_log_) :$/;"	f	class:Rank
+Rank	Rank.h	/^class Rank : public SimulatorObject$/;"	c	namespace:DRAMSim
+RankThenBankRoundRobin	SystemConfiguration.h	/^	RankThenBankRoundRobin,$/;"	e	enum:SchedulingPolicy
+ReadIniFile	IniReader.cpp	/^void IniReader::ReadIniFile(string filename, bool isSystemFile)$/;"	f	class:DRAMSim::IniReader
+Refreshing	BankState.h	/^	Refreshing,$/;"	e	enum:DRAMSim::CurrentBankState
+RegisterCallbacks	MemorySystem.cpp	/^void MemorySystem::RegisterCallbacks( Callback_t* readCB, Callback_t* writeCB,$/;"	f	class:DRAMSim::MemorySystem
+RegisterCallbacks	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::RegisterCallbacks( $/;"	f	class:MultiChannelMemorySystem
+ReportPower	MemorySystem.cpp	/^powerCallBack_t MemorySystem::ReportPower = NULL;$/;"	m	class:DRAMSim::MemorySystem	file:
+ReportPower	MemorySystem.h	/^	static powerCallBack_t ReportPower;$/;"	m	class:DRAMSim::MemorySystem
+ReturnReadData	MemorySystem.h	/^	Callback_t* ReturnReadData;$/;"	m	class:DRAMSim::MemorySystem
+RowActive	BankState.h	/^	RowActive,$/;"	e	enum:DRAMSim::CurrentBankState
+RowBufferPolicy	SystemConfiguration.h	/^enum RowBufferPolicy$/;"	g
+Running DRAMSim2	README.tex	/^\\section{Running DRAMSim2}$/;"	s
+SCHEDULING_POLICY	IniReader.cpp	/^string SCHEDULING_POLICY;$/;"	v
+SEQUENTIAL	MemoryController.cpp	42;"	d	file:
+SHOW_SIM_OUTPUT	PrintMacros.cpp	/^int __attribute__((weak)) SHOW_SIM_OUTPUT = false;$/;"	v
+SHOW_SIM_OUTPUT	TraceBasedSim.cpp	/^int SHOW_SIM_OUTPUT = 1;$/;"	v
+SIMULATOROBJ_H	SimulatorObject.h	39;"	d
+SINGLE_INDEX_LEN	CSVWriter.h	/^			static const unsigned SINGLE_INDEX_LEN = 4; $/;"	m	struct:DRAMSim::CSVWriter::IndexedName
+SRC	Makefile	/^SRC = $(wildcard *.cpp)$/;"	m
+STATIC_LIB_NAME	Makefile	/^STATIC_LIB_NAME := libdramsim.a$/;"	m
+STRING	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	e	enum:DRAMSim::_variableType
+SYSCONFIG_H	SystemConfiguration.h	34;"	d
+SYS_PARAM	IniReader.h	/^typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	e	enum:DRAMSim::_paramType
+SchedulingPolicy	SystemConfiguration.h	/^enum SchedulingPolicy$/;"	g
+Scheme1	SystemConfiguration.h	/^	Scheme1,$/;"	e	enum:AddressMappingScheme
+Scheme2	SystemConfiguration.h	/^	Scheme2,$/;"	e	enum:AddressMappingScheme
+Scheme3	SystemConfiguration.h	/^	Scheme3,$/;"	e	enum:AddressMappingScheme
+Scheme4	SystemConfiguration.h	/^	Scheme4,$/;"	e	enum:AddressMappingScheme
+Scheme5	SystemConfiguration.h	/^	Scheme5,$/;"	e	enum:AddressMappingScheme
+Scheme6	SystemConfiguration.h	/^	Scheme6,$/;"	e	enum:AddressMappingScheme
+Scheme7	SystemConfiguration.h	/^	Scheme7$/;"	e	enum:AddressMappingScheme
+SetKey	IniReader.cpp	/^void IniReader::SetKey(string key, string valueString, bool isSystemParam, size_t lineNumber)$/;"	f	class:DRAMSim::IniReader
+SimulatorObject	SimulatorObject.h	/^class SimulatorObject$/;"	c	namespace:DRAMSim
+THROW_AWAY_BITS	IniReader.cpp	/^unsigned THROW_AWAY_BITS;$/;"	v
+TOTAL_ROW_ACCESSES	IniReader.cpp	/^unsigned TOTAL_ROW_ACCESSES;$/;"	v
+TRANSACTION_H	Transaction.h	32;"	d
+TRANSACTION_SIZE	IniReader.cpp	/^unsigned TRANSACTION_SIZE;$/;"	v
+TRANS_QUEUE_DEPTH	IniReader.cpp	/^unsigned TRANS_QUEUE_DEPTH;$/;"	v
+TestObj	ClockDomain.h	/^		TestObj() {}$/;"	f	class:ClockDomain::TestObj
+TestObj	ClockDomain.h	/^	class TestObj$/;"	c	namespace:ClockDomain
+The Sales Pitch	README.tex	/^\\subsection{The Sales Pitch}$/;"	b
+Trace Based Simulation	README.tex	/^\\subsection{Trace-Based Simulation}$/;"	b
+TraceType	SystemConfiguration.h	/^enum TraceType$/;"	g
+Transaction	Transaction.cpp	/^Transaction::Transaction(TransactionType transType, uint64_t addr, void *dat) :$/;"	f	class:DRAMSim::Transaction
+Transaction	Transaction.cpp	/^Transaction::Transaction(const Transaction &t)$/;"	f	class:DRAMSim::Transaction
+Transaction	Transaction.h	/^class Transaction$/;"	c	namespace:DRAMSim
+TransactionCompleteCB	Callback.h	/^typedef CallbackBase <void, unsigned, uint64_t, uint64_t> TransactionCompleteCB;$/;"	t	namespace:DRAMSim
+TransactionReceiver	TraceBasedSim.cpp	/^class TransactionReceiver$/;"	c	file:
+TransactionType	Transaction.h	/^enum TransactionType$/;"	g	namespace:DRAMSim
+UINT	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	e	enum:DRAMSim::_variableType
+UINT64	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	e	enum:DRAMSim::_variableType
+USE_LOW_POWER	IniReader.cpp	/^bool USE_LOW_POWER;$/;"	v
+VERIFICATION_OUTPUT	IniReader.cpp	/^bool VERIFICATION_OUTPUT;$/;"	v
+VIS_FILE_OUTPUT	IniReader.cpp	/^bool VIS_FILE_OUTPUT;$/;"	v
+Vdd	IniReader.cpp	/^float Vdd;$/;"	v
+WL	SystemConfiguration.h	98;"	d
+WRITE	BusPacket.h	/^	WRITE,$/;"	e	enum:DRAMSim::BusPacketType
+WRITE_AUTOPRE_DELAY	SystemConfiguration.h	126;"	d
+WRITE_P	BusPacket.h	/^	WRITE_P,$/;"	e	enum:DRAMSim::BusPacketType
+WRITE_TO_PRE_DELAY	SystemConfiguration.h	123;"	d
+WRITE_TO_READ_DELAY_B	SystemConfiguration.h	127;"	d
+WRITE_TO_READ_DELAY_R	SystemConfiguration.h	128;"	d
+Why Do We Need to Simulate DRAM Systems This Accurately	README.tex	/^\\section{Why Do We Need to Simulate DRAM Systems This Accurately?}$/;"	s
+WillAcceptTransaction	MemoryController.cpp	/^bool MemoryController::WillAcceptTransaction()$/;"	f	class:MemoryController
+WillAcceptTransaction	MemorySystem.cpp	/^bool MemorySystem::WillAcceptTransaction()$/;"	f	class:DRAMSim::MemorySystem
+WriteDataDone	MemorySystem.h	/^	Callback_t* WriteDataDone;$/;"	m	class:DRAMSim::MemorySystem
+WriteParams	IniReader.cpp	/^void IniReader::WriteParams(std::ofstream &visDataOut, paramType type)$/;"	f	class:DRAMSim::IniReader
+WriteValuesOut	IniReader.cpp	/^void IniReader::WriteValuesOut(std::ofstream &visDataOut)$/;"	f	class:DRAMSim::IniReader
+_CSV_WRITER_H_	CSVWriter.h	31;"	d
+_DataStruct	Bank.h	/^	typedef struct _DataStruct$/;"	s	class:DRAMSim::Bank
+_configMap	IniReader.h	/^typedef struct _configMap$/;"	s	namespace:DRAMSim
+_paramType	IniReader.h	/^typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	g	namespace:DRAMSim
+_variableType	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	g	namespace:DRAMSim
+actpreEnergy	MemoryController.h	/^	vector< uint64_t > actpreEnergy;$/;"	m	class:DRAMSim::MemoryController
+actual_update	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::actual_update() $/;"	f	class:MultiChannelMemorySystem
+addTransaction	MemoryController.cpp	/^bool MemoryController::addTransaction(Transaction *trans)$/;"	f	class:MemoryController
+addTransaction	MemorySystem.cpp	/^bool MemorySystem::addTransaction(Transaction *trans)$/;"	f	class:DRAMSim::MemorySystem
+addTransaction	MemorySystem.cpp	/^bool MemorySystem::addTransaction(bool isWrite, uint64_t addr)$/;"	f	class:DRAMSim::MemorySystem
+addTransaction	MultiChannelMemorySystem.cpp	/^bool MultiChannelMemorySystem::addTransaction(Transaction *trans)$/;"	f	class:MultiChannelMemorySystem
+addTransaction	MultiChannelMemorySystem.cpp	/^bool MultiChannelMemorySystem::addTransaction(bool isWrite, uint64_t addr)$/;"	f	class:MultiChannelMemorySystem
+addTransaction	MultiChannelMemorySystem.cpp	/^bool MultiChannelMemorySystem::addTransaction(const Transaction &trans)$/;"	f	class:MultiChannelMemorySystem
+add_one_and_run	example_app/dramsim_test.cpp	/^int some_object::add_one_and_run(MultiChannelMemorySystem *mem, uint64_t addr)$/;"	f	class:some_object
+add_pending	TraceBasedSim.cpp	/^		void add_pending(const Transaction &t, uint64_t cycle)$/;"	f	class:TransactionReceiver
+address	Transaction.h	/^	uint64_t address;$/;"	m	class:DRAMSim::Transaction
+addressMapping	AddressMapping.cpp	/^void addressMapping(uint64_t physicalAddress, unsigned &newTransactionChan, unsigned &newTransactionRank, unsigned &newTransactionBank, unsigned &newTransactionRow, unsigned &newTransactionColumn)$/;"	f	namespace:DRAMSim
+addressMappingScheme	IniReader.cpp	/^AddressMappingScheme addressMappingScheme;$/;"	m	namespace:DRAMSim	file:
+alignTransactionAddress	TraceBasedSim.cpp	/^void alignTransactionAddress(Transaction &trans)$/;"	f
+array	traces/traceParse.py	/^import array$/;"	i
+attachMemoryController	Rank.cpp	/^void Rank::attachMemoryController(MemoryController *memoryController)$/;"	f	class:Rank
+attachRanks	MemoryController.cpp	/^void MemoryController::attachRanks(vector<Rank *> *ranks)$/;"	f	class:MemoryController
+backgroundEnergy	MemoryController.h	/^	vector< uint64_t > backgroundEnergy;$/;"	m	class:DRAMSim::MemoryController
+bank	BusPacket.h	/^	unsigned bank;$/;"	m	class:DRAMSim::BusPacket
+bankBitWidth	MemoryController.h	/^	unsigned bankBitWidth;$/;"	m	class:DRAMSim::MemoryController
+bankStates	CommandQueue.h	/^	vector< vector<BankState> > &bankStates;$/;"	m	class:DRAMSim::CommandQueue
+bankStates	MemoryController.h	/^	vector< vector <BankState> > bankStates;$/;"	m	class:DRAMSim::MemoryController
+bankStates	Rank.h	/^	vector<BankState> bankStates;$/;"	m	class:DRAMSim::Rank
+banks	Rank.h	/^	vector<Bank> banks;$/;"	m	class:DRAMSim::Rank
+binaries	comparison_gen.py	/^binaries = ['DRAMSim.master', 'DRAMSim.cleanup']$/;"	v
+burstEnergy	MemoryController.h	/^	vector< uint64_t > burstEnergy;$/;"	m	class:DRAMSim::MemoryController
+busPacketType	BusPacket.h	/^	BusPacketType busPacketType;$/;"	m	class:DRAMSim::BusPacket
+byteOffsetWidth	MemoryController.h	/^	unsigned byteOffsetWidth;$/;"	m	class:DRAMSim::MemoryController
+callback	ClockDomain.h	/^		ClockUpdateCB *callback;$/;"	m	class:ClockDomain::ClockDomainCrosser
+cb	ClockDomain.cpp	/^	void TestObj::cb()$/;"	f	class:ClockDomain::TestObj
+channelBitWidth	MemoryController.h	/^	unsigned channelBitWidth;$/;"	m	class:DRAMSim::MemoryController
+channels	MultiChannelMemorySystem.h	/^		vector<MemorySystem*> channels; $/;"	m	class:DRAMSim::MultiChannelMemorySystem
+checkNameLength	CSVWriter.h	/^			static void checkNameLength(const char *baseName, unsigned numIndices)$/;"	f	struct:DRAMSim::CSVWriter::IndexedName
+clock1	ClockDomain.h	/^		uint64_t clock1, clock2;$/;"	m	class:ClockDomain::ClockDomainCrosser
+clock2	ClockDomain.h	/^		uint64_t clock1, clock2;$/;"	m	class:ClockDomain::ClockDomainCrosser
+clockDomainCrosser	MultiChannelMemorySystem.h	/^		ClockDomain::ClockDomainCrosser clockDomainCrosser; $/;"	m	class:DRAMSim::MultiChannelMemorySystem
+cmdCyclesLeft	MemoryController.h	/^	unsigned cmdCyclesLeft;$/;"	m	class:DRAMSim::MemoryController
+colBitWidth	MemoryController.h	/^	unsigned colBitWidth;$/;"	m	class:DRAMSim::MemoryController
+column	BusPacket.h	/^	unsigned column;$/;"	m	class:DRAMSim::BusPacket
+commandQueue	MemoryController.h	/^	CommandQueue commandQueue;$/;"	m	class:DRAMSim::MemoryController
+configMap	IniReader.cpp	/^static ConfigMap configMap[] =$/;"	m	namespace:DRAMSim	file:
+counter1	ClockDomain.h	/^		uint64_t counter1, counter2;$/;"	m	class:ClockDomain::ClockDomainCrosser
+counter2	ClockDomain.h	/^		uint64_t counter1, counter2;$/;"	m	class:ClockDomain::ClockDomainCrosser
+csvOut	MemoryController.h	/^	CSVWriter &csvOut; $/;"	m	class:DRAMSim::MemoryController
+csvOut	MemorySystem.h	/^	CSVWriter &csvOut;$/;"	m	class:DRAMSim::MemorySystem
+csvOut	MultiChannelMemorySystem.h	/^		CSVWriter *csvOut; $/;"	m	class:DRAMSim::MultiChannelMemorySystem
+currentBankState	BankState.h	/^	CurrentBankState currentBankState;$/;"	m	class:DRAMSim::BankState
+currentClockCycle	SimulatorObject.h	/^	uint64_t currentClockCycle;$/;"	m	class:DRAMSim::SimulatorObject
+currentState	Bank.h	/^	BankState currentState;$/;"	m	class:DRAMSim::Bank
+data	Bank.h	/^		void *data;$/;"	m	struct:DRAMSim::Bank::_DataStruct
+data	BusPacket.h	/^	void *data;$/;"	m	class:DRAMSim::BusPacket
+data	Transaction.h	/^	void *data;$/;"	m	class:DRAMSim::Transaction
+dataCyclesLeft	MemoryController.h	/^	unsigned dataCyclesLeft;$/;"	m	class:DRAMSim::MemoryController
+dataCyclesLeft	Rank.h	/^	unsigned dataCyclesLeft;$/;"	m	class:DRAMSim::Rank
+deviceIniFilename	MultiChannelMemorySystem.h	/^		string deviceIniFilename;$/;"	m	class:DRAMSim::MultiChannelMemorySystem
+devices	comparison_gen.py	/^devices = ['DDR3_micron_64M_8B_x4_sg15.ini', 'DDR2_micron_32M_4B_x4_sg3E.ini'];$/;"	v
+diff_args	comparison_gen.py	/^	diff_args="%s_%d.vis %s_%d.vis"%(binaries[0],x,binaries[1],x)$/;"	v
+dramsim_flags	comparison_gen.py	/^dramsim_flags = '-c 2000000 -n -S 8192 -q '$/;"	v
+dramsim_log	Bank.h	/^	ostream &dramsim_log; $/;"	m	class:DRAMSim::Bank
+dramsim_log	BankState.h	/^	ostream &dramsim_log; $/;"	m	class:DRAMSim::BankState
+dramsim_log	BusPacket.h	/^	ostream &dramsim_log; $/;"	m	class:DRAMSim::BusPacket
+dramsim_log	CommandQueue.h	/^	ostream &dramsim_log;$/;"	m	class:DRAMSim::CommandQueue
+dramsim_log	MemoryController.h	/^	ostream &dramsim_log;$/;"	m	class:DRAMSim::MemoryController
+dramsim_log	MemorySystem.h	/^	ostream &dramsim_log;$/;"	m	class:DRAMSim::MemorySystem
+dramsim_log	MultiChannelMemorySystem.h	/^	ofstream dramsim_log; $/;"	m	class:DRAMSim::MultiChannelMemorySystem
+dramsim_log	Rank.h	/^	ostream &dramsim_log; $/;"	m	class:DRAMSim::Rank
+dramsim_log2	SystemConfiguration.h	/^unsigned inline dramsim_log2(unsigned value)$/;"	f	namespace:DRAMSim
+enqueue	CommandQueue.cpp	/^void CommandQueue::enqueue(BusPacket *newBusPacket)$/;"	f	class:CommandQueue
+fieldNames	CSVWriter.h	/^		vector<string> fieldNames; $/;"	m	class:DRAMSim::CSVWriter
+fileExists	MultiChannelMemorySystem.cpp	/^bool fileExists(string &path)$/;"	f
+finalize	CSVWriter.h	/^		void finalize()$/;"	f	class:DRAMSim::CSVWriter
+finalized	CSVWriter.h	/^		bool finalized; $/;"	m	class:DRAMSim::CSVWriter
+findChannelNumber	MultiChannelMemorySystem.cpp	/^unsigned MultiChannelMemorySystem::findChannelNumber(uint64_t addr)$/;"	f	class:MultiChannelMemorySystem
+getBusPacketType	Transaction.h	/^	BusPacketType getBusPacketType()$/;"	f	class:DRAMSim::Transaction
+getCommandQueue	CommandQueue.cpp	/^vector<BusPacket *> &CommandQueue::getCommandQueue(unsigned rank, unsigned bank)$/;"	f	class:CommandQueue
+getId	Rank.cpp	/^int Rank::getId() const$/;"	f	class:Rank
+getIniBool	MultiChannelMemorySystem.cpp	/^int MultiChannelMemorySystem::getIniBool(const std::string& field, bool *val)$/;"	f	class:MultiChannelMemorySystem
+getIniFloat	MultiChannelMemorySystem.cpp	/^int MultiChannelMemorySystem::getIniFloat(const std::string& field, float *val)$/;"	f	class:MultiChannelMemorySystem
+getIniUint	MultiChannelMemorySystem.cpp	/^int MultiChannelMemorySystem::getIniUint(const std::string& field, unsigned int *val)$/;"	f	class:MultiChannelMemorySystem
+getIniUint64	MultiChannelMemorySystem.cpp	/^int MultiChannelMemorySystem::getIniUint64(const std::string& field, uint64_t *val)$/;"	f	class:MultiChannelMemorySystem
+getLogFile	MultiChannelMemorySystem.cpp	/^ostream &MultiChannelMemorySystem::getLogFile()$/;"	f	class:MultiChannelMemorySystem
+getMemorySystemInstance	MultiChannelMemorySystem.cpp	/^MultiChannelMemorySystem *getMemorySystemInstance(const string &dev, const string &sys, const string &pwd, const string &trc, unsigned megsOfMemory, string *visfilename) $/;"	f	namespace:DRAMSim
+getOutputStream	CSVWriter.h	/^		ostream &getOutputStream()$/;"	f	class:DRAMSim::CSVWriter
+grandTotalBankAccesses	MemoryController.h	/^	vector<uint64_t> grandTotalBankAccesses; $/;"	m	class:DRAMSim::MemoryController
+gztrace_filename	traces/traceParse.py	/^gztrace_filename = sys.argv[1]$/;"	v
+hasRoomFor	CommandQueue.cpp	/^bool CommandQueue::hasRoomFor(unsigned numberToEnqueue, unsigned rank, unsigned bank)$/;"	f	class:CommandQueue
+i	comparison_gen.py	/^i=0$/;"	v
+id	Rank.h	/^	int id;$/;"	m	class:DRAMSim::Rank
+idx	CSVWriter.h	/^		unsigned idx; $/;"	m	class:DRAMSim::CSVWriter
+incomingWriteBank	Rank.h	/^	unsigned incomingWriteBank;$/;"	m	class:DRAMSim::Rank
+incomingWriteColumn	Rank.h	/^	unsigned incomingWriteColumn;$/;"	m	class:DRAMSim::Rank
+incomingWriteRow	Rank.h	/^	unsigned incomingWriteRow;$/;"	m	class:DRAMSim::Rank
+iniKey	IniReader.h	/^	string iniKey; \/\/for example "tRCD"$/;"	m	struct:DRAMSim::_configMap
+insertHistogram	MemoryController.cpp	/^void MemoryController::insertHistogram(unsigned latencyValue, unsigned rank, unsigned bank)$/;"	f	class:MemoryController
+isEmpty	CommandQueue.cpp	/^bool CommandQueue::isEmpty(unsigned rank)$/;"	f	class:CommandQueue
+isFinalized	CSVWriter.h	/^		bool isFinalized()$/;"	f	class:DRAMSim::CSVWriter
+isIssuable	CommandQueue.cpp	/^bool CommandQueue::isIssuable(BusPacket *busPacket)$/;"	f	class:CommandQueue
+isNameTooLong	CSVWriter.h	/^			static bool isNameTooLong(const char *baseName, unsigned numIndices)$/;"	f	struct:DRAMSim::CSVWriter::IndexedName
+isPowerDown	Rank.h	/^	bool isPowerDown;$/;"	m	class:DRAMSim::Rank
+isPowerOfTwo	SystemConfiguration.h	/^inline bool isPowerOfTwo(unsigned long x)$/;"	f	namespace:DRAMSim
+itertools	comparison_gen.py	/^import itertools $/;"	i
+k6	SystemConfiguration.h	/^	k6,$/;"	e	enum:TraceType
+lastCommand	BankState.h	/^	BusPacketType lastCommand;$/;"	m	class:DRAMSim::BankState
+latencies	MemoryController.h	/^	map<unsigned,unsigned> latencies; \/\/ latencyValue -> latencyCount$/;"	m	class:DRAMSim::MemoryController
+length	traces/traceParse.py	/^        length = len(time)$/;"	v
+libdramsim_is_present	MemorySystem.cpp	/^	void libdramsim_is_present(void)$/;"	f
+linePattern	traces/traceParse.py	/^  linePattern = re.compile(r'(0x[0-9A-F]+)\\s+([A-Z_]+)\\s+([0-9.,]+)\\s+(.*)')$/;"	v
+main	TraceBasedSim.cpp	/^int main(int argc, char **argv)$/;"	f
+main	example_app/dramsim_test.cpp	/^int main()$/;"	f
+mase	SystemConfiguration.h	/^	mase,$/;"	e	enum:TraceType
+master_list	comparison_gen.py	/^master_list = []$/;"	v
+megsOfMemory	MultiChannelMemorySystem.h	/^		unsigned megsOfMemory; $/;"	m	class:DRAMSim::MultiChannelMemorySystem
+member	Callback.h	/^	const PtrMember  member;$/;"	m	class:DRAMSim::Callback
+member	ClockDomain.h	/^        const PtrMember  member;$/;"	m	class:ClockDomain::Callback
+memoryController	MemorySystem.h	/^	MemoryController *memoryController;$/;"	m	class:DRAMSim::MemorySystem
+memoryController	Rank.h	/^	MemoryController *memoryController;$/;"	m	class:DRAMSim::Rank
+misc	SystemConfiguration.h	/^	misc$/;"	e	enum:TraceType
+mkdirIfNotExist	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::mkdirIfNotExist(string path)$/;"	f	class:MultiChannelMemorySystem
+needRefresh	CommandQueue.cpp	/^void CommandQueue::needRefresh(unsigned rank)$/;"	f	class:CommandQueue
+next	Bank.h	/^		struct _DataStruct *next;$/;"	m	struct:DRAMSim::Bank::_DataStruct	typeref:struct:DRAMSim::Bank::_DataStruct::_DataStruct
+nextActivate	BankState.h	/^	uint64_t nextActivate;$/;"	m	class:DRAMSim::BankState
+nextBank	CommandQueue.h	/^	unsigned nextBank;$/;"	m	class:DRAMSim::CommandQueue
+nextBankPRE	CommandQueue.h	/^	unsigned nextBankPRE;$/;"	m	class:DRAMSim::CommandQueue
+nextPowerUp	BankState.h	/^	uint64_t nextPowerUp;$/;"	m	class:DRAMSim::BankState
+nextPrecharge	BankState.h	/^	uint64_t nextPrecharge;$/;"	m	class:DRAMSim::BankState
+nextRank	CommandQueue.h	/^	unsigned nextRank;$/;"	m	class:DRAMSim::CommandQueue
+nextRankAndBank	CommandQueue.cpp	/^void CommandQueue::nextRankAndBank(unsigned &rank, unsigned &bank)$/;"	f	class:CommandQueue
+nextRankPRE	CommandQueue.h	/^	unsigned nextRankPRE;$/;"	m	class:DRAMSim::CommandQueue
+nextRead	BankState.h	/^	uint64_t nextRead;$/;"	m	class:DRAMSim::BankState
+nextWrite	BankState.h	/^	uint64_t nextWrite;$/;"	m	class:DRAMSim::BankState
+object	Callback.h	/^	ConsumerT* const object;$/;"	m	class:DRAMSim::Callback
+object	ClockDomain.h	/^        ConsumerT* const object;$/;"	m	class:ClockDomain::Callback
+openRowAddress	BankState.h	/^	unsigned openRowAddress;$/;"	m	class:DRAMSim::BankState
+operator ()	Callback.h	/^	ReturnT operator()(Param1T param1, Param2T param2, Param3T param3)$/;"	f	class:DRAMSim::Callback
+operator ()	ClockDomain.h	/^        ReturnT operator()()$/;"	f	class:ClockDomain::Callback
+operator <<	CSVWriter.h	/^		CSVWriter &operator<<(const IndexedName &indexedName)$/;"	f	class:DRAMSim::CSVWriter
+operator <<	CSVWriter.h	/^		CSVWriter &operator<<(const char *name)$/;"	f	class:DRAMSim::CSVWriter
+operator <<	CSVWriter.h	/^		CSVWriter &operator<<(const string &name)$/;"	f	class:DRAMSim::CSVWriter
+operator <<	Transaction.cpp	/^ostream &operator<<(ostream &os, const Transaction &t)$/;"	f	namespace:DRAMSim
+os	traces/traceParse.py	/^import re, os $/;"	i
+outfile	traces/traceParse.py	/^outfile = open(tracefile_filename,"w")$/;"	v
+outgoingCmdPacket	MemoryController.h	/^	BusPacket *outgoingCmdPacket;$/;"	m	class:DRAMSim::MemoryController
+outgoingDataPacket	MemoryController.h	/^	BusPacket *outgoingDataPacket;$/;"	m	class:DRAMSim::MemoryController
+outgoingDataPacket	Rank.h	/^	BusPacket *outgoingDataPacket;$/;"	m	class:DRAMSim::Rank
+output	CSVWriter.h	/^		ostream &output; $/;"	m	class:DRAMSim::CSVWriter
+output_file	comparison_gen.py	/^				output_file = "%s_%d"%(executable, i)$/;"	v
+paramOverrideList	comparison_gen.py	/^paramOverrideList=[]$/;"	v
+paramType	IniReader.h	/^typedef enum _paramType {SYS_PARAM, DEV_PARAM} paramType;$/;"	t	namespace:DRAMSim	typeref:enum:DRAMSim::_paramType
+parameterType	IniReader.h	/^	paramType parameterType;$/;"	m	struct:DRAMSim::_configMap
+parameters	comparison_gen.py	/^parameters = {'QUEUING_STRUCTURE': ['per_rank', 'per_rank_per_bank'],$/;"	v
+parentMemorySystem	MemoryController.h	/^	MemorySystem *parentMemorySystem;$/;"	m	class:DRAMSim::MemoryController
+parseParamOverrides	TraceBasedSim.cpp	/^IniReader::OverrideMap *parseParamOverrides(const string &kv_str)$/;"	f
+parseTraceFileLine	TraceBasedSim.cpp	/^void *parseTraceFileLine(string &line, uint64_t &addr, enum TransactionType &transType, uint64_t &clockCycle, TraceType type, bool useClockCycle)$/;"	f
+pendingReadRequests	TraceBasedSim.cpp	/^		map<uint64_t, list<uint64_t> > pendingReadRequests; $/;"	m	class:TransactionReceiver	file:
+pendingReadTransactions	MemoryController.h	/^	vector<Transaction *> pendingReadTransactions;$/;"	m	class:DRAMSim::MemoryController
+pendingTransactions	MemorySystem.h	/^	deque<Transaction *> pendingTransactions; $/;"	m	class:DRAMSim::MemorySystem
+pendingWriteRequests	TraceBasedSim.cpp	/^		map<uint64_t, list<uint64_t> > pendingWriteRequests; $/;"	m	class:TransactionReceiver	file:
+physicalAddress	BusPacket.h	/^	uint64_t physicalAddress;$/;"	m	class:DRAMSim::BusPacket
+pop	CommandQueue.cpp	/^bool CommandQueue::pop(BusPacket **busPacket)$/;"	f	class:CommandQueue
+poppedBusPacket	MemoryController.h	/^	BusPacket *poppedBusPacket;$/;"	m	class:DRAMSim::MemoryController
+powerCallBack_t	SystemConfiguration.h	/^typedef void (*powerCallBack_t)(double bgpower, double burstpower, double refreshpower, double actprepower);$/;"	t	namespace:DRAMSim
+powerDown	MemoryController.h	/^	vector<bool> powerDown;$/;"	m	class:DRAMSim::MemoryController
+powerDown	Rank.cpp	/^void Rank::powerDown()$/;"	f	class:Rank
+powerUp	Rank.cpp	/^void Rank::powerUp()$/;"	f	class:Rank
+power_callback	example_app/dramsim_test.cpp	/^void power_callback(double a, double b, double c, double d)$/;"	f
+print	BankState.cpp	/^void BankState::print()$/;"	f	class:BankState
+print	BusPacket.cpp	/^void BusPacket::print()$/;"	f	class:BusPacket
+print	BusPacket.cpp	/^void BusPacket::print(uint64_t currentClockCycle, bool dataStart)$/;"	f	class:BusPacket
+print	CommandQueue.cpp	/^void CommandQueue::print()$/;"	f	class:CommandQueue
+printData	BusPacket.cpp	/^void BusPacket::printData() const $/;"	f	class:BusPacket
+printStats	MemoryController.cpp	/^void MemoryController::printStats(bool finalStats)$/;"	f	class:MemoryController
+printStats	MemorySystem.cpp	/^void MemorySystem::printStats(bool finalStats)$/;"	f	class:DRAMSim::MemorySystem
+printStats	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::printStats(bool finalStats) {$/;"	f	class:MultiChannelMemorySystem
+pwd	MultiChannelMemorySystem.h	/^		string pwd;$/;"	m	class:DRAMSim::MultiChannelMemorySystem
+queues	CommandQueue.h	/^	BusPacket3D queues; \/\/ 3D array of BusPacket pointers$/;"	m	class:DRAMSim::CommandQueue
+queuingStructure	IniReader.cpp	/^QueuingStructure queuingStructure;$/;"	m	namespace:DRAMSim	file:
+rank	BusPacket.h	/^	unsigned rank;$/;"	m	class:DRAMSim::BusPacket
+rankBitWidth	MemoryController.h	/^	unsigned rankBitWidth;$/;"	m	class:DRAMSim::MemoryController
+ranks	MemoryController.h	/^	vector<Rank *> *ranks;$/;"	m	class:DRAMSim::MemoryController
+ranks	MemorySystem.h	/^	vector<Rank *> *ranks;$/;"	m	class:DRAMSim::MemorySystem
+re	traces/traceParse.py	/^import re, os $/;"	i
+read	Bank.cpp	/^void Bank::read(BusPacket *busPacket)$/;"	f	class:Bank
+readReturnCountdown	Rank.h	/^	vector<unsigned> readReturnCountdown;$/;"	m	class:DRAMSim::Rank
+readReturnPacket	Rank.h	/^	vector<BusPacket *> readReturnPacket;$/;"	m	class:DRAMSim::Rank
+read_complete	TraceBasedSim.cpp	/^		void read_complete(unsigned id, uint64_t address, uint64_t done_cycle)$/;"	f	class:TransactionReceiver
+read_complete	example_app/dramsim_test.cpp	/^void some_object::read_complete(unsigned id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:some_object
+receiveFromBus	MemoryController.cpp	/^void MemoryController::receiveFromBus(BusPacket *bpacket)$/;"	f	class:MemoryController
+receiveFromBus	Rank.cpp	/^void Rank::receiveFromBus(BusPacket *packet)$/;"	f	class:Rank
+refreshCountdown	MemoryController.h	/^	vector<unsigned>refreshCountdown;$/;"	m	class:DRAMSim::MemoryController
+refreshEnergy	MemoryController.h	/^	vector< uint64_t > refreshEnergy;$/;"	m	class:DRAMSim::MemoryController
+refreshRank	CommandQueue.h	/^	unsigned refreshRank;$/;"	m	class:DRAMSim::CommandQueue
+refreshRank	MemoryController.h	/^	unsigned refreshRank;$/;"	m	class:DRAMSim::MemoryController
+refreshWaiting	CommandQueue.h	/^	bool refreshWaiting;$/;"	m	class:DRAMSim::CommandQueue
+refreshWaiting	Rank.h	/^	bool refreshWaiting;$/;"	m	class:DRAMSim::Rank
+resetStats	MemoryController.cpp	/^void MemoryController::resetStats()$/;"	f	class:MemoryController
+returnCallBack_t	SystemConfiguration.h	/^typedef void (*returnCallBack_t)(unsigned id, uint64_t addr, uint64_t clockcycle);$/;"	t	namespace:DRAMSim
+returnReadData	MemoryController.cpp	/^void MemoryController::returnReadData(const Transaction *trans)$/;"	f	class:MemoryController
+returnTransaction	MemoryController.h	/^	vector<Transaction *> returnTransaction;$/;"	m	class:DRAMSim::MemoryController
+row	Bank.h	/^		unsigned row;$/;"	m	struct:DRAMSim::Bank::_DataStruct
+row	BusPacket.h	/^	unsigned row;$/;"	m	class:DRAMSim::BusPacket
+rowAccessCounters	CommandQueue.h	/^	vector< vector<unsigned> > rowAccessCounters;$/;"	m	class:DRAMSim::CommandQueue
+rowBitWidth	MemoryController.h	/^	unsigned rowBitWidth;$/;"	m	class:DRAMSim::MemoryController
+rowBufferPolicy	IniReader.cpp	/^RowBufferPolicy rowBufferPolicy;$/;"	m	namespace:DRAMSim	file:
+rowEntries	Bank.h	/^	std::vector<DataStruct *> rowEntries;$/;"	m	class:DRAMSim::Bank
+schedulingPolicy	IniReader.cpp	/^SchedulingPolicy schedulingPolicy;$/;"	m	namespace:DRAMSim	file:
+searchForRow	Bank.cpp	/^Bank::DataStruct *Bank::searchForRow(unsigned row, DataStruct *head)$/;"	f	class:Bank
+searchResult	traces/traceParse.py	/^    searchResult = linePattern.search(line)$/;"	v
+sendAct	CommandQueue.h	/^	bool sendAct;$/;"	m	class:DRAMSim::CommandQueue
+setCPUClockSpeed	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::setCPUClockSpeed(uint64_t cpuClkFreqHz)$/;"	f	class:MultiChannelMemorySystem
+setId	Rank.cpp	/^void Rank::setId(int id)$/;"	f	class:Rank
+some_object	example_app/dramsim_test.h	/^class some_object$/;"	c
+stateChangeCountdown	BankState.h	/^	unsigned stateChangeCountdown;$/;"	m	class:DRAMSim::BankState
+step	SimulatorObject.cpp	/^void SimulatorObject::step()$/;"	f	class:SimulatorObject
+str	CSVWriter.h	/^			string str; $/;"	m	struct:DRAMSim::CSVWriter::IndexedName
+string	traces/traceParse.py	/^import string$/;"	i
+sys	traces/traceParse.py	/^import sys$/;"	i
+systemID	MemorySystem.h	/^	unsigned systemID;$/;"	m	class:DRAMSim::MemorySystem
+systemIniFilename	MultiChannelMemorySystem.h	/^		string systemIniFilename;$/;"	m	class:DRAMSim::MultiChannelMemorySystem
+tCCD	IniReader.cpp	/^unsigned tCCD;$/;"	v
+tCK	IniReader.cpp	/^float tCK;$/;"	v
+tCKE	IniReader.cpp	/^unsigned tCKE;$/;"	v
+tCMD	IniReader.cpp	/^unsigned tCMD;$/;"	v
+tFAW	IniReader.cpp	/^unsigned tFAW;$/;"	v
+tFAWCountdown	CommandQueue.h	/^	vector< vector<unsigned> > tFAWCountdown;$/;"	m	class:DRAMSim::CommandQueue
+tRAS	IniReader.cpp	/^unsigned tRAS;$/;"	v
+tRC	IniReader.cpp	/^unsigned tRC;$/;"	v
+tRCD	IniReader.cpp	/^unsigned tRCD;$/;"	v
+tRFC	IniReader.cpp	/^unsigned tRFC;$/;"	v
+tRP	IniReader.cpp	/^unsigned tRP;$/;"	v
+tRRD	IniReader.cpp	/^unsigned tRRD;$/;"	v
+tRTP	IniReader.cpp	/^unsigned tRTP;$/;"	v
+tRTRS	IniReader.cpp	/^unsigned tRTRS;$/;"	v
+tWR	IniReader.cpp	/^unsigned tWR;$/;"	v
+tWTR	IniReader.cpp	/^unsigned tWTR;$/;"	v
+tXP	IniReader.cpp	/^unsigned tXP;$/;"	v
+temp	traces/traceParse.py	/^        temp = len(time)$/;"	v
+temp_trace	traces/traceParse.py	/^temp_trace = tracefile_filename + ".temp"$/;"	v
+test	ClockDomain.cpp	/^	int TestObj::test()$/;"	f	class:ClockDomain::TestObj
+time	traces/traceParse.py	/^            time = "0"$/;"	v
+time	traces/traceParse.py	/^        time = string.replace(time,",","")$/;"	v
+time	traces/traceParse.py	/^        time = string.replace(time,".","")$/;"	v
+time	traces/traceParse.py	/^        time = time[0:length-5]$/;"	v
+timeAdded	Transaction.h	/^	uint64_t timeAdded;$/;"	m	class:DRAMSim::Transaction
+timeReturned	Transaction.h	/^	uint64_t timeReturned;$/;"	m	class:DRAMSim::Transaction
+tmp	comparison_gen.py	/^	tmp=[]$/;"	v
+totalEpochLatency	MemoryController.h	/^	vector< uint64_t > totalEpochLatency;$/;"	m	class:DRAMSim::MemoryController
+totalReadsPerBank	MemoryController.h	/^	vector<uint64_t> totalReadsPerBank;$/;"	m	class:DRAMSim::MemoryController
+totalReadsPerRank	MemoryController.h	/^	vector<uint64_t> totalReadsPerRank;$/;"	m	class:DRAMSim::MemoryController
+totalTransactions	MemoryController.h	/^	uint64_t totalTransactions;$/;"	m	class:DRAMSim::MemoryController
+totalWritesPerBank	MemoryController.h	/^	vector<uint64_t> totalWritesPerBank;$/;"	m	class:DRAMSim::MemoryController
+totalWritesPerRank	MemoryController.h	/^	vector<uint64_t> totalWritesPerRank;$/;"	m	class:DRAMSim::MemoryController
+traceFilename	MultiChannelMemorySystem.h	/^		string traceFilename;$/;"	m	class:DRAMSim::MultiChannelMemorySystem
+tracefile	traces/traceParse.py	/^tracefile = open(temp_trace,"r")$/;"	v
+tracefile_filename	traces/traceParse.py	/^tracefile_filename = sys.argv[1][0:len(sys.argv[1])-3]$/;"	v
+traces	comparison_gen.py	/^traces = ['k6_bsc_vector1.trc', 'k6_video_tracking_128kL2_trace.trc',  'k6_aoe_02_short.trc']$/;"	v
+transactionQueue	MemoryController.h	/^	vector<Transaction *> transactionQueue;$/;"	m	class:DRAMSim::MemoryController
+transactionType	Transaction.h	/^	TransactionType transactionType;$/;"	m	class:DRAMSim::Transaction
+update	ClockDomain.cpp	/^	void ClockDomainCrosser::update()$/;"	f	class:ClockDomain::ClockDomainCrosser
+update	CommandQueue.cpp	/^void CommandQueue::update()$/;"	f	class:CommandQueue
+update	MemoryController.cpp	/^void MemoryController::update()$/;"	f	class:MemoryController
+update	MemorySystem.cpp	/^void MemorySystem::update()$/;"	f	class:DRAMSim::MemorySystem
+update	MultiChannelMemorySystem.cpp	/^void MultiChannelMemorySystem::update()$/;"	f	class:MultiChannelMemorySystem
+update	Rank.cpp	/^void Rank::update()$/;"	f	class:Rank
+usage	TraceBasedSim.cpp	/^void usage()$/;"	f
+varType	IniReader.h	/^typedef enum _variableType {STRING, UINT, UINT64, FLOAT, BOOL} varType;$/;"	t	namespace:DRAMSim	typeref:enum:DRAMSim::_variableType
+variablePtr	IniReader.h	/^	void *variablePtr;$/;"	m	struct:DRAMSim::_configMap
+variableType	IniReader.h	/^	varType variableType;$/;"	m	struct:DRAMSim::_configMap
+visDataOut	MultiChannelMemorySystem.h	/^	std::ofstream visDataOut;$/;"	m	class:DRAMSim::MultiChannelMemorySystem
+visDataOut	TraceBasedSim.cpp	/^ofstream visDataOut; \/\/mostly used in MemoryController$/;"	v
+visFilename	MultiChannelMemorySystem.h	/^		string *visFilename;$/;"	m	class:DRAMSim::MultiChannelMemorySystem
+wasSet	IniReader.h	/^	bool wasSet;$/;"	m	struct:DRAMSim::_configMap
+willAcceptTransaction	MultiChannelMemorySystem.cpp	/^bool MultiChannelMemorySystem::willAcceptTransaction()$/;"	f	class:MultiChannelMemorySystem
+willAcceptTransaction	MultiChannelMemorySystem.cpp	/^bool MultiChannelMemorySystem::willAcceptTransaction(uint64_t addr)$/;"	f	class:MultiChannelMemorySystem
+write	Bank.cpp	/^void Bank::write(const BusPacket *busPacket)$/;"	f	class:Bank
+writeDataCountdown	MemoryController.h	/^	vector<unsigned> writeDataCountdown;$/;"	m	class:DRAMSim::MemoryController
+writeDataToSend	MemoryController.h	/^	vector<BusPacket *> writeDataToSend;$/;"	m	class:DRAMSim::MemoryController
+write_complete	TraceBasedSim.cpp	/^		void write_complete(unsigned id, uint64_t address, uint64_t done_cycle)$/;"	f	class:TransactionReceiver
+write_complete	example_app/dramsim_test.cpp	/^void some_object::write_complete(unsigned id, uint64_t address, uint64_t clock_cycle)$/;"	f	class:some_object
+zcat_cmd	traces/traceParse.py	/^	zcat_cmd = "gzcat"$/;"	v
+zcat_cmd	traces/traceParse.py	/^zcat_cmd = "zcat";$/;"	v
+~CallbackBase	Callback.h	/^DRAMSim::CallbackBase<Return,Param1T,Param2T,Param3T>::~CallbackBase() {}$/;"	f	class:DRAMSim::DRAMSim::CallbackBase
+~CommandQueue	CommandQueue.cpp	/^CommandQueue::~CommandQueue()$/;"	f	class:CommandQueue
+~MemoryController	MemoryController.cpp	/^MemoryController::~MemoryController()$/;"	f	class:MemoryController
+~MemorySystem	MemorySystem.cpp	/^MemorySystem::~MemorySystem()$/;"	f	class:DRAMSim::MemorySystem
+~MultiChannelMemorySystem	MultiChannelMemorySystem.cpp	/^MultiChannelMemorySystem::~MultiChannelMemorySystem()$/;"	f	class:MultiChannelMemorySystem
+~Rank	Rank.cpp	/^Rank::~Rank()$/;"	f	class:Rank
