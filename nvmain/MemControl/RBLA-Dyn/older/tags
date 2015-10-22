@@ -1,0 +1,126 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+B	RBLA_Dyn.h	/^		B,KB,MB,GB$/;"	e	enum:NVM::Unit
+BUSY	DRAMBuffer.h	/^			BUSY$/;"	e	enum:NVM::DRAMCacheState
+BUSY	StatsStore.h	/^			BUSY$/;"	e	enum:NVM::StatsStoreFlag
+CalculateStats	RBLA_Dyn.cpp	/^void RBLA_Dyn::CalculateStats()$/;"	f	class:RBLA_Dyn
+ClearCounter	StatsStore.cpp	/^bool ClearCounter()$/;"	f
+Cycle	RBLA_Dyn.cpp	/^void RBLA_Dyn::Cycle(ncycle_t steps)$/;"	f	class:RBLA_Dyn
+DIRTY	DRAMBuffer.h	/^			DIRTY = 2$/;"	e	enum:NVM::__anon1
+DRAMBuffer	DRAMBuffer.h	/^	class DRAMBuffer$/;"	c	namespace:NVM
+DRAMCacheBlock	DRAMBuffer.h	/^	typedef struct DRAMCacheBlock$/;"	s	namespace:NVM
+DRAMCacheOp	DRAMBuffer.h	/^	enum DRAMCacheOp$/;"	g	namespace:NVM
+DRAMCacheState	DRAMBuffer.h	/^	enum DRAMCacheState$/;"	g	namespace:NVM
+DRAMCache_evict	DRAMBuffer.h	/^			DRAMCache_evict$/;"	e	enum:NVM::DRAMCacheOp
+DRAMCache_evicts	RBLA_Dyn.h	/^			ncounter_t DRAMCache_hits,DRAMCache_misses , DRAMCache_evicts;$/;"	m	class:NVM::RBLA_Dyn
+DRAMCache_hitrate	RBLA_Dyn.h	/^			double DRAMCache_hitrate;	$/;"	m	class:NVM::RBLA_Dyn
+DRAMCache_hits	RBLA_Dyn.h	/^			ncounter_t DRAMCache_hits,DRAMCache_misses , DRAMCache_evicts;$/;"	m	class:NVM::RBLA_Dyn
+DRAMCache_misses	RBLA_Dyn.h	/^			ncounter_t DRAMCache_hits,DRAMCache_misses , DRAMCache_evicts;$/;"	m	class:NVM::RBLA_Dyn
+DRAMCache_none	DRAMBuffer.h	/^			DRAMCache_none,$/;"	e	enum:NVM::DRAMCacheOp
+DRAMCache_read	DRAMBuffer.h	/^			DRAMCache_read,$/;"	e	enum:NVM::DRAMCacheOp
+DRAMCache_write	DRAMBuffer.h	/^			DRAMCache_write,$/;"	e	enum:NVM::DRAMCacheOp
+FindMissCounter	StatsStore.cpp	/^bool StatsStoreOp::FindMissCounter( NVMainRequest* req , ncounter_t rows,StatsEntry* entry)$/;"	f	class:StatsStoreOp
+FindMissCounter	StatsStore.cpp	/^bool StatsStoreOp::FindMissCounter( ncounter_t index , StatsEntry *entry )$/;"	f	class:StatsStoreOp
+FindVictim	StatsStore.cpp	/^statsEntry* StatsStoreOp::FindVictim()$/;"	f	class:StatsStoreOp
+Full	StatsStore.cpp	/^StatsEntry* StatsStoreOp::Full()$/;"	f	class:StatsStoreOp
+Full	StatsStore.cpp	/^bool StatsStoreOp::Full()$/;"	f	class:StatsStoreOp
+GB	RBLA_Dyn.h	/^		B,KB,MB,GB$/;"	e	enum:NVM::Unit
+GetCacheSize	RBLA_Dyn.cpp	/^uint64_t RBLA_Dyn::GetCacheSize()$/;"	f	class:RBLA_Dyn
+GetCacheSize	RBLA_Dyn.h	/^			uint64_t GetCacheSize()$/;"	f	class:NVM::RBLA_Dyn
+GetFlag	StatsStore.h	/^			void GetFlag( )$/;"	f	class:NVM::StatsEntry
+GetMissCounter	StatsStore.h	/^			ncounter_t GetMissCounter()$/;"	f	class:NVM::StatsEntry
+GetReadIncreSteps	StatsStore.h	/^			ncounter_t GetReadIncreSteps()$/;"	f	class:NVM::StatsStoreOp
+GetRowID	StatsStore.h	/^			ncounter_t GetRowID()$/;"	f	class:NVM::StatsEntry
+GetStatsStore	RBLA_Dyn.h	/^			StatsStoreOp* GetStatsStore()$/;"	f	class:NVM::RBLA_Dyn
+GetWriteIncreSteps	StatsStore.h	/^			ncounter_t GetWriteIncreSteps()$/;"	f	class:NVM::StatsStoreOp
+IDLE	DRAMBuffer.h	/^			IDLE,$/;"	e	enum:NVM::DRAMCacheState
+IDLE	StatsStore.h	/^			IDLE,$/;"	e	enum:NVM::StatsStoreFlag
+INVLID	DRAMBuffer.h	/^			INVLID = 0,$/;"	e	enum:NVM::__anon1
+Insert	StatsStore.cpp	/^void StatsStoreOp::Insert( ncounter_t row_id )$/;"	f	class:StatsStoreOp
+Invalid	StatsStore.h	/^		Invalid,$/;"	e	enum:NVM::StatsEntryFlag
+Invalidate	StatsStore.h	/^			void Invalidate()$/;"	f	class:NVM::StatsEntry
+IsIssuable	StatsStore.cpp	/^bool StatsStoreOp::IsIssuable()$/;"	f	class:StatsStoreOp
+IssueAtomic	RBLA_Dyn.cpp	/^bool RBLA_Dyn::IssueAtomic(NVMainRequest *req)$/;"	f	class:RBLA_Dyn
+IssueCommand	RBLA_Dyn.cpp	/^bool RBLA_Dyn::IssueCommand(NVMainRequest *req)$/;"	f	class:RBLA_Dyn
+IssueCommand	StatsStore.cpp	/^bool StatsStoreOp::IssueCommand()$/;"	f	class:StatsStoreOp
+IssueFunctional	RBLA_Dyn.cpp	/^bool RBLA_Dyn::IssueFunctional(NVMainRequest *req)$/;"	f	class:RBLA_Dyn
+KB	RBLA_Dyn.h	/^		B,KB,MB,GB$/;"	e	enum:NVM::Unit
+MB	RBLA_Dyn.h	/^		B,KB,MB,GB$/;"	e	enum:NVM::Unit
+MissIncrement	StatsStore.cpp	/^void StatsEntry::MissIncrement(ncounter_t steps)$/;"	f	class:StatsEntry
+MissType	StatsStore.h	/^	enum MissType$/;"	g	namespace:NVM
+NVM	DRAMBuffer.h	/^namespace NVM$/;"	n
+NVM	RBLA_Dyn.h	/^namespace NVM{$/;"	n
+NVM	StatsStore.h	/^namespace NVM{$/;"	n
+RAMCacheRequest	DRAMBuffer.h	/^	typedef struct RAMCacheRequest$/;"	s	namespace:NVM
+RBLA_Dyn	RBLA_Dyn.cpp	/^RBLA_Dyn::RBLA_Dyn()$/;"	f	class:RBLA_Dyn
+RBLA_Dyn	RBLA_Dyn.h	/^	class RBLA_Dyn:public AbstractDRAMCache$/;"	c	namespace:NVM
+READ	StatsStore.h	/^			READ,$/;"	e	enum:NVM::MissType
+Read	StatsStore.cpp	/^bool Read( ncounter_t row_id , ncounter_t &miss_counter )$/;"	f
+RegisterStats	RBLA_Dyn.cpp	/^void RBLA_Dyn::RegisterStats()$/;"	f	class:RBLA_Dyn
+RequestComplete	RBLA_Dyn.cpp	/^bool RBLA_Dyn::RequestComplete(NVMainRequest *req)$/;"	f	class:RBLA_Dyn
+RequestComplete	StatsStore.cpp	/^bool StatStoreOp::RequestComplete()$/;"	f	class:StatStoreOp
+SetCacheSize	RBLA_Dyn.cpp	/^void RBLA_Dyn::SetCacheSize( uint64_t size, Unit unit)$/;"	f	class:RBLA_Dyn
+SetCacheSize	RBLA_Dyn.cpp	/^void RBLA_Dyn::SetCacheSize( uint64_t size, std::string unit)$/;"	f	class:RBLA_Dyn
+SetConfig	RBLA_Dyn.cpp	/^void RBLA_Dyn::SetConfig( Config *conf,bool createChildren = true)$/;"	f	class:RBLA_Dyn
+SetFlag	StatsStore.h	/^			void SetFlag( StatsEntryFlag flag )$/;"	f	class:NVM::StatsEntry
+SetFunctionalCache	RBLA_Dyn.cpp	/^void RBLA_Dyn::SetFunctionalCache( CacheBank *cache)$/;"	f	class:RBLA_Dyn
+SetMainMemory	RBLA_Dyn.cpp	/^void RBLA_Dyn::SetMainMemory(NVMain *memory)$/;"	f	class:RBLA_Dyn
+SetMissCounter	StatsStore.h	/^			void SetMissCounter( ncounter_t missCounter)$/;"	f	class:NVM::StatsEntry
+SetReadIncreSteps	StatsStore.h	/^			void SetReadIncreSteps(ncounter_t steps)$/;"	f	class:NVM::StatsStoreOp
+SetRowID	StatsStore.h	/^			void SetRowID(ncounter_t rowID)$/;"	f	class:NVM::StatsEntry
+SetStatsStore	RBLA_Dyn.h	/^			void SetStatsStore(StatsStoreOp* statsStore)$/;"	f	class:NVM::RBLA_Dyn
+SetWriteIncreSteps	StatsStore.h	/^			void SetWriteIncreSteps(ncounter_t steps)$/;"	f	class:NVM::StatsStoreOp
+StatsEntry	StatsStore.cpp	/^StatsEntry::StatsEntry()$/;"	f	class:StatsEntry
+StatsEntry	StatsStore.h	/^	class StatsEntry$/;"	c	namespace:NVM
+StatsEntryFlag	StatsStore.h	/^	enum StatsEntryFlag$/;"	g	namespace:NVM
+StatsStoreFlag	StatsStore.h	/^	enum StatsStoreFlag$/;"	g	namespace:NVM
+StatsStoreOp	StatsStore.cpp	/^StatsStoreOp::StatsStoreOp(ncounter_t statsStoreSize,ncounter_t readIncrementStep,ncounter_t writeIncrementStep)$/;"	f	class:StatsStoreOp
+StatsStoreOp	StatsStore.h	/^	class StatsStoreOp$/;"	c	namespace:NVM
+Unit	RBLA_Dyn.h	/^	enum Unit$/;"	g	namespace:NVM
+Update	StatsStore.cpp	/^bool Update( ncounter_t row_id , MissType type)$/;"	f
+VALID	DRAMBuffer.h	/^			VALID = 1,$/;"	e	enum:NVM::__anon1
+Valid	StatsStore.h	/^		Valid$/;"	e	enum:NVM::StatsEntryFlag
+Validate	StatsStore.h	/^			void Validate()$/;"	f	class:NVM::StatsEntry
+WRITE	StatsStore.h	/^			WRITE$/;"	e	enum:NVM::MissType
+_DRAM_BUFFER_H_	DRAMBuffer.h	8;"	d
+_RBLA_DYN_	RBLA_Dyn.h	10;"	d
+addr	DRAMBuffer.h	/^		NVMAddress* addr;$/;"	m	struct:NVM::DRAMCacheBlock
+address	DRAMBuffer.h	/^	 	NVMAddress address;$/;"	m	struct:NVM::RAMCacheRequest
+assoc	RBLA_Dyn.h	/^			ncounter_t assoc;$/;"	m	class:NVM::RBLA_Dyn
+cacheLineSize	RBLA_Dyn.h	/^			ncounter_t cacheLineSize;$/;"	m	class:NVM::RBLA_Dyn
+cacheSize	RBLA_Dyn.h	/^			uint64_t cacheSize;$/;"	m	class:NVM::RBLA_Dyn
+data	DRAMBuffer.h	/^		NVMDataBlock *data;$/;"	m	struct:NVM::DRAMCacheBlock
+data	DRAMBuffer.h	/^	   	NVMDataBlock data;$/;"	m	struct:NVM::RAMCacheRequest
+dram_cache	DRAMBuffer.h	/^			std::list<DRAMCacheBlock*> dram_cache;$/;"	m	class:NVM::DRAMBuffer
+endAddr	DRAMBuffer.h	/^	  	NVMAddress endAddr;$/;"	m	struct:NVM::RAMCacheRequest
+flag	StatsStore.h	/^			StatsEntryFlag flag;$/;"	m	class:NVM::StatsEntry
+flags	DRAMBuffer.h	/^		uint64_t flags;$/;"	m	struct:NVM::DRAMCacheBlock
+functionalCache	RBLA_Dyn.h	/^			CacheBank *functionalCache;$/;"	m	class:NVM::RBLA_Dyn
+hit	DRAMBuffer.h	/^	    bool hit;$/;"	m	struct:NVM::RAMCacheRequest
+indexID	StatsStore.h	/^			ncounter_t indexID;$/;"	m	class:NVM::StatsEntry
+mainMemory	RBLA_Dyn.h	/^			NVMain *mainMemory;$/;"	m	class:NVM::RBLA_Dyn
+mainMemoryConfig	RBLA_Dyn.h	/^			Config *mainMemoryConfig;$/;"	m	class:NVM::RBLA_Dyn
+missCounter	StatsStore.h	/^			ncounter_t missCounter;$/;"	m	class:NVM::StatsEntry
+optype	DRAMBuffer.h	/^		DRAMCacheOp optype;$/;"	m	struct:NVM::RAMCacheRequest
+originalRequest	DRAMBuffer.h	/^		NVMainRequest *originalRequest;$/;"	m	struct:NVM::RAMCacheRequest
+owner	DRAMBuffer.h	/^		NVMObject *owner;$/;"	m	struct:NVM::RAMCacheRequest
+rb_evicts	RBLA_Dyn.h	/^			ncounter_t rb_hits,rb_misses,rb_evicts;$/;"	m	class:NVM::RBLA_Dyn
+rb_hits	RBLA_Dyn.h	/^			ncounter_t rb_hits,rb_misses,rb_evicts;$/;"	m	class:NVM::RBLA_Dyn
+rb_misses	RBLA_Dyn.h	/^			ncounter_t rb_hits,rb_misses,rb_evicts;$/;"	m	class:NVM::RBLA_Dyn
+readIncrementSteps	RBLA_Dyn.h	/^			ncounter_t writeIncrementSteps,readIncrementSteps;$/;"	m	class:NVM::RBLA_Dyn
+readIncrementSteps	StatsStore.h	/^			ncounter_t readIncrementSteps,writeIncrementSteps;$/;"	m	class:NVM::StatsStoreOp
+rows	RBLA_Dyn.h	/^			ncounter_t rows;	\/\/row number$/;"	m	class:NVM::RBLA_Dyn
+sets	RBLA_Dyn.h	/^			ncounter_t sets;$/;"	m	class:NVM::RBLA_Dyn
+state	StatsStore.h	/^			StatsStoreFlag state;$/;"	m	class:NVM::StatsStoreOp
+statsStore	RBLA_Dyn.h	/^			StatsStoreOp *statsStore;$/;"	m	class:NVM::RBLA_Dyn
+statsStore	StatsStore.h	/^			std::list<StatsEntry *>statsStore;$/;"	m	class:NVM::StatsStoreOp
+statsStoreSize	RBLA_Dyn.h	/^			ncounter_t statsStoreSize;	\/\/stats store entry num(default is 16)$/;"	m	class:NVM::RBLA_Dyn
+statsStoreSize	StatsStore.h	/^			ncounter_t statsStoreSize;	\/\/stats store entry num(default is 16)$/;"	m	class:NVM::StatsStoreOp
+writeIncrementSteps	RBLA_Dyn.h	/^			ncounter_t writeIncrementSteps,readIncrementSteps;$/;"	m	class:NVM::RBLA_Dyn
+writeIncrementSteps	StatsStore.h	/^			ncounter_t readIncrementSteps,writeIncrementSteps;$/;"	m	class:NVM::StatsStoreOp
+~RBLA_Dyn	RBLA_Dyn.cpp	/^RBLA_Dyn::~RBLA_Dyn()$/;"	f	class:RBLA_Dyn
+~StatesStoreOp	StatsStore.cpp	/^StatsStoreOp::~StatesStoreOp()$/;"	f	class:StatsStoreOp
